@@ -1,0 +1,100 @@
+{
+ "design": "PDAC-driver feasibility audit: DepMap 24Q4 dependency + HPA cell-line expression.",
+ "sources": {
+  "depmap": "Public 24Q4 CRISPRGeneEffect.csv + Model.csv (figshare 27993248)",
+  "hpa": "rna_celline.tsv.zip (last-modified 2025-11-05)"
+ },
+ "threshold": -0.5,
+ "n_models": 1178,
+ "n_pancreas_models": 47,
+ "dependency": {
+  "KRAS": {
+   "median_pancreas": -1.75801560266707,
+   "median_other": -0.3619025419814944,
+   "frac_dep_pancreas": 0.9148936170212766,
+   "frac_dep_other": 0.3147656940760389,
+   "mw_p_two_sided": 1.0268588065194762e-21,
+   "n_pancreas": 47
+  },
+  "TP53": {
+   "median_pancreas": 0.1572973983160889,
+   "median_other": 0.2179476226172833,
+   "frac_dep_pancreas": 0.0,
+   "frac_dep_other": 0.0035366931918656055,
+   "mw_p_two_sided": 0.0020331388157501557,
+   "n_pancreas": 47
+  },
+  "CDKN2A": {
+   "median_pancreas": 0.1684669866759628,
+   "median_other": 0.1597155997116149,
+   "frac_dep_pancreas": 0.0,
+   "frac_dep_other": 0.0,
+   "mw_p_two_sided": 0.6154303162308676,
+   "n_pancreas": 47
+  },
+  "SMAD4": {
+   "median_pancreas": -0.0638344667844974,
+   "median_other": -0.0987516919833003,
+   "frac_dep_pancreas": 0.0,
+   "frac_dep_other": 0.021220159151193633,
+   "mw_p_two_sided": 0.01287595248165953,
+   "n_pancreas": 47
+  }
+ },
+ "dependency_controls": {
+  "RPS3": {
+   "median_pancreas": -2.4096905563307502,
+   "median_other": -2.46678275397519,
+   "frac_dep_pancreas": 1.0,
+   "frac_dep_other": 1.0,
+   "mw_p_two_sided": 0.13646864411422963,
+   "n_pancreas": 47
+  },
+  "PCNA": {
+   "median_pancreas": -2.854886562476304,
+   "median_other": -2.744785002749162,
+   "frac_dep_pancreas": 1.0,
+   "frac_dep_other": 0.9991158267020336,
+   "mw_p_two_sided": 0.07556887889102824,
+   "n_pancreas": 47
+  },
+  "PSMA1": {
+   "median_pancreas": -2.148761806555004,
+   "median_other": -2.252418242184813,
+   "frac_dep_pancreas": 1.0,
+   "frac_dep_other": 1.0,
+   "mw_p_two_sided": 0.11398680205047851,
+   "n_pancreas": 47
+  }
+ },
+ "expression": {
+  "KRAS": {
+   "median_ntpm_pancreatic_lines": 21.8,
+   "median_ntpm_all_lines": 19.3,
+   "frac_zero_pancreatic": 0.0,
+   "frac_zero_all": 0.0,
+   "n_pancreatic_lines": 22
+  },
+  "TP53": {
+   "median_ntpm_pancreatic_lines": 66.7,
+   "median_ntpm_all_lines": 67.0,
+   "frac_zero_pancreatic": 0.0,
+   "frac_zero_all": 0.0,
+   "n_pancreatic_lines": 22
+  },
+  "CDKN2A": {
+   "median_ntpm_pancreatic_lines": 29.150000000000002,
+   "median_ntpm_all_lines": 45.7,
+   "frac_zero_pancreatic": 0.0,
+   "frac_zero_all": 0.026533996683250415,
+   "n_pancreatic_lines": 22
+  },
+  "SMAD4": {
+   "median_ntpm_pancreatic_lines": 4.05,
+   "median_ntpm_all_lines": 8.95,
+   "frac_zero_pancreatic": 0.13636363636363635,
+   "frac_zero_all": 0.009950248756218905,
+   "n_pancreatic_lines": 22
+  }
+ }
+}

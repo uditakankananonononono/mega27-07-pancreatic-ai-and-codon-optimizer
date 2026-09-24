@@ -118,6 +118,43 @@ Codon optimizers can raise tAI/CAI while inadvertently strengthening secondary s
 \section{Results: RefSeq provenance audit of the benchmark wild types}
 Every head-to-head and MFE number above scores the ICOR benchmark's wild-type DNA, so we verified those sequences against the live NCBI record each fasta header names (E-utilities \texttt{efetch}, \texttt{rettype=fasta\_cds\_na}, joined CDS; \texttt{scripts/refseq\_provenance.py}, \texttt{results/refseq\_provenance.json}). 36 of the 40 benchmark genes carry an accession.version in their header; all 36 fetched cleanly and \textbf{34 match the live CDS exactly}. The two failures are both pathogen genes: \emph{falvac-1} (header U65407.1, \emph{P.\,falciparum} AMA-1; benchmark 972\,bp vs live CDS 1{,}869\,bp; only 1/24 sampled 40-nt windows occur in the live record) and \emph{pa} (header AY862693.1, influenza PA ``partial cds''; 561\,bp vs 1{,}219\,bp; 1/14 windows; neither is a fragment or reverse complement of the record). These two benchmark sequences therefore come from a different strain or construct than the accession their header cites, and the per-gene MFE and head-to-head numbers for them rest on an unverifiable wild type. Four further genes (\emph{hpdf}, \emph{mmpl3}, \emph{pea}, \emph{ptp4a3}) have plain-name headers with no accession and are unverifiable by construction. \emph{Verdict:} the benchmark's WT sequences are provenance-clean for 34/36 accessioned genes; the two pathogen genes are flagged, and we do not drop them silently --- the caveat stands wherever their numbers appear.
 
+\section{Results: external feasibility audit of the driver panel (DepMap 24Q4 + HPA)}
+The four-gene panel is a biological choice, and two external resources let us
+audit it against data we did not train on. First, \emph{dependency}: a driver
+whose loss is tolerated is a sustainable tumor state and therefore a usable
+detection marker; a driver that is a selective dependency is the therapeutic
+handle. DepMap Public 24Q4 Chronos scores (1{,}178 models, 47 pancreatic;
+\texttt{results/depmap\_panel\_subset.csv}) show exactly the expected split
+(\texttt{scripts/depmap\_hpa\_audit.py}, \texttt{results/depmap\_hpa\_panel\_audit.json},
+five hermetic tests; Figure~\ref{fig:depmaphpa}). KRAS is a strong
+pancreatic-selective dependency: median effect $-1.76$ in pancreatic models vs
+$-0.36$ elsewhere, with $91.5\%$ of pancreatic models dependent
+(effect $<-0.5$) vs $31.5\%$ of others (Mann--Whitney
+$p=1.0\times10^{-21}$). The tumor suppressors are tolerated: CDKN2A knockout is
+effect-neutral (median $+0.17$ pancreas, $p=0.62$) and TP53 loss is if anything
+favoured (median $+0.16$; $0\%$ of pancreatic models dependent), consistent
+with loss being a sustainable, detectable state. SMAD4 shows no
+pancreatic-selective dependency either ($0\%$ dependent). Pan-essential
+controls (RPS3, PCNA, PSMA1) read median $<-2.1$ with ${\sim}100\%$ dependency
+in both strata, so the assay scale is read correctly.
+Second, \emph{measurability}: in the Human Protein Atlas cell-line RNA atlas
+all four driver transcripts are expressed in the 22 pancreatic cell lines
+(median nTPM: TP53 66.7, CDKN2A 29.2, KRAS 21.8, SMAD4 4.1). SMAD4 is
+undetectable (nTPM $=0$) in $13.6\%$ of pancreatic lines vs $1.0\%$ of lines
+overall, mirroring the ${\sim}20\%$ SMAD4-loss prevalence in PDAC tumours
+(Table in \texttt{results/depmap\_hpa\_panel\_audit.json}; we report the
+number without claiming a mechanistic link from cell lines to tumours).
+Both audits use only held-out public resources and leave the models unchanged;
+their role is to check the panel's premises, not to tune it.
+\begin{figure}[h]\centering
+\includegraphics[width=0.98\linewidth]{figs/fig_depmap_hpa_audit.pdf}
+\caption{Left: median DepMap 24Q4 Chronos gene effect for the four PDAC drivers
+and three pan-essential controls, pancreatic models vs all others. KRAS is the
+single selective dependency ($p=1.0\times10^{-21}$); the tumor suppressors are
+tolerated. Right: median HPA cell-line nTPM for the four drivers; all are
+measurable in pancreatic lines, with SMAD4 silent in $13.6\%$ of them.}
+\label{fig:depmaphpa}\end{figure}
+
 \section{Documented negatives}
 (1) SMAD4 predictability is at chance across architectures. (2) The SWI/SNF--CDKN2A exclusivity fails replication. (3) Gene-level permutation importance on the CDKN2A GNN is noise. (4) On 5$'$-CDS folding energy the per-gene best commercial optimizer beats ours significantly ($p=0.040$; ViennaRNA audit above). Each negative is preserved in the archived result files (\texttt{results/*.json}).
 \section{Falsification paths}
