@@ -1,0 +1,327 @@
+{
+ "source": "CIViC v2 GraphQL API (civicdb.org/api/graphql), evidenceItems, molecularProfileName substring",
+ "genes": {
+  "KRAS": {
+   "group": "panel",
+   "items_all": 501,
+   "items_accepted": 200,
+   "target_pattern": "pancrea",
+   "target_hits": 13,
+   "target_share": 0.065,
+   "target_share_ci95": [
+    0.0384,
+    0.108
+   ],
+   "no_disease_accepted": 0,
+   "top_diseases": [
+    [
+     "Colorectal Cancer",
+     96
+    ],
+    [
+     "Lung Non-small Cell Carcinoma",
+     31
+    ],
+    [
+     "Multiple Myeloma",
+     17
+    ],
+    [
+     "Cancer",
+     10
+    ],
+    [
+     "Lung Cancer",
+     7
+    ]
+   ],
+   "evidence_types": {
+    "PREDICTIVE": 167,
+    "PROGNOSTIC": 24,
+    "DIAGNOSTIC": 4,
+    "ONCOGENIC": 5
+   },
+   "evidence_levels": {
+    "A": 6,
+    "B": 95,
+    "C": 34,
+    "D": 64,
+    "E": 1
+   },
+   "distinct_molecular_profiles": 78
+  },
+  "TP53": {
+   "group": "panel",
+   "items_all": 406,
+   "items_accepted": 196,
+   "target_pattern": "pancrea",
+   "target_hits": 0,
+   "target_share": 0.0,
+   "target_share_ci95": [
+    0.0,
+    0.0192
+   ],
+   "no_disease_accepted": 102,
+   "top_diseases": [
+    [
+     "",
+     102
+    ],
+    [
+     "Cancer",
+     21
+    ],
+    [
+     "Breast Cancer",
+     16
+    ],
+    [
+     "Chronic Lymphocytic Leukemia",
+     7
+    ],
+    [
+     "Ovarian Cancer",
+     7
+    ]
+   ],
+   "evidence_types": {
+    "PROGNOSTIC": 40,
+    "PREDISPOSING": 2,
+    "PREDICTIVE": 52,
+    "FUNCTIONAL": 102
+   },
+   "evidence_levels": {
+    "A": 1,
+    "B": 55,
+    "C": 11,
+    "D": 127,
+    "E": 2
+   },
+   "distinct_molecular_profiles": 233
+  },
+  "CDKN2A": {
+   "group": "panel",
+   "items_all": 59,
+   "items_accepted": 30,
+   "target_pattern": "pancrea",
+   "target_hits": 2,
+   "target_share": 0.0667,
+   "target_share_ci95": [
+    0.0185,
+    0.2132
+   ],
+   "no_disease_accepted": 0,
+   "top_diseases": [
+    [
+     "Head And Neck Squamous Cell Carcinoma",
+     7
+    ],
+    [
+     "Lung Non-small Cell Carcinoma",
+     5
+    ],
+    [
+     "Oropharynx Cancer",
+     2
+    ],
+    [
+     "Pancreatic Cancer",
+     2
+    ],
+    [
+     "Skin Melanoma",
+     2
+    ]
+   ],
+   "evidence_types": {
+    "PROGNOSTIC": 9,
+    "PREDICTIVE": 20,
+    "PREDISPOSING": 1
+   },
+   "evidence_levels": {
+    "A": 1,
+    "B": 21,
+    "C": 2,
+    "D": 6
+   },
+   "distinct_molecular_profiles": 32
+  },
+  "SMAD4": {
+   "group": "panel",
+   "items_all": 31,
+   "items_accepted": 7,
+   "target_pattern": "pancrea",
+   "target_hits": 3,
+   "target_share": 0.4286,
+   "target_share_ci95": [
+    0.1582,
+    0.7495
+   ],
+   "no_disease_accepted": 0,
+   "top_diseases": [
+    [
+     "Colorectal Cancer",
+     2
+    ],
+    [
+     "Pancreatic Adenocarcinoma",
+     1
+    ],
+    [
+     "Pancreatic Ductal Adenocarcinoma",
+     1
+    ],
+    [
+     "Pancreatic Cancer",
+     1
+    ],
+    [
+     "Juvenile Polyposis Syndrome",
+     1
+    ]
+   ],
+   "evidence_types": {
+    "PROGNOSTIC": 3,
+    "PREDICTIVE": 3,
+    "PREDISPOSING": 1
+   },
+   "evidence_levels": {
+    "B": 5,
+    "C": 1,
+    "D": 1
+   },
+   "distinct_molecular_profiles": 20
+  },
+  "BRCA1": {
+   "group": "breast_ovarian_control",
+   "items_all": 102,
+   "items_accepted": 47,
+   "target_pattern": "breast|ovarian",
+   "target_hits": 29,
+   "target_share": 0.617,
+   "target_share_ci95": [
+    0.4743,
+    0.7421
+   ],
+   "no_disease_accepted": 0,
+   "top_diseases": [
+    [
+     "Ovarian Cancer",
+     14
+    ],
+    [
+     "Breast Cancer",
+     4
+    ],
+    [
+     "Pancreatic Cancer",
+     4
+    ],
+    [
+     "HER2 Negative Breast Cancer",
+     3
+    ],
+    [
+     "Triple-negative Breast Cancer",
+     3
+    ]
+   ],
+   "evidence_types": {
+    "PREDICTIVE": 41,
+    "PROGNOSTIC": 3,
+    "PREDISPOSING": 3
+   },
+   "evidence_levels": {
+    "A": 10,
+    "B": 29,
+    "C": 5,
+    "D": 3
+   },
+   "distinct_molecular_profiles": 48
+  },
+  "JAK2": {
+   "group": "hematologic_control",
+   "items_all": 54,
+   "items_accepted": 44,
+   "target_pattern": "myelo|leukemi|polycythemia|thrombocythemia|lymph",
+   "target_hits": 40,
+   "target_share": 0.9091,
+   "target_share_ci95": [
+    0.7884,
+    0.9641
+   ],
+   "no_disease_accepted": 0,
+   "top_diseases": [
+    [
+     "B-lymphoblastic Leukemia/lymphoma, BCR-ABL1\u2013like",
+     34
+    ],
+    [
+     "Chronic Myeloid Leukemia",
+     2
+    ],
+    [
+     "Polycythemia Vera",
+     2
+    ],
+    [
+     "Hematologic Cancer",
+     1
+    ],
+    [
+     "Lymphoid Leukemia",
+     1
+    ]
+   ],
+   "evidence_types": {
+    "DIAGNOSTIC": 37,
+    "PREDICTIVE": 7
+   },
+   "evidence_levels": {
+    "A": 3,
+    "B": 7,
+    "C": 33,
+    "D": 1
+   },
+   "distinct_molecular_profiles": 28
+  }
+ },
+ "panel_pooled_accepted": {
+  "pancreatic_hits": 18,
+  "n": 433,
+  "share": 0.0416,
+  "share_ci95": [
+   0.0265,
+   0.0647
+  ]
+ },
+ "per_gene_pancreatic_accepted": {
+  "KRAS": {
+   "k": 13,
+   "n": 200
+  },
+  "TP53": {
+   "k": 0,
+   "n": 196
+  },
+  "CDKN2A": {
+   "k": 2,
+   "n": 30
+  },
+  "SMAD4": {
+   "k": 3,
+   "n": 7
+  }
+ },
+ "fisher_panel_vs_brca1_breast_ovarian": {
+  "odds_ratio": 0.0269,
+  "p": 3.729e-22
+ },
+ "fisher_panel_vs_jak2_hematologic": {
+  "odds_ratio": 0.0043,
+  "p": 1.644e-39
+ },
+ "unique_eids": 1146,
+ "gene_eid_rows": 1153,
+ "verdict": "Controls calibrate the metric: BRCA1 evidence concentrates on breast/ovarian (29/47 = 0.62) and JAK2 on hematologic (40/44 = 0.91) disease, both far above the panel's pooled pancreatic share (18/433 = 0.042; Fisher p=3.7e-22 and 1.6e-39). The detection panel's curated clinical-evidence base is indication-diffuse: pancreatic specificity must come from the mutation-pattern combination, not from any single marker's evidence concentration."
+}
