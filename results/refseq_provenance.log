@@ -1,0 +1,77 @@
+BIRC5 NM_001012271.2 True
+BRAF1 NM_004333.6 True
+CAV1 NM_001753.5 True
+CD80 NM_009855.2 True
+CDK1 NM_001786.5 True
+CEBPZ NM_005760.3 True
+CLN3 NM_000086.2 True
+CREB1 NM_004379.5 True
+CSNK1A1 NM_001892.6 True
+FGFR4 NM_002011.5 True
+GSK3B NM_002093.4 True
+JUN NM_002228.4 True
+KIF11 NM_004523.4 True
+LAMP1 NM_005561.4 True
+LEMD3 NM_014319.5 True
+MAPK1 NM_002745.5 True
+MAPKAPK5 NM_003668.4 True
+NGFR NM_002507.4 True
+NOC2L NM_015658.4 True
+OPRM1 NM_000914.5 True
+PDCD11 NM_014976.2 True
+PLK1 NM_005030.6 True
+RPS6KB1 NM_003161.4 True
+SMARCD1 NM_139071.3 True
+TAP1 NM_000593.6 True
+TAS2R10 NM_023921.1 True
+akt1 NM_005163.2 True
+emg1 NM_006331.8 True
+falvac-1 U65407.1 False
+flt1 NM_002019.4 True
+hpdf None None
+lck NM_005356.5 True
+mmpl3 None None
+npr1 NM_000906.4 True
+pa AY862693.1 False
+pak1 NM_002576.5 True
+pea None None
+pim1 NM_002648.4 True
+ptp4a3 None None
+ubtf NM_014233.4 True
+{
+ "n_genes": 40,
+ "n_with_accession": 36,
+ "n_no_accession_header": [
+  "hpdf",
+  "mmpl3",
+  "pea",
+  "ptp4a3"
+ ],
+ "n_fetched": 36,
+ "n_fetch_failed": [],
+ "n_exact_cds_match": 34,
+ "n_mismatch": 2,
+ "mismatches": [
+  {
+   "gene": "falvac-1",
+   "accession": "U65407.1",
+   "benchmark_len": 972,
+   "refseq_cds_len": 1869,
+   "n_cds_features": 1,
+   "exact_match": false,
+   "benchmark_in_refseq": false,
+   "refseq_in_benchmark": false
+  },
+  {
+   "gene": "pa",
+   "accession": "AY862693.1",
+   "benchmark_len": 561,
+   "refseq_cds_len": 1219,
+   "n_cds_features": 1,
+   "exact_match": false,
+   "benchmark_in_refseq": false,
+   "refseq_in_benchmark": false
+  }
+ ],
+ "note": "exact_match = benchmark WT DNA identical to the joined CDS of the live NCBI record for the header accession.version; mismatches are reported per gene, not assumed away"
+}

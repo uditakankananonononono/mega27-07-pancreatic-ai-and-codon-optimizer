@@ -1,0 +1,427 @@
+{
+ "summary": {
+  "n_genes": 40,
+  "n_with_accession": 36,
+  "n_no_accession_header": [
+   "hpdf",
+   "mmpl3",
+   "pea",
+   "ptp4a3"
+  ],
+  "n_fetched": 36,
+  "n_fetch_failed": [],
+  "n_exact_cds_match": 34,
+  "n_mismatch": 2,
+  "mismatches": [
+   {
+    "gene": "falvac-1",
+    "accession": "U65407.1",
+    "benchmark_len": 972,
+    "refseq_cds_len": 1869,
+    "n_cds_features": 1,
+    "exact_match": false,
+    "benchmark_in_refseq": false,
+    "refseq_in_benchmark": false
+   },
+   {
+    "gene": "pa",
+    "accession": "AY862693.1",
+    "benchmark_len": 561,
+    "refseq_cds_len": 1219,
+    "n_cds_features": 1,
+    "exact_match": false,
+    "benchmark_in_refseq": false,
+    "refseq_in_benchmark": false
+   }
+  ],
+  "note": "exact_match = benchmark WT DNA identical to the joined CDS of the live NCBI record for the header accession.version; mismatches are reported per gene, not assumed away"
+ },
+ "per_gene": [
+  {
+   "gene": "BIRC5",
+   "header": ">NM_001012271.2 Homo sapiens baculoviral IAP repeat containing 5 (BIRC5), transcript variant 3, mRNA",
+   "accession": "NM_001012271.2",
+   "benchmark_len": 498,
+   "refseq_cds_len": 498,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "BRAF1",
+   "header": ">NM_004333.6 Homo sapiens B-Raf proto-oncogene, serine/threonine kinase (BRAF), transcript variant 1, mRNA",
+   "accession": "NM_004333.6",
+   "benchmark_len": 2301,
+   "refseq_cds_len": 2301,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "CAV1",
+   "header": ">NM_001753.5 Homo sapiens caveolin 1 (CAV1), transcript variant 1, mRNA",
+   "accession": "NM_001753.5",
+   "benchmark_len": 537,
+   "refseq_cds_len": 537,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "CD80",
+   "header": ">NM_009855.2 Mus musculus CD80 antigen (Cd80), transcript variant 2, mRNA",
+   "accession": "NM_009855.2",
+   "benchmark_len": 921,
+   "refseq_cds_len": 921,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "CDK1",
+   "header": ">NM_001786.5 Homo sapiens cyclin dependent kinase 1 (CDK1), transcript variant 1, mRNA",
+   "accession": "NM_001786.5",
+   "benchmark_len": 894,
+   "refseq_cds_len": 894,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "CEBPZ",
+   "header": ">NM_005760.3 Homo sapiens CCAAT enhancer binding protein zeta (CEBPZ), mRNA",
+   "accession": "NM_005760.3",
+   "benchmark_len": 3165,
+   "refseq_cds_len": 3165,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "CLN3",
+   "header": ">NM_000086.2 Homo sapiens CLN3 lysosomal/endosomal transmembrane protein, battenin (CLN3), transcript variant 2, mRNA",
+   "accession": "NM_000086.2",
+   "benchmark_len": 1317,
+   "refseq_cds_len": 1317,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "CREB1",
+   "header": ">NM_004379.5 Homo sapiens cAMP responsive element binding protein 1 (CREB1), transcript variant 1, mRNA",
+   "accession": "NM_004379.5",
+   "benchmark_len": 984,
+   "refseq_cds_len": 984,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "CSNK1A1",
+   "header": ">NM_001892.6 Homo sapiens casein kinase 1 alpha 1 (CSNK1A1), transcript variant 2, mRNA",
+   "accession": "NM_001892.6",
+   "benchmark_len": 1014,
+   "refseq_cds_len": 1014,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "FGFR4",
+   "header": ">NM_002011.5 Homo sapiens fibroblast growth factor receptor 4 (FGFR4), transcript variant 1, mRNA",
+   "accession": "NM_002011.5",
+   "benchmark_len": 2409,
+   "refseq_cds_len": 2409,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "GSK3B",
+   "header": ">NM_002093.4 Homo sapiens glycogen synthase kinase 3 beta (GSK3B), transcript variant 1, mRNA",
+   "accession": "NM_002093.4",
+   "benchmark_len": 1302,
+   "refseq_cds_len": 1302,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "JUN",
+   "header": ">NM_002228.4 Homo sapiens Jun proto-oncogene, AP-1 transcription factor subunit (JUN), mRNA",
+   "accession": "NM_002228.4",
+   "benchmark_len": 996,
+   "refseq_cds_len": 996,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "KIF11",
+   "header": ">NM_004523.4 Homo sapiens kinesin family member 11 (KIF11), mRNA",
+   "accession": "NM_004523.4",
+   "benchmark_len": 3171,
+   "refseq_cds_len": 3171,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "LAMP1",
+   "header": ">NM_005561.4 Homo sapiens lysosomal associated membrane protein 1 (LAMP1), mRNA",
+   "accession": "NM_005561.4",
+   "benchmark_len": 1254,
+   "refseq_cds_len": 1254,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "LEMD3",
+   "header": ">NM_014319.5 Homo sapiens LEM domain containing 3 (LEMD3), transcript variant 1, mRNA",
+   "accession": "NM_014319.5",
+   "benchmark_len": 2736,
+   "refseq_cds_len": 2736,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "MAPK1",
+   "header": ">NM_002745.5 Homo sapiens mitogen-activated protein kinase 1 (MAPK1), transcript variant 1, mRNA",
+   "accession": "NM_002745.5",
+   "benchmark_len": 1083,
+   "refseq_cds_len": 1083,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "MAPKAPK5",
+   "header": ">NM_003668.4 Homo sapiens MAPK activated protein kinase 5 (MAPKAPK5), transcript variant 1, mRNA",
+   "accession": "NM_003668.4",
+   "benchmark_len": 1416,
+   "refseq_cds_len": 1416,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "NGFR",
+   "header": ">NM_002507.4 Homo sapiens nerve growth factor receptor (NGFR), mRNA",
+   "accession": "NM_002507.4",
+   "benchmark_len": 1284,
+   "refseq_cds_len": 1284,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "NOC2L",
+   "header": ">NM_015658.4 Homo sapiens NOC2 like nucleolar associated transcriptional repressor (NOC2L), mRNA",
+   "accession": "NM_015658.4",
+   "benchmark_len": 2250,
+   "refseq_cds_len": 2250,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "OPRM1",
+   "header": ">NM_000914.5 Homo sapiens opioid receptor mu 1 (OPRM1), transcript variant MOR-1, mRNA",
+   "accession": "NM_000914.5",
+   "benchmark_len": 1203,
+   "refseq_cds_len": 1203,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "PDCD11",
+   "header": ">NM_014976.2 Homo sapiens programmed cell death 11 (PDCD11), mRNA",
+   "accession": "NM_014976.2",
+   "benchmark_len": 5616,
+   "refseq_cds_len": 5616,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "PLK1",
+   "header": ">NM_005030.6 Homo sapiens polo like kinase 1 (PLK1), mRNA",
+   "accession": "NM_005030.6",
+   "benchmark_len": 1812,
+   "refseq_cds_len": 1812,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "RPS6KB1",
+   "header": ">NM_003161.4 Homo sapiens ribosomal protein S6 kinase B1 (RPS6KB1), transcript variant 1, mRNA",
+   "accession": "NM_003161.4",
+   "benchmark_len": 1578,
+   "refseq_cds_len": 1578,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "SMARCD1",
+   "header": ">NM_139071.3 Homo sapiens SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily d, member 1 (SMARCD1), transcript variant 2, mRNA",
+   "accession": "NM_139071.3",
+   "benchmark_len": 1425,
+   "refseq_cds_len": 1425,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "TAP1",
+   "header": ">NM_000593.6 Homo sapiens transporter 1, ATP binding cassette subfamily B member (TAP1), transcript variant 1, mRNA",
+   "accession": "NM_000593.6",
+   "benchmark_len": 2247,
+   "refseq_cds_len": 2247,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "TAS2R10",
+   "header": ">NM_023921.1 Homo sapiens taste 2 receptor member 10 (TAS2R10), mRNA",
+   "accession": "NM_023921.1",
+   "benchmark_len": 924,
+   "refseq_cds_len": 924,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "akt1",
+   "header": ">NM_005163.2 Homo sapiens AKT serine/threonine kinase 1 (AKT1), transcript variant 1, mRNA",
+   "accession": "NM_005163.2",
+   "benchmark_len": 1443,
+   "refseq_cds_len": 1443,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "emg1",
+   "header": ">NM_006331.8 Homo sapiens EMG1 N1-specific pseudouridine methyltransferase (EMG1), transcript variant 1, mRNA",
+   "accession": "NM_006331.8",
+   "benchmark_len": 735,
+   "refseq_cds_len": 735,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "falvac-1",
+   "header": ">U65407.1 Plasmodium falciparum apical membrane antigen 1 (AMA-1) gene, complete cds",
+   "accession": "U65407.1",
+   "benchmark_len": 972,
+   "refseq_cds_len": 1869,
+   "n_cds_features": 1,
+   "exact_match": false,
+   "benchmark_in_refseq": false,
+   "refseq_in_benchmark": false
+  },
+  {
+   "gene": "flt1",
+   "header": ">NM_002019.4 Homo sapiens fms related receptor tyrosine kinase 1 (FLT1), transcript variant 1, mRNA",
+   "accession": "NM_002019.4",
+   "benchmark_len": 4017,
+   "refseq_cds_len": 4017,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "hpdf",
+   "header": "> Human peptide deformylase (hPDF)",
+   "accession": null,
+   "benchmark_len": 615
+  },
+  {
+   "gene": "lck",
+   "header": ">NM_005356.5 Homo sapiens LCK proto-oncogene, Src family tyrosine kinase (LCK), transcript variant 2, mRNA",
+   "accession": "NM_005356.5",
+   "benchmark_len": 1530,
+   "refseq_cds_len": 1530,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "mmpl3",
+   "header": ">  Mycobacterial Membrane Protein 3 (myolic acid transporter)",
+   "accession": null,
+   "benchmark_len": 2835
+  },
+  {
+   "gene": "npr1",
+   "header": ">NM_000906.4 Homo sapiens natriuretic peptide receptor 1 (NPR1), mRNA",
+   "accession": "NM_000906.4",
+   "benchmark_len": 3186,
+   "refseq_cds_len": 3186,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "pa",
+   "header": ">AY862693.1 Influenza A virus (A/duck/Korea/S17/03(H6N1)) PA (PA) gene, partial cds",
+   "accession": "AY862693.1",
+   "benchmark_len": 561,
+   "refseq_cds_len": 1219,
+   "n_cds_features": 1,
+   "exact_match": false,
+   "benchmark_in_refseq": false,
+   "refseq_in_benchmark": false
+  },
+  {
+   "gene": "pak1",
+   "header": ">NM_002576.5 Homo sapiens p21 (RAC1) activated kinase 1 (PAK1), transcript variant 2, mRNA",
+   "accession": "NM_002576.5",
+   "benchmark_len": 1638,
+   "refseq_cds_len": 1638,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "pea",
+   "header": "> Pseudomonas aeruginosa exotoxin A (PEA) gene",
+   "accession": null,
+   "benchmark_len": 1839
+  },
+  {
+   "gene": "pim1",
+   "header": ">NM_002648.4 Homo sapiens Pim-1 proto-oncogene, serine/threonine kinase (PIM1), transcript variant 1, mRNA",
+   "accession": "NM_002648.4",
+   "benchmark_len": 942,
+   "refseq_cds_len": 942,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  },
+  {
+   "gene": "ptp4a3",
+   "header": "> Protein-tyrosine phosphatase 4A3 (PTP4A3)",
+   "accession": null,
+   "benchmark_len": 561
+  },
+  {
+   "gene": "ubtf",
+   "header": ">NM_014233.4 Homo sapiens upstream binding transcription factor (UBTF), transcript variant 1, mRNA",
+   "accession": "NM_014233.4",
+   "benchmark_len": 2295,
+   "refseq_cds_len": 2295,
+   "n_cds_features": 1,
+   "exact_match": true,
+   "identity_frac": 1.0
+  }
+ ]
+}
