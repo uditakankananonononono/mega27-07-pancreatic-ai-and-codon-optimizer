@@ -111,6 +111,8 @@ ERC & 0.602 & 0.490 & $-0.27$\\
 \caption{E.~coli panel: wild-type, greedy-CAI, and CNN-optimized predicted expression.}
 \label{fig:codon}\end{figure}
 \input{tai}
+\section{Results: independent hold-out validation of CNN-guided optimization}
+Optimizing CNN-predicted expression and scoring with the same network is circular. We therefore validate against evaluators the optimizer never saw (\texttt{results/cnn\_holdout\_validation.json}). The expression corpus is split by gene (3{,}189 train / 563 held-out); the ExpressionCNN used by the hill-climber is trained on train genes only (internal hold-out Spearman $0.627$). Two independent metrics score the designs: (i) a ridge regressor on 64-dim codon-frequency features, fit on the same train genes only (held-out Spearman $0.633$), and (ii) tAI from GtRNAdb copy numbers. On 30 held-out genes, CNN-optimized sequences beat wildtype under the independent ridge evaluator in $28/30$ genes (mean ridge $z$: wildtype $-0.098$, CNN-opt $+0.266$; Wilcoxon $p=5.1\times10^{-6}$) and beat CAI-greedy on mean ($+0.266$ vs $+0.180$). Under tAI, CNN-opt beats wildtype in $30/30$ (mean $0.3386$ vs $0.3132$). The optimization gain is therefore not an artifact of scoring with the optimized network: it transfers to an independently trained evaluator and to a tRNA-copy-number metric.
 \section{Documented negatives}
 (1) SMAD4 predictability is at chance across architectures. (2) The SWI/SNF--CDKN2A exclusivity fails replication. (3) Gene-level permutation importance on the CDKN2A GNN is noise. Each negative is preserved in the archived result files (\texttt{results/*.json}).
 \section{Falsification paths}

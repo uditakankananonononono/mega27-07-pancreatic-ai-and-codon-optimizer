@@ -1,35 +1,40 @@
-\contentsline {section}{\numberline {1}Introduction}{3}{}%
-\contentsline {section}{\numberline {2}Related work}{3}{}%
-\contentsline {section}{\numberline {3}Data}{3}{}%
-\contentsline {subsection}{\numberline {3.1}PDAC cohorts}{3}{}%
-\contentsline {subsection}{\numberline {3.2}Codon data}{3}{}%
-\contentsline {section}{\numberline {4}Methods}{3}{}%
-\contentsline {subsection}{\numberline {4.1}Mutation prediction models}{3}{}%
-\contentsline {subsection}{\numberline {4.2}Attribution}{4}{}%
-\contentsline {subsection}{\numberline {4.3}Co-mutation statistics}{4}{}%
-\contentsline {subsection}{\numberline {4.4}Codon expression model}{4}{}%
-\contentsline {subsection}{\numberline {4.5}Codon optimization objective}{4}{}%
-\contentsline {section}{\numberline {5}Results: PDAC driver prediction}{4}{}%
-\contentsline {section}{\numberline {6}Results: CDKN2A attribution and replication}{5}{}%
-\contentsline {section}{\numberline {7}Results: codon optimization head-to-head}{5}{}%
-\contentsline {section}{\numberline {8}Documented negatives}{5}{}%
-\contentsline {section}{\numberline {9}Falsification paths}{6}{}%
-\contentsline {section}{\numberline {10}Conclusion}{6}{}%
-\contentsline {section}{\numberline {A}External tools and dataset manifest}{7}{}%
-\contentsline {subsection}{\numberline {A.1}External tools and resources used (honest count: 18)}{7}{}%
-\contentsline {subsection}{\numberline {A.2}Dataset manifest (distinct accession-level datasets used: 19)}{7}{}%
-\contentsline {section}{\numberline {B}Multi-cohort replication meta-analysis}{8}{}%
-\contentsline {section}{\numberline {C}Extended derivations and training protocols}{8}{}%
-\contentsline {subsection}{\numberline {C.1}Derivation of the symmetric GCN normalization}{8}{}%
-\contentsline {subsection}{\numberline {C.2}Gradient of the logistic head under BCE}{9}{}%
-\contentsline {subsection}{\numberline {C.3}Fisher exact $p$ from the hypergeometric law}{9}{}%
-\contentsline {subsection}{\numberline {C.4}Permutation-importance variance estimate}{10}{}%
-\contentsline {subsection}{\numberline {C.5}CAI properties and the circularity theorem}{10}{}%
-\contentsline {subsection}{\numberline {C.6}ExpressionCNN training protocol}{10}{}%
-\contentsline {subsection}{\numberline {C.7}Constrained hill-climb optimizer}{10}{}%
-\contentsline {subsection}{\numberline {C.8}GC content as a matching constraint}{11}{}%
-\contentsline {section}{\numberline {D}Supplementary tables}{12}{}%
-\contentsline {subsection}{\numberline {D.1}Table S1: per-gene head-to-head on the ICOR 40-gene benchmark}{12}{}%
-\contentsline {subsection}{\numberline {D.2}Table S2: E.\,coli codon-optimization panel (all genes)}{13}{}%
-\contentsline {subsection}{\numberline {D.3}Table S3: co-mutation $2\times 2$ tables, all cohorts}{13}{}%
-\contentsline {section}{\numberline {E}Reproduction}{13}{}%
+\contentsline {section}{\numberline {1}Introduction}{4}{}%
+\contentsline {section}{\numberline {2}Related work}{4}{}%
+\contentsline {section}{\numberline {3}Data}{4}{}%
+\contentsline {subsection}{\numberline {3.1}PDAC cohorts}{4}{}%
+\contentsline {subsection}{\numberline {3.2}Codon data}{4}{}%
+\contentsline {section}{\numberline {4}Methods}{4}{}%
+\contentsline {subsection}{\numberline {4.1}Mutation prediction models}{4}{}%
+\contentsline {subsection}{\numberline {4.2}Attribution}{5}{}%
+\contentsline {subsection}{\numberline {4.3}Co-mutation statistics}{5}{}%
+\contentsline {subsection}{\numberline {4.4}Codon expression model}{5}{}%
+\contentsline {subsection}{\numberline {4.5}Codon optimization objective}{5}{}%
+\contentsline {section}{\numberline {5}Results: PDAC driver prediction}{5}{}%
+\contentsline {section}{\numberline {6}Results: CDKN2A attribution and replication}{6}{}%
+\contentsline {section}{\numberline {7}Results: codon optimization head-to-head}{6}{}%
+\contentsline {section}{\numberline {8}Results: tRNA adaptation index head-to-head (documented deficit)}{6}{}%
+\contentsline {subsection}{\numberline {8.1}Multi-objective repair: tAI-constrained CNN optimization}{7}{}%
+\contentsline {section}{\numberline {9}Results: independent hold-out validation of CNN-guided optimization}{8}{}%
+\contentsline {section}{\numberline {10}Documented negatives}{8}{}%
+\contentsline {section}{\numberline {11}Falsification paths}{8}{}%
+\contentsline {section}{\numberline {12}Conclusion}{8}{}%
+\contentsline {section}{\numberline {A}External tools and dataset manifest}{10}{}%
+\contentsline {subsection}{\numberline {A.1}External tools and resources used (honest count: 18)}{10}{}%
+\contentsline {subsection}{\numberline {A.2}Dataset manifest (distinct accession-level datasets used: 19)}{11}{}%
+\contentsline {section}{\numberline {B}Multi-cohort replication meta-analysis}{11}{}%
+\contentsline {section}{\numberline {C}Extended derivations and training protocols}{11}{}%
+\contentsline {subsection}{\numberline {C.1}Derivation of the symmetric GCN normalization}{11}{}%
+\contentsline {subsection}{\numberline {C.2}Gradient of the logistic head under BCE}{12}{}%
+\contentsline {subsection}{\numberline {C.3}Fisher exact $p$ from the hypergeometric law}{12}{}%
+\contentsline {subsection}{\numberline {C.4}Permutation-importance variance estimate}{12}{}%
+\contentsline {subsection}{\numberline {C.5}CAI properties and the circularity theorem}{12}{}%
+\contentsline {subsection}{\numberline {C.6}ExpressionCNN training protocol}{12}{}%
+\contentsline {subsection}{\numberline {C.7}Constrained hill-climb optimizer}{13}{}%
+\contentsline {subsection}{\numberline {C.8}GC content as a matching constraint}{13}{}%
+\contentsline {section}{\numberline {D}Supplementary tables}{14}{}%
+\contentsline {subsection}{\numberline {D.1}Table S1: per-gene head-to-head on the ICOR 40-gene benchmark}{14}{}%
+\contentsline {subsection}{\numberline {D.2}Table S2: E.\,coli codon-optimization panel (all genes)}{15}{}%
+\contentsline {subsection}{\numberline {D.3}Table S3: co-mutation $2\times 2$ tables, all cohorts}{15}{}%
+\contentsline {section}{\numberline {E}Supplementary table: per-gene multi-objective results}{15}{}%
+\contentsline {section}{\numberline {F}Reproduction}{16}{}%
+\contentsline {section}{\numberline {G}Pan-cancer generalization: CDKN2A landscape across 143 cohorts}{17}{}%
