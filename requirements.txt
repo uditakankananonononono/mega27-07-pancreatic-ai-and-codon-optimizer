@@ -1,0 +1,8 @@
+torch
+scikit-learn
+biopython
+numpy
+scipy
+pandas
+matplotlib
+pytest
