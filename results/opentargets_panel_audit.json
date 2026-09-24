@@ -1,0 +1,547 @@
+{
+ "source": "Open Targets Platform GraphQL API (api.platform.opentargets.org/api/v4/graphql), fetched 2026-09-25",
+ "diseases": {
+  "MONDO_0005192": {
+   "name": "exocrine pancreatic carcinoma",
+   "n_targets": 11589
+  },
+  "MONDO_0007254": {
+   "name": "breast cancer",
+   "n_targets": 17252
+  },
+  "EFO_0004251": {
+   "name": "myeloproliferative disorder",
+   "n_targets": 13488
+  }
+ },
+ "datasources_seen": [
+  "cancer_biomarkers",
+  "cancer_gene_census",
+  "clingen",
+  "clinical_precedence",
+  "crispr",
+  "europepmc",
+  "eva",
+  "eva_somatic",
+  "expression_atlas",
+  "gene2phenotype",
+  "gene_burden",
+  "genomics_england",
+  "gwas_credible_sets",
+  "impc",
+  "intogen",
+  "orphanet",
+  "reactome",
+  "uniprot_literature",
+  "uniprot_variants"
+ ],
+ "per_gene": {
+  "KRAS": {
+   "group": "panel",
+   "diseases": {
+    "MONDO_0005192": {
+     "associated": true,
+     "rank": 1,
+     "n_targets": 11589,
+     "score": 0.807263,
+     "top_percentile": 0.0086,
+     "genetic_max": 0.919068,
+     "europepmc": 0.996665,
+     "datasources": {
+      "europepmc": 0.996665,
+      "intogen": 0.919068,
+      "cancer_gene_census": 0.888843,
+      "eva": 0.85623,
+      "cancer_biomarkers": 0.827461,
+      "eva_somatic": 0.683922,
+      "genomics_england": 0.607931,
+      "crispr": 0.407192,
+      "clinical_precedence": 0.120742
+     }
+    },
+    "MONDO_0007254": {
+     "associated": true,
+     "rank": 33,
+     "n_targets": 17252,
+     "score": 0.712338,
+     "top_percentile": 0.1913,
+     "genetic_max": 0.839176,
+     "europepmc": 0.952639,
+     "datasources": {
+      "europepmc": 0.952639,
+      "eva": 0.839176,
+      "intogen": 0.710864,
+      "cancer_gene_census": 0.709717,
+      "genomics_england": 0.607931,
+      "eva_somatic": 0.547138,
+      "impc": 0.422727,
+      "crispr": 0.311261,
+      "clinical_precedence": 0.162115
+     }
+    },
+    "EFO_0004251": {
+     "associated": true,
+     "rank": 20,
+     "n_targets": 13488,
+     "score": 0.786546,
+     "top_percentile": 0.1483,
+     "genetic_max": 0.865457,
+     "europepmc": 0.914115,
+     "datasources": {
+      "europepmc": 0.914115,
+      "uniprot_variants": 0.865457,
+      "eva": 0.856413,
+      "intogen": 0.85214,
+      "eva_somatic": 0.83932,
+      "uniprot_literature": 0.759913,
+      "cancer_gene_census": 0.721786,
+      "impc": 0.622037,
+      "cancer_biomarkers": 0.607931,
+      "crispr": 0.412177
+     }
+    }
+   },
+   "drug_candidates": {
+    "count": 3,
+    "by_stage": {
+     "APPROVAL": 2,
+     "PHASE_2": 1
+    },
+    "pancreatic_indication_drugs": [
+     "ADAGRASIB",
+     "SALIRASIB",
+     "SOTORASIB"
+    ]
+   },
+   "tractability_true_buckets": {
+    "SM": [
+     "Approved Drug",
+     "Structure with Ligand",
+     "High-Quality Ligand"
+    ],
+    "AB": [
+     "UniProt loc high conf",
+     "GO CC high conf"
+    ],
+    "PR": [
+     "Literature",
+     "UniProt Ubiquitination",
+     "Database Ubiquitination",
+     "Half-life Data",
+     "Small Molecule Binder"
+    ]
+   }
+  },
+  "TP53": {
+   "group": "panel",
+   "diseases": {
+    "MONDO_0005192": {
+     "associated": true,
+     "rank": 2,
+     "n_targets": 11589,
+     "score": 0.795444,
+     "top_percentile": 0.0173,
+     "genetic_max": 0.919751,
+     "europepmc": 0.987743,
+     "datasources": {
+      "europepmc": 0.987743,
+      "eva": 0.919751,
+      "intogen": 0.919068,
+      "cancer_gene_census": 0.831979,
+      "genomics_england": 0.607931,
+      "eva_somatic": 0.547138,
+      "impc": 0.273447
+     }
+    },
+    "MONDO_0007254": {
+     "associated": true,
+     "rank": 7,
+     "n_targets": 17252,
+     "score": 0.865037,
+     "top_percentile": 0.0406,
+     "genetic_max": 0.956429,
+     "europepmc": 0.998683,
+     "datasources": {
+      "europepmc": 0.998683,
+      "intogen": 0.956429,
+      "cancer_gene_census": 0.952605,
+      "eva": 0.936381,
+      "genomics_england": 0.906661,
+      "eva_somatic": 0.882091,
+      "gwas_credible_sets": 0.729181,
+      "cancer_biomarkers": 0.607931,
+      "impc": 0.493008,
+      "clinical_precedence": 0.144384
+     }
+    },
+    "EFO_0004251": {
+     "associated": true,
+     "rank": 26,
+     "n_targets": 13488,
+     "score": 0.757657,
+     "top_percentile": 0.1928,
+     "genetic_max": 0.869149,
+     "europepmc": 0.996961,
+     "datasources": {
+      "europepmc": 0.996961,
+      "eva_somatic": 0.869149,
+      "cancer_biomarkers": 0.827461,
+      "intogen": 0.759913,
+      "cancer_gene_census": 0.72437,
+      "eva": 0.683922,
+      "gwas_credible_sets": 0.67061,
+      "impc": 0.653365,
+      "clinical_precedence": 0.616893,
+      "gene_burden": 0.477129
+     }
+    }
+   },
+   "drug_candidates": {
+    "count": 9,
+    "by_stage": {
+     "PHASE_3": 5,
+     "PHASE_2": 4
+    },
+    "pancreatic_indication_drugs": []
+   },
+   "tractability_true_buckets": {
+    "SM": [
+     "Advanced Clinical",
+     "Structure with Ligand",
+     "High-Quality Ligand",
+     "Med-Quality Pocket",
+     "Druggable Family"
+    ],
+    "PR": [
+     "UniProt Ubiquitination",
+     "Database Ubiquitination",
+     "Small Molecule Binder"
+    ],
+    "OC": [
+     "Advanced Clinical"
+    ]
+   }
+  },
+  "CDKN2A": {
+   "group": "panel",
+   "diseases": {
+    "MONDO_0005192": {
+     "associated": true,
+     "rank": 7,
+     "n_targets": 11589,
+     "score": 0.732096,
+     "top_percentile": 0.0604,
+     "genetic_max": 0.918592,
+     "europepmc": 0.959418,
+     "datasources": {
+      "europepmc": 0.959418,
+      "intogen": 0.918592,
+      "cancer_gene_census": 0.813234,
+      "eva": 0.570925,
+      "gwas_credible_sets": 0.172819
+     }
+    },
+    "MONDO_0007254": {
+     "associated": true,
+     "rank": 88,
+     "n_targets": 17252,
+     "score": 0.619252,
+     "top_percentile": 0.5101,
+     "genetic_max": 0.702054,
+     "europepmc": 0.981309,
+     "datasources": {
+      "europepmc": 0.981309,
+      "gwas_credible_sets": 0.77877,
+      "cancer_gene_census": 0.702054,
+      "intogen": 0.468645
+     }
+    },
+    "EFO_0004251": {
+     "associated": true,
+     "rank": 221,
+     "n_targets": 13488,
+     "score": 0.439329,
+     "top_percentile": 1.6385,
+     "genetic_max": 0.675898,
+     "europepmc": 0.935297,
+     "datasources": {
+      "europepmc": 0.935297,
+      "cancer_gene_census": 0.675898
+     }
+    }
+   },
+   "drug_candidates": {
+    "count": 0,
+    "by_stage": {},
+    "pancreatic_indication_drugs": []
+   },
+   "tractability_true_buckets": {}
+  },
+  "SMAD4": {
+   "group": "panel",
+   "diseases": {
+    "MONDO_0005192": {
+     "associated": true,
+     "rank": 4,
+     "n_targets": 11589,
+     "score": 0.779512,
+     "top_percentile": 0.0345,
+     "genetic_max": 0.916447,
+     "europepmc": 0.986578,
+     "datasources": {
+      "europepmc": 0.986578,
+      "intogen": 0.916447,
+      "eva": 0.856657,
+      "cancer_gene_census": 0.841731,
+      "eva_somatic": 0.778911,
+      "impc": 0.274967
+     }
+    },
+    "MONDO_0007254": {
+     "associated": true,
+     "rank": 357,
+     "n_targets": 17252,
+     "score": 0.479552,
+     "top_percentile": 2.0693,
+     "genetic_max": 0.700178,
+     "europepmc": 0.952847,
+     "datasources": {
+      "europepmc": 0.952847,
+      "cancer_gene_census": 0.700178,
+      "intogen": 0.269898,
+      "eva": 0
+     }
+    },
+    "EFO_0004251": {
+     "associated": true,
+     "rank": 608,
+     "n_targets": 13488,
+     "score": 0.293065,
+     "top_percentile": 4.5077,
+     "genetic_max": 0.455948,
+     "europepmc": 0.522441,
+     "datasources": {
+      "europepmc": 0.522441,
+      "cancer_gene_census": 0.455948,
+      "eva": 0
+     }
+    }
+   },
+   "drug_candidates": {
+    "count": 0,
+    "by_stage": {},
+    "pancreatic_indication_drugs": []
+   },
+   "tractability_true_buckets": {
+    "SM": [
+     "Structure with Ligand",
+     "High-Quality Pocket"
+    ],
+    "PR": [
+     "UniProt Ubiquitination",
+     "Database Ubiquitination",
+     "Half-life Data"
+    ]
+   }
+  },
+  "BRCA1": {
+   "group": "breast_control",
+   "diseases": {
+    "MONDO_0005192": {
+     "associated": true,
+     "rank": 9,
+     "n_targets": 11589,
+     "score": 0.691357,
+     "top_percentile": 0.0777,
+     "genetic_max": 0.858166,
+     "europepmc": 0.926013,
+     "datasources": {
+      "europepmc": 0.926013,
+      "eva": 0.858166,
+      "cancer_gene_census": 0.620596,
+      "genomics_england": 0.607931,
+      "uniprot_literature": 0.607931,
+      "cancer_biomarkers": 0.607931,
+      "impc": 0.261775
+     }
+    },
+    "MONDO_0007254": {
+     "associated": true,
+     "rank": 2,
+     "n_targets": 17252,
+     "score": 0.919444,
+     "top_percentile": 0.0116,
+     "genetic_max": 0.99505,
+     "europepmc": 0.999206,
+     "datasources": {
+      "europepmc": 0.999206,
+      "gene_burden": 0.99505,
+      "uniprot_variants": 0.994961,
+      "genomics_england": 0.976169,
+      "eva": 0.969912,
+      "eva_somatic": 0.955106,
+      "cancer_biomarkers": 0.865457,
+      "cancer_gene_census": 0.864475,
+      "uniprot_literature": 0.759913,
+      "orphanet": 0.607931,
+      "intogen": 0.468295,
+      "impc": 0.401797
+     }
+    },
+    "EFO_0004251": {
+     "associated": true,
+     "rank": 352,
+     "n_targets": 13488,
+     "score": 0.369501,
+     "top_percentile": 2.6097,
+     "genetic_max": 0.565713,
+     "europepmc": 0.841761,
+     "datasources": {
+      "europepmc": 0.841761,
+      "cancer_gene_census": 0.565713,
+      "eva": 0
+     }
+    }
+   },
+   "drug_candidates": {
+    "count": 0,
+    "by_stage": {},
+    "pancreatic_indication_drugs": []
+   },
+   "tractability_true_buckets": {
+    "SM": [
+     "Druggable Family"
+    ],
+    "AB": [
+     "GO CC high conf"
+    ],
+    "PR": [
+     "UniProt Ubiquitination",
+     "Database Ubiquitination",
+     "Small Molecule Binder"
+    ]
+   }
+  },
+  "JAK2": {
+   "group": "mpn_control",
+   "diseases": {
+    "MONDO_0005192": {
+     "associated": true,
+     "rank": 141,
+     "n_targets": 11589,
+     "score": 0.437377,
+     "top_percentile": 1.2167,
+     "genetic_max": 0.569935,
+     "europepmc": 0.786128,
+     "datasources": {
+      "europepmc": 0.786128,
+      "cancer_gene_census": 0.569935,
+      "clinical_precedence": 0.528189
+     }
+    },
+    "MONDO_0007254": {
+     "associated": true,
+     "rank": 329,
+     "n_targets": 17252,
+     "score": 0.495966,
+     "top_percentile": 1.907,
+     "genetic_max": 0.690949,
+     "europepmc": 0.938414,
+     "datasources": {
+      "europepmc": 0.938414,
+      "cancer_gene_census": 0.690949,
+      "cancer_biomarkers": 0.607931,
+      "intogen": 0.216252,
+      "eva": 0.194538,
+      "clinical_precedence": 0.186916
+     }
+    },
+    "EFO_0004251": {
+     "associated": true,
+     "rank": 1,
+     "n_targets": 13488,
+     "score": 0.90344,
+     "top_percentile": 0.0074,
+     "genetic_max": 0.956734,
+     "europepmc": 0.994558,
+     "datasources": {
+      "europepmc": 0.994558,
+      "clinical_precedence": 0.987195,
+      "cancer_gene_census": 0.956734,
+      "eva": 0.8847,
+      "gwas_credible_sets": 0.862597,
+      "uniprot_variants": 0.858618,
+      "gene_burden": 0.858401,
+      "uniprot_literature": 0.846459,
+      "cancer_biomarkers": 0.827461,
+      "eva_somatic": 0.818258,
+      "impc": 0.730572,
+      "reactome": 0.607931,
+      "intogen": 0.607931
+     }
+    }
+   },
+   "drug_candidates": {
+    "count": 31,
+    "by_stage": {
+     "APPROVAL": 12,
+     "PHASE_2": 6,
+     "PHASE_3": 3,
+     "PHASE_1_2": 1,
+     "PHASE_1": 2,
+     "PHASE_4": 6,
+     "PHASE_2_3": 1
+    },
+    "pancreatic_indication_drugs": [
+     "MOMELOTINIB",
+     "RUXOLITINIB",
+     "TOFACITINIB"
+    ]
+   },
+   "tractability_true_buckets": {
+    "SM": [
+     "Approved Drug",
+     "Structure with Ligand",
+     "High-Quality Ligand",
+     "High-Quality Pocket",
+     "Druggable Family"
+    ],
+    "AB": [
+     "GO CC high conf",
+     "UniProt loc med conf"
+    ],
+    "PR": [
+     "Literature",
+     "UniProt Ubiquitination",
+     "Database Ubiquitination",
+     "Half-life Data",
+     "Small Molecule Binder"
+    ]
+   }
+  }
+ },
+ "pancreatic_background": {
+  "n": 11589,
+  "lit_only_n": 2514,
+  "lit_only_share": 0.21693,
+  "lit_only_wilson95": [
+   0.21693,
+   0.20952,
+   0.224527
+  ],
+  "genetic_backed_n": 933,
+  "genetic_backed_share": 0.080507,
+  "top100_lit_only": 5,
+  "rest_lit_only": 2509,
+  "rest_n": 11489,
+  "fisher_top100_vs_rest_litonly_p": 7.055141596739363e-06,
+  "fisher_oddsratio": 0.18837448343856852
+ },
+ "panel_all4_top_rank_probability": 1.3310927212129543e-13,
+ "panel_ranks_pancreatic": [
+  1,
+  2,
+  7,
+  4
+ ]
+}
