@@ -1,0 +1,126 @@
+benchmark genes: 40
+BIRC5 {'icor': 0.863, 'gensmart': 0.731, 'HFC': 0.997, 'BFC': 0.63, 'URC': 0.538, 'ERC': 0.674}
+BRAF1 {'icor': 0.841, 'gensmart': 0.738, 'HFC': 0.998, 'BFC': 0.653, 'URC': 0.546, 'ERC': 0.592}
+CAV1 {'icor': 0.892, 'gensmart': 0.765, 'HFC': 0.999, 'BFC': 0.662, 'URC': 0.561, 'ERC': 0.686}
+CD80 {'icor': 0.875, 'gensmart': 0.742, 'HFC': 0.998, 'BFC': 0.65, 'URC': 0.532, 'ERC': 0.62}
+CDK1 {'icor': 0.891, 'gensmart': 0.731, 'HFC': 0.998, 'BFC': 0.64, 'URC': 0.483, 'ERC': 0.607}
+CEBPZ {'icor': 0.904, 'gensmart': 0.721, 'HFC': 0.998, 'BFC': 0.631, 'URC': 0.537, 'ERC': 0.6}
+CLN3 {'icor': 0.847, 'gensmart': 0.714, 'HFC': 0.998, 'BFC': 0.646, 'URC': 0.51, 'ERC': 0.574}
+CREB1 {'icor': 0.862, 'gensmart': 0.751, 'HFC': 0.998, 'BFC': 0.666, 'URC': 0.559, 'ERC': 0.629}
+CSNK1A1 {'icor': 0.893, 'gensmart': 0.732, 'HFC': 0.997, 'BFC': 0.647, 'URC': 0.54, 'ERC': 0.631}
+FGFR4 {'icor': 0.863, 'gensmart': 0.719, 'HFC': 0.997, 'BFC': 0.64, 'URC': 0.511, 'ERC': 0.564}
+GSK3B {'icor': 0.86, 'gensmart': 0.724, 'HFC': 0.997, 'BFC': 0.675, 'URC': 0.537, 'ERC': 0.611}
+JUN {'icor': 0.851, 'gensmart': 0.738, 'HFC': 0.998, 'BFC': 0.631, 'URC': 0.532, 'ERC': 0.601}
+KIF11 {'icor': 0.873, 'gensmart': 0.721, 'HFC': 0.998, 'BFC': 0.638, 'URC': 0.549, 'ERC': 0.585}
+LAMP1 {'icor': 0.837, 'gensmart': 0.727, 'HFC': 0.998, 'BFC': 0.653, 'URC': 0.545, 'ERC': 0.607}
+LEMD3 {'icor': 0.852, 'gensmart': 0.728, 'HFC': 0.997, 'BFC': 0.651, 'URC': 0.524, 'ERC': 0.571}
+MAPK1 {'icor': 0.892, 'gensmart': 0.744, 'HFC': 0.998, 'BFC': 0.663, 'URC': 0.504, 'ERC': 0.62}
+MAPKAPK5 {'icor': 0.906, 'gensmart': 0.74, 'HFC': 0.997, 'BFC': 0.664, 'URC': 0.552, 'ERC': 0.602}
+NGFR {'icor': 0.861, 'gensmart': 0.742, 'HFC': 0.998, 'BFC': 0.667, 'URC': 0.555, 'ERC': 0.619}
+NOC2L {'icor': 0.866, 'gensmart': 0.717, 'HFC': 0.997, 'BFC': 0.651, 'URC': 0.513, 'ERC': 0.574}
+OPRM1 {'icor': 0.862, 'gensmart': 0.763, 'HFC': 0.998, 'BFC': 0.677, 'URC': 0.544, 'ERC': 0.618}
+PDCD11 {'icor': 0.869, 'gensmart': 0.71, 'HFC': 0.998, 'BFC': 0.629, 'URC': 0.537, 'ERC': 0.523}
+PLK1 {'icor': 0.875, 'gensmart': 0.719, 'HFC': 0.996, 'BFC': 0.624, 'URC': 0.507, 'ERC': 0.573}
+RPS6KB1 {'icor': 0.889, 'gensmart': 0.72, 'HFC': 0.997, 'BFC': 0.632, 'URC': 0.542, 'ERC': 0.594}
+SMARCD1 {'icor': 0.884, 'gensmart': 0.732, 'HFC': 0.997, 'BFC': 0.636, 'URC': 0.513, 'ERC': 0.602}
+TAP1 {'icor': 0.853, 'gensmart': 0.707, 'HFC': 0.998, 'BFC': 0.642, 'URC': 0.498, 'ERC': 0.555}
+TAS2R10 {'icor': 0.869, 'gensmart': 0.731, 'HFC': 0.998, 'BFC': 0.686, 'URC': 0.524, 'ERC': 0.624}
+akt1 {'icor': 0.895, 'HFC': 0.997}
+emg1 {'icor': 0.866, 'HFC': 0.997}
+falvac-1 {'icor': 0.888, 'HFC': 0.999}
+flt1 {'icor': 0.864, 'HFC': 0.998}
+hpdf {'icor': 0.899, 'HFC': 0.995}
+lck {'icor': 0.885, 'HFC': 0.997}
+mmpl3 {'icor': 0.848, 'HFC': 0.997}
+npr1 {'icor': 0.871, 'HFC': 0.997}
+pa {'icor': 0.923, 'HFC': 0.996}
+pak1 {'icor': 0.886, 'gensmart': 0.728, 'HFC': 0.998, 'BFC': 0.647, 'URC': 0.547}
+pea {'icor': 0.882, 'HFC': 0.997}
+pim1 {'icor': 0.89, 'HFC': 0.997}
+ptp4a3 {'icor': 0.897, 'HFC': 0.997}
+ubtf {'icor': 0.893, 'HFC': 0.997}
+BIRC5 ours 0.691 2.1
+BRAF1 ours 0.901 2.27
+CAV1 ours 0.731 2.22
+CD80 ours 0.757 2.15
+CDK1 ours 0.755 2.48
+CEBPZ ours 0.924 2.45
+CLN3 ours 0.852 1.65
+CREB1 ours 0.78 2.62
+CSNK1A1 ours 0.802 2.6
+FGFR4 ours 0.897 2.06
+GSK3B ours 0.838 2.26
+JUN ours 0.743 2.6
+KIF11 ours 0.918 2.51
+LAMP1 ours 0.814 2.18
+LEMD3 ours 0.92 2.45
+MAPK1 ours 0.786 2.42
+MAPKAPK5 ours 0.843 2.53
+NGFR ours 0.826 2.33
+NOC2L ours 0.906 2.09
+OPRM1 ours 0.807 1.3
+PDCD11 ours 0.956 2.04
+PLK1 ours 0.865 2.31
+RPS6KB1 ours 0.851 2.37
+SMARCD1 ours 0.843 2.46
+TAP1 ours 0.897 1.81
+TAS2R10 ours 0.815 1.57
+akt1 ours 0.842 2.39
+emg1 ours 0.724 2.41
+falvac-1 ours 0.778 2.51
+flt1 ours 0.935 1.24
+hpdf ours 0.673 1.93
+lck ours 0.853 1.96
+mmpl3 ours 0.919 1.91
+npr1 ours 0.916 1.56
+pa ours 0.716 2.2
+pak1 ours 0.85 2.87
+pea ours 0.89 2.09
+pim1 ours 0.784 2.51
+ptp4a3 ours 0.696 2.44
+ubtf ours 0.877 2.17
+{
+ "icor": {
+  "n": 40,
+  "cai_mean": 0.875,
+  "gc_mean": 0.511,
+  "pred_expr_z_mean": 0.68
+ },
+ "gensmart": {
+  "n": 27,
+  "cai_mean": 0.731,
+  "gc_mean": 0.528,
+  "pred_expr_z_mean": 0.24
+ },
+ "HFC": {
+  "n": 40,
+  "cai_mean": 0.997,
+  "gc_mean": 0.538,
+  "pred_expr_z_mean": 0.6
+ },
+ "BFC": {
+  "n": 27,
+  "cai_mean": 0.649,
+  "gc_mean": 0.516,
+  "pred_expr_z_mean": 0.07
+ },
+ "URC": {
+  "n": 27,
+  "cai_mean": 0.531,
+  "gc_mean": 0.479,
+  "pred_expr_z_mean": -0.52
+ },
+ "ERC": {
+  "n": 26,
+  "cai_mean": 0.602,
+  "gc_mean": 0.49,
+  "pred_expr_z_mean": -0.27
+ },
+ "ours_cnn": {
+  "n": 40,
+  "cai_mean": 0.829,
+  "gc_mean": 0.538,
+  "pred_expr_z_mean": 2.2
+ }
+}
+saved results/icor_headtohead.json
