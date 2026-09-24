@@ -15,4 +15,8 @@
 \contentsline {section}{\numberline {8}Documented negatives}{5}{}%
 \contentsline {section}{\numberline {9}Falsification paths}{6}{}%
 \contentsline {section}{\numberline {10}Conclusion}{6}{}%
-\contentsline {section}{\numberline {A}Reproduction}{7}{}%
+\contentsline {section}{\numberline {A}Supplementary tables}{7}{}%
+\contentsline {subsection}{\numberline {A.1}Table S1: per-gene head-to-head on the ICOR 40-gene benchmark}{7}{}%
+\contentsline {subsection}{\numberline {A.2}Table S2: E.\,coli codon-optimization panel (all genes)}{8}{}%
+\contentsline {subsection}{\numberline {A.3}Table S3: co-mutation $2\times 2$ tables, all cohorts}{9}{}%
+\contentsline {section}{\numberline {B}Reproduction}{9}{}%
