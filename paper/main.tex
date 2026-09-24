@@ -155,6 +155,39 @@ tolerated. Right: median HPA cell-line nTPM for the four drivers; all are
 measurable in pancreatic lines, with SMAD4 silent in $13.6\%$ of them.}
 \label{fig:depmaphpa}\end{figure}
 
+\section{Results: population specificity audit of the detection panel (gnomAD r4)}
+\label{sec:gnomad}
+A mutation-based blood panel is useful only if its target alleles are rare in
+healthy people. We therefore screened every recurrent somatic allele of the
+four-gene driver panel against gnomAD r4 ($\approx1.6$M population
+chromosomes, GraphQL API; 9,410 variant records fetched and pass-screened,
+results/gnomad\_panel\_variants.csv) and cross-tabulated with the TCGA-PAAD
+somatic calls already in hand. Of the 23 panel alleles seen in $\ge2$
+PAAD tumours, 7 are entirely absent from gnomAD r4 (including KRAS G12R
+and Q61H), and \emph{none} exceeds a population allele frequency of
+$2\times10^{-5}$: the largest backgrounds are TP53 R248Q and R273H ($\approx2\times
+10^{-5}$, 12 and 18 alleles) and KRAS G12D itself ($1.3\times10^{-5}$, 6
+alleles). Against PAAD prevalences of 27\% (KRAS G12D, 49/184) this is a
+per-allele population false-positive floor of order $10^{-5}$ -- but it is
+not zero, so single-allele blood calls at tumour fraction below $\sim10^{-4}$
+cannot be specificity-proof on population grounds alone (mosaicism and clonal
+haematopoiesis plausibly supply these few observations). Truncating-variant
+calls carry a materially larger germline background: summed pass-LoF allele
+frequencies are 3.2e-04 (TP53), 3.5e-04 (CDKN2A), 4.0e-04 (KRAS) and
+1.0e-03 (SMAD4), i.e.\ $\sim0.1\%$ of the population carries a SMAD4 LoF
+allele, so panel designs that score truncations need germline or CHIP
+filtering that hotspot-allele calls do not. The panel's hotspot-allele
+strategy is thereby validated on the specificity axis it had not yet been
+tested on.
+\begin{figure}[h]\centering
+\includegraphics[width=0.98\linewidth]{figs/fig_gnomad_specificity.pdf}
+\caption{Left: the five KRAS alleles recurrent in PAAD (bars) against
+their gnomAD r4 allele frequencies (dots, log scale; open triangles mark
+alleles absent from gnomAD r4, plotted at the $10^{-7}$ floor). Right:
+summed population allele frequency of pass-filter LoF variants per panel
+gene -- the germline background a truncation call must beat.}
+\label{fig:gnomad}\end{figure}
+
 \section{Documented negatives}
 (1) SMAD4 predictability is at chance across architectures. (2) The SWI/SNF--CDKN2A exclusivity fails replication. (3) Gene-level permutation importance on the CDKN2A GNN is noise. (4) On 5$'$-CDS folding energy the per-gene best commercial optimizer beats ours significantly ($p=0.040$; ViennaRNA audit above). Each negative is preserved in the archived result files (\texttt{results/*.json}).
 \section{Falsification paths}

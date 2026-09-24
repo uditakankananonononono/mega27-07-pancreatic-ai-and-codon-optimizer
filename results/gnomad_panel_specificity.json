@@ -1,0 +1,244 @@
+{
+ "source": "gnomAD r4 GraphQL API (gnomad.broadinstitute.org); TCGA-PAAD via cBioPortal (paad_tcga_pan_can_atlas_2018)",
+ "n_paad_samples_with_panel_gene_mutation": 136,
+ "n_gnomad_variants": 9410,
+ "variants_per_gene": {
+  "CDKN2A": 2333,
+  "KRAS": 1235,
+  "SMAD4": 2502,
+  "TP53": 3340
+ },
+ "n_somatic_alleles_tested": 23,
+ "n_ac0_or_absent": 7,
+ "frac_ac0_or_absent": 0.30434782608695654,
+ "n_flagged_af_gt_1e-4": 0,
+ "flagged": [],
+ "max_af_over_hotspots": 1.9744895944398372e-05,
+ "lof_background": {
+  "CDKN2A": {
+   "n_lof_pass": 38,
+   "sum_af": 0.00034810473940322047
+  },
+  "KRAS": {
+   "n_lof_pass": 27,
+   "sum_af": 0.000400960603493116
+  },
+  "SMAD4": {
+   "n_lof_pass": 28,
+   "sum_af": 0.001006663186601242
+  },
+  "TP53": {
+   "n_lof_pass": 53,
+   "sum_af": 0.0003176063897055417
+  }
+ },
+ "allele_table": [
+  {
+   "gene": "KRAS",
+   "allele": "G12D",
+   "paad_samples": 49,
+   "gnomad_status": "observed",
+   "max_af": 1.3142158730993153e-05,
+   "ac": 6,
+   "an": 1612744
+  },
+  {
+   "gene": "KRAS",
+   "allele": "G12V",
+   "paad_samples": 33,
+   "gnomad_status": "observed",
+   "max_af": 6.84666081505389e-07,
+   "ac": 1,
+   "an": 1460566
+  },
+  {
+   "gene": "KRAS",
+   "allele": "G12R",
+   "paad_samples": 25,
+   "gnomad_status": "absent_from_record",
+   "max_af": null,
+   "ac": null,
+   "an": null
+  },
+  {
+   "gene": "CDKN2A",
+   "allele": "R80*",
+   "paad_samples": 6,
+   "gnomad_status": "observed",
+   "max_af": 6.889586115003727e-07,
+   "ac": 1,
+   "an": 1451466
+  },
+  {
+   "gene": "KRAS",
+   "allele": "Q61H",
+   "paad_samples": 6,
+   "gnomad_status": "absent_from_record",
+   "max_af": null,
+   "ac": null,
+   "an": null
+  },
+  {
+   "gene": "TP53",
+   "allele": "R175H",
+   "paad_samples": 4,
+   "gnomad_status": "observed",
+   "max_af": 6.570129562954982e-06,
+   "ac": 7,
+   "an": 1614062
+  },
+  {
+   "gene": "TP53",
+   "allele": "R248Q",
+   "paad_samples": 4,
+   "gnomad_status": "observed",
+   "max_af": 1.9744895944398372e-05,
+   "ac": 12,
+   "an": 1613554
+  },
+  {
+   "gene": "TP53",
+   "allele": "R248W",
+   "paad_samples": 4,
+   "gnomad_status": "observed",
+   "max_af": 6.157306876069832e-06,
+   "ac": 9,
+   "an": 1613618
+  },
+  {
+   "gene": "TP53",
+   "allele": "R273H",
+   "paad_samples": 3,
+   "gnomad_status": "observed",
+   "max_af": 1.971453355413611e-05,
+   "ac": 18,
+   "an": 1613942
+  },
+  {
+   "gene": "CDKN2A",
+   "allele": "H83Y",
+   "paad_samples": 3,
+   "gnomad_status": "ac0",
+   "max_af": 0.0,
+   "ac": 0,
+   "an": 1451924
+  },
+  {
+   "gene": "TP53",
+   "allele": "R273C",
+   "paad_samples": 3,
+   "gnomad_status": "observed",
+   "max_af": 4.104640980735552e-06,
+   "ac": 6,
+   "an": 1613804
+  },
+  {
+   "gene": "TP53",
+   "allele": "R213*",
+   "paad_samples": 3,
+   "gnomad_status": "observed",
+   "max_af": 1.3680938621836967e-06,
+   "ac": 2,
+   "an": 1613992
+  },
+  {
+   "gene": "SMAD4",
+   "allele": "R361C",
+   "paad_samples": 3,
+   "gnomad_status": "observed",
+   "max_af": 6.840712638079785e-07,
+   "ac": 1,
+   "an": 1461836
+  },
+  {
+   "gene": "TP53",
+   "allele": "R196*",
+   "paad_samples": 3,
+   "gnomad_status": "observed",
+   "max_af": 2.0521436008006096e-06,
+   "ac": 3,
+   "an": 1461886
+  },
+  {
+   "gene": "KRAS",
+   "allele": "Q61R",
+   "paad_samples": 2,
+   "gnomad_status": "ac0",
+   "max_af": 0.0,
+   "ac": 0,
+   "an": 1461754
+  },
+  {
+   "gene": "TP53",
+   "allele": "G245S",
+   "paad_samples": 2,
+   "gnomad_status": "observed",
+   "max_af": 6.581458714509484e-06,
+   "ac": 5,
+   "an": 1613726
+  },
+  {
+   "gene": "TP53",
+   "allele": "Y220C",
+   "paad_samples": 2,
+   "gnomad_status": "observed",
+   "max_af": 6.5726341803267915e-06,
+   "ac": 8,
+   "an": 1613958
+  },
+  {
+   "gene": "SMAD4",
+   "allele": "E520*",
+   "paad_samples": 2,
+   "gnomad_status": "absent_from_record",
+   "max_af": null,
+   "ac": null,
+   "an": null
+  },
+  {
+   "gene": "TP53",
+   "allele": "H179Y",
+   "paad_samples": 2,
+   "gnomad_status": "observed",
+   "max_af": 6.5684896414918355e-06,
+   "ac": 2,
+   "an": 1614124
+  },
+  {
+   "gene": "SMAD4",
+   "allele": "G352*",
+   "paad_samples": 2,
+   "gnomad_status": "absent_from_record",
+   "max_af": null,
+   "ac": null,
+   "an": null
+  },
+  {
+   "gene": "TP53",
+   "allele": "H179R",
+   "paad_samples": 2,
+   "gnomad_status": "observed",
+   "max_af": 6.570215897294385e-06,
+   "ac": 1,
+   "an": 1614088
+  },
+  {
+   "gene": "CDKN2A",
+   "allele": "R58*",
+   "paad_samples": 2,
+   "gnomad_status": "ac0",
+   "max_af": 0.0,
+   "ac": 0,
+   "an": 1445040
+  },
+  {
+   "gene": "TP53",
+   "allele": "R282W",
+   "paad_samples": 2,
+   "gnomad_status": "observed",
+   "max_af": 6.57825492053468e-06,
+   "ac": 1,
+   "an": 1613884
+  }
+ ]
+}
