@@ -38,9 +38,9 @@ def run():
         X, C, y, _ = features.build_dataset(gene)
         if y.sum() < 10 or (len(y) - y.sum()) < 10:
             results[gene] = {"skipped": "too few positives/negatives"}; continue
-        cnn = train_eval(lambda xtr: MutationCNN(n_genes=X.shape[1]), X, C, y)
+        cnn = train_eval(lambda xtr: MutationCNN(n_genes=X.shape[1], clin_dim=C.shape[1]), X, C, y)
         X100 = X[:, :100, :].copy()
-        gnn = train_eval(lambda xtr: CoMutationGNN(comutation_adjacency(xtr)), X100, C, y)
+        gnn = train_eval(lambda xtr: CoMutationGNN(comutation_adjacency(xtr), clin_dim=C.shape[1]), X100, C, y)
         flat = X.reshape(len(X), -1)
         skf = StratifiedKFold(5, shuffle=True, random_state=42)
         b_aucs = []

@@ -99,5 +99,39 @@ def build_dataset(target_gene, data_dir=None):
     C = np.array([clin.get(sp[s], (np.nan, 0.0)) for s in samples], dtype=np.float32)
     age = C[:, 0]
     C[:, 0] = np.where(np.isnan(age), np.nanmean(age), age) / 100.0  # scale
+    C = np.hstack([C, extra_features(muts, samples, exclude=[target_gene])])
     y = np.array([status[s][target_gene] for s in samples], dtype=np.int64)
     return X, C, y, genes
+
+
+# Curated pathway membership per TCGA PanCancer Atlas PAAD marker paper
+# (Raphael et al. 2017 / Cancer Cell 2017 PAAD integrated analysis).
+PATHWAYS = {
+    "RTK_RAS": ["KRAS", "BRAF", "MAP2K4", "MAPK1", "NF1", "RASA1", "EGFR", "ERBB2"],
+    "TP53": ["TP53", "MDM2", "MDM4", "ATM", "CHEK2"],
+    "CELL_CYCLE": ["CDKN2A", "CDKN2B", "CCND1", "CDK4", "CDK6", "RB1"],
+    "TGF_BETA": ["SMAD4", "TGFBR1", "TGFBR2", "SMAD2", "SMAD3", "ACVR1B"],
+    "SWI_SNF": ["ARID1A", "ARID1B", "ARID2", "SMARCA4", "SMARCB1", "PBRM1"],
+    "DNA_REPAIR": ["BRCA1", "BRCA2", "PALB2", "MLH1", "MSH2", "MSH6", "POLD1", "POLE"],
+}
+
+
+def extra_features(muts, samples, exclude=None):
+    """Per-sample global + pathway features (target gene excluded):
+    [log1p(burden), frac_truncating, log1p(n_genes), pathway mutated (6x)]."""
+    exclude = set(exclude or [])
+    per_sample = defaultdict(list)
+    for m in muts:
+        if m["mutationType"] in NONSYNONYMOUS and m["hugo"] not in exclude:
+            per_sample[m["sampleId"]].append(m)
+    out = np.zeros((len(samples), 9), dtype=np.float32)
+    for i, s in enumerate(samples):
+        ms = per_sample.get(s, [])
+        burden = len(ms)
+        trunc = sum(1 for m in ms if m["mutationType"] in TRUNCATING)
+        genes = {m["hugo"] for m in ms}
+        row = [np.log1p(burden), trunc / burden if burden else 0.0, np.log1p(len(genes))]
+        for pname, pgenes in PATHWAYS.items():
+            row.append(1.0 if genes & set(pgenes) else 0.0)
+        out[i] = row
+    return out
