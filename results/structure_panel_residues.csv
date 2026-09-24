@@ -1,0 +1,681 @@
+gene,pdb,resnum,aa,uniprot_match,rsa,partner_contact,ligand_contact,domain
+KRAS,6VJJ,0,G,0,0.4025422956348543,0,0,
+KRAS,6VJJ,1,M,1,0.3362334417399527,0,0,
+KRAS,6VJJ,2,T,1,0.1410054912166618,0,0,
+KRAS,6VJJ,3,E,1,0.13400259189925479,1,0,
+KRAS,6VJJ,4,Y,1,0.0,0,0,
+KRAS,6VJJ,5,K,1,0.34378475031899663,1,0,
+KRAS,6VJJ,6,L,1,0.0,0,0,
+KRAS,6VJJ,7,V,1,0.0,0,0,
+KRAS,6VJJ,8,V,1,0.0069403920462064155,0,0,
+KRAS,6VJJ,9,V,1,0.0069403920462064155,0,0,
+KRAS,6VJJ,10,G,1,0.01161180976961458,0,1,
+KRAS,6VJJ,11,A,1,0.0,0,1,
+KRAS,6VJJ,12,G,1,0.04120996246395078,0,1,
+KRAS,6VJJ,13,G,1,0.04513791992483144,0,1,
+KRAS,6VJJ,14,V,1,0.0,0,1,
+KRAS,6VJJ,15,G,1,0.0,0,1,
+KRAS,6VJJ,16,K,1,0.0,0,1,
+KRAS,6VJJ,17,S,1,0.015582299561805372,1,1,
+KRAS,6VJJ,18,A,1,0.0,0,1,
+KRAS,6VJJ,19,L,1,0.01802430173193905,0,1,
+KRAS,6VJJ,20,T,1,0.0,0,0,
+KRAS,6VJJ,21,I,1,0.1961629589506463,1,0,
+KRAS,6VJJ,22,Q,1,0.03402275030667667,0,0,
+KRAS,6VJJ,23,L,1,0.04467751128573807,0,0,
+KRAS,6VJJ,24,I,1,0.12458465677652318,1,0,
+KRAS,6VJJ,25,Q,1,0.5805725217928968,1,0,
+KRAS,6VJJ,26,N,1,0.4929707927213844,0,0,
+KRAS,6VJJ,27,H,1,0.38673005565690355,0,0,
+KRAS,6VJJ,28,F,1,0.06760812110280352,0,1,
+KRAS,6VJJ,29,V,1,0.07634431250827058,1,1,
+KRAS,6VJJ,30,D,1,0.49489076085655004,0,1,
+KRAS,6VJJ,31,E,1,0.35648302699389184,1,1,
+KRAS,6VJJ,32,Y,1,0.30273772455420206,0,1,
+KRAS,6VJJ,33,D,1,0.40121908097525966,1,1,
+KRAS,6VJJ,34,P,1,0.35589036439238475,1,1,
+KRAS,6VJJ,35,T,1,0.013250507209899053,1,1,
+KRAS,6VJJ,36,I,1,0.43905112843437943,1,0,
+KRAS,6VJJ,37,E,1,0.3917074090975067,1,0,
+KRAS,6VJJ,38,D,1,0.14575270989422343,1,0,
+KRAS,6VJJ,39,S,1,0.45312111025347995,1,0,
+KRAS,6VJJ,40,Y,1,0.19998174754655734,1,0,
+KRAS,6VJJ,41,R,1,0.5156782625228237,1,0,
+KRAS,6VJJ,42,K,1,0.18410265423367309,1,0,
+KRAS,6VJJ,43,Q,1,0.2814864225089651,0,0,
+KRAS,6VJJ,44,V,1,0.0069403920462064155,0,0,
+KRAS,6VJJ,45,V,1,0.29374136860835187,0,0,
+KRAS,6VJJ,46,I,1,0.006130092467207697,0,0,
+KRAS,6VJJ,47,D,1,0.49044187499469555,0,0,
+KRAS,6VJJ,48,G,1,0.7216579067268183,0,0,
+KRAS,6VJJ,49,E,1,0.2175954416604776,0,0,
+KRAS,6VJJ,50,T,1,0.23506535974749437,0,0,
+KRAS,6VJJ,51,C,1,0.0,0,0,
+KRAS,6VJJ,52,L,1,0.1441944138555124,0,0,
+KRAS,6VJJ,53,L,1,0.0060081005773130166,0,0,
+KRAS,6VJJ,54,D,1,0.09517547726838493,1,0,
+KRAS,6VJJ,55,I,1,0.0,0,0,
+KRAS,6VJJ,56,L,1,0.1081458103916343,1,0,
+KRAS,6VJJ,57,D,1,0.0,0,1,
+KRAS,6VJJ,58,T,1,0.0,0,1,
+KRAS,6VJJ,59,A,1,0.0,0,1,
+KRAS,6VJJ,60,G,1,0.0,0,1,
+KRAS,6VJJ,61,Q,1,0.2209037263749953,1,1,
+KRAS,6VJJ,62,E,1,0.15269120811462938,0,0,
+KRAS,6VJJ,63,E,1,0.5304615542263703,0,0,
+KRAS,6VJJ,64,Y,1,0.19620529038211967,1,0,
+KRAS,6VJJ,65,S,1,0.041475833189524657,0,0,
+KRAS,6VJJ,66,A,1,0.2329809008451218,0,0,
+KRAS,6VJJ,67,M,1,0.18340870361066877,1,0,
+KRAS,6VJJ,68,R,1,0.0,0,0,
+KRAS,6VJJ,69,D,1,0.04652942885198627,0,0,
+KRAS,6VJJ,70,Q,1,0.49659559991680324,0,0,
+KRAS,6VJJ,71,Y,1,0.10353905779851443,1,0,
+KRAS,6VJJ,72,M,1,0.005744626566564195,0,0,
+KRAS,6VJJ,73,R,1,0.2702118238352438,0,0,
+KRAS,6VJJ,74,T,1,0.46318414671584185,0,0,
+KRAS,6VJJ,75,G,1,0.010302490615987696,0,0,
+KRAS,6VJJ,76,E,1,0.18151970203559947,0,0,
+KRAS,6VJJ,77,G,1,0.0,0,0,
+KRAS,6VJJ,78,F,1,0.0,0,0,
+KRAS,6VJJ,79,L,1,0.0060081005773130166,0,0,
+KRAS,6VJJ,80,C,1,0.0072313066828737504,0,0,
+KRAS,6VJJ,81,V,1,0.0,0,0,
+KRAS,6VJJ,82,F,1,0.0,0,0,
+KRAS,6VJJ,83,A,1,0.0,0,0,
+KRAS,6VJJ,84,I,1,0.0,0,0,
+KRAS,6VJJ,85,N,1,0.20094148600062758,0,0,
+KRAS,6VJJ,86,N,1,0.16032742727550234,0,0,
+KRAS,6VJJ,87,T,1,0.23450637543603817,0,0,
+KRAS,6VJJ,88,K,1,0.3829002412228452,0,0,
+KRAS,6VJJ,89,S,1,0.0,0,0,
+KRAS,6VJJ,90,F,1,0.0497504707017582,0,0,
+KRAS,6VJJ,91,E,1,0.30644317569313634,0,0,
+KRAS,6VJJ,92,D,1,0.0,0,0,
+KRAS,6VJJ,93,I,1,0.006130092467207697,0,0,
+KRAS,6VJJ,94,H,1,0.3466551143695487,0,0,
+KRAS,6VJJ,95,H,1,0.09347780890822022,0,0,
+KRAS,6VJJ,96,Y,1,0.009183484532622938,0,0,
+KRAS,6VJJ,97,R,1,0.11216976309976026,0,0,
+KRAS,6VJJ,98,E,1,0.21698481748120765,0,0,
+KRAS,6VJJ,99,Q,1,0.09681444684304266,0,0,
+KRAS,6VJJ,100,I,1,0.012260184934415394,0,0,
+KRAS,6VJJ,101,K,1,0.2579737444061848,0,0,
+KRAS,6VJJ,102,R,1,0.2365802718819017,0,0,
+KRAS,6VJJ,103,V,1,0.12706911747781835,0,0,
+KRAS,6VJJ,104,K,1,0.21572443495938076,0,0,
+KRAS,6VJJ,105,D,1,0.6643536727816549,0,0,
+KRAS,6VJJ,106,S,1,0.2603910895078473,0,0,
+KRAS,6VJJ,107,E,1,0.5742156844052483,0,0,
+KRAS,6VJJ,108,D,1,0.4470429699724418,0,0,
+KRAS,6VJJ,109,V,1,0.09888217042564454,0,0,
+KRAS,6VJJ,110,P,1,0.037258498533800456,0,0,
+KRAS,6VJJ,111,M,1,0.027309416138705557,0,0,
+KRAS,6VJJ,112,V,1,0.0,0,0,
+KRAS,6VJJ,113,L,1,0.012016201154626033,0,0,
+KRAS,6VJJ,114,V,1,0.0,0,0,
+KRAS,6VJJ,115,G,1,0.0,0,0,
+KRAS,6VJJ,116,N,1,0.0,0,1,
+KRAS,6VJJ,117,K,1,0.009267698328089892,0,1,
+KRAS,6VJJ,118,C,1,0.019247766899330304,0,1,
+KRAS,6VJJ,119,D,1,0.14513988771690559,0,1,
+KRAS,6VJJ,120,L,1,0.07141974826120298,0,1,
+KRAS,6VJJ,121,P,1,0.3189961325388458,0,0,
+KRAS,6VJJ,122,S,1,0.22274759398890814,0,0,
+KRAS,6VJJ,123,R,1,0.10845493297788987,0,0,
+KRAS,6VJJ,124,T,1,0.22773770447343755,0,0,
+KRAS,6VJJ,125,V,1,0.0,0,0,
+KRAS,6VJJ,126,D,1,0.37505759023510676,0,0,
+KRAS,6VJJ,127,T,1,0.3325689983090155,0,0,
+KRAS,6VJJ,128,K,1,0.5790833841562331,0,0,
+KRAS,6VJJ,129,Q,1,0.23556069425529536,0,0,
+KRAS,6VJJ,130,A,1,0.0,0,0,
+KRAS,6VJJ,131,Q,1,0.28066944086742357,0,0,
+KRAS,6VJJ,132,D,1,0.32138004515759294,0,0,
+KRAS,6VJJ,133,L,1,0.11415391096894732,0,0,
+KRAS,6VJJ,134,A,1,0.0,0,0,
+KRAS,6VJJ,135,R,1,0.5626377805300213,0,0,
+KRAS,6VJJ,136,S,1,0.30288820379820475,0,0,
+KRAS,6VJJ,137,Y,1,0.06014236307506183,0,0,
+KRAS,6VJJ,138,G,1,0.33770767724639494,0,0,
+KRAS,6VJJ,139,I,1,0.012260184934415394,0,0,
+KRAS,6VJJ,140,P,1,0.1739711267647344,0,0,
+KRAS,6VJJ,141,F,1,0.028488590501282957,0,0,
+KRAS,6VJJ,142,I,1,0.06130092467207697,0,0,
+KRAS,6VJJ,143,E,1,0.06009948455901985,0,0,
+KRAS,6VJJ,144,T,1,0.0,0,1,
+KRAS,6VJJ,145,S,1,0.0,0,1,
+KRAS,6VJJ,146,A,1,0.0,0,1,
+KRAS,6VJJ,147,K,1,0.269563771920608,0,1,
+KRAS,6VJJ,148,T,1,0.4349957317395946,0,0,
+KRAS,6VJJ,149,R,1,0.13479381647225433,0,0,
+KRAS,6VJJ,150,Q,1,0.1858296455774533,0,0,
+KRAS,6VJJ,151,G,0,0.0,0,0,
+KRAS,6VJJ,152,V,1,0.0,0,0,
+KRAS,6VJJ,153,D,0,0.1638185930866719,0,0,
+KRAS,6VJJ,154,D,1,0.19380787844883293,0,0,
+KRAS,6VJJ,155,A,1,0.009361459039069119,0,0,
+KRAS,6VJJ,156,F,1,0.010063568466999302,0,0,
+KRAS,6VJJ,157,Y,1,0.0535476464507506,0,0,
+KRAS,6VJJ,158,T,1,0.05458539153700546,0,0,
+KRAS,6VJJ,159,L,1,0.0,0,0,
+KRAS,6VJJ,160,V,1,0.0,0,0,
+KRAS,6VJJ,161,R,1,0.12531744301169973,0,0,
+KRAS,6VJJ,162,E,1,0.12011872467070855,0,0,
+KRAS,6VJJ,163,I,1,0.012260184934415394,0,0,
+KRAS,6VJJ,164,R,1,0.2013488925338856,0,0,
+KRAS,6VJJ,165,K,0,0.5741139170515852,0,0,
+KRAS,6VJJ,166,H,0,0.37783946064698204,0,0,Hypervariable region
+KRAS,6VJJ,167,K,0,0.5514530767679109,0,0,Hypervariable region
+TP53,1TSR,96,S,1,0.6127388255036349,0,0,Interaction with CCAR2;Disordered;Interaction with WWOX
+TP53,1TSR,97,V,1,0.4116738680032818,0,0,Interaction with CCAR2;Interaction with WWOX
+TP53,1TSR,98,P,1,0.25652214441133814,0,0,Interaction with CCAR2;Interaction with WWOX
+TP53,1TSR,99,S,1,0.42318679934969433,0,0,Interaction with CCAR2;Interaction with WWOX
+TP53,1TSR,100,Q,1,0.32258990377781277,0,0,Interaction with CCAR2;Interaction with WWOX;Interaction with HIPK1;Required for interaction with ZNF385A
+TP53,1TSR,101,K,1,0.618079814023244,0,0,Interaction with CCAR2;Interaction with WWOX;Interaction with HIPK1;Required for interaction with ZNF385A
+TP53,1TSR,102,T,1,0.5780992223665002,0,0,DNA binding;Interaction with CCAR2;Interaction with WWOX;Interaction with HIPK1;Required for interaction with ZNF385A
+TP53,1TSR,103,Y,1,0.3584014904793585,0,0,DNA binding;Interaction with CCAR2;Interaction with WWOX;Interaction with HIPK1;Required for interaction with ZNF385A
+TP53,1TSR,104,Q,1,0.4350632771181403,0,0,DNA binding;Interaction with CCAR2;Interaction with WWOX;Interaction with HIPK1;Required for interaction with ZNF385A
+TP53,1TSR,105,G,1,0.12777062733977038,0,0,DNA binding;Interaction with CCAR2;Interaction with WWOX;Interaction with HIPK1;Required for interaction with ZNF385A
+TP53,1TSR,106,S,1,0.48871717916922536,0,0,DNA binding;Interaction with CCAR2;Interaction with WWOX;Interaction with HIPK1;Required for interaction with ZNF385A
+TP53,1TSR,107,Y,1,0.14932040052432988,0,0,DNA binding;Interaction with CCAR2;Interaction with WWOX;Interaction with HIPK1;Required for interaction with ZNF385A
+TP53,1TSR,108,G,1,0.03483542930884374,0,0,DNA binding;Interaction with CCAR2;Interaction with WWOX;Interaction with HIPK1;Required for interaction with ZNF385A
+TP53,1TSR,109,F,1,0.005031784233499651,0,0,DNA binding;Interaction with CCAR2;Interaction with WWOX;Interaction with HIPK1;Required for interaction with ZNF385A
+TP53,1TSR,110,R,1,0.24671821430636923,0,0,DNA binding;Interaction with CCAR2;Interaction with WWOX;Interaction with HIPK1;Required for interaction with ZNF385A
+TP53,1TSR,111,L,1,0.16024954655640433,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A
+TP53,1TSR,112,G,1,0.12772990746576038,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A
+TP53,1TSR,113,F,1,0.15936791640848688,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42
+TP53,1TSR,114,L,1,0.33975189824062907,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42
+TP53,1TSR,115,H,1,0.730596221148228,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42
+TP53,1TSR,116,S,1,0.27914108734477683,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,117,G,1,0.2670716247011354,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,118,T,1,0.30104085116111956,1,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,119,A,1,0.47301426318921846,1,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,120,K,1,0.5385685000908763,1,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,121,S,1,0.3086641130993582,1,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,122,V,1,0.1457482329703347,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,123,T,1,0.31906117274269913,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,124,C,1,0.033710380265077805,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,125,T,1,0.007021094279301839,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,126,Y,1,0.12287349405843538,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,127,S,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,128,P,1,0.5896270707652339,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,129,A,1,0.7651451679298547,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,130,L,1,0.267565663891207,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,131,N,1,0.1466714556644889,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,132,K,1,0.03292016369630322,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,133,M,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,134,F,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,135,C,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,136,Q,1,0.13196431681802323,1,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,137,L,1,0.11823973195780409,1,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,138,A,1,0.3731253521403858,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,139,K,1,0.2992926099541951,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,140,T,1,0.24249215784087488,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,141,C,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,142,P,1,0.10633204417961527,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,143,V,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,144,Q,1,0.15960614337940862,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,145,L,1,0.0060081005773130166,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,146,W,1,0.2788609916911714,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,147,V,1,0.08318186253289742,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,148,D,1,0.5199193249195534,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,149,S,1,0.2803659436495622,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,150,T,1,0.4791211540063257,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,151,P,1,0.04043241600236681,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,152,P,1,0.3148532609587572,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,153,P,1,0.7433553551457847,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,154,G,1,0.341995951218545,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,155,T,1,0.025709333071093472,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,156,R,1,0.19042523090735536,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,157,V,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,158,R,1,0.10352579703574075,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,159,A,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,160,M,1,0.09739498224816498,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,161,A,1,0.009361459039069119,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,162,I,1,0.006130092467207697,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,163,Y,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,164,K,1,0.3512672785571839,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,165,Q,1,0.29791374068141613,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,166,S,1,0.5841873018075816,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,167,Q,1,0.5168922990782916,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,168,H,1,0.2485953486759366,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,169,M,1,0.1950536338797563,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,170,T,1,0.49422717350978806,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,171,E,1,0.21123753434686465,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,172,V,1,0.09022509660068341,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,173,V,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,174,R,1,0.21777657862683875,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,175,R,1,0.023543370522000763,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,176,C,1,0.0,0,1,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,177,P,1,0.03797573006414831,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,178,H,1,0.24676789544931715,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,179,H,1,0.041093153906330775,0,1,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,180,E,1,0.1008997287233952,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,181,R,1,0.3519180445311419,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,182,C,1,0.3218884110118207,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,183,S,1,0.1253060104845559,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,184,D,1,0.41756115762876944,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,185,S,1,0.28685570387497006,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,186,D,1,0.1680518322154966,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,187,G,1,0.40430170835135126,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,188,L,1,0.18819446647469726,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,189,A,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,190,P,1,0.1215223362052746,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,191,P,1,0.12911748221810426,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,192,Q,1,0.11129727275189569,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,193,H,1,0.004882091083547354,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,194,L,1,0.0060081005773130166,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,195,I,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,196,R,1,0.02394719130031987,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,197,V,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,198,E,1,0.27280993278533794,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,199,G,1,0.6734350636466483,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,200,N,1,0.10353026758735288,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,201,L,1,0.7729277598422585,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,202,R,1,0.4621869376934811,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,203,V,1,0.05542029434807175,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,204,E,1,0.23978731405680953,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,205,Y,1,0.05347960648210099,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,206,L,1,0.2343159225152076,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,207,D,1,0.27763325351258006,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,208,D,1,0.29573865891727164,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,209,R,1,0.6899307120374982,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,210,N,1,0.6196884629234265,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,211,T,1,0.20815374647390147,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,212,F,1,0.5076428359502265,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,213,R,1,0.03476225013263553,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,214,H,1,0.005391197393035341,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,215,S,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,216,V,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,217,V,1,0.0130982025293255,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,218,V,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,219,P,1,0.14933369021928766,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,220,Y,1,0.08303303443796956,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,221,E,1,0.34968591657459147,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,222,P,1,0.39814814451870906,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,223,P,1,0.09359843809217444,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,224,E,1,0.4410563917716611,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,225,V,1,0.7904707883354446,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,226,G,1,0.7652411007795829,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,227,S,1,0.29724347119159344,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,228,D,1,0.46572167534220815,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,229,C,1,0.07831181572320887,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,230,T,1,0.025709333071093472,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,231,T,1,0.2639660395325752,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,232,I,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,233,H,1,0.268632819319614,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,234,Y,1,0.004073988684649127,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,235,N,1,0.021978646647440418,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,236,Y,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1
+TP53,1TSR,237,M,1,0.043129579144282726,0,1,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1
+TP53,1TSR,238,C,1,0.0,0,1,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1
+TP53,1TSR,239,N,1,0.11240728067518867,1,1,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1
+TP53,1TSR,240,S,1,0.007791149780902686,1,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1
+TP53,1TSR,241,S,1,0.253363002179992,1,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with the 53BP2 SH3 domain
+TP53,1TSR,242,C,1,0.0,0,1,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with the 53BP2 SH3 domain
+TP53,1TSR,243,M,1,0.36654487405863856,1,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with the 53BP2 SH3 domain
+TP53,1TSR,244,G,1,0.17375967721275132,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with the 53BP2 SH3 domain
+TP53,1TSR,245,G,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with the 53BP2 SH3 domain
+TP53,1TSR,246,M,1,0.005744626566564195,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with the 53BP2 SH3 domain
+TP53,1TSR,247,N,1,0.2727564252168297,1,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with the 53BP2 SH3 domain
+TP53,1TSR,248,R,1,0.5695424049679475,1,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with the 53BP2 SH3 domain
+TP53,1TSR,249,R,1,0.08332443901982883,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1
+TP53,1TSR,250,P,1,0.1594980662694229,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1
+TP53,1TSR,251,I,1,0.006130092467207697,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1
+TP53,1TSR,252,L,1,0.030040502886565082,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1
+TP53,1TSR,253,T,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1
+TP53,1TSR,254,I,1,0.018390277401623092,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1
+TP53,1TSR,255,I,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1
+TP53,1TSR,256,T,1,0.06625253604949526,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1
+TP53,1TSR,257,L,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1
+TP53,1TSR,258,E,1,0.06246173682876846,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1
+TP53,1TSR,259,D,1,0.07155799291498972,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1
+TP53,1TSR,260,S,1,0.5576345606994407,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1
+TP53,1TSR,261,S,1,0.5362763518364818,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1
+TP53,1TSR,262,G,1,0.35307538186386284,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1
+TP53,1TSR,263,N,1,0.5052258395591386,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1
+TP53,1TSR,264,L,1,0.35428299901880345,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1
+TP53,1TSR,265,L,1,0.07141974826120298,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1
+TP53,1TSR,266,G,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1
+TP53,1TSR,267,R,1,0.12098456759640196,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1
+TP53,1TSR,268,N,1,0.08381653202510357,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1
+TP53,1TSR,269,S,1,0.11026746994023766,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1
+TP53,1TSR,270,F,1,0.005031784233499651,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1
+TP53,1TSR,271,E,1,0.06787710999486674,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1
+TP53,1TSR,272,V,1,0.012315620966238165,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1
+TP53,1TSR,273,R,1,0.2503677359911782,1,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1;Interaction with DNA
+TP53,1TSR,274,V,1,0.019256013012444582,1,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1;Interaction with DNA
+TP53,1TSR,275,C,1,0.057035069079893023,1,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1;Interaction with DNA
+TP53,1TSR,276,A,1,0.49051006056480567,1,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1;Interaction with DNA
+TP53,1TSR,277,C,1,0.114423576739281,1,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1;Interaction with DNA
+TP53,1TSR,278,P,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1;Interaction with DNA
+TP53,1TSR,279,G,1,0.0,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1;Interaction with DNA
+TP53,1TSR,280,R,1,0.40271039730105207,1,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1;Interaction with DNA
+TP53,1TSR,281,D,1,0.1075970416224004,1,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1
+TP53,1TSR,282,R,1,0.07267398129749471,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1;Disordered
+TP53,1TSR,283,R,1,0.38942604664301483,1,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1;Disordered
+TP53,1TSR,284,T,1,0.34780857203040244,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1;Disordered
+TP53,1TSR,285,E,1,0.20973757177729954,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1;Disordered
+TP53,1TSR,286,E,1,0.2890560522836328,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1;Disordered
+TP53,1TSR,287,E,1,0.5391437329407001,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1;Disordered
+TP53,1TSR,288,N,1,0.5144650218923729,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1;Disordered
+TP53,1TSR,289,L,1,0.9195607373087812,0,0,DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1;Disordered
+CDKN2A,1BI7,10,E,1,0.6739101685784197,0,0,
+CDKN2A,1BI7,11,P,1,0.5695500412461377,0,0,ANK 1
+CDKN2A,1BI7,12,S,1,0.3177620843507955,0,0,ANK 1
+CDKN2A,1BI7,13,A,1,0.06270657902055504,0,0,ANK 1
+CDKN2A,1BI7,14,D,1,0.20620750048731967,0,0,ANK 1
+CDKN2A,1BI7,15,W,1,0.5722732673509007,0,0,ANK 1
+CDKN2A,1BI7,16,L,1,0.0,0,0,ANK 1
+CDKN2A,1BI7,17,A,1,0.018722918078138237,1,0,ANK 1
+CDKN2A,1BI7,18,T,1,0.4063523703109311,1,0,ANK 1
+CDKN2A,1BI7,19,A,1,0.04680729519534559,0,0,ANK 1
+CDKN2A,1BI7,20,A,1,0.0,0,0,ANK 1
+CDKN2A,1BI7,21,A,1,0.28887222078876373,1,0,ANK 1
+CDKN2A,1BI7,22,R,1,0.4927810052461333,1,0,ANK 1
+CDKN2A,1BI7,23,G,1,0.04120996246395078,1,0,ANK 1
+CDKN2A,1BI7,24,R,1,0.3566361204821695,1,0,ANK 1
+CDKN2A,1BI7,25,V,1,0.1519060434534538,1,0,ANK 1
+CDKN2A,1BI7,26,E,1,0.4241084714678451,0,0,ANK 1
+CDKN2A,1BI7,27,E,1,0.4464717649377594,1,0,ANK 1
+CDKN2A,1BI7,28,V,1,0.0,0,0,ANK 1
+CDKN2A,1BI7,29,R,1,0.32255098675738214,0,0,ANK 1
+CDKN2A,1BI7,30,A,1,0.4295715406655733,0,0,ANK 1
+CDKN2A,1BI7,31,L,1,0.18557365923015032,0,0,ANK 1
+CDKN2A,1BI7,32,L,1,0.042645135286078426,0,0,ANK 1
+CDKN2A,1BI7,33,E,1,0.5720058627745662,0,0,ANK 1
+CDKN2A,1BI7,34,A,1,0.588300192893589,0,0,ANK 1
+CDKN2A,1BI7,35,G,1,0.6918062516714347,0,0,ANK 1
+CDKN2A,1BI7,36,A,1,0.09575856907946197,0,0,ANK 1
+CDKN2A,1BI7,37,N,0,0.4761728417992238,0,0,ANK 1
+CDKN2A,1BI7,38,P,1,0.13499980820606353,0,0,ANK 1
+CDKN2A,1BI7,39,N,1,0.3262234322492477,0,0,ANK 1
+CDKN2A,1BI7,40,A,1,0.167450687571638,0,0,ANK 1
+CDKN2A,1BI7,41,P,1,0.5973347608771505,0,0,
+CDKN2A,1BI7,42,N,1,0.07851403916925385,1,0,
+CDKN2A,1BI7,43,S,1,0.5608138524648736,0,0,
+CDKN2A,1BI7,44,Y,1,0.6709535982642518,1,0,ANK 2
+CDKN2A,1BI7,45,G,1,0.29730812485658364,0,0,ANK 2
+CDKN2A,1BI7,46,R,1,0.20937797782846457,1,0,ANK 2
+CDKN2A,1BI7,47,R,1,0.22558813729432317,0,0,ANK 2
+CDKN2A,1BI7,48,P,1,0.045570876076977976,0,0,ANK 2
+CDKN2A,1BI7,49,I,1,0.0,0,0,ANK 2
+CDKN2A,1BI7,50,Q,1,0.05784803048614101,1,0,ANK 2
+CDKN2A,1BI7,51,V,1,0.25131643476802606,1,0,ANK 2
+CDKN2A,1BI7,52,M,1,0.03348309450196001,1,0,ANK 2
+CDKN2A,1BI7,53,M,1,0.3254128990430885,1,0,ANK 2
+CDKN2A,1BI7,54,M,1,0.08688596212282543,1,0,ANK 2
+CDKN2A,1BI7,55,G,1,0.4276393918700031,1,0,ANK 2
+CDKN2A,1BI7,56,S,1,0.09337834890789774,1,0,ANK 2
+CDKN2A,1BI7,57,A,1,0.1863451512207211,0,0,ANK 2
+CDKN2A,1BI7,58,R,1,0.522300372935259,1,0,ANK 2
+CDKN2A,1BI7,59,V,1,0.0,0,0,ANK 2
+CDKN2A,1BI7,60,A,1,0.0,0,0,ANK 2
+CDKN2A,1BI7,61,E,1,0.3845404078409297,0,0,ANK 2
+CDKN2A,1BI7,62,L,1,0.1081458103916343,0,0,ANK 2
+CDKN2A,1BI7,63,L,1,0.012016201154626033,0,0,ANK 2
+CDKN2A,1BI7,64,L,1,0.08063708732795025,0,0,ANK 2
+CDKN2A,1BI7,65,L,1,0.5958897922220975,0,0,ANK 2
+CDKN2A,1BI7,66,H,1,0.28483670542787964,0,0,ANK 2
+CDKN2A,1BI7,67,G,1,0.38560367386010486,0,0,ANK 2
+CDKN2A,1BI7,68,A,1,0.09416205552908422,0,0,ANK 2
+CDKN2A,1BI7,69,E,1,0.27090587405579275,0,0,ANK 2
+CDKN2A,1BI7,70,P,1,0.12911748221810426,0,0,ANK 2
+CDKN2A,1BI7,71,N,1,0.30928119361526374,0,0,ANK 2
+CDKN2A,1BI7,72,C,1,0.014462613365747501,0,0,ANK 2
+CDKN2A,1BI7,73,A,1,0.4244717372981088,0,0,
+CDKN2A,1BI7,74,D,1,0.1117375630737389,1,0,
+CDKN2A,1BI7,75,P,1,0.49774145269792985,1,0,
+CDKN2A,1BI7,76,A,1,0.6574789398491675,1,0,
+CDKN2A,1BI7,77,T,1,0.2699929293274572,1,0,ANK 3
+CDKN2A,1BI7,78,L,1,0.360486034638781,0,0,ANK 3
+CDKN2A,1BI7,79,T,1,0.024917651722388846,1,0,ANK 3
+CDKN2A,1BI7,80,R,1,0.04324161508667352,0,0,ANK 3
+CDKN2A,1BI7,81,P,1,0.006877914482481807,0,0,ANK 3
+CDKN2A,1BI7,82,V,1,0.0,0,0,ANK 3
+CDKN2A,1BI7,83,H,1,0.0,0,0,ANK 3
+CDKN2A,1BI7,84,D,1,0.16866465439281453,1,0,ANK 3
+CDKN2A,1BI7,85,A,1,0.0,0,0,ANK 3
+CDKN2A,1BI7,86,A,1,0.0,0,0,ANK 3
+CDKN2A,1BI7,87,R,1,0.2611921049447884,1,0,ANK 3
+CDKN2A,1BI7,88,E,1,0.4716365137831099,1,0,ANK 3
+CDKN2A,1BI7,89,G,1,0.14554418777745462,1,0,ANK 3
+CDKN2A,1BI7,90,F,1,0.301907054009979,1,0,ANK 3
+CDKN2A,1BI7,91,L,1,0.19769995679597976,0,0,ANK 3
+CDKN2A,1BI7,92,D,1,0.5000588598262089,1,0,ANK 3
+CDKN2A,1BI7,93,T,1,0.0,0,0,ANK 3
+CDKN2A,1BI7,94,L,1,0.012016201154626033,0,0,ANK 3
+CDKN2A,1BI7,95,V,1,0.13880784092412832,0,0,ANK 3
+CDKN2A,1BI7,96,V,1,0.10254071756692158,0,0,ANK 3
+CDKN2A,1BI7,97,L,1,0.0,0,0,ANK 3
+CDKN2A,1BI7,98,H,1,0.1977531595670909,0,0,ANK 3
+CDKN2A,1BI7,99,R,1,0.7212544087511132,0,0,ANK 3
+CDKN2A,1BI7,100,A,1,0.3408515029223122,0,0,ANK 3
+CDKN2A,1BI7,101,G,1,0.4034505784032018,0,0,ANK 3
+CDKN2A,1BI7,102,A,1,0.008305883907462949,0,0,ANK 3
+CDKN2A,1BI7,103,R,1,0.5619483729275576,0,0,ANK 3
+CDKN2A,1BI7,104,L,1,0.09012150865969526,0,0,ANK 3
+CDKN2A,1BI7,105,D,1,0.4028375383553691,0,0,ANK 3
+CDKN2A,1BI7,106,V,1,0.11798666478550908,0,0,ANK 3
+CDKN2A,1BI7,107,R,1,0.4568632910943075,0,0,
+CDKN2A,1BI7,108,D,1,0.03886120812662716,1,0,
+CDKN2A,1BI7,109,A,1,0.4779351175425856,0,0,
+CDKN2A,1BI7,110,W,1,0.5316888727222379,1,0,ANK 4
+CDKN2A,1BI7,111,G,1,0.34822295034942,0,0,ANK 4
+CDKN2A,1BI7,112,R,1,0.2738987235932305,1,0,ANK 4
+CDKN2A,1BI7,113,L,1,0.12016201154626033,0,0,ANK 4
+CDKN2A,1BI7,114,P,1,0.0,0,0,ANK 4
+CDKN2A,1BI7,115,V,1,0.07634431250827058,0,0,ANK 4
+CDKN2A,1BI7,116,D,1,0.29089259761112896,0,0,ANK 4
+CDKN2A,1BI7,117,L,1,0.030040502886565082,0,0,ANK 4
+CDKN2A,1BI7,118,A,1,0.0,0,0,ANK 4
+CDKN2A,1BI7,119,E,1,0.46858339288676015,0,0,ANK 4
+CDKN2A,1BI7,120,E,1,0.5186232441875157,0,0,ANK 4
+CDKN2A,1BI7,121,L,1,0.5418168870262803,0,0,ANK 4
+CDKN2A,1BI7,122,G,1,0.5323177424095616,0,0,ANK 4
+CDKN2A,1BI7,123,H,1,0.18054620780442912,1,0,ANK 4
+CDKN2A,1BI7,124,R,1,0.5446604407995186,0,0,ANK 4
+CDKN2A,1BI7,125,D,1,0.3939436732753742,1,0,ANK 4
+CDKN2A,1BI7,126,V,1,0.0,0,0,ANK 4
+CDKN2A,1BI7,127,A,1,0.037445836156276474,0,0,ANK 4
+CDKN2A,1BI7,128,R,1,0.5508009473512921,0,0,ANK 4
+CDKN2A,1BI7,129,Y,1,0.24486366304634732,0,0,ANK 4
+CDKN2A,1BI7,130,L,1,0.010661283821519606,0,0,ANK 4
+CDKN2A,1BI7,131,R,1,0.454664130374128,0,0,ANK 4
+CDKN2A,1BI7,132,A,1,0.35573544348462655,0,0,ANK 4
+CDKN2A,1BI7,133,A,1,0.5606778490773423,0,0,ANK 4
+CDKN2A,1BI7,134,A,1,0.7072083545741171,0,0,ANK 4
+SMAD4,1U7F,314,I,1,1.0,0,0,Mediates interaction with ZBTB7A;SAD
+SMAD4,1U7F,315,S,1,0.7007963298733365,0,0,Mediates interaction with ZBTB7A;SAD
+SMAD4,1U7F,316,N,1,0.5674828617289853,1,0,Mediates interaction with ZBTB7A;SAD
+SMAD4,1U7F,317,H,1,0.5400693417829505,1,0,Mediates interaction with ZBTB7A;SAD
+SMAD4,1U7F,318,P,1,0.3637372329863889,0,0,Mediates interaction with ZBTB7A;SAD
+SMAD4,1U7F,319,A,1,0.25670426029051807,0,0,Mediates interaction with ZBTB7A;SAD
+SMAD4,1U7F,320,P,1,0.09028534214152076,1,0,Mediates interaction with ZBTB7A;SAD
+SMAD4,1U7F,321,E,1,0.5823902493684832,1,0,Mediates interaction with ZBTB7A
+SMAD4,1U7F,322,Y,1,0.14117242315503165,0,0,Mediates interaction with ZBTB7A
+SMAD4,1U7F,323,W,1,0.03246497597329033,0,0,MH2
+SMAD4,1U7F,324,C,1,0.0,0,0,MH2
+SMAD4,1U7F,325,S,1,0.1158732873346239,0,0,MH2
+SMAD4,1U7F,326,I,1,0.0,0,0,MH2
+SMAD4,1U7F,327,A,1,0.018722918078138237,0,0,MH2
+SMAD4,1U7F,328,Y,1,0.004158130808800788,0,0,MH2
+SMAD4,1U7F,329,F,1,0.14088995853799022,1,0,MH2
+SMAD4,1U7F,330,E,1,0.009609497973656685,0,0,MH2
+SMAD4,1U7F,331,M,1,0.2012414494099519,0,0,MH2
+SMAD4,1U7F,332,D,1,0.4616738715683558,1,0,MH2
+SMAD4,1U7F,333,V,1,0.2220925454786053,0,0,MH2
+SMAD4,1U7F,334,Q,1,0.20807368537987883,1,0,MH2
+SMAD4,1U7F,335,V,1,0.006157810483119083,0,0,MH2
+SMAD4,1U7F,336,G,1,0.24343053583043878,1,0,MH2
+SMAD4,1U7F,337,E,1,0.6061352800915998,1,0,MH2
+SMAD4,1U7F,338,T,1,0.27192720061824305,1,0,MH2
+SMAD4,1U7F,339,F,1,0.05031784233499651,0,0,MH2
+SMAD4,1U7F,340,K,1,0.3452487857429026,1,0,MH2
+SMAD4,1U7F,341,V,1,0.0,0,0,MH2
+SMAD4,1U7F,342,P,1,0.2354495263977195,0,0,MH2
+SMAD4,1U7F,343,S,1,0.3211333578298722,0,0,MH2
+SMAD4,1U7F,344,S,1,0.5840445316227306,0,0,MH2
+SMAD4,1U7F,345,C,1,0.1993914302630476,0,0,MH2
+SMAD4,1U7F,346,P,1,0.21266408835923054,0,0,MH2
+SMAD4,1U7F,347,I,1,0.33568182226642723,0,0,MH2
+SMAD4,1U7F,348,V,1,0.0,0,0,MH2
+SMAD4,1U7F,349,T,1,0.14258885391407106,0,0,MH2
+SMAD4,1U7F,350,V,1,0.0,0,0,MH2
+SMAD4,1U7F,351,D,1,0.03330960696568042,0,0,MH2
+SMAD4,1U7F,352,G,1,0.17645165962541773,1,0,MH2
+SMAD4,1U7F,353,Y,1,0.378389760258241,1,0,MH2
+SMAD4,1U7F,354,V,1,0.5407195166935932,1,0,MH2
+SMAD4,1U7F,355,D,1,0.3167633038374802,1,0,MH2
+SMAD4,1U7F,356,P,1,0.5626721267636561,1,0,MH2
+SMAD4,1U7F,357,S,1,0.5198155413586946,1,0,MH2
+SMAD4,1U7F,358,G,1,0.20484730731634915,0,0,MH2
+SMAD4,1U7F,359,G,1,0.45000463163188226,0,0,MH2
+SMAD4,1U7F,360,D,1,0.4201051640155271,0,0,MH2
+SMAD4,1U7F,361,R,1,0.28305520495511666,1,0,MH2
+SMAD4,1U7F,362,F,1,0.03522248963449756,0,0,MH2
+SMAD4,1U7F,363,C,1,0.0,1,0,MH2
+SMAD4,1U7F,364,L,1,0.0,0,0,MH2
+SMAD4,1U7F,365,G,1,0.20098459831827378,1,0,MH2
+SMAD4,1U7F,366,Q,1,0.1436442835745135,1,0,MH2
+SMAD4,1U7F,367,L,1,0.10213770981432127,1,0,MH2
+SMAD4,1U7F,368,S,1,0.5499369695745959,1,0,MH2
+SMAD4,1U7F,369,N,1,0.12401622273458611,1,0,MH2
+SMAD4,1U7F,370,V,1,0.7534210834151505,1,0,MH2
+SMAD4,1U7F,371,H,1,0.4499046228272848,1,0,MH2
+SMAD4,1U7F,372,R,1,0.06745893749253563,0,0,MH2
+SMAD4,1U7F,373,T,1,0.24642594326522915,0,0,MH2
+SMAD4,1U7F,374,E,1,0.5819363385375474,0,0,MH2
+SMAD4,1U7F,375,A,1,0.31301173167031915,0,0,MH2
+SMAD4,1U7F,376,I,1,0.018390277401623092,0,0,MH2
+SMAD4,1U7F,377,E,1,0.30583255151386646,1,0,MH2
+SMAD4,1U7F,378,R,1,0.31290377486420534,1,0,MH2
+SMAD4,1U7F,379,A,1,0.0,1,0,MH2
+SMAD4,1U7F,380,R,1,0.05322733932110797,1,0,MH2
+SMAD4,1U7F,381,L,1,0.5998655167997508,1,0,MH2
+SMAD4,1U7F,382,H,1,0.27221171045060977,1,0,MH2
+SMAD4,1U7F,383,I,1,0.006130092467207697,0,0,MH2
+SMAD4,1U7F,384,G,1,0.19630422941685838,0,0,MH2
+SMAD4,1U7F,385,K,1,0.4750940049557555,1,0,MH2
+SMAD4,1U7F,386,G,1,0.0,0,0,MH2
+SMAD4,1U7F,387,V,1,0.0,0,0,MH2
+SMAD4,1U7F,388,Q,1,0.10605854831964556,0,0,MH2
+SMAD4,1U7F,389,L,1,0.0060081005773130166,0,0,MH2
+SMAD4,1U7F,390,E,1,0.14841683885973986,0,0,MH2
+SMAD4,1U7F,391,C,1,0.19033401171149553,0,0,MH2
+SMAD4,1U7F,392,K,1,0.5170687711530356,0,0,MH2
+SMAD4,1U7F,393,G,1,0.2348955535735554,0,0,MH2
+SMAD4,1U7F,394,E,1,0.393092921897037,0,0,MH2
+SMAD4,1U7F,395,G,1,0.09027583984966288,0,0,MH2
+SMAD4,1U7F,396,D,1,0.058338171028683876,0,0,MH2
+SMAD4,1U7F,397,V,1,0.013880784092412831,0,0,MH2
+SMAD4,1U7F,398,W,1,0.22289826953741207,0,0,MH2
+SMAD4,1U7F,399,V,1,0.0069403920462064155,0,0,MH2
+SMAD4,1U7F,400,R,1,0.16065118783128973,0,0,MH2
+SMAD4,1U7F,401,C,1,0.006415922299776769,0,0,MH2
+SMAD4,1U7F,402,L,1,0.24158991300396118,0,0,MH2
+SMAD4,1U7F,403,S,1,0.04926698297042735,0,0,MH2
+SMAD4,1U7F,404,D,1,0.7124088413362645,1,0,MH2
+SMAD4,1U7F,405,H,1,0.33536361327399006,1,0,MH2
+SMAD4,1U7F,406,A,1,0.16020690551540262,0,0,MH2
+SMAD4,1U7F,407,V,1,0.0,0,0,MH2
+SMAD4,1U7F,408,F,1,0.030190705400997907,1,0,MH2
+SMAD4,1U7F,409,V,1,0.0,0,0,MH2
+SMAD4,1U7F,410,Q,1,0.17018914975706947,0,0,MH2
+SMAD4,1U7F,411,S,1,0.015582299561805372,0,0,MH2
+SMAD4,1U7F,412,Y,1,0.3705103114168998,0,0,MH2
+SMAD4,1U7F,413,Y,1,0.06854276681681507,0,0,MH2
+SMAD4,1U7F,414,L,1,0.12811346070156707,0,0,MH2
+SMAD4,1U7F,415,D,1,0.06671193160884711,0,0,MH2
+SMAD4,1U7F,416,R,1,0.6585506959694505,0,0,MH2
+SMAD4,1U7F,417,E,1,0.5815351163008918,0,0,MH2
+SMAD4,1U7F,424,D,1,0.5006321597912836,0,0,MH2
+SMAD4,1U7F,425,A,1,0.14328487498414544,0,0,MH2
+SMAD4,1U7F,426,V,1,0.052519990454381806,0,0,MH2
+SMAD4,1U7F,427,H,1,0.1925557872208083,0,0,MH2
+SMAD4,1U7F,428,K,1,0.3438314482301356,1,0,MH2
+SMAD4,1U7F,429,I,1,0.06130092467207697,0,0,MH2
+SMAD4,1U7F,430,Y,1,0.45846845529903774,0,0,MH2
+SMAD4,1U7F,431,P,1,0.23202388634797877,0,0,MH2
+SMAD4,1U7F,432,S,1,0.5190524789056471,0,0,MH2
+SMAD4,1U7F,433,A,1,0.028084377117207356,0,0,MH2
+SMAD4,1U7F,434,Y,1,0.22624746892739617,0,0,MH2
+SMAD4,1U7F,435,I,1,0.27585416102434634,0,0,MH2
+SMAD4,1U7F,436,K,1,0.10292192991358766,0,0,MH2
+SMAD4,1U7F,437,V,1,0.0,0,0,MH2
+SMAD4,1U7F,438,F,1,0.03522248963449756,0,0,MH2
+SMAD4,1U7F,439,D,1,0.022206404643786953,0,0,MH2
+SMAD4,1U7F,440,L,1,0.01802430173193905,0,0,MH2
+SMAD4,1U7F,441,R,1,0.46540172716276623,0,0,MH2
+SMAD4,1U7F,442,Q,1,0.21168604220195056,0,0,MH2
+SMAD4,1U7F,443,C,1,0.0433878400972425,0,0,MH2
+SMAD4,1U7F,444,H,1,0.1815644204234051,0,0,MH2
+SMAD4,1U7F,445,R,1,0.3538283163151903,0,0,MH2
+SMAD4,1U7F,446,Q,1,0.21453414028852497,0,0,MH2
+SMAD4,1U7F,447,M,1,0.0,0,0,MH2
+SMAD4,1U7F,448,Q,1,0.26161753845372565,0,0,MH2
+SMAD4,1U7F,449,Q,1,0.4584612448461804,0,0,MH2
+SMAD4,1U7F,450,Q,1,0.1738922637002449,0,0,MH2
+SMAD4,1U7F,451,A,1,0.018722918078138237,0,0,MH2
+SMAD4,1U7F,452,A,1,0.4377387074276498,0,0,MH2
+SMAD4,1U7F,453,T,1,0.44145784170744035,0,0,MH2
+SMAD4,1U7F,454,A,1,0.3471521252863907,0,0,MH2
+SMAD4,1U7F,455,Q,1,0.4860654281462588,0,0,MH2
+SMAD4,1U7F,490,I,1,0.34711256295161164,1,0,MH2
+SMAD4,1U7F,491,G,1,0.19630422941685838,1,0,MH2
+SMAD4,1U7F,492,V,1,0.44915927932539446,1,0,MH2
+SMAD4,1U7F,493,D,1,0.4674547927153326,1,0,MH2
+SMAD4,1U7F,494,D,1,0.30190308225553625,1,0,MH2
+SMAD4,1U7F,495,L,1,0.04205670404119111,0,0,MH2
+SMAD4,1U7F,496,R,1,0.30009777181751024,1,0,MH2
+SMAD4,1U7F,497,R,1,0.4013810220505856,1,0,MH2
+SMAD4,1U7F,498,L,1,0.12346027745736049,0,0,MH2
+SMAD4,1U7F,499,C,1,0.0,0,0,MH2
+SMAD4,1U7F,500,I,1,0.15039661990525013,1,0,MH2
+SMAD4,1U7F,501,L,1,0.0,0,0,MH2
+SMAD4,1U7F,502,R,1,0.22957933584437645,1,0,MH2
+SMAD4,1U7F,503,M,1,0.0,0,0,MH2
+SMAD4,1U7F,504,S,1,0.0,0,0,MH2
+SMAD4,1U7F,505,F,1,0.015095352700498953,0,0,MH2
+SMAD4,1U7F,506,V,1,0.1355746726501994,1,0,MH2
+SMAD4,1U7F,507,K,1,0.269556636777971,1,0,MH2
+SMAD4,1U7F,508,G,1,0.031333036822037835,1,0,MH2
+SMAD4,1U7F,509,W,1,0.0,0,0,MH2
+SMAD4,1U7F,510,G,1,0.0773547109264214,0,0,MH2
+SMAD4,1U7F,511,P,1,0.800465795000507,0,0,MH2
+SMAD4,1U7F,512,D,1,0.44804860517523337,0,0,MH2
+SMAD4,1U7F,513,Y,1,0.3391672984990912,1,0,MH2
+SMAD4,1U7F,514,P,1,0.7323612034662145,1,0,MH2
+SMAD4,1U7F,515,R,1,0.23672932554794796,1,0,MH2
+SMAD4,1U7F,516,Q,1,0.5780383037190011,0,0,MH2
+SMAD4,1U7F,517,S,1,0.20761006287349226,0,0,MH2
+SMAD4,1U7F,518,I,1,0.023941487567687086,0,0,MH2
+SMAD4,1U7F,519,K,1,0.49008451365735745,1,0,MH2
+SMAD4,1U7F,520,E,1,0.29500180518166985,0,0,MH2
+SMAD4,1U7F,521,T,1,0.0,0,0,MH2
+SMAD4,1U7F,522,P,1,0.045570876076977976,0,0,MH2
+SMAD4,1U7F,523,C,1,0.0,0,0,MH2
+SMAD4,1U7F,524,W,1,0.016949167944419877,1,0,MH2
+SMAD4,1U7F,525,I,1,0.0,0,0,MH2
+SMAD4,1U7F,526,E,1,0.08648548176291017,1,0,MH2
+SMAD4,1U7F,527,I,1,0.012260184934415394,0,0,MH2
+SMAD4,1U7F,528,H,1,0.1317252969689556,1,0,MH2
+SMAD4,1U7F,529,L,1,0.0360486034638781,0,0,MH2
+SMAD4,1U7F,530,H,1,0.14860933788672345,1,0,MH2
+SMAD4,1U7F,531,R,1,0.07916240203715331,0,0,MH2
+SMAD4,1U7F,532,A,1,0.008477429478407808,0,0,MH2
+SMAD4,1U7F,533,L,1,0.2783159751343925,1,0,MH2
+SMAD4,1U7F,534,Q,1,0.19951056948950205,1,0,MH2
+SMAD4,1U7F,535,L,1,0.16754935749821126,0,0,MH2
+SMAD4,1U7F,536,L,1,0.04205670404119111,1,0,MH2
+SMAD4,1U7F,537,D,1,0.4533001109881926,1,0,MH2
+SMAD4,1U7F,538,E,1,0.5896527099605791,0,0,MH2
+SMAD4,1U7F,539,V,1,0.020165774912611723,0,0,MH2
+SMAD4,1U7F,540,L,1,0.2988720566892126,1,0,MH2
+SMAD4,1U7F,541,H,1,0.6368371835976426,1,0,MH2
+SMAD4,1U7F,542,T,1,0.3611384957801725,0,0,MH2
+SMAD4,1U7F,543,M,1,0.14838549941015516,0,0,MH2
+SMAD4,1U7F,544,P,1,0.5341435412192951,0,0,MH2
+SMAD4,1U7F,545,I,1,0.7620277121228562,1,0,MH2
+SMAD4,1U7F,546,A,1,0.8461396153296042,1,0,MH2

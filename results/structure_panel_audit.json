@@ -1,0 +1,448 @@
+{
+ "structures": {
+  "KRAS": {
+   "pdb": "6VJJ",
+   "chain": "A",
+   "n_residues": 168,
+   "uniprot_identity": 0.9642857142857143,
+   "n_partner_contact": 24,
+   "n_ligand_contact": 32
+  },
+  "TP53": {
+   "pdb": "1TSR",
+   "chain": "B",
+   "n_residues": 194,
+   "uniprot_identity": 1.0,
+   "n_partner_contact": 20,
+   "n_ligand_contact": 6
+  },
+  "CDKN2A": {
+   "pdb": "1BI7",
+   "chain": "B",
+   "n_residues": 125,
+   "uniprot_identity": 0.992,
+   "n_partner_contact": 35,
+   "n_ligand_contact": 0
+  },
+  "SMAD4": {
+   "pdb": "1U7F",
+   "chain": "B",
+   "n_residues": 193,
+   "uniprot_identity": 1.0,
+   "n_partner_contact": 65,
+   "n_ligand_contact": 0
+  }
+ },
+ "n_alleles_mapped": 471,
+ "n_panel_alleles": 537,
+ "mapped_by_gene": {
+  "TP53": 285,
+  "SMAD4": 87,
+  "CDKN2A": 70,
+  "KRAS": 29
+ },
+ "spearman_rsa_vs_am": -0.1144122184825999,
+ "p_rsa_am": 0.012969674092646188,
+ "spearman_rsa_vs_revel": -0.1003868077079886,
+ "p_rsa_revel": 0.029378916586545203,
+ "spearman_rsa_vs_cadd": 0.011761527091325873,
+ "p_rsa_cadd": 0.7990432628315665,
+ "low_am_x_contact": {
+  "table_rows_highAM_lowAM_cols_no_yes": [
+   [
+    284,
+    160
+   ],
+   [
+    24,
+    3
+   ]
+  ],
+  "or": 0.221875,
+  "p": 0.006558618194006173
+ },
+ "low_am_x_partner_contact": {
+  "table_rows_highAM_lowAM_cols_no_yes": [
+   [
+    330,
+    114
+   ],
+   [
+    25,
+    2
+   ]
+  ],
+  "or": 0.23157894736842105,
+  "p": 0.03646109272556124
+ },
+ "low_am_x_buried": {
+  "table_rows_highAM_lowAM_cols_no_yes": [
+   [
+    92,
+    352
+   ],
+   [
+    12,
+    15
+   ]
+  ],
+  "or": 0.32670454545454547,
+  "p": 0.007353962337925368
+ },
+ "per_gene": {
+  "CDKN2A": {
+   "n": 70,
+   "n_low_am": 17,
+   "table": [
+    [
+     33,
+     20
+    ],
+    [
+     15,
+     2
+    ]
+   ],
+   "or": 0.22,
+   "p": 0.07001501213909214,
+   "median_rsa_low_am": 0.09575856907946197,
+   "median_rsa_high_am": 0.045570876076977976
+  },
+  "KRAS": {
+   "n": 29,
+   "n_low_am": 1,
+   "table": [
+    [
+     6,
+     22
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "or": Infinity,
+   "p": 1.0,
+   "median_rsa_low_am": 0.269563771920608,
+   "median_rsa_high_am": 0.04134289782673772
+  },
+  "SMAD4": {
+   "n": 87,
+   "n_low_am": 0,
+   "table": [
+    [
+     34,
+     53
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "or": NaN,
+   "p": 1.0,
+   "median_rsa_low_am": null,
+   "median_rsa_high_am": 0.08648548176291017
+  },
+  "TP53": {
+   "n": 285,
+   "n_low_am": 9,
+   "table": [
+    [
+     211,
+     65
+    ],
+    [
+     9,
+     0
+    ]
+   ],
+   "or": 0.0,
+   "p": 0.217450120156729,
+   "median_rsa_low_am": 0.24671821430636923,
+   "median_rsa_high_am": 0.021399691767222673
+  }
+ },
+ "logit": {
+  "rsa": {
+   "coef": 6.204863756391198,
+   "p": 6.407942724319222e-05
+  },
+  "contact": {
+   "coef": -2.1762382272973246,
+   "p": 0.0021740032486337988
+  }
+ },
+ "low_am_alleles_mapped": [
+  {
+   "gene": "CDKN2A",
+   "protein": "H83Y",
+   "n_pat": 48,
+   "am": 0.1664,
+   "rsa": 0.0,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "ANK 3"
+  },
+  {
+   "gene": "CDKN2A",
+   "protein": "H83D",
+   "n_pat": 7,
+   "am": 0.091,
+   "rsa": 0.0,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "ANK 3"
+  },
+  {
+   "gene": "TP53",
+   "protein": "P152L",
+   "n_pat": 7,
+   "am": 0.4915,
+   "rsa": 0.3148532609587572,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1"
+  },
+  {
+   "gene": "TP53",
+   "protein": "R110L",
+   "n_pat": 3,
+   "am": 0.5017,
+   "rsa": 0.24671821430636923,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "DNA binding;Interaction with CCAR2;Interaction with WWOX;Interaction with HIPK1;Required for interaction with ZNF385A"
+  },
+  {
+   "gene": "TP53",
+   "protein": "S106R",
+   "n_pat": 3,
+   "am": 0.3249,
+   "rsa": 0.48871717916922536,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "DNA binding;Interaction with CCAR2;Interaction with WWOX;Interaction with HIPK1;Required for interaction with ZNF385A"
+  },
+  {
+   "gene": "TP53",
+   "protein": "Q192H",
+   "n_pat": 1,
+   "am": 0.4948,
+   "rsa": 0.11129727275189569,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1"
+  },
+  {
+   "gene": "TP53",
+   "protein": "L264V",
+   "n_pat": 1,
+   "am": 0.086,
+   "rsa": 0.35428299901880345,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Interaction with AXIN1;Interaction with E4F1"
+  },
+  {
+   "gene": "TP53",
+   "protein": "V157I",
+   "n_pat": 1,
+   "am": 0.1112,
+   "rsa": 0.0,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1"
+  },
+  {
+   "gene": "TP53",
+   "protein": "A159T",
+   "n_pat": 1,
+   "am": 0.487,
+   "rsa": 0.0,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1"
+  },
+  {
+   "gene": "KRAS",
+   "protein": "K147R",
+   "n_pat": 1,
+   "am": 0.2994,
+   "rsa": 0.269563771920608,
+   "partner_contact": 0,
+   "ligand_contact": 1,
+   "domain": ""
+  },
+  {
+   "gene": "TP53",
+   "protein": "L188Q",
+   "n_pat": 1,
+   "am": 0.2501,
+   "rsa": 0.18819446647469726,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "DNA binding;Interaction with CCAR2;Interaction with HIPK1;Required for interaction with ZNF385A;Required for interaction with FBXO42;Interaction with AXIN1"
+  },
+  {
+   "gene": "CDKN2A",
+   "protein": "L130V",
+   "n_pat": 1,
+   "am": 0.4433,
+   "rsa": 0.010661283821519606,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "ANK 4"
+  },
+  {
+   "gene": "TP53",
+   "protein": "R110C",
+   "n_pat": 1,
+   "am": 0.1734,
+   "rsa": 0.24671821430636923,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "DNA binding;Interaction with CCAR2;Interaction with WWOX;Interaction with HIPK1;Required for interaction with ZNF385A"
+  },
+  {
+   "gene": "CDKN2A",
+   "protein": "R128W",
+   "n_pat": 1,
+   "am": 0.2218,
+   "rsa": 0.5508009473512921,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "ANK 4"
+  },
+  {
+   "gene": "CDKN2A",
+   "protein": "E119K",
+   "n_pat": 1,
+   "am": 0.2545,
+   "rsa": 0.46858339288676015,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "ANK 4"
+  },
+  {
+   "gene": "CDKN2A",
+   "protein": "H98Y",
+   "n_pat": 1,
+   "am": 0.1493,
+   "rsa": 0.1977531595670909,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "ANK 3"
+  },
+  {
+   "gene": "CDKN2A",
+   "protein": "L104V",
+   "n_pat": 1,
+   "am": 0.0995,
+   "rsa": 0.09012150865969526,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "ANK 3"
+  },
+  {
+   "gene": "CDKN2A",
+   "protein": "L91M",
+   "n_pat": 1,
+   "am": 0.3601,
+   "rsa": 0.19769995679597976,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "ANK 3"
+  },
+  {
+   "gene": "CDKN2A",
+   "protein": "L97V",
+   "n_pat": 1,
+   "am": 0.0967,
+   "rsa": 0.0,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "ANK 3"
+  },
+  {
+   "gene": "CDKN2A",
+   "protein": "H83N",
+   "n_pat": 1,
+   "am": 0.1979,
+   "rsa": 0.0,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "ANK 3"
+  },
+  {
+   "gene": "CDKN2A",
+   "protein": "T77S",
+   "n_pat": 1,
+   "am": 0.1876,
+   "rsa": 0.2699929293274572,
+   "partner_contact": 1,
+   "ligand_contact": 0,
+   "domain": "ANK 3"
+  },
+  {
+   "gene": "CDKN2A",
+   "protein": "A73G",
+   "n_pat": 1,
+   "am": 0.1917,
+   "rsa": 0.4244717372981088,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": ""
+  },
+  {
+   "gene": "CDKN2A",
+   "protein": "C72G",
+   "n_pat": 1,
+   "am": 0.1469,
+   "rsa": 0.014462613365747501,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "ANK 2"
+  },
+  {
+   "gene": "CDKN2A",
+   "protein": "V51F",
+   "n_pat": 1,
+   "am": 0.3529,
+   "rsa": 0.25131643476802606,
+   "partner_contact": 1,
+   "ligand_contact": 0,
+   "domain": "ANK 2"
+  },
+  {
+   "gene": "CDKN2A",
+   "protein": "A36G",
+   "n_pat": 1,
+   "am": 0.2227,
+   "rsa": 0.09575856907946197,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "ANK 1"
+  },
+  {
+   "gene": "CDKN2A",
+   "protein": "D14G",
+   "n_pat": 1,
+   "am": 0.325,
+   "rsa": 0.20620750048731967,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "ANK 1"
+  },
+  {
+   "gene": "CDKN2A",
+   "protein": "A13T",
+   "n_pat": 1,
+   "am": 0.1774,
+   "rsa": 0.06270657902055504,
+   "partner_contact": 0,
+   "ligand_contact": 0,
+   "domain": "ANK 1"
+  }
+ ]
+}
