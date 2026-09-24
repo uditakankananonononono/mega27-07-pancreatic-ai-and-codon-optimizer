@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codonopt"
+version = "0.1.0"
+description = "Multi-objective codon optimization: maximize predicted expression subject to a tAI floor"
+requires-python = ">=3.9"
+dependencies = ["numpy", "torch", "scipy"]
+
+[project.scripts]
+codonopt = "codon_optimizer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
