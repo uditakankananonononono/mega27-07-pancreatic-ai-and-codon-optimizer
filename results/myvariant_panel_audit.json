@@ -1,0 +1,413 @@
+{
+ "n_rows": 7395,
+ "n_patients_by_study": {
+  "paac_jhu_2014": 17,
+  "paad_cptac_2021": 140,
+  "paad_icgc": 96,
+  "paad_qcmg_uq_2016": 367,
+  "paad_tcga_pan_can_atlas_2018": 142,
+  "paad_utsw_2015": 102,
+  "pdac_msk_2024": 2270
+ },
+ "n_snv_ids": 1342,
+ "myvariant_found_fraction_snv": 0.9985682468978683,
+ "q1_positive_control": {
+  "am": {
+   "panel_median": 0.993,
+   "passenger_median": 0.1883,
+   "n_panel_alleles": 537,
+   "n_passenger_alleles": 469,
+   "auroc_panel_vs_passenger": 0.9356986019622557,
+   "mwu_p": 6.319426431478586e-126
+  },
+  "revel": {
+   "panel_median": 0.902,
+   "passenger_median": 0.222,
+   "n_panel_alleles": 537,
+   "n_passenger_alleles": 471,
+   "auroc_panel_vs_passenger": 0.9471309903648089,
+   "mwu_p": 8.354368599434001e-133
+  },
+  "cadd": {
+   "panel_median": 27.5,
+   "passenger_median": 21.2,
+   "n_panel_alleles": 544,
+   "n_passenger_alleles": 475,
+   "auroc_panel_vs_passenger": 0.8477302631578948,
+   "mwu_p": 6.013559722991447e-82
+  },
+  "passed": true
+ },
+ "q2_recurrence": {
+  "panel": {
+   "am": {
+    "spearman_rho_recurrence": 0.06461472170592768,
+    "p": 0.13480809159876372,
+    "n_alleles": 537,
+    "n_recurrent_ge3": 171,
+    "n_singleton": 269,
+    "auroc_recurrent_vs_singleton": 0.5368921063501381,
+    "p_auroc": 0.1918685608384899
+   },
+   "revel": {
+    "spearman_rho_recurrence": 0.18526115352692618,
+    "p": 1.5563576605873156e-05,
+    "n_alleles": 537,
+    "n_recurrent_ge3": 171,
+    "n_singleton": 269,
+    "auroc_recurrent_vs_singleton": 0.6248940194352051,
+    "p_auroc": 9.947285916959005e-06
+   },
+   "cadd": {
+    "spearman_rho_recurrence": 0.20563766215482115,
+    "p": 1.3180706419675694e-06,
+    "n_alleles": 544,
+    "n_recurrent_ge3": 174,
+    "n_singleton": 272,
+    "auroc_recurrent_vs_singleton": 0.6282855814739688,
+    "p_auroc": 4.773858074717388e-06
+   }
+  },
+  "passenger": {
+   "am": {
+    "spearman_rho_recurrence": -0.06366654351952622,
+    "p": 0.16866499981898617,
+    "n_alleles": 469,
+    "n_recurrent_ge3": 1,
+    "n_singleton": 442,
+    "auroc_recurrent_vs_singleton": null,
+    "p_auroc": null
+   },
+   "revel": {
+    "spearman_rho_recurrence": -0.010221298709920314,
+    "p": 0.8249021155299415,
+    "n_alleles": 471,
+    "n_recurrent_ge3": 1,
+    "n_singleton": 444,
+    "auroc_recurrent_vs_singleton": null,
+    "p_auroc": null
+   },
+   "cadd": {
+    "spearman_rho_recurrence": -0.0704827465081054,
+    "p": 0.12503045533440393,
+    "n_alleles": 475,
+    "n_recurrent_ge3": 1,
+    "n_singleton": 448,
+    "auroc_recurrent_vs_singleton": null,
+    "p_auroc": null
+   }
+  },
+  "per_gene_am": {
+   "KRAS": {
+    "n_alleles": 30,
+    "n_patients_missense": 2958,
+    "am_median": 0.9903,
+    "frac_alleles_am_lp": 0.9333333333333333,
+    "frac_patient_weighted_am_lp": 0.9993238674780257,
+    "spearman_rho": 0.49906378128292594,
+    "p": 0.0049937634955081935,
+    "n_recurrent_ge3": 12,
+    "auroc_recurrent_vs_singleton": 0.75,
+    "p_auroc": 0.025142056475060997
+   },
+   "TP53": {
+    "n_alleles": 293,
+    "n_patients_missense": 1467,
+    "am_median": 0.9907,
+    "frac_alleles_am_lp": 0.9522184300341296,
+    "frac_patient_weighted_am_lp": 0.9822767552828903,
+    "spearman_rho": 0.09789126794301357,
+    "p": 0.09442870887988841,
+    "n_recurrent_ge3": 126,
+    "auroc_recurrent_vs_singleton": 0.5670859538784067,
+    "p_auroc": 0.0786459727560623
+   },
+   "CDKN2A": {
+    "n_alleles": 75,
+    "n_patients_missense": 168,
+    "am_median": 0.877,
+    "frac_alleles_am_lp": 0.7066666666666667,
+    "frac_patient_weighted_am_lp": 0.5535714285714286,
+    "spearman_rho": 0.3070179353240887,
+    "p": 0.00737907272007435,
+    "n_recurrent_ge3": 12,
+    "auroc_recurrent_vs_singleton": 0.6105769230769231,
+    "p_auroc": 0.23870260649680897
+   },
+   "SMAD4": {
+    "n_alleles": 139,
+    "n_patients_missense": 290,
+    "am_median": 0.9996,
+    "frac_alleles_am_lp": 0.9640287769784173,
+    "frac_patient_weighted_am_lp": 0.9827586206896551,
+    "spearman_rho": 0.11486028664437965,
+    "p": 0.17816876272387913,
+    "n_recurrent_ge3": 21,
+    "auroc_recurrent_vs_singleton": 0.5764944275582573,
+    "p_auroc": 0.2722920237082058
+   }
+  },
+  "top_panel_alleles": [
+   {
+    "gene": "KRAS",
+    "protein": "G12D",
+    "n_pat": 1211,
+    "am": 0.999,
+    "clinvar": "P/LP"
+   },
+   {
+    "gene": "KRAS",
+    "protein": "G12V",
+    "n_pat": 964,
+    "am": 0.9966,
+    "clinvar": "P/LP"
+   },
+   {
+    "gene": "KRAS",
+    "protein": "G12R",
+    "n_pat": 489,
+    "am": 0.9985,
+    "clinvar": "P/LP"
+   },
+   {
+    "gene": "TP53",
+    "protein": "R175H",
+    "n_pat": 154,
+    "am": 0.9857,
+    "clinvar": "P/LP"
+   },
+   {
+    "gene": "KRAS",
+    "protein": "Q61H",
+    "n_pat": 117,
+    "am": 0.9985,
+    "clinvar": "P/LP"
+   },
+   {
+    "gene": "TP53",
+    "protein": "R273H",
+    "n_pat": 86,
+    "am": 0.989,
+    "clinvar": "P/LP"
+   },
+   {
+    "gene": "TP53",
+    "protein": "R282W",
+    "n_pat": 74,
+    "am": 0.9469,
+    "clinvar": "P/LP"
+   },
+   {
+    "gene": "TP53",
+    "protein": "R248Q",
+    "n_pat": 70,
+    "am": 0.9963,
+    "clinvar": "P/LP"
+   },
+   {
+    "gene": "TP53",
+    "protein": "R248W",
+    "n_pat": 60,
+    "am": 0.9968,
+    "clinvar": "P/LP"
+   },
+   {
+    "gene": "TP53",
+    "protein": "R273C",
+    "n_pat": 56,
+    "am": 0.9945,
+    "clinvar": "P/LP"
+   },
+   {
+    "gene": "CDKN2A",
+    "protein": "H83Y",
+    "n_pat": 48,
+    "am": 0.1664,
+    "clinvar": "P/LP"
+   },
+   {
+    "gene": "KRAS",
+    "protein": "Q61R",
+    "n_pat": 47,
+    "am": 0.9891,
+    "clinvar": "P/LP"
+   },
+   {
+    "gene": "TP53",
+    "protein": "Y220C",
+    "n_pat": 45,
+    "am": 0.8863,
+    "clinvar": "P/LP"
+   },
+   {
+    "gene": "KRAS",
+    "protein": "G12C",
+    "n_pat": 40,
+    "am": 0.9985,
+    "clinvar": "P/LP"
+   },
+   {
+    "gene": "SMAD4",
+    "protein": "R361H",
+    "n_pat": 37,
+    "am": 0.991,
+    "clinvar": "P/LP"
+   }
+  ],
+  "cpg_control": {
+   "panel": {
+    "n_alleles": 544,
+    "frac_cpg_transition": 0.058823529411764705,
+    "spearman_recurrence_vs_cpg_ts": 0.12403441352224152,
+    "p": 0.0037615376283158157,
+    "am": {
+     "spearman_score_vs_cpg_ts": -0.15736800897355124,
+     "p_score_vs_cpg": 0.00025116620274772485,
+     "partial_spearman_given_cpg": 0.08611138484936963,
+     "p_partial": 0.04609332909794293,
+     "noncpg_only_rho": 0.05544223152930803,
+     "noncpg_only_p": 0.2135810752444107,
+     "n_noncpg": 505
+    },
+    "revel": {
+     "spearman_score_vs_cpg_ts": -0.09700152556174649,
+     "p_score_vs_cpg": 0.02458213262245102,
+     "partial_spearman_given_cpg": 0.1999524446458061,
+     "p_partial": 3.0120831164654934e-06,
+     "noncpg_only_rho": 0.1766384093006213,
+     "noncpg_only_p": 6.578347225554731e-05,
+     "n_noncpg": 505
+    },
+    "cadd": {
+     "spearman_score_vs_cpg_ts": 0.1800412208033739,
+     "p_score_vs_cpg": 2.3984046780943095e-05,
+     "partial_spearman_given_cpg": 0.18780173322638885,
+     "p_partial": 1.0362411272528659e-05,
+     "noncpg_only_rho": 0.181345890294331,
+     "noncpg_only_p": 3.665174012322366e-05,
+     "n_noncpg": 512
+    }
+   },
+   "passenger": {
+    "n_alleles": 475,
+    "frac_cpg_transition": 0.33263157894736844,
+    "spearman_recurrence_vs_cpg_ts": 0.0781220607864407,
+    "p": 0.08899091379305935,
+    "am": {
+     "spearman_score_vs_cpg_ts": -0.02985193375052773,
+     "p_score_vs_cpg": 0.5189892506659297,
+     "partial_spearman_given_cpg": -0.06156753022818216,
+     "p_partial": 0.1831770050998023,
+     "noncpg_only_rho": -0.08569041757567636,
+     "noncpg_only_p": 0.13096728927706078,
+     "n_noncpg": 312
+    },
+    "revel": {
+     "spearman_score_vs_cpg_ts": 0.11055577194196962,
+     "p_score_vs_cpg": 0.016380424711537722,
+     "partial_spearman_given_cpg": -0.01902667847152007,
+     "p_partial": 0.6804367551935222,
+     "noncpg_only_rho": -0.005277248544667795,
+     "noncpg_only_p": 0.9257917191099783,
+     "n_noncpg": 314
+    },
+    "cadd": {
+     "spearman_score_vs_cpg_ts": 0.2743094986970206,
+     "p_score_vs_cpg": 1.2041530940806738e-09,
+     "partial_spearman_given_cpg": -0.09587162905069452,
+     "p_partial": 0.036727360637364315,
+     "noncpg_only_rho": -0.08003540601756466,
+     "noncpg_only_p": 0.15513016658154308,
+     "n_noncpg": 317
+    }
+   }
+  },
+  "am_ceiling": {
+   "panel_singletons_frac_am_lp": 0.862453531598513,
+   "panel_singletons_frac_am_ge_0_9": 0.7286245353159851,
+   "n": 269
+  },
+  "cohort_split_replication": {
+   "msk_impact": {
+    "n_alleles": 451,
+    "recurrent_threshold": 3,
+    "am": {
+     "auroc_recurrent_vs_singleton": 0.5490847734942224,
+     "p": 0.1243569299186124,
+     "n_rec": 127,
+     "n_sing": 231
+    },
+    "revel": {
+     "auroc_recurrent_vs_singleton": 0.61325288884344,
+     "p": 0.00039105744884537,
+     "n_rec": 127,
+     "n_sing": 231
+    },
+    "cadd": {
+     "auroc_recurrent_vs_singleton": 0.6481097961867193,
+     "p": 2.787095840793238e-06,
+     "n_rec": 130,
+     "n_sing": 234
+    }
+   },
+   "wes_cohorts": {
+    "n_alleles": 255,
+    "recurrent_threshold": 2,
+    "am": {
+     "auroc_recurrent_vs_singleton": 0.5174674036281179,
+     "p": 0.651914802426763,
+     "n_rec": 84,
+     "n_sing": 168
+    },
+    "revel": {
+     "auroc_recurrent_vs_singleton": 0.5306831065759637,
+     "p": 0.4278217673341419,
+     "n_rec": 84,
+     "n_sing": 168
+    },
+    "cadd": {
+     "auroc_recurrent_vs_singleton": 0.542676134781398,
+     "p": 0.2682406409296899,
+     "n_rec": 84,
+     "n_sing": 171
+    }
+   }
+  }
+ },
+ "q3_patient_support": {
+  "n_panel_positive_patients": 3115,
+  "frac_panel_positive_with_supported_allele": 0.993900481540931,
+  "n_panel_positive_unsupported_only": 19,
+  "frac_panel_positive_with_clinvar_plp": 0.9778491171749599,
+  "unsupported_alteration_types": {
+   "In_Frame_Del": 106,
+   "Missense_Mutation": 103,
+   "In_Frame_Ins": 31,
+   "Splice_Region": 8
+  },
+  "unsupported_by_gene": {
+   "CDKN2A": 89,
+   "TP53": 83,
+   "KRAS": 50,
+   "SMAD4": 26
+  },
+  "n_unsupported_alterations": 248,
+  "n_panel_alterations": 6801,
+  "by_study_frac_supported": {
+   "paac_jhu_2014": 0.8888888888888888,
+   "paad_cptac_2021": 1.0,
+   "paad_icgc": 1.0,
+   "paad_qcmg_uq_2016": 0.9917355371900827,
+   "paad_tcga_pan_can_atlas_2018": 1.0,
+   "paad_utsw_2015": 1.0,
+   "pdac_msk_2024": 0.9933920704845814
+  },
+  "n_patients_any_fetched_gene_mutation": 3134,
+  "note": "denominator = patients with >=1 panel alteration; panel-negative patients are not in the mutation table",
+  "unsupported_missense_clinvar": {
+   "none": 87,
+   "other": 13,
+   "B/LB": 3
+  }
+ }
+}
