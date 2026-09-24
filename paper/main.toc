@@ -1,0 +1,18 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{}%
+\contentsline {section}{\numberline {2}Related work}{3}{}%
+\contentsline {section}{\numberline {3}Data}{3}{}%
+\contentsline {subsection}{\numberline {3.1}PDAC cohorts}{3}{}%
+\contentsline {subsection}{\numberline {3.2}Codon data}{3}{}%
+\contentsline {section}{\numberline {4}Methods}{3}{}%
+\contentsline {subsection}{\numberline {4.1}Mutation prediction models}{3}{}%
+\contentsline {subsection}{\numberline {4.2}Attribution}{4}{}%
+\contentsline {subsection}{\numberline {4.3}Co-mutation statistics}{4}{}%
+\contentsline {subsection}{\numberline {4.4}Codon expression model}{4}{}%
+\contentsline {subsection}{\numberline {4.5}Codon optimization objective}{4}{}%
+\contentsline {section}{\numberline {5}Results: PDAC driver prediction}{4}{}%
+\contentsline {section}{\numberline {6}Results: CDKN2A attribution and replication}{5}{}%
+\contentsline {section}{\numberline {7}Results: codon optimization head-to-head}{5}{}%
+\contentsline {section}{\numberline {8}Documented negatives}{5}{}%
+\contentsline {section}{\numberline {9}Falsification paths}{6}{}%
+\contentsline {section}{\numberline {10}Conclusion}{6}{}%
+\contentsline {section}{\numberline {A}Reproduction}{7}{}%
