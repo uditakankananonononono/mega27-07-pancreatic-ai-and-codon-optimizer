@@ -67,6 +67,26 @@ CAI is
 w(c)=\frac{f(c)}{\max_{c'\sim\mathrm{aa}(c)} f(c')}.
 \end{equation}
 \textbf{Circularity remark.} HFC sets every codon to the argmax of $f$, yielding CAI $=0.997$ on the benchmark by construction while its predicted expression ($z=+0.60$) trails ICOR. Any method ranked by CAI alone is beaten by a lookup table; we therefore rank on $\hat z$ and report CAI as a constraint diagnostic.
+For $k$ independent cohorts with per-cohort tables
+$[[a_i,b_i],[c_i,d_i]]$ ($a_i$: CDKN2A-altered and covariate-altered), the
+Mantel--Haenszel pooled odds ratio is
+\begin{equation}
+\widehat{\mathrm{OR}}_{\mathrm{MH}}=\frac{\sum_i a_i d_i/n_i}{\sum_i b_i c_i/n_i},\qquad n_i=a_i+b_i+c_i+d_i,
+\end{equation}
+with log-scale variance (Robins--Greenland form)
+\begin{equation}
+\mathrm{Var}(\ln\widehat{\mathrm{OR}}_{\mathrm{MH}})=\frac{\sum_i (a_i+d_i)(a_i d_i)/n_i^2}{2\left(\sum_i a_i d_i/n_i\right)^2}+\frac{\sum_i (b_i+c_i)(b_i c_i)/n_i^2}{2\left(\sum_i b_i c_i/n_i\right)^2},
+\end{equation}
+and heterogeneity quantified by Cochran's $Q$ with inverse-variance weights
+$w_i=(1/a_i+1/b_i+1/c_i+1/d_i)^{-1}$ and
+\begin{equation}
+I^2=\max\!\left(0,\frac{Q-(k-1)}{Q}\right).
+\end{equation}
+A covariate is called \emph{replicated} when the pooled $p<0.05$ and at least
+two-thirds of cohorts with a finite odds ratio share the direction;
+\emph{falsified} when the pooled test is non-significant or fewer than half
+share the direction.
+
 \section{Results: PDAC driver prediction}
 Figure~\ref{fig:bench} and Table~\ref{tab:bench} summarize 5-fold CV AUCs on TCGA-PAAD.
 \begin{figure}[h]\centering\includegraphics[width=0.8\linewidth]{figs/fig_benchmark.pdf}
@@ -88,6 +108,34 @@ Covariate permutation on the held-out fold assigns CDKN2A predictability to RTK/
 \begin{figure}[h]\centering\includegraphics[width=0.8\linewidth]{figs/fig_replication.pdf}
 \caption{Replication in two independent cohorts. Black: $p<0.05$; gray: not significant. KRAS and TP53-pathway enrichments replicate in both cohorts; the SWI/SNF exclusivity does not (QCMG $\mathrm{OR}=2.05$ opposite direction, MSK $\mathrm{OR}=0.76$), and is reported as falsified.}
 \label{fig:rep}\end{figure}
+\subsection{Pan-cohort meta-replication: nine independent cohorts}
+The two-cohort replication above is extended to every cBioPortal PDAC cohort
+with mutation data (nine independent cohorts beyond the TCGA discovery;
+\texttt{scripts/meta\_replicate\_cdkn2a.py},
+\texttt{results/cdkn2a\_meta\_replication.json}) with Mantel--Haenszel pooling:
+\begin{center}\small\begin{tabular}{lccccc}\hline\hline
+Covariate & $\mathrm{OR}_{\mathrm{MH}}$ & pooled $p$ & $I^2$ & same-direction & verdict\\\hline
+KRAS & 2.71 & $2.8\times10^{-13}$ & 0.44 & 3/4 finite-OR cohorts & REPLICATED\\
+TP53 pathway & 3.79 & underflows to 0.0 & 0.00 & 6/6 & REPLICATED\\
+SWI/SNF & 0.91 & 0.296 & 0.39 & 4/6 & FALSIFIED\\
+RTK/RAS (non-KRAS) & 1.25 & 0.084 & 0.00 & 5/6 & FALSIFIED\\\hline\hline
+\end{tabular}\end{center}
+The discovery-cohort picture survives at pan-cohort scale for the two positive
+signals and not for the rest. KRAS co-occurrence replicates (pooled OR 2.71;
+the finite-OR restriction reflects near-universal KRAS mutation in PDAC, which
+empties the wild-type cell in several cohorts), and TP53-pathway co-occurrence
+replicates homogeneously (OR 3.79, $I^2=0$, all six informative cohorts in the
+same direction; the pooled $z$ exceeds the double-precision normal tail, so the
+committed JSON records $p=0.0$). The SWI/SNF exclusivity trend from TCGA does
+\emph{not} survive: pooled OR 0.91, $p=0.296$ --- the two-cohort analysis had
+already shown a direction flip in QCMG, and the nine-cohort pool settles it as
+falsified rather than merely unreplicated. The non-KRAS RTK/RAS signal is
+likewise falsified at scale ($p=0.084$). Heterogeneity is moderate only for
+KRAS ($I^2=0.44$), consistent with cohort-specific KRAS ascertainment rather
+than biology. We keep the falsified rows in the table because they are the
+point of the exercise: attribution signals that replicate are claims;
+attribution signals that do not are documented negatives.
+
 \section{Results: codon optimization head-to-head}
 On ICOR's own 40-gene benchmark with its own published sequences:
 \begin{table}[h]\centering\small
