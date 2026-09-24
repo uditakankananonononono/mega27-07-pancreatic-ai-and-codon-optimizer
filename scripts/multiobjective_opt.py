@@ -81,12 +81,12 @@ for g in sorted(aa_seqs):
     else:
         seq, _ = mo_hillclimb(prot, floor)
         f.write_text(f">{g}_mo\n{seq}\n")
-    z = float((float(model(torch.tensor(encode(seq)).unsqueeze(0))) - float(mu)) / float(sd))
+    z = float(model(torch.tensor(encode(seq)).unsqueeze(0)))  # raw output IS z (targets z-scored in training); no renorm
     with torch.no_grad():
         pass
     icor_z = None
     with torch.no_grad():
-        icor_z = float((float(model(torch.tensor(encode(icor[g])).unsqueeze(0))) - float(mu)) / float(sd))
+        icor_z = float(model(torch.tensor(encode(icor[g])).unsqueeze(0)))
     rows[g] = {"tai": round(scorer.tai(seq), 4), "tai_icor": round(floor, 4),
                "cai": round(cai(seq, wcai), 4), "z": round(z, 3), "z_icor": round(icor_z, 3),
                "gc": round(gc(seq), 4)}

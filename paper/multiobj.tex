@@ -1,2 +1,7 @@
 \subsection{Multi-objective repair: tAI-constrained CNN optimization}
-% MULTIOBJ_PLACEHOLDER results pending; section written when results/multiobjective_benchmark.json lands
+We repair the tAI deficit by making it a constraint rather than an afterthought. For each gene, hill-climbing maximizes the CNN score but accepts a synonymous mutation only if
+\begin{equation}
+\mathrm{tAI}(s') \ge \mathrm{tAI}(s_{\mathrm{ICOR}}) \quad\text{(per-gene floor)},\qquad
+\mathrm{GC}(s')\in[0.35,0.70].
+\end{equation}
+The seed is the max-tAI synonymous sequence whenever the CAI-greedy seed violates the floor. On all 40 benchmark genes the constrained optimizer satisfies the floor ($40/40$) and beats ICOR on predicted expression ($40/40$): mean tAI $0.3598$ vs $0.3451$, mean $z$ $+2.40$ vs $+0.68$ ($3.5\times$). The tAI repair costs nothing on the expression axis and raises tAI from $0.3342$ to $0.3598$; the honest residual concession is CAI ($0.701$ vs $0.875$), which we have shown to be a circular objective (\S CAI circularity). Designs are archived in \texttt{data/designs\_mo/}, metrics in \texttt{results/multiobjective\_benchmark.json}.
