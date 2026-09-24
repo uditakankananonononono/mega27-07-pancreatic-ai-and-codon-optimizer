@@ -27,26 +27,30 @@
 \contentsline {paragraph}{Within-panel recurrence: AlphaMissense has no room left.}{15}{}%
 \contentsline {paragraph}{CDKN2A is the exception.}{16}{}%
 \contentsline {paragraph}{How many panel calls rest on unsupported alleles?}{16}{}%
-\contentsline {section}{\numberline {18}Documented negatives}{16}{}%
-\contentsline {section}{\numberline {19}Falsification paths}{17}{}%
-\contentsline {section}{\numberline {20}Conclusion}{17}{}%
-\contentsline {section}{\numberline {A}External tools and dataset manifest}{18}{}%
-\contentsline {subsection}{\numberline {A.1}External tools and resources used (honest count: 36)}{18}{}%
-\contentsline {subsection}{\numberline {A.2}Dataset manifest (distinct accession-level datasets used: 54,814)}{19}{}%
-\contentsline {section}{\numberline {B}Multi-cohort replication meta-analysis}{19}{}%
+\contentsline {section}{\numberline {18}Testing the p14\textsuperscript {ARF} explanation of the CDKN2A exception (negative)}{16}{}%
+\contentsline {paragraph}{The raw association is strong.}{17}{}%
+\contentsline {paragraph}{It is explained by reading-frame geometry.}{17}{}%
+\contentsline {paragraph}{Independent recurrence definition.}{17}{}%
+\contentsline {section}{\numberline {19}Documented negatives}{17}{}%
+\contentsline {section}{\numberline {20}Falsification paths}{18}{}%
+\contentsline {section}{\numberline {21}Conclusion}{18}{}%
+\contentsline {section}{\numberline {A}External tools and dataset manifest}{19}{}%
+\contentsline {subsection}{\numberline {A.1}External tools and resources used (honest count: 37)}{19}{}%
+\contentsline {subsection}{\numberline {A.2}Dataset manifest (distinct accession-level datasets used: 54,980)}{20}{}%
+\contentsline {section}{\numberline {B}Multi-cohort replication meta-analysis}{20}{}%
 \contentsline {section}{\numberline {C}Extended derivations and training protocols}{20}{}%
 \contentsline {subsection}{\numberline {C.1}Derivation of the symmetric GCN normalization}{20}{}%
-\contentsline {subsection}{\numberline {C.2}Gradient of the logistic head under BCE}{20}{}%
-\contentsline {subsection}{\numberline {C.3}Fisher exact $p$ from the hypergeometric law}{20}{}%
-\contentsline {subsection}{\numberline {C.4}Permutation-importance variance estimate}{20}{}%
-\contentsline {subsection}{\numberline {C.5}CAI properties and the circularity theorem}{20}{}%
-\contentsline {subsection}{\numberline {C.6}ExpressionCNN training protocol}{21}{}%
-\contentsline {subsection}{\numberline {C.7}Constrained hill-climb optimizer}{21}{}%
-\contentsline {subsection}{\numberline {C.8}GC content as a matching constraint}{21}{}%
-\contentsline {section}{\numberline {D}Supplementary tables}{22}{}%
-\contentsline {subsection}{\numberline {D.1}Table S1: per-gene head-to-head on the ICOR 40-gene benchmark}{22}{}%
-\contentsline {subsection}{\numberline {D.2}Table S2: E.\,coli codon-optimization panel (all genes)}{23}{}%
-\contentsline {subsection}{\numberline {D.3}Table S3: co-mutation $2\times 2$ tables, all cohorts}{23}{}%
-\contentsline {section}{\numberline {E}Supplementary table: per-gene multi-objective results}{23}{}%
-\contentsline {section}{\numberline {F}Reproduction}{24}{}%
-\contentsline {section}{\numberline {G}Pan-cancer generalization: CDKN2A landscape across 143 cohorts}{25}{}%
+\contentsline {subsection}{\numberline {C.2}Gradient of the logistic head under BCE}{21}{}%
+\contentsline {subsection}{\numberline {C.3}Fisher exact $p$ from the hypergeometric law}{21}{}%
+\contentsline {subsection}{\numberline {C.4}Permutation-importance variance estimate}{21}{}%
+\contentsline {subsection}{\numberline {C.5}CAI properties and the circularity theorem}{22}{}%
+\contentsline {subsection}{\numberline {C.6}ExpressionCNN training protocol}{22}{}%
+\contentsline {subsection}{\numberline {C.7}Constrained hill-climb optimizer}{22}{}%
+\contentsline {subsection}{\numberline {C.8}GC content as a matching constraint}{22}{}%
+\contentsline {section}{\numberline {D}Supplementary tables}{23}{}%
+\contentsline {subsection}{\numberline {D.1}Table S1: per-gene head-to-head on the ICOR 40-gene benchmark}{23}{}%
+\contentsline {subsection}{\numberline {D.2}Table S2: E.\,coli codon-optimization panel (all genes)}{24}{}%
+\contentsline {subsection}{\numberline {D.3}Table S3: co-mutation $2\times 2$ tables, all cohorts}{24}{}%
+\contentsline {section}{\numberline {E}Supplementary table: per-gene multi-objective results}{24}{}%
+\contentsline {section}{\numberline {F}Reproduction}{25}{}%
+\contentsline {section}{\numberline {G}Pan-cancer generalization: CDKN2A landscape across 143 cohorts}{26}{}%

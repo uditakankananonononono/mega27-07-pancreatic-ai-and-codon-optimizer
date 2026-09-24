@@ -73,7 +73,7 @@ ROWS
 
 \paragraph{CDKN2A is the exception.} Patient-weighted, KRAS KRASW\%, TP53 TP53W\% and
 SMAD4 SMAD4W\% of missense carriers hold an AlphaMissense likely-pathogenic allele,
-but only CDKNW\% of CDKN2A missense carriers do. One candidate explanation (not tested here) is that
+but only CDKNW\% of CDKN2A missense carriers do. One candidate explanation (tested and not supported in the next section) is that
 the scores are defined on a single canonical protein, while CDKN2A also
 encodes p14$^{ARF}$ from an alternate reading frame, so an allele's effect on
 that product is not scored. We treat the low scores as a limit of the

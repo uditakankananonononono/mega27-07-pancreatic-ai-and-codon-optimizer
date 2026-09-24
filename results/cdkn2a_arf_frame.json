@@ -1,0 +1,353 @@
+{
+ "transcript_checks": {
+  "p16_len_aa": 156,
+  "arf_len_aa": 132,
+  "p16_ok": true,
+  "arf_ok": true,
+  "shared_coding_bp": 206
+ },
+ "n_alleles": 72,
+ "n_p16_mismatch_vs_cbio": 3,
+ "n_excluded_not_p16_missense": 3,
+ "codon_position_control_shared_region": {
+  "or_mh": 0.0,
+  "p_mh": 0.7582887584332108,
+  "n_informative_strata": 1,
+  "strata_tables": {
+   "1": [
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     10
+    ]
+   ],
+   "2": [
+    [
+     26,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "3": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     0
+    ]
+   ]
+  },
+  "low_am_by_codon_pos_table_rows_pos1_pos2_cols_high_low": [
+   [
+    9,
+    15
+   ],
+   [
+    41,
+    4
+   ]
+  ],
+  "low_am_pos1_vs_pos2_fisher_or": 0.05853658536585366,
+  "low_am_pos1_vs_pos2_fisher_p": 4.4450689170448155e-06,
+  "frac_arf_altered_by_codon_pos_shared_region": {
+   "1": 0.9411764705882353,
+   "2": 0.0,
+   "3": 1.0
+  }
+ },
+ "n_in_arf_coding": 45,
+ "arf_kind_counts": {
+  "synonymous": 28,
+  "noncoding": 27,
+  "missense": 17
+ },
+ "table_low_am_x_arf_altered": [
+  [
+   46,
+   7
+  ],
+  [
+   9,
+   10
+  ]
+ ],
+ "fisher_or": 7.301587301587301,
+ "fisher_p": 0.0011893736107407996,
+ "patient_weighted_frac_arf_altered": {
+  "high_am": 0.15053763440860216,
+  "low_am": 0.875
+ },
+ "shared_region_only": {
+  "table": [
+   [
+    26,
+    7
+   ],
+   [
+    2,
+    10
+   ]
+  ],
+  "fisher_or": 18.571428571428573,
+  "fisher_p": 0.0002678739282017187
+ },
+ "am_median_shared_region": 0.8467,
+ "am_median_p16_only_region": 0.908,
+ "am_shared_vs_p16only_mwu_p": 0.7712111169246935,
+ "low_am_alleles": [
+  {
+   "protein_cbio": "H83Y",
+   "arf_change": "A97V",
+   "arf_kind": "missense",
+   "n_pat": 48,
+   "am": 0.1664,
+   "revel": 0.577,
+   "clinvar": "P/LP"
+  },
+  {
+   "protein_cbio": "H83D",
+   "arf_change": "A97G",
+   "arf_kind": "missense",
+   "n_pat": 7,
+   "am": 0.091,
+   "revel": 0.429,
+   "clinvar": ""
+  },
+  {
+   "protein_cbio": "D153H",
+   "arf_change": "",
+   "arf_kind": "noncoding",
+   "n_pat": 1,
+   "am": 0.149,
+   "revel": 0.449,
+   "clinvar": "other"
+  },
+  {
+   "protein_cbio": "R128W",
+   "arf_change": "",
+   "arf_kind": "noncoding",
+   "n_pat": 1,
+   "am": 0.2218,
+   "revel": 0.449,
+   "clinvar": "other"
+  },
+  {
+   "protein_cbio": "L130V",
+   "arf_change": "",
+   "arf_kind": "noncoding",
+   "n_pat": 1,
+   "am": 0.4433,
+   "revel": 0.738,
+   "clinvar": ""
+  },
+  {
+   "protein_cbio": "E119K",
+   "arf_change": "*133*",
+   "arf_kind": "synonymous",
+   "n_pat": 1,
+   "am": 0.2545,
+   "revel": 0.201,
+   "clinvar": "other"
+  },
+  {
+   "protein_cbio": "L104V",
+   "arf_change": "A118G",
+   "arf_kind": "missense",
+   "n_pat": 1,
+   "am": 0.0995,
+   "revel": 0.418,
+   "clinvar": ""
+  },
+  {
+   "protein_cbio": "L97V",
+   "arf_change": "A111G",
+   "arf_kind": "missense",
+   "n_pat": 1,
+   "am": 0.0967,
+   "revel": 0.327,
+   "clinvar": ""
+  },
+  {
+   "protein_cbio": "H98Y",
+   "arf_change": "A112V",
+   "arf_kind": "missense",
+   "n_pat": 1,
+   "am": 0.1493,
+   "revel": 0.413,
+   "clinvar": "P/LP"
+  },
+  {
+   "protein_cbio": "L91M",
+   "arf_change": "P105H",
+   "arf_kind": "missense",
+   "n_pat": 1,
+   "am": 0.3601,
+   "revel": 0.649,
+   "clinvar": "other"
+  },
+  {
+   "protein_cbio": "H83N",
+   "arf_change": "A97E",
+   "arf_kind": "missense",
+   "n_pat": 1,
+   "am": 0.1979,
+   "revel": 0.545,
+   "clinvar": ""
+  },
+  {
+   "protein_cbio": "T77S",
+   "arf_change": "H91L",
+   "arf_kind": "missense",
+   "n_pat": 1,
+   "am": 0.1876,
+   "revel": 0.474,
+   "clinvar": ""
+  }
+ ],
+ "cancerhotspots": {
+  "n_hotspot_residues": {
+   "KRAS": 12,
+   "TP53": 113,
+   "CDKN2A": 18,
+   "SMAD4": 21
+  },
+  "n_panel_alleles": 537,
+  "n_hotspot_alleles": 355,
+  "hotspot_alleles_below_am_lp": 13,
+  "hotspot_patients_below_am_lp": 74,
+  "hotspot_patients_total": 4647,
+  "below_lp_hotspot_alleles": [
+   {
+    "gene": "CDKN2A",
+    "protein": "H83Y",
+    "n_pat": 48,
+    "am": 0.1664,
+    "revel": 0.577,
+    "cadd": 28.6,
+    "clinvar": "P/LP"
+   },
+   {
+    "gene": "CDKN2A",
+    "protein": "H83D",
+    "n_pat": 7,
+    "am": 0.091,
+    "revel": 0.429,
+    "cadd": 29.5,
+    "clinvar": NaN
+   },
+   {
+    "gene": "TP53",
+    "protein": "P152L",
+    "n_pat": 7,
+    "am": 0.4915,
+    "revel": 0.878,
+    "cadd": 28.0,
+    "clinvar": "P/LP"
+   },
+   {
+    "gene": "TP53",
+    "protein": "R110L",
+    "n_pat": 3,
+    "am": 0.5017,
+    "revel": 0.632,
+    "cadd": 24.9,
+    "clinvar": "P/LP"
+   },
+   {
+    "gene": "TP53",
+    "protein": "Q331H",
+    "n_pat": 1,
+    "am": 0.4011,
+    "revel": 0.582,
+    "cadd": 23.1,
+    "clinvar": "other"
+   },
+   {
+    "gene": "TP53",
+    "protein": "V157I",
+    "n_pat": 1,
+    "am": 0.1112,
+    "revel": 0.425,
+    "cadd": 8.017,
+    "clinvar": "B/LB"
+   },
+   {
+    "gene": "TP53",
+    "protein": "A159T",
+    "n_pat": 1,
+    "am": 0.487,
+    "revel": 0.715,
+    "cadd": 21.6,
+    "clinvar": "other"
+   },
+   {
+    "gene": "TP53",
+    "protein": "Q192H",
+    "n_pat": 1,
+    "am": 0.4948,
+    "revel": 0.534,
+    "cadd": 15.78,
+    "clinvar": "other"
+   },
+   {
+    "gene": "TP53",
+    "protein": "R110C",
+    "n_pat": 1,
+    "am": 0.1734,
+    "revel": 0.471,
+    "cadd": 24.7,
+    "clinvar": "other"
+   },
+   {
+    "gene": "CDKN2A",
+    "protein": "L130V",
+    "n_pat": 1,
+    "am": 0.4433,
+    "revel": 0.738,
+    "cadd": 25.2,
+    "clinvar": NaN
+   },
+   {
+    "gene": "CDKN2A",
+    "protein": "D153H",
+    "n_pat": 1,
+    "am": 0.149,
+    "revel": 0.449,
+    "cadd": 13.7,
+    "clinvar": "other"
+   },
+   {
+    "gene": "CDKN2A",
+    "protein": "H83N",
+    "n_pat": 1,
+    "am": 0.1979,
+    "revel": 0.545,
+    "cadd": 29.0,
+    "clinvar": NaN
+   },
+   {
+    "gene": "CDKN2A",
+    "protein": "V51F",
+    "n_pat": 1,
+    "am": 0.3529,
+    "revel": 0.561,
+    "cadd": 29.1,
+    "clinvar": "other"
+   }
+  ],
+  "auroc_hotspot_vs_not_am": 0.5192152917505031,
+  "p_am": 0.46581459327765573,
+  "auroc_hotspot_vs_not_revel": 0.6104550379198267,
+  "p_revel": 2.7543664961996826e-05,
+  "auroc_hotspot_vs_not_cadd": 0.5968348552855595,
+  "p_cadd": 0.00023575293782231375
+ }
+}
