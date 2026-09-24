@@ -26,37 +26,50 @@
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Head-to-head on ICOR's benchmark ($n=40$; GenSmart/BFC/URC/ERC have 26--27 published sequences). Ours concedes CAI to ICOR by 5\% and wins predicted expression by $3.2\times $; HFC demonstrates CAI circularity.}}{8}{}\protected@file@percent }
 \newlabel{tab:icor}{{2}{8}}
 \@writefile{toc}{\contentsline {section}{\numberline {9}Results: independent hold-out validation of CNN-guided optimization}{8}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {10}Documented negatives}{8}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {11}Falsification paths}{8}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {12}Conclusion}{8}{}\protected@file@percent }
-\bibcite{sharp1987}{{1}{1987}{{Sharp and Li}}{{}}}
-\bibcite{jain2023}{{2}{2023}{{Jain et al.}}{{}}}
-\bibcite{tcga}{{3}{2017}{{TCGA}}{{}}}
-\bibcite{grimson}{{4}{2007}{{Grimson et al.}}{{}}}
+\@writefile{toc}{\contentsline {section}{\numberline {10}Results: 5\,$'$\,-structure audit with ViennaRNA (independent biophysical axis)}{8}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces CAI vs predicted expression per method. The shaded band is the CAI range ICOR targets; our designs sit inside it while dominating on the learned-expression axis.}}{9}{}\protected@file@percent }
 \newlabel{fig:icor}{{3}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {11}Results: RefSeq provenance audit of the benchmark wild types}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {12}Results: external feasibility audit of the driver panel (DepMap 24Q4 + HPA)}{9}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces E.\nobreakspace  {}coli panel: wild-type, greedy-CAI, and CNN-optimized predicted expression.}}{10}{}\protected@file@percent }
 \newlabel{fig:codon}{{4}{10}}
-\@writefile{toc}{\contentsline {section}{\numberline {A}External tools and dataset manifest}{10}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}External tools and resources used (honest count: 18)}{10}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Dataset manifest (distinct accession-level datasets used: 155)}{11}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {B}Multi-cohort replication meta-analysis}{11}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Mantel--Haenszel meta-analysis over 9 cohorts. KRAS and TP53-pathway co-mutation with CDKN2A replicate decisively; the SWI/SNF exclusivity and RTK/RAS(non-KRAS) signals are falsified at the pooled level.}}{11}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {C}Extended derivations and training protocols}{11}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {C.1}Derivation of the symmetric GCN normalization}{11}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {C.2}Gradient of the logistic head under BCE}{12}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {C.3}Fisher exact $p$ from the hypergeometric law}{12}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {C.4}Permutation-importance variance estimate}{12}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {C.5}CAI properties and the circularity theorem}{12}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {C.6}ExpressionCNN training protocol}{12}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {C.7}Constrained hill-climb optimizer}{13}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {C.8}GC content as a matching constraint}{13}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {D}Supplementary tables}{14}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {D.1}Table S1: per-gene head-to-head on the ICOR 40-gene benchmark}{14}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {D.2}Table S2: E.\,coli codon-optimization panel (all genes)}{15}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {D.3}Table S3: co-mutation $2\times 2$ tables, all cohorts}{15}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {E}Supplementary table: per-gene multi-objective results}{15}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {F}Reproduction}{16}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {G}Pan-cancer generalization: CDKN2A landscape across 143 cohorts}{17}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Top cohorts by CDKN2A alteration frequency (full per-cohort table in \texttt  {results/pancan\_cdkn2a.json}).}}{17}{}\protected@file@percent }
-\gdef \@abspage@last{17}
+\@writefile{toc}{\contentsline {section}{\numberline {13}Results: population specificity audit of the detection panel (gnomAD r4)}{10}{}\protected@file@percent }
+\newlabel{sec:gnomad}{{13}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Left: median DepMap 24Q4 Chronos gene effect for the four PDAC drivers and three pan-essential controls, pancreatic models vs all others. KRAS is the single selective dependency ($p=1.0\times 10^{-21}$); the tumor suppressors are tolerated. Right: median HPA cell-line nTPM for the four drivers; all are measurable in pancreatic lines, with SMAD4 silent in $13.6\%$ of them.}}{11}{}\protected@file@percent }
+\newlabel{fig:depmaphpa}{{5}{11}}
+\@writefile{toc}{\contentsline {section}{\numberline {14}Results: normal-tissue expression background of the panel (GTEx v8)}{11}{}\protected@file@percent }
+\newlabel{sec:gtex}{{14}{11}}
+\bibcite{sharp1987}{{1}{1987}{{Sharp and Li}}{{}}}
+\bibcite{jain2023}{{2}{2023}{{Jain et al.}}{{}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Left: the five KRAS alleles recurrent in PAAD (bars) against their gnomAD r4 allele frequencies (dots, log scale; open triangles mark alleles absent from gnomAD r4, plotted at the $10^{-7}$ floor). Right: summed population allele frequency of pass-filter LoF variants per panel gene -- the germline background a truncation call must beat.}}{12}{}\protected@file@percent }
+\newlabel{fig:gnomad}{{6}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {15}Documented negatives}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {16}Falsification paths}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {17}Conclusion}{12}{}\protected@file@percent }
+\bibcite{tcga}{{3}{2017}{{TCGA}}{{}}}
+\bibcite{grimson}{{4}{2007}{{Grimson et al.}}{{}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Left: normal-tissue median TPM in pancreas (target organ) versus whole blood (the liquid-biopsy sampling compartment) for the four panel genes and four controls (log scale). Right: $\tau $ tissue-specificity index per gene, annotated with the pancreas expression rank among 54 tissues; only the pancreas-specific controls PRSS1/INS achieve high $\tau $ via pancreas.}}{13}{}\protected@file@percent }
+\newlabel{fig:gtex}{{7}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}External tools and dataset manifest}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}External tools and resources used (honest count: 28)}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Dataset manifest (distinct accession-level datasets used: 10,000)}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {B}Multi-cohort replication meta-analysis}{14}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Mantel--Haenszel meta-analysis over 9 cohorts. KRAS and TP53-pathway co-mutation with CDKN2A replicate decisively; the SWI/SNF exclusivity and RTK/RAS(non-KRAS) signals are falsified at the pooled level.}}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {C}Extended derivations and training protocols}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.1}Derivation of the symmetric GCN normalization}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.2}Gradient of the logistic head under BCE}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.3}Fisher exact $p$ from the hypergeometric law}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.4}Permutation-importance variance estimate}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.5}CAI properties and the circularity theorem}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.6}ExpressionCNN training protocol}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.7}Constrained hill-climb optimizer}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.8}GC content as a matching constraint}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {D}Supplementary tables}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.1}Table S1: per-gene head-to-head on the ICOR 40-gene benchmark}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.2}Table S2: E.\,coli codon-optimization panel (all genes)}{18}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.3}Table S3: co-mutation $2\times 2$ tables, all cohorts}{18}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {E}Supplementary table: per-gene multi-objective results}{18}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {F}Reproduction}{19}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {G}Pan-cancer generalization: CDKN2A landscape across 143 cohorts}{20}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Top cohorts by CDKN2A alteration frequency (full per-cohort table in \texttt  {results/pancan\_cdkn2a.json}).}}{20}{}\protected@file@percent }
+\gdef \@abspage@last{20}

@@ -15,26 +15,31 @@
 \contentsline {section}{\numberline {8}Results: tRNA adaptation index head-to-head (documented deficit)}{6}{}%
 \contentsline {subsection}{\numberline {8.1}Multi-objective repair: tAI-constrained CNN optimization}{7}{}%
 \contentsline {section}{\numberline {9}Results: independent hold-out validation of CNN-guided optimization}{8}{}%
-\contentsline {section}{\numberline {10}Documented negatives}{8}{}%
-\contentsline {section}{\numberline {11}Falsification paths}{8}{}%
-\contentsline {section}{\numberline {12}Conclusion}{8}{}%
-\contentsline {section}{\numberline {A}External tools and dataset manifest}{10}{}%
-\contentsline {subsection}{\numberline {A.1}External tools and resources used (honest count: 18)}{10}{}%
-\contentsline {subsection}{\numberline {A.2}Dataset manifest (distinct accession-level datasets used: 155)}{11}{}%
-\contentsline {section}{\numberline {B}Multi-cohort replication meta-analysis}{11}{}%
-\contentsline {section}{\numberline {C}Extended derivations and training protocols}{11}{}%
-\contentsline {subsection}{\numberline {C.1}Derivation of the symmetric GCN normalization}{11}{}%
-\contentsline {subsection}{\numberline {C.2}Gradient of the logistic head under BCE}{12}{}%
-\contentsline {subsection}{\numberline {C.3}Fisher exact $p$ from the hypergeometric law}{12}{}%
-\contentsline {subsection}{\numberline {C.4}Permutation-importance variance estimate}{12}{}%
-\contentsline {subsection}{\numberline {C.5}CAI properties and the circularity theorem}{12}{}%
-\contentsline {subsection}{\numberline {C.6}ExpressionCNN training protocol}{12}{}%
-\contentsline {subsection}{\numberline {C.7}Constrained hill-climb optimizer}{13}{}%
-\contentsline {subsection}{\numberline {C.8}GC content as a matching constraint}{13}{}%
-\contentsline {section}{\numberline {D}Supplementary tables}{14}{}%
-\contentsline {subsection}{\numberline {D.1}Table S1: per-gene head-to-head on the ICOR 40-gene benchmark}{14}{}%
-\contentsline {subsection}{\numberline {D.2}Table S2: E.\,coli codon-optimization panel (all genes)}{15}{}%
-\contentsline {subsection}{\numberline {D.3}Table S3: co-mutation $2\times 2$ tables, all cohorts}{15}{}%
-\contentsline {section}{\numberline {E}Supplementary table: per-gene multi-objective results}{15}{}%
-\contentsline {section}{\numberline {F}Reproduction}{16}{}%
-\contentsline {section}{\numberline {G}Pan-cancer generalization: CDKN2A landscape across 143 cohorts}{17}{}%
+\contentsline {section}{\numberline {10}Results: 5\,$'$\,-structure audit with ViennaRNA (independent biophysical axis)}{8}{}%
+\contentsline {section}{\numberline {11}Results: RefSeq provenance audit of the benchmark wild types}{9}{}%
+\contentsline {section}{\numberline {12}Results: external feasibility audit of the driver panel (DepMap 24Q4 + HPA)}{9}{}%
+\contentsline {section}{\numberline {13}Results: population specificity audit of the detection panel (gnomAD r4)}{10}{}%
+\contentsline {section}{\numberline {14}Results: normal-tissue expression background of the panel (GTEx v8)}{11}{}%
+\contentsline {section}{\numberline {15}Documented negatives}{12}{}%
+\contentsline {section}{\numberline {16}Falsification paths}{12}{}%
+\contentsline {section}{\numberline {17}Conclusion}{12}{}%
+\contentsline {section}{\numberline {A}External tools and dataset manifest}{13}{}%
+\contentsline {subsection}{\numberline {A.1}External tools and resources used (honest count: 28)}{13}{}%
+\contentsline {subsection}{\numberline {A.2}Dataset manifest (distinct accession-level datasets used: 10,000)}{14}{}%
+\contentsline {section}{\numberline {B}Multi-cohort replication meta-analysis}{14}{}%
+\contentsline {section}{\numberline {C}Extended derivations and training protocols}{15}{}%
+\contentsline {subsection}{\numberline {C.1}Derivation of the symmetric GCN normalization}{15}{}%
+\contentsline {subsection}{\numberline {C.2}Gradient of the logistic head under BCE}{15}{}%
+\contentsline {subsection}{\numberline {C.3}Fisher exact $p$ from the hypergeometric law}{15}{}%
+\contentsline {subsection}{\numberline {C.4}Permutation-importance variance estimate}{15}{}%
+\contentsline {subsection}{\numberline {C.5}CAI properties and the circularity theorem}{16}{}%
+\contentsline {subsection}{\numberline {C.6}ExpressionCNN training protocol}{16}{}%
+\contentsline {subsection}{\numberline {C.7}Constrained hill-climb optimizer}{16}{}%
+\contentsline {subsection}{\numberline {C.8}GC content as a matching constraint}{16}{}%
+\contentsline {section}{\numberline {D}Supplementary tables}{17}{}%
+\contentsline {subsection}{\numberline {D.1}Table S1: per-gene head-to-head on the ICOR 40-gene benchmark}{17}{}%
+\contentsline {subsection}{\numberline {D.2}Table S2: E.\,coli codon-optimization panel (all genes)}{18}{}%
+\contentsline {subsection}{\numberline {D.3}Table S3: co-mutation $2\times 2$ tables, all cohorts}{18}{}%
+\contentsline {section}{\numberline {E}Supplementary table: per-gene multi-objective results}{18}{}%
+\contentsline {section}{\numberline {F}Reproduction}{19}{}%
+\contentsline {section}{\numberline {G}Pan-cancer generalization: CDKN2A landscape across 143 cohorts}{20}{}%
