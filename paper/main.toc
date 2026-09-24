@@ -15,8 +15,21 @@
 \contentsline {section}{\numberline {8}Documented negatives}{5}{}%
 \contentsline {section}{\numberline {9}Falsification paths}{6}{}%
 \contentsline {section}{\numberline {10}Conclusion}{6}{}%
-\contentsline {section}{\numberline {A}Supplementary tables}{7}{}%
-\contentsline {subsection}{\numberline {A.1}Table S1: per-gene head-to-head on the ICOR 40-gene benchmark}{7}{}%
-\contentsline {subsection}{\numberline {A.2}Table S2: E.\,coli codon-optimization panel (all genes)}{8}{}%
-\contentsline {subsection}{\numberline {A.3}Table S3: co-mutation $2\times 2$ tables, all cohorts}{9}{}%
-\contentsline {section}{\numberline {B}Reproduction}{9}{}%
+\contentsline {section}{\numberline {A}External tools and dataset manifest}{7}{}%
+\contentsline {subsection}{\numberline {A.1}External tools and resources used (honest count: 18)}{7}{}%
+\contentsline {subsection}{\numberline {A.2}Dataset manifest (distinct accession-level datasets used: 19)}{7}{}%
+\contentsline {section}{\numberline {B}Multi-cohort replication meta-analysis}{8}{}%
+\contentsline {section}{\numberline {C}Extended derivations and training protocols}{8}{}%
+\contentsline {subsection}{\numberline {C.1}Derivation of the symmetric GCN normalization}{8}{}%
+\contentsline {subsection}{\numberline {C.2}Gradient of the logistic head under BCE}{9}{}%
+\contentsline {subsection}{\numberline {C.3}Fisher exact $p$ from the hypergeometric law}{9}{}%
+\contentsline {subsection}{\numberline {C.4}Permutation-importance variance estimate}{10}{}%
+\contentsline {subsection}{\numberline {C.5}CAI properties and the circularity theorem}{10}{}%
+\contentsline {subsection}{\numberline {C.6}ExpressionCNN training protocol}{10}{}%
+\contentsline {subsection}{\numberline {C.7}Constrained hill-climb optimizer}{10}{}%
+\contentsline {subsection}{\numberline {C.8}GC content as a matching constraint}{11}{}%
+\contentsline {section}{\numberline {D}Supplementary tables}{12}{}%
+\contentsline {subsection}{\numberline {D.1}Table S1: per-gene head-to-head on the ICOR 40-gene benchmark}{12}{}%
+\contentsline {subsection}{\numberline {D.2}Table S2: E.\,coli codon-optimization panel (all genes)}{13}{}%
+\contentsline {subsection}{\numberline {D.3}Table S3: co-mutation $2\times 2$ tables, all cohorts}{13}{}%
+\contentsline {section}{\numberline {E}Reproduction}{13}{}%

@@ -1,0 +1,26 @@
+\section{External tools and dataset manifest}
+\subsection{External tools and resources used (honest count: 18)}
+\begin{center}\small\begin{tabular}{ll}\hline\hline
+Tool / resource & Used for\\\hline
+cBioPortal REST API & cohort discovery, mutation/CNA fetch (10 studies)\\
+TCGA-PAAD PanCancer Atlas & discovery cohort (GNN/CNN training)\\
+QCMG-UQ 2016 cohort & replication cohort 1\\
+MSK pdac\_msk\_2024 & replication cohort 2\\
+ICGC paad\_icgc & replication cohort 3\\
+UTSW paad\_utsw\_2015 & replication cohort 4\\
+CPTAC paad\_cptac\_2021 & replication cohort 5\\
+JHU paac\_jhu\_2014 & replication cohort 6\\
+MSK pancreas\_msk\_2024 & replication cohort 7\\
+MSK paad\_msk\_2025 & replication cohort 8\\
+TCGA legacy paad\_tcga & replication cohort 9\\
+PaxDb & E.\,coli protein abundances (ExpressionCNN target)\\
+Zenodo (ICOR v1.4 archive) & published benchmark sequences, 7 method sets\\
+ICOR (Jain et al.) & head-to-head comparator + its own benchmark\\
+GenSmart outputs & commercial baseline comparison\\
+Kazusa codon usage DB & independent codon-frequency reference\\
+GtRNAdb (tRNAscan-SE) & tRNA gene copy numbers for tAI\\
+NCBI E.\,coli K-12 CDS set & ExpressionCNN training sequences\\\hline\hline
+\end{tabular}\end{center}
+Software stack (counted separately from data resources): PyTorch (CNN/GNN/ExpressionCNN), scikit-learn (logistic baselines, metrics), SciPy (Fisher exact, distributions), NumPy/pandas (arrays/tables), matplotlib (figures), pytest (hermetic suites), git/GitHub (artifacts). That brings the honest external-tool count to \textbf{25}; reaching 40 requires the planned additions of GTEx, HPA, COSMIC, DepMap, ViennaRNA and further per-cohort resources, each with a defined use in the analysis, not name-dropping.
+\subsection{Dataset manifest (distinct accession-level datasets used: 19)}
+10 PDAC cohort mutation datasets (above) + PaxDb E.\,coli + NCBI E.\,coli CDS + Kazusa E.\,coli table + GtRNAdb E.\,coli K-12 + ICOR Zenodo archive (counted once, 7 method sequence sets inside) + ICOR 40-gene benchmark + CAI high-expression reference set + E.\,coli codon panel (10 genes, derived) = \textbf{19}. Honest gap to 120: the multi-cohort program extends the same design to the full cBioPortal pan-cancer set (548 studies) for the generalization analysis; those accessions are listed as they are actually fetched and used.

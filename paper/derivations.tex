@@ -1,0 +1,55 @@
+\section{Extended derivations and training protocols}
+\subsection{Derivation of the symmetric GCN normalization}
+Unnormalized propagation $AH$ amplifies features with node degree, so high-degree pathway hubs dominate. With $\tilde A=A+I$ and $\tilde D_{ii}=\sum_j\tilde A_{ij}$, the symmetric normalization $\tilde D^{-1/2}\tilde A\tilde D^{-1/2}$ bounds the spectral radius by 1: for any $x$,
+\begin{equation}
+x^{\top}\tilde D^{-1/2}\tilde A\tilde D^{-1/2}x
+=\sum_{(i,j)\in\mathcal E}\left(\frac{x_i}{\sqrt{d_i}}+\frac{x_j}{\sqrt{d_j}}\right)^{\!2}\Big/2
+\le \sum_i x_i^2,
+\end{equation}
+which keeps repeated propagation stable and makes stacking $L$ layers well-posed.
+\subsection{Gradient of the logistic head under BCE}
+With $\hat y=\sigma(z)$, $z=w^{\top}h+b$,
+\begin{equation}
+\frac{\partial\mathcal L}{\partial z}
+=\hat y-y,\qquad
+\frac{\partial\mathcal L}{\partial w}=(\hat y-y)\,h,
+\end{equation}
+so updates are residual-scaled feature vectors; class imbalance is handled by the prevalence-weighted variant $w_+=N/(2N_+)$, $w_-=N/(2N_-)$.
+\subsection{Fisher exact $p$ from the hypergeometric law}
+Conditioning on margins of the $2\times2$ table,
+\begin{equation}
+P(X=n_{11})=\frac{\binom{n_{1\cdot}}{n_{11}}\binom{n_{2\cdot}}{n_{\cdot1}-n_{11}}}{\binom{N}{n_{\cdot1}}},
+\end{equation}
+and the two-sided $p$ sums all tables with probability $\le$ the observed one. We use this exact law rather than a $\chi^2$ approximation because several cells (e.g. SWI/SNF$\times$CDKN2A in TCGA) contain zeros.
+\subsection{Permutation-importance variance estimate}
+For $R$ repeats of permutation of covariate set $S$,
+\begin{equation}
+\bar\Delta_S=\frac1R\sum_{r}\Delta_S^{(r)},\qquad
+s_S^2=\frac{1}{R-1}\sum_r(\Delta_S^{(r)}-\bar\Delta_S)^2,
+\end{equation}
+and we report $\bar\Delta_S$ only when $\bar\Delta_S > 2 s_S/\sqrt{R}$, which the gene-level analysis failed (all drops $<0.004$ AUC) and the pathway-level analysis passed for RTK/RAS and SWI/SNF.
+\subsection{CAI properties and the circularity theorem}
+\textbf{Theorem (CAI circularity).} Let $c^*(a)=\arg\max_{c\sim a} f(c)$ per amino acid $a$ and let $s^*$ map every residue to $c^*$. Then $\mathrm{CAI}(s^*)=1$ on the weight support and $s^*$ is independent of any expression data beyond the weight table.
+\emph{Proof.} Each factor $w(c^*(a))=f(c^*)/\max f=1$, so the geometric mean is 1; the construction uses only $f$, not measured expression of $s^*$. Hence no CAI-maximizing method can be distinguished from a lookup table by CAI alone. $\square$
+On the benchmark, HFC instantiates $s^*$ at CAI $0.997$ (floating-point caps in the published table) with predicted expression $z=+0.60$, below ICOR's $+0.68$ and far below CodonOpt's $+2.20$.
+\subsection{ExpressionCNN training protocol}
+Inputs: one-hot CDS track $X\in\{0,1\}^{4\times L}$; target $\log_{10}$ PaxDb abundance $z$-scored on the training split. Architecture: three 1-D convolutions (kernel 9, 64/128/128 channels, ReLU, max-pool 2), global mean+max pooling, two dense layers. Optimization:
+\begin{equation}
+\theta^*=\arg\min_\theta \frac1N\sum_i \left(\hat z_i-z_i\right)^2+\lambda\lVert\theta\rVert_2^2,\quad \lambda=10^{-4},
+\end{equation}
+Adam, lr $10^{-3}$, batch 256, early stop on held-out-gene Spearman. Final held-out $\rho_s=0.61$.
+\subsection{Constrained hill-climb optimizer}
+Objective (6) is optimized by steepest-ascent codon swaps:
+\begin{enumerate}
+\item initialize $s$ at the wild-type CDS;
+\item enumerate all single-codon synonymous swaps $\delta$; score $\hat z(s\oplus\delta)$;
+\item apply the best swap satisfying $\mathrm{GC}\in[0.50,0.56]$ and $\mathrm{CAI}\ge0.80$;
+\item stop when no feasible improving swap exists.
+\end{enumerate}
+Complexity per sweep is $O(L\cdot 6)$ forward passes batched on CPU; convergence in $<40$ sweeps for all benchmark genes.
+\subsection{GC content as a matching constraint}
+We match GC because expression predictors can confound codon identity with GC-driven mRNA stability; our constraint keeps
+\begin{equation}
+\left|\mathrm{GC}(s)-\mathrm{GC}(s_{\mathrm{ICOR}})\right|\le 0.03
+\end{equation}
+per gene (achieved mean $0.538$ vs $0.511$ benchmark-wide), so the $z$ gain is attributable to codon choice, not GC shift.

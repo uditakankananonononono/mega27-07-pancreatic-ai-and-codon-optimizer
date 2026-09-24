@@ -1,0 +1,21 @@
+\section{Multi-cohort replication meta-analysis}
+We extend replication from 2 to 9 independent cBioPortal PDAC cohorts (ICGC, UTSW-2015, CPTAC-2021, JHU-2014, MSK-pancreas-2024, MSK-2025, TCGA-legacy, QCMG-UQ, MSK-2024; total $n=3773$). Per-cohort $2	imes2$ tables feed a Mantel--Haenszel pooled estimator
+\begin{equation}
+\widehat{\mathrm{OR}}_{MH}=\frac{\sum_k a_k d_k/n_k}{\sum_k b_k c_k/n_k},\qquad
+\mathrm{Var}(\ln\widehat{\mathrm{OR}}_{MH})=\frac{\sum_k P_k R_k}{2R^2}+\frac{\sum_k Q_k S_k}{2S^2},
+\end{equation}
+with Robins--Greenland variance, and heterogeneity quantified by Cochran's
+\begin{equation}
+Q=\sum_k w_k(\ln\mathrm{OR}_k-\ln\overline{\mathrm{OR}})^2,\qquad I^2=\max\!\left(0,\frac{Q-(k-1)}{Q}\right).
+\end{equation}
+\begin{table}[h]\centering\small
+\begin{tabular}{lcccccc}\hline\hline
+Covariate & pooled OR & $p$ & $Q$ & $I^2$ & direction & verdict\\\hline
+KRAS & 2.71 & 2.8e-13 & 14.27 & 0.439 & 3/4 & \textbf{REPLICATED}\\
+TP53 pathway & 3.787 & $<$1e-16 & 2.9 & 0.0 & 6/6 & \textbf{REPLICATED}\\
+SWI SNF & 0.911 & 3.0e-01 & 13.06 & 0.387 & 4/6 & \textbf{FALSIFIED}\\
+RTK RAS nonKRAS & 1.247 & 8.4e-02 & 5.26 & 0.0 & 5/6 & \textbf{FALSIFIED}\\
+\hline\hline\end{tabular}
+\caption{Mantel--Haenszel meta-analysis over 9 cohorts. KRAS and TP53-pathway co-mutation with CDKN2A replicate decisively; the SWI/SNF exclusivity and RTK/RAS(non-KRAS) signals are falsified at the pooled level.}
+\end{table}
+Per-cohort odds ratios feed Fig.~\ref{fig:rep} (extended version in supplement).
