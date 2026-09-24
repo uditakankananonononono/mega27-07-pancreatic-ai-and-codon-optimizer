@@ -1,0 +1,405 @@
+{
+ "metric": "tAI (dos Reis 2004), GtRNAdb E.coli K-12 tRNA copy numbers",
+ "summary_tai": {
+  "original": 0.2775,
+  "icor": 0.3451,
+  "gensmart": 0.3125,
+  "HFC": 0.349,
+  "BFC": 0.2934,
+  "URC": 0.2734,
+  "ERC": 0.2909,
+  "ours_cnn": 0.3342
+ },
+ "per_gene": {
+  "BIRC5": {
+   "original": 0.2853,
+   "icor": 0.3471,
+   "gensmart": 0.3188,
+   "HFC": 0.3658,
+   "BFC": 0.2923,
+   "URC": 0.2532,
+   "ERC": 0.3294,
+   "ours_cnn": 0.3412
+  },
+  "BRAF1": {
+   "original": 0.2632,
+   "icor": 0.3285,
+   "gensmart": 0.2958,
+   "HFC": 0.3215,
+   "BFC": 0.2692,
+   "URC": 0.2678,
+   "ERC": 0.2756,
+   "ours_cnn": 0.3106
+  },
+  "CAV1": {
+   "original": 0.2971,
+   "icor": 0.3477,
+   "gensmart": 0.3263,
+   "HFC": 0.3515,
+   "BFC": 0.2968,
+   "URC": 0.309,
+   "ERC": 0.3114,
+   "ours_cnn": 0.3508
+  },
+  "CD80": {
+   "original": 0.2769,
+   "icor": 0.3324,
+   "gensmart": 0.3049,
+   "HFC": 0.3263,
+   "BFC": 0.2736,
+   "URC": 0.2664,
+   "ERC": 0.2861,
+   "ours_cnn": 0.3199
+  },
+  "CDK1": {
+   "original": 0.294,
+   "icor": 0.3675,
+   "gensmart": 0.3296,
+   "HFC": 0.3748,
+   "BFC": 0.3139,
+   "URC": 0.2787,
+   "ERC": 0.3103,
+   "ours_cnn": 0.3393
+  },
+  "CEBPZ": {
+   "original": 0.3199,
+   "icor": 0.386,
+   "gensmart": 0.3412,
+   "HFC": 0.3903,
+   "BFC": 0.3097,
+   "URC": 0.2971,
+   "ERC": 0.3211,
+   "ours_cnn": 0.3786
+  },
+  "CLN3": {
+   "original": 0.2617,
+   "icor": 0.3102,
+   "gensmart": 0.2879,
+   "HFC": 0.31,
+   "BFC": 0.2779,
+   "URC": 0.2481,
+   "ERC": 0.2581,
+   "ours_cnn": 0.312
+  },
+  "CREB1": {
+   "original": 0.2683,
+   "icor": 0.3248,
+   "gensmart": 0.295,
+   "HFC": 0.3114,
+   "BFC": 0.2841,
+   "URC": 0.2668,
+   "ERC": 0.2922,
+   "ours_cnn": 0.309
+  },
+  "CSNK1A1": {
+   "original": 0.2918,
+   "icor": 0.3829,
+   "gensmart": 0.3446,
+   "HFC": 0.3919,
+   "BFC": 0.3199,
+   "URC": 0.2957,
+   "ERC": 0.318,
+   "ours_cnn": 0.3623
+  },
+  "FGFR4": {
+   "original": 0.2611,
+   "icor": 0.327,
+   "gensmart": 0.2903,
+   "HFC": 0.3237,
+   "BFC": 0.2726,
+   "URC": 0.25,
+   "ERC": 0.2623,
+   "ours_cnn": 0.3081
+  },
+  "GSK3B": {
+   "original": 0.2565,
+   "icor": 0.3143,
+   "gensmart": 0.2915,
+   "HFC": 0.3174,
+   "BFC": 0.2829,
+   "URC": 0.2576,
+   "ERC": 0.2747,
+   "ours_cnn": 0.3143
+  },
+  "JUN": {
+   "original": 0.2667,
+   "icor": 0.3265,
+   "gensmart": 0.3017,
+   "HFC": 0.3276,
+   "BFC": 0.2736,
+   "URC": 0.2599,
+   "ERC": 0.2854,
+   "ours_cnn": 0.2973
+  },
+  "KIF11": {
+   "original": 0.3138,
+   "icor": 0.3672,
+   "gensmart": 0.3293,
+   "HFC": 0.3697,
+   "BFC": 0.3081,
+   "URC": 0.2943,
+   "ERC": 0.3141,
+   "ours_cnn": 0.3556
+  },
+  "LAMP1": {
+   "original": 0.2715,
+   "icor": 0.3316,
+   "gensmart": 0.3029,
+   "HFC": 0.3302,
+   "BFC": 0.2975,
+   "URC": 0.2634,
+   "ERC": 0.282,
+   "ours_cnn": 0.3255
+  },
+  "LEMD3": {
+   "original": 0.2647,
+   "icor": 0.3328,
+   "gensmart": 0.3041,
+   "HFC": 0.338,
+   "BFC": 0.2944,
+   "URC": 0.2646,
+   "ERC": 0.2703,
+   "ours_cnn": 0.3237
+  },
+  "MAPK1": {
+   "original": 0.2937,
+   "icor": 0.3659,
+   "gensmart": 0.3295,
+   "HFC": 0.3739,
+   "BFC": 0.3067,
+   "URC": 0.2728,
+   "ERC": 0.2872,
+   "ours_cnn": 0.3555
+  },
+  "MAPKAPK5": {
+   "original": 0.2801,
+   "icor": 0.3653,
+   "gensmart": 0.3304,
+   "HFC": 0.3663,
+   "BFC": 0.2998,
+   "URC": 0.3103,
+   "ERC": 0.3142,
+   "ours_cnn": 0.3524
+  },
+  "NGFR": {
+   "original": 0.2388,
+   "icor": 0.2858,
+   "gensmart": 0.2726,
+   "HFC": 0.2897,
+   "BFC": 0.2692,
+   "URC": 0.2487,
+   "ERC": 0.2614,
+   "ours_cnn": 0.2687
+  },
+  "NOC2L": {
+   "original": 0.2676,
+   "icor": 0.347,
+   "gensmart": 0.3127,
+   "HFC": 0.3483,
+   "BFC": 0.2966,
+   "URC": 0.2644,
+   "ERC": 0.2908,
+   "ours_cnn": 0.333
+  },
+  "OPRM1": {
+   "original": 0.2726,
+   "icor": 0.322,
+   "gensmart": 0.3031,
+   "HFC": 0.3085,
+   "BFC": 0.2963,
+   "URC": 0.276,
+   "ERC": 0.2846,
+   "ours_cnn": 0.31
+  },
+  "PDCD11": {
+   "original": 0.2779,
+   "icor": 0.3611,
+   "gensmart": 0.3179,
+   "HFC": 0.3678,
+   "BFC": 0.2994,
+   "URC": 0.2843,
+   "ERC": 0.2716,
+   "ours_cnn": 0.3525
+  },
+  "PLK1": {
+   "original": 0.2609,
+   "icor": 0.3532,
+   "gensmart": 0.3114,
+   "HFC": 0.3542,
+   "BFC": 0.2896,
+   "URC": 0.265,
+   "ERC": 0.2881,
+   "ours_cnn": 0.3383
+  },
+  "RPS6KB1": {
+   "original": 0.2821,
+   "icor": 0.3549,
+   "gensmart": 0.3235,
+   "HFC": 0.3709,
+   "BFC": 0.3024,
+   "URC": 0.2919,
+   "ERC": 0.2972,
+   "ours_cnn": 0.3433
+  },
+  "SMARCD1": {
+   "original": 0.28,
+   "icor": 0.3321,
+   "gensmart": 0.3108,
+   "HFC": 0.3485,
+   "BFC": 0.2887,
+   "URC": 0.2563,
+   "ERC": 0.2845,
+   "ours_cnn": 0.3347
+  },
+  "TAP1": {
+   "original": 0.2611,
+   "icor": 0.3391,
+   "gensmart": 0.3027,
+   "HFC": 0.3388,
+   "BFC": 0.2878,
+   "URC": 0.2511,
+   "ERC": 0.2693,
+   "ours_cnn": 0.331
+  },
+  "TAS2R10": {
+   "original": 0.2794,
+   "icor": 0.3588,
+   "gensmart": 0.3407,
+   "HFC": 0.3692,
+   "BFC": 0.3257,
+   "URC": 0.2985,
+   "ERC": 0.3244,
+   "ours_cnn": 0.3525
+  },
+  "akt1": {
+   "original": 0.2787,
+   "icor": 0.3684,
+   "HFC": 0.3832,
+   "ours_cnn": 0.3657
+  },
+  "emg1": {
+   "original": 0.2648,
+   "icor": 0.3592,
+   "HFC": 0.3517,
+   "ours_cnn": 0.3413
+  },
+  "falvac-1": {
+   "original": 0.3185,
+   "icor": 0.358,
+   "HFC": 0.3609,
+   "ours_cnn": 0.3564
+  },
+  "flt1": {
+   "original": 0.2846,
+   "icor": 0.3468,
+   "HFC": 0.3393,
+   "ours_cnn": 0.3275
+  },
+  "hpdf": {
+   "original": 0.2428,
+   "icor": 0.3183,
+   "HFC": 0.3261,
+   "ours_cnn": 0.2888
+  },
+  "lck": {
+   "original": 0.2789,
+   "icor": 0.3353,
+   "HFC": 0.3482,
+   "ours_cnn": 0.3368
+  },
+  "mmpl3": {
+   "original": 0.2782,
+   "icor": 0.3322,
+   "HFC": 0.3396,
+   "ours_cnn": 0.3149
+  },
+  "npr1": {
+   "original": 0.2735,
+   "icor": 0.3502,
+   "HFC": 0.3606,
+   "ours_cnn": 0.3362
+  },
+  "pa": {
+   "original": 0.3035,
+   "icor": 0.3799,
+   "HFC": 0.3942,
+   "ours_cnn": 0.3643
+  },
+  "pak1": {
+   "original": 0.2771,
+   "icor": 0.3427,
+   "gensmart": 0.3176,
+   "HFC": 0.3514,
+   "BFC": 0.2922,
+   "URC": 0.2894,
+   "ours_cnn": 0.3449
+  },
+  "pea": {
+   "original": 0.284,
+   "icor": 0.3316,
+   "HFC": 0.3443,
+   "ours_cnn": 0.3274
+  },
+  "pim1": {
+   "original": 0.2636,
+   "icor": 0.3409,
+   "HFC": 0.3402,
+   "ours_cnn": 0.32
+  },
+  "ptp4a3": {
+   "original": 0.263,
+   "icor": 0.3387,
+   "HFC": 0.3517,
+   "ours_cnn": 0.3518
+  },
+  "ubtf": {
+   "original": 0.3024,
+   "icor": 0.3897,
+   "HFC": 0.3826,
+   "ours_cnn": 0.3728
+  }
+ },
+ "anticodon_copy": {
+  "GAU": 3,
+  "UGC": 3,
+  "GUC": 3,
+  "CGU": 2,
+  "UCU": 1,
+  "NNN": 2,
+  "UUU": 6,
+  "UAC": 5,
+  "GAC": 2,
+  "GUU": 4,
+  "GGG": 1,
+  "CCU": 1,
+  "CAU": 8,
+  "GAA": 2,
+  "UCA": 1,
+  "UUC": 4,
+  "CCA": 1,
+  "CCG": 1,
+  "GUG": 1,
+  "CAG": 4,
+  "UGG": 1,
+  "UGU": 1,
+  "GUA": 3,
+  "UCC": 1,
+  "GGU": 2,
+  "GCC": 4,
+  "CAA": 1,
+  "CGG": 1,
+  "GAG": 1,
+  "CCC": 1,
+  "GCU": 1,
+  "ACG": 4,
+  "GGC": 2,
+  "CGA": 1,
+  "GCA": 1,
+  "UAA": 1,
+  "GGA": 2,
+  "UGA": 1,
+  "UAG": 1,
+  "UUG": 2,
+  "CUG": 2
+ }
+}

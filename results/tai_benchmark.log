@@ -1,0 +1,12 @@
+anticodons: 41 total tRNAs: 89
+our designs: 40
+{
+ "original": 0.2775,
+ "icor": 0.3451,
+ "gensmart": 0.3125,
+ "HFC": 0.349,
+ "BFC": 0.2934,
+ "URC": 0.2734,
+ "ERC": 0.2909,
+ "ours_cnn": 0.3342
+}
