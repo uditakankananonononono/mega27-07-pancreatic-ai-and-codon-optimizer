@@ -1,0 +1,592 @@
+{
+ "discovery": "paad_tcga_pan_can_atlas_2018",
+ "per_study": [
+  {
+   "study": "paad_qcmg_uq_2016",
+   "n": 456,
+   "cdkn2a_mut_n": 71,
+   "KRAS": {
+    "table": [
+     [
+      65,
+      6
+     ],
+     [
+      279,
+      106
+     ]
+    ],
+    "odds_ratio": 4.116,
+    "p": 0.000282
+   },
+   "TP53_pathway": {
+    "table": [
+     [
+      60,
+      11
+     ],
+     [
+      207,
+      178
+     ]
+    ],
+    "odds_ratio": 4.69,
+    "p": 7.19e-07
+   },
+   "SWI_SNF": {
+    "table": [
+     [
+      13,
+      58
+     ],
+     [
+      38,
+      347
+     ]
+    ],
+    "odds_ratio": 2.047,
+    "p": 0.0621
+   },
+   "RTK_RAS_nonKRAS": {
+    "table": [
+     [
+      1,
+      70
+     ],
+     [
+      19,
+      366
+     ]
+    ],
+    "odds_ratio": 0.275,
+    "p": 0.339
+   }
+  },
+  {
+   "study": "pdac_msk_2024",
+   "n": 2336,
+   "cdkn2a_mut_n": 546,
+   "KRAS": {
+    "table": [
+     [
+      525,
+      21
+     ],
+     [
+      1663,
+      127
+     ]
+    ],
+    "odds_ratio": 1.909,
+    "p": 0.00646
+   },
+   "TP53_pathway": {
+    "table": [
+     [
+      500,
+      46
+     ],
+     [
+      1327,
+      463
+     ]
+    ],
+    "odds_ratio": 3.792,
+    "p": 2e-20
+   },
+   "SWI_SNF": {
+    "table": [
+     [
+      61,
+      485
+     ],
+     [
+      255,
+      1535
+     ]
+    ],
+    "odds_ratio": 0.757,
+    "p": 0.0737
+   },
+   "RTK_RAS_nonKRAS": {
+    "table": [
+     [
+      30,
+      516
+     ],
+     [
+      82,
+      1708
+     ]
+    ],
+    "odds_ratio": 1.211,
+    "p": 0.423
+   }
+  },
+  {
+   "study": "paad_icgc",
+   "n": 99,
+   "cdkn2a_mut_n": 2,
+   "KRAS": {
+    "table": [
+     [
+      2,
+      0
+     ],
+     [
+      92,
+      5
+     ]
+    ],
+    "odds_ratio": null,
+    "p": 1.0
+   },
+   "TP53_pathway": {
+    "table": [
+     [
+      1,
+      1
+     ],
+     [
+      33,
+      64
+     ]
+    ],
+    "odds_ratio": 1.939,
+    "p": 1.0
+   },
+   "SWI_SNF": {
+    "table": [
+     [
+      0,
+      2
+     ],
+     [
+      8,
+      89
+     ]
+    ],
+    "odds_ratio": 0.0,
+    "p": 1.0
+   },
+   "RTK_RAS_nonKRAS": {
+    "table": [
+     [
+      0,
+      2
+     ],
+     [
+      6,
+      91
+     ]
+    ],
+    "odds_ratio": 0.0,
+    "p": 1.0
+   }
+  },
+  {
+   "study": "paad_utsw_2015",
+   "n": 109,
+   "cdkn2a_mut_n": 6,
+   "KRAS": {
+    "table": [
+     [
+      6,
+      0
+     ],
+     [
+      94,
+      9
+     ]
+    ],
+    "odds_ratio": null,
+    "p": 1.0
+   },
+   "TP53_pathway": {
+    "table": [
+     [
+      6,
+      0
+     ],
+     [
+      51,
+      52
+     ]
+    ],
+    "odds_ratio": null,
+    "p": 0.028
+   },
+   "SWI_SNF": {
+    "table": [
+     [
+      1,
+      5
+     ],
+     [
+      11,
+      92
+     ]
+    ],
+    "odds_ratio": 1.673,
+    "p": 0.512
+   },
+   "RTK_RAS_nonKRAS": {
+    "table": [
+     [
+      2,
+      4
+     ],
+     [
+      15,
+      88
+     ]
+    ],
+    "odds_ratio": 2.933,
+    "p": 0.235
+   }
+  },
+  {
+   "study": "paad_cptac_2021",
+   "n": 140,
+   "cdkn2a_mut_n": 29,
+   "KRAS": {
+    "table": [
+     [
+      27,
+      2
+     ],
+     [
+      108,
+      3
+     ]
+    ],
+    "odds_ratio": 0.375,
+    "p": 0.276
+   },
+   "TP53_pathway": {
+    "table": [
+     [
+      25,
+      4
+     ],
+     [
+      83,
+      28
+     ]
+    ],
+    "odds_ratio": 2.108,
+    "p": 0.224
+   },
+   "SWI_SNF": {
+    "table": [
+     [
+      5,
+      24
+     ],
+     [
+      7,
+      104
+     ]
+    ],
+    "odds_ratio": 3.095,
+    "p": 0.127
+   },
+   "RTK_RAS_nonKRAS": {
+    "table": [
+     [
+      1,
+      28
+     ],
+     [
+      3,
+      108
+     ]
+    ],
+    "odds_ratio": 1.286,
+    "p": 1.0
+   }
+  },
+  {
+   "study": "paac_jhu_2014",
+   "n": 23,
+   "cdkn2a_mut_n": 0,
+   "KRAS": {
+    "table": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      23
+     ]
+    ],
+    "odds_ratio": null,
+    "p": 1.0
+   },
+   "TP53_pathway": {
+    "table": [
+     [
+      0,
+      0
+     ],
+     [
+      4,
+      19
+     ]
+    ],
+    "odds_ratio": null,
+    "p": 1.0
+   },
+   "SWI_SNF": {
+    "table": [
+     [
+      0,
+      0
+     ],
+     [
+      3,
+      20
+     ]
+    ],
+    "odds_ratio": null,
+    "p": 1.0
+   },
+   "RTK_RAS_nonKRAS": {
+    "table": [
+     [
+      0,
+      0
+     ],
+     [
+      4,
+      19
+     ]
+    ],
+    "odds_ratio": null,
+    "p": 1.0
+   }
+  },
+  {
+   "study": "pancreas_msk_2024",
+   "n": 395,
+   "cdkn2a_mut_n": 93,
+   "KRAS": {
+    "table": [
+     [
+      92,
+      1
+     ],
+     [
+      269,
+      33
+     ]
+    ],
+    "odds_ratio": 11.286,
+    "p": 0.00125
+   },
+   "TP53_pathway": {
+    "table": [
+     [
+      82,
+      11
+     ],
+     [
+      211,
+      91
+     ]
+    ],
+    "odds_ratio": 3.215,
+    "p": 0.000369
+   },
+   "SWI_SNF": {
+    "table": [
+     [
+      9,
+      84
+     ],
+     [
+      33,
+      269
+     ]
+    ],
+    "odds_ratio": 0.873,
+    "p": 0.849
+   },
+   "RTK_RAS_nonKRAS": {
+    "table": [
+     [
+      5,
+      88
+     ],
+     [
+      11,
+      291
+     ]
+    ],
+    "odds_ratio": 1.503,
+    "p": 0.546
+   }
+  },
+  {
+   "study": "paad_msk_2025",
+   "n": 29,
+   "cdkn2a_mut_n": 3,
+   "KRAS": {
+    "table": [
+     [
+      3,
+      0
+     ],
+     [
+      15,
+      11
+     ]
+    ],
+    "odds_ratio": null,
+    "p": 0.268
+   },
+   "TP53_pathway": {
+    "table": [
+     [
+      3,
+      0
+     ],
+     [
+      11,
+      15
+     ]
+    ],
+    "odds_ratio": null,
+    "p": 0.0996
+   },
+   "SWI_SNF": {
+    "table": [
+     [
+      1,
+      2
+     ],
+     [
+      5,
+      21
+     ]
+    ],
+    "odds_ratio": 2.1,
+    "p": 0.515
+   },
+   "RTK_RAS_nonKRAS": {
+    "table": [
+     [
+      0,
+      3
+     ],
+     [
+      3,
+      23
+     ]
+    ],
+    "odds_ratio": 0.0,
+    "p": 1.0
+   }
+  },
+  {
+   "study": "paad_tcga",
+   "n": 186,
+   "cdkn2a_mut_n": 22,
+   "KRAS": {
+    "table": [
+     [
+      22,
+      0
+     ],
+     [
+      114,
+      50
+     ]
+    ],
+    "odds_ratio": null,
+    "p": 0.00131
+   },
+   "TP53_pathway": {
+    "table": [
+     [
+      18,
+      4
+     ],
+     [
+      89,
+      75
+     ]
+    ],
+    "odds_ratio": 3.792,
+    "p": 0.02
+   },
+   "SWI_SNF": {
+    "table": [
+     [
+      0,
+      22
+     ],
+     [
+      13,
+      151
+     ]
+    ],
+    "odds_ratio": 0.0,
+    "p": 0.37
+   },
+   "RTK_RAS_nonKRAS": {
+    "table": [
+     [
+      3,
+      19
+     ],
+     [
+      8,
+      156
+     ]
+    ],
+    "odds_ratio": 3.079,
+    "p": 0.126
+   }
+  }
+ ],
+ "meta": {
+  "KRAS": {
+   "pooled_or_mh": 2.71,
+   "pooled_p": 2.84e-13,
+   "cochrans_Q": 14.27,
+   "I2": 0.439,
+   "k_cohorts": 9,
+   "same_direction": "3/4",
+   "verdict": "REPLICATED"
+  },
+  "TP53_pathway": {
+   "pooled_or_mh": 3.787,
+   "pooled_p": 0.0,
+   "cochrans_Q": 2.9,
+   "I2": 0.0,
+   "k_cohorts": 9,
+   "same_direction": "6/6",
+   "verdict": "REPLICATED"
+  },
+  "SWI_SNF": {
+   "pooled_or_mh": 0.911,
+   "pooled_p": 0.296,
+   "cochrans_Q": 13.06,
+   "I2": 0.387,
+   "k_cohorts": 9,
+   "same_direction": "4/6",
+   "verdict": "FALSIFIED"
+  },
+  "RTK_RAS_nonKRAS": {
+   "pooled_or_mh": 1.247,
+   "pooled_p": 0.0839,
+   "cochrans_Q": 5.26,
+   "I2": 0.0,
+   "k_cohorts": 9,
+   "same_direction": "5/6",
+   "verdict": "FALSIFIED"
+  }
+ }
+}

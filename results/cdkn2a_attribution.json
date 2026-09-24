@@ -1,0 +1,108 @@
+{
+  "target": "CDKN2A",
+  "held_out_auc": 0.715,
+  "n_test": 46,
+  "method": "permutation importance, GNN, 4 repeats",
+  "ranked_genes": [
+    {
+      "gene": "PCDHB7",
+      "auc_drop": 0.0038
+    },
+    {
+      "gene": "SIGLEC1",
+      "auc_drop": 0.003
+    },
+    {
+      "gene": "FAT3",
+      "auc_drop": 0.0023
+    },
+    {
+      "gene": "MYO18B",
+      "auc_drop": 0.0023
+    },
+    {
+      "gene": "PCDH15",
+      "auc_drop": 0.0008
+    },
+    {
+      "gene": "FAT4",
+      "auc_drop": 0.0008
+    },
+    {
+      "gene": "USH2A",
+      "auc_drop": 0.0008
+    },
+    {
+      "gene": "TP53",
+      "auc_drop": 0.0008
+    },
+    {
+      "gene": "XIRP2",
+      "auc_drop": 0.0008
+    },
+    {
+      "gene": "PEG3",
+      "auc_drop": 0.0008
+    },
+    {
+      "gene": "DNAH9",
+      "auc_drop": 0.0008
+    },
+    {
+      "gene": "RYR1",
+      "auc_drop": 0.0008
+    },
+    {
+      "gene": "RREB1",
+      "auc_drop": 0.0008
+    },
+    {
+      "gene": "CSMD1",
+      "auc_drop": 0.0008
+    },
+    {
+      "gene": "FAT2",
+      "auc_drop": 0.0008
+    },
+    {
+      "gene": "PLEC",
+      "auc_drop": 0.0
+    },
+    {
+      "gene": "KMT2C",
+      "auc_drop": 0.0
+    },
+    {
+      "gene": "COL5A1",
+      "auc_drop": 0.0
+    },
+    {
+      "gene": "DNAH10",
+      "auc_drop": 0.0
+    },
+    {
+      "gene": "MUC5B",
+      "auc_drop": 0.0
+    },
+    {
+      "gene": "FCGBP",
+      "auc_drop": 0.0
+    },
+    {
+      "gene": "FLG",
+      "auc_drop": 0.0
+    },
+    {
+      "gene": "MACF1",
+      "auc_drop": 0.0
+    },
+    {
+      "gene": "SYNE2",
+      "auc_drop": 0.0
+    },
+    {
+      "gene": "NEB",
+      "auc_drop": 0.0
+    }
+  ]
+}

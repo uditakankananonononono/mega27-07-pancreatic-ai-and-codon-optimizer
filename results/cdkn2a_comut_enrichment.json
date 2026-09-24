@@ -1,0 +1,104 @@
+[
+  {
+    "label": "RTK_RAS_nonKRAS",
+    "table": [
+      [
+        2,
+        33
+      ],
+      [
+        9,
+        140
+      ]
+    ],
+    "odds_ratio": 0.943,
+    "p": 1.0,
+    "prev_in_cdkn2a": 0.057,
+    "prev_in_wt": 0.06
+  },
+  {
+    "label": "KRAS",
+    "table": [
+      [
+        33,
+        2
+      ],
+      [
+        84,
+        65
+      ]
+    ],
+    "odds_ratio": 12.768,
+    "p": 8.89e-06,
+    "prev_in_cdkn2a": 0.943,
+    "prev_in_wt": 0.564
+  },
+  {
+    "label": "SWI_SNF",
+    "table": [
+      [
+        0,
+        35
+      ],
+      [
+        15,
+        134
+      ]
+    ],
+    "odds_ratio": 0.0,
+    "p": 0.0786,
+    "prev_in_cdkn2a": 0.0,
+    "prev_in_wt": 0.101
+  },
+  {
+    "label": "DNA_REPAIR",
+    "table": [
+      [
+        0,
+        35
+      ],
+      [
+        4,
+        145
+      ]
+    ],
+    "odds_ratio": 0.0,
+    "p": 1.0,
+    "prev_in_cdkn2a": 0.0,
+    "prev_in_wt": 0.027
+  },
+  {
+    "label": "TP53_pathway",
+    "table": [
+      [
+        31,
+        4
+      ],
+      [
+        83,
+        66
+      ]
+    ],
+    "odds_ratio": 6.163,
+    "p": 0.000198,
+    "prev_in_cdkn2a": 0.886,
+    "prev_in_wt": 0.557
+  },
+  {
+    "label": "TGF_BETA",
+    "table": [
+      [
+        9,
+        26
+      ],
+      [
+        37,
+        112
+      ]
+    ],
+    "odds_ratio": 1.048,
+    "p": 1.0,
+    "prev_in_cdkn2a": 0.257,
+    "prev_in_wt": 0.248
+  }
+]

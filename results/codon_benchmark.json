@@ -1,0 +1,112 @@
+[
+  {
+    "locus": "b4621",
+    "gene": "yjbS",
+    "len_aa": 67,
+    "wt_cai": 0.539,
+    "cai_greedy_cai": 1.0,
+    "cnn_opt_cai": 0.617,
+    "wt_pred": -0.86,
+    "cai_greedy_pred": 0.225,
+    "cnn_opt_pred": 1.84
+  },
+  {
+    "locus": "b1847",
+    "gene": "yebF",
+    "len_aa": 118,
+    "wt_cai": 0.685,
+    "cai_greedy_cai": 1.0,
+    "cnn_opt_cai": 0.619,
+    "wt_pred": 0.59,
+    "cai_greedy_pred": 0.712,
+    "cnn_opt_pred": 2.467
+  },
+  {
+    "locus": "b3642",
+    "gene": "pyrE",
+    "len_aa": 213,
+    "wt_cai": 0.751,
+    "cai_greedy_cai": 1.0,
+    "cnn_opt_cai": 0.623,
+    "wt_pred": 0.761,
+    "cai_greedy_pred": 0.425,
+    "cnn_opt_pred": 2.553
+  },
+  {
+    "locus": "b4278",
+    "gene": "insG",
+    "len_aa": 442,
+    "wt_cai": 0.606,
+    "cai_greedy_cai": 1.0,
+    "cnn_opt_cai": 0.675,
+    "wt_pred": -0.578,
+    "cai_greedy_pred": -0.082,
+    "cnn_opt_pred": 2.442
+  },
+  {
+    "locus": "b2026",
+    "gene": "hisI",
+    "len_aa": 203,
+    "wt_cai": 0.744,
+    "cai_greedy_cai": 1.0,
+    "cnn_opt_cai": 0.645,
+    "wt_pred": 0.626,
+    "cai_greedy_pred": 0.98,
+    "cnn_opt_pred": 2.499
+  },
+  {
+    "locus": "b0190",
+    "gene": "yaeQ",
+    "len_aa": 181,
+    "wt_cai": 0.75,
+    "cai_greedy_cai": 1.0,
+    "cnn_opt_cai": 0.621,
+    "wt_pred": -0.06,
+    "cai_greedy_pred": 0.786,
+    "cnn_opt_pred": 2.256
+  },
+  {
+    "locus": "b1244",
+    "gene": "oppB",
+    "len_aa": 306,
+    "wt_cai": 0.649,
+    "cai_greedy_cai": 1.0,
+    "cnn_opt_cai": 0.615,
+    "wt_pred": -0.493,
+    "cai_greedy_pred": -0.495,
+    "cnn_opt_pred": 2.079
+  },
+  {
+    "locus": "b2469",
+    "gene": "narQ",
+    "len_aa": 566,
+    "wt_cai": 0.687,
+    "cai_greedy_cai": 1.0,
+    "cnn_opt_cai": 0.732,
+    "wt_pred": -0.738,
+    "cai_greedy_pred": 0.04,
+    "cnn_opt_pred": 2.46
+  },
+  {
+    "locus": "b2333",
+    "gene": "yfcP",
+    "len_aa": 179,
+    "wt_cai": 0.66,
+    "cai_greedy_cai": 1.0,
+    "cnn_opt_cai": 0.635,
+    "wt_pred": -0.41,
+    "cai_greedy_pred": 0.332,
+    "cnn_opt_pred": 2.415
+  },
+  {
+    "locus": "b1938",
+    "gene": "fliF",
+    "len_aa": 552,
+    "wt_cai": 0.723,
+    "cai_greedy_cai": 1.0,
+    "cnn_opt_cai": 0.753,
+    "wt_pred": 0.229,
+    "cai_greedy_pred": 0.508,
+    "cnn_opt_pred": 2.854
+  }
+]
