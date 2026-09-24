@@ -1,0 +1,10 @@
+\section{Results: tRNA adaptation index head-to-head (documented deficit)}
+CAI measures codon usage against a reference set; tAI (dos Reis et al.\ 2004) measures adaptation to the actual tRNA pool:
+\begin{equation}
+\mathrm{tAI}(s)=\Big(\prod_{i=1}^{L} w_{c_i}\Big)^{1/L},\qquad
+w_{c}=\frac{W_c}{\max_{c'}W_{c'}},\qquad
+W_c=\sum_{j}(1-s_{cj})\,n_{cj},
+\end{equation}
+where $n_{cj}$ is the copy number of tRNA $j$ recognizing codon $c$ (GtRNAdb, \emph{E.~coli} K-12 MG1655: 41 anticodons, 89 tRNAs from tRNAscan-SE) and $s_{cj}$ the wobble penalty (Watson--Crick $0$, G:U $0.41$, I:U/C/A $0.28$, I:G $0.9999$; dos Reis 2004).
+On the same ICOR 40-gene benchmark, mean tAI is: HFC $0.349$, ICOR $0.3451$, ours (CNN-only) $0.3342$, GenSmart $0.3125$, BFC $0.2934$, ERC $0.2909$, original $0.2775$, URC $0.2734$. Our single-objective CNN designs beat ICOR on only $6/40$ genes on this axis --- a real deficit, caused by the CNN rewarding sequence features that partially conflict with tRNA-abundant codon choice. This negative is documented here (and in \texttt{results/tai\_benchmark.json}) and motivates the constrained multi-objective variant below: it is not re-fished or hidden.
+\input{multiobj}
