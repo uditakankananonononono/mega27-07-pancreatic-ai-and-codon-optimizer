@@ -12,7 +12,7 @@ from codon_optimizer.model import ExpressionCNN, encode
 from codon_optimizer.optimize import cnn_hillclimb
 
 ICOR = pathlib.Path("data/icor/Lattice-Automation-icor-codon-optimization-c60b775/benchmark_sequences")
-METHODS = {"original": "all_original", "icor": "icor", "gensmart": "genscript",
+METHODS = {"original": "dna", "icor": "icor", "gensmart": "genscript",
            "HFC": "HFC", "BFC": "BFC", "URC": "URC", "ERC": "ERC"}
 
 def read_fasta_dir(d):

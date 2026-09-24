@@ -1,44 +1,44 @@
 benchmark genes: 40
-BIRC5 {'icor': 0.863, 'gensmart': 0.731, 'HFC': 0.997, 'BFC': 0.63, 'URC': 0.538, 'ERC': 0.674}
-BRAF1 {'icor': 0.841, 'gensmart': 0.738, 'HFC': 0.998, 'BFC': 0.653, 'URC': 0.546, 'ERC': 0.592}
-CAV1 {'icor': 0.892, 'gensmart': 0.765, 'HFC': 0.999, 'BFC': 0.662, 'URC': 0.561, 'ERC': 0.686}
-CD80 {'icor': 0.875, 'gensmart': 0.742, 'HFC': 0.998, 'BFC': 0.65, 'URC': 0.532, 'ERC': 0.62}
-CDK1 {'icor': 0.891, 'gensmart': 0.731, 'HFC': 0.998, 'BFC': 0.64, 'URC': 0.483, 'ERC': 0.607}
-CEBPZ {'icor': 0.904, 'gensmart': 0.721, 'HFC': 0.998, 'BFC': 0.631, 'URC': 0.537, 'ERC': 0.6}
-CLN3 {'icor': 0.847, 'gensmart': 0.714, 'HFC': 0.998, 'BFC': 0.646, 'URC': 0.51, 'ERC': 0.574}
-CREB1 {'icor': 0.862, 'gensmart': 0.751, 'HFC': 0.998, 'BFC': 0.666, 'URC': 0.559, 'ERC': 0.629}
-CSNK1A1 {'icor': 0.893, 'gensmart': 0.732, 'HFC': 0.997, 'BFC': 0.647, 'URC': 0.54, 'ERC': 0.631}
-FGFR4 {'icor': 0.863, 'gensmart': 0.719, 'HFC': 0.997, 'BFC': 0.64, 'URC': 0.511, 'ERC': 0.564}
-GSK3B {'icor': 0.86, 'gensmart': 0.724, 'HFC': 0.997, 'BFC': 0.675, 'URC': 0.537, 'ERC': 0.611}
-JUN {'icor': 0.851, 'gensmart': 0.738, 'HFC': 0.998, 'BFC': 0.631, 'URC': 0.532, 'ERC': 0.601}
-KIF11 {'icor': 0.873, 'gensmart': 0.721, 'HFC': 0.998, 'BFC': 0.638, 'URC': 0.549, 'ERC': 0.585}
-LAMP1 {'icor': 0.837, 'gensmart': 0.727, 'HFC': 0.998, 'BFC': 0.653, 'URC': 0.545, 'ERC': 0.607}
-LEMD3 {'icor': 0.852, 'gensmart': 0.728, 'HFC': 0.997, 'BFC': 0.651, 'URC': 0.524, 'ERC': 0.571}
-MAPK1 {'icor': 0.892, 'gensmart': 0.744, 'HFC': 0.998, 'BFC': 0.663, 'URC': 0.504, 'ERC': 0.62}
-MAPKAPK5 {'icor': 0.906, 'gensmart': 0.74, 'HFC': 0.997, 'BFC': 0.664, 'URC': 0.552, 'ERC': 0.602}
-NGFR {'icor': 0.861, 'gensmart': 0.742, 'HFC': 0.998, 'BFC': 0.667, 'URC': 0.555, 'ERC': 0.619}
-NOC2L {'icor': 0.866, 'gensmart': 0.717, 'HFC': 0.997, 'BFC': 0.651, 'URC': 0.513, 'ERC': 0.574}
-OPRM1 {'icor': 0.862, 'gensmart': 0.763, 'HFC': 0.998, 'BFC': 0.677, 'URC': 0.544, 'ERC': 0.618}
-PDCD11 {'icor': 0.869, 'gensmart': 0.71, 'HFC': 0.998, 'BFC': 0.629, 'URC': 0.537, 'ERC': 0.523}
-PLK1 {'icor': 0.875, 'gensmart': 0.719, 'HFC': 0.996, 'BFC': 0.624, 'URC': 0.507, 'ERC': 0.573}
-RPS6KB1 {'icor': 0.889, 'gensmart': 0.72, 'HFC': 0.997, 'BFC': 0.632, 'URC': 0.542, 'ERC': 0.594}
-SMARCD1 {'icor': 0.884, 'gensmart': 0.732, 'HFC': 0.997, 'BFC': 0.636, 'URC': 0.513, 'ERC': 0.602}
-TAP1 {'icor': 0.853, 'gensmart': 0.707, 'HFC': 0.998, 'BFC': 0.642, 'URC': 0.498, 'ERC': 0.555}
-TAS2R10 {'icor': 0.869, 'gensmart': 0.731, 'HFC': 0.998, 'BFC': 0.686, 'URC': 0.524, 'ERC': 0.624}
-akt1 {'icor': 0.895, 'HFC': 0.997}
-emg1 {'icor': 0.866, 'HFC': 0.997}
-falvac-1 {'icor': 0.888, 'HFC': 0.999}
-flt1 {'icor': 0.864, 'HFC': 0.998}
-hpdf {'icor': 0.899, 'HFC': 0.995}
-lck {'icor': 0.885, 'HFC': 0.997}
-mmpl3 {'icor': 0.848, 'HFC': 0.997}
-npr1 {'icor': 0.871, 'HFC': 0.997}
-pa {'icor': 0.923, 'HFC': 0.996}
-pak1 {'icor': 0.886, 'gensmart': 0.728, 'HFC': 0.998, 'BFC': 0.647, 'URC': 0.547}
-pea {'icor': 0.882, 'HFC': 0.997}
-pim1 {'icor': 0.89, 'HFC': 0.997}
-ptp4a3 {'icor': 0.897, 'HFC': 0.997}
-ubtf {'icor': 0.893, 'HFC': 0.997}
+BIRC5 {'original': 0.597, 'icor': 0.863, 'gensmart': 0.731, 'HFC': 0.997, 'BFC': 0.63, 'URC': 0.538, 'ERC': 0.674}
+BRAF1 {'original': 0.528, 'icor': 0.841, 'gensmart': 0.738, 'HFC': 0.998, 'BFC': 0.653, 'URC': 0.546, 'ERC': 0.592}
+CAV1 {'original': 0.661, 'icor': 0.892, 'gensmart': 0.765, 'HFC': 0.999, 'BFC': 0.662, 'URC': 0.561, 'ERC': 0.686}
+CD80 {'original': 0.554, 'icor': 0.875, 'gensmart': 0.742, 'HFC': 0.998, 'BFC': 0.65, 'URC': 0.532, 'ERC': 0.62}
+CDK1 {'original': 0.523, 'icor': 0.891, 'gensmart': 0.731, 'HFC': 0.998, 'BFC': 0.64, 'URC': 0.483, 'ERC': 0.607}
+CEBPZ {'original': 0.573, 'icor': 0.904, 'gensmart': 0.721, 'HFC': 0.998, 'BFC': 0.631, 'URC': 0.537, 'ERC': 0.6}
+CLN3 {'original': 0.598, 'icor': 0.847, 'gensmart': 0.714, 'HFC': 0.998, 'BFC': 0.646, 'URC': 0.51, 'ERC': 0.574}
+CREB1 {'original': 0.534, 'icor': 0.862, 'gensmart': 0.751, 'HFC': 0.998, 'BFC': 0.666, 'URC': 0.559, 'ERC': 0.629}
+CSNK1A1 {'original': 0.543, 'icor': 0.893, 'gensmart': 0.732, 'HFC': 0.997, 'BFC': 0.647, 'URC': 0.54, 'ERC': 0.631}
+FGFR4 {'original': 0.581, 'icor': 0.863, 'gensmart': 0.719, 'HFC': 0.997, 'BFC': 0.64, 'URC': 0.511, 'ERC': 0.564}
+GSK3B {'original': 0.53, 'icor': 0.86, 'gensmart': 0.724, 'HFC': 0.997, 'BFC': 0.675, 'URC': 0.537, 'ERC': 0.611}
+JUN {'original': 0.629, 'icor': 0.851, 'gensmart': 0.738, 'HFC': 0.998, 'BFC': 0.631, 'URC': 0.532, 'ERC': 0.601}
+KIF11 {'original': 0.55, 'icor': 0.873, 'gensmart': 0.721, 'HFC': 0.998, 'BFC': 0.638, 'URC': 0.549, 'ERC': 0.585}
+LAMP1 {'original': 0.584, 'icor': 0.837, 'gensmart': 0.727, 'HFC': 0.998, 'BFC': 0.653, 'URC': 0.545, 'ERC': 0.607}
+LEMD3 {'original': 0.531, 'icor': 0.852, 'gensmart': 0.728, 'HFC': 0.997, 'BFC': 0.651, 'URC': 0.524, 'ERC': 0.571}
+MAPK1 {'original': 0.573, 'icor': 0.892, 'gensmart': 0.744, 'HFC': 0.998, 'BFC': 0.663, 'URC': 0.504, 'ERC': 0.62}
+MAPKAPK5 {'original': 0.55, 'icor': 0.906, 'gensmart': 0.74, 'HFC': 0.997, 'BFC': 0.664, 'URC': 0.552, 'ERC': 0.602}
+NGFR {'original': 0.642, 'icor': 0.861, 'gensmart': 0.742, 'HFC': 0.998, 'BFC': 0.667, 'URC': 0.555, 'ERC': 0.619}
+NOC2L {'original': 0.59, 'icor': 0.866, 'gensmart': 0.717, 'HFC': 0.997, 'BFC': 0.651, 'URC': 0.513, 'ERC': 0.574}
+OPRM1 {'original': 0.584, 'icor': 0.862, 'gensmart': 0.763, 'HFC': 0.998, 'BFC': 0.677, 'URC': 0.544, 'ERC': 0.618}
+PDCD11 {'original': 0.561, 'icor': 0.869, 'gensmart': 0.71, 'HFC': 0.998, 'BFC': 0.629, 'URC': 0.537, 'ERC': 0.523}
+PLK1 {'original': 0.573, 'icor': 0.875, 'gensmart': 0.719, 'HFC': 0.996, 'BFC': 0.624, 'URC': 0.507, 'ERC': 0.573}
+RPS6KB1 {'original': 0.516, 'icor': 0.889, 'gensmart': 0.72, 'HFC': 0.997, 'BFC': 0.632, 'URC': 0.542, 'ERC': 0.594}
+SMARCD1 {'original': 0.562, 'icor': 0.884, 'gensmart': 0.732, 'HFC': 0.997, 'BFC': 0.636, 'URC': 0.513, 'ERC': 0.602}
+TAP1 {'original': 0.57, 'icor': 0.853, 'gensmart': 0.707, 'HFC': 0.998, 'BFC': 0.642, 'URC': 0.498, 'ERC': 0.555}
+TAS2R10 {'original': 0.517, 'icor': 0.869, 'gensmart': 0.731, 'HFC': 0.998, 'BFC': 0.686, 'URC': 0.524, 'ERC': 0.624}
+akt1 {'original': 0.587, 'icor': 0.895, 'HFC': 0.997}
+emg1 {'original': 0.531, 'icor': 0.866, 'HFC': 0.997}
+falvac-1 {'original': 0.592, 'icor': 0.888, 'HFC': 0.999}
+flt1 {'original': 0.557, 'icor': 0.864, 'HFC': 0.998}
+hpdf {'original': 0.664, 'icor': 0.899, 'HFC': 0.995}
+lck {'original': 0.63, 'icor': 0.885, 'HFC': 0.997}
+mmpl3 {'original': 0.665, 'icor': 0.848, 'HFC': 0.997}
+npr1 {'original': 0.612, 'icor': 0.871, 'HFC': 0.997}
+pa {'original': 0.517, 'icor': 0.923, 'HFC': 0.996}
+pak1 {'original': 0.559, 'icor': 0.886, 'gensmart': 0.728, 'HFC': 0.998, 'BFC': 0.647, 'URC': 0.547}
+pea {'original': 0.743, 'icor': 0.882, 'HFC': 0.997}
+pim1 {'original': 0.585, 'icor': 0.89, 'HFC': 0.997}
+ptp4a3 {'original': 0.676, 'icor': 0.897, 'HFC': 0.997}
+ubtf {'original': 0.577, 'icor': 0.893, 'HFC': 0.997}
 BIRC5 ours 0.691 2.1
 BRAF1 ours 0.901 2.27
 CAV1 ours 0.731 2.22
@@ -80,6 +80,12 @@ pim1 ours 0.784 2.51
 ptp4a3 ours 0.696 2.44
 ubtf ours 0.877 2.17
 {
+ "original": {
+  "n": 40,
+  "cai_mean": 0.581,
+  "gc_mean": 0.524,
+  "pred_expr_z_mean": -0.27
+ },
  "icor": {
   "n": 40,
   "cai_mean": 0.875,
