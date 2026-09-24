@@ -20,7 +20,7 @@
 \contentsline {section}{\numberline {12}Conclusion}{8}{}%
 \contentsline {section}{\numberline {A}External tools and dataset manifest}{10}{}%
 \contentsline {subsection}{\numberline {A.1}External tools and resources used (honest count: 18)}{10}{}%
-\contentsline {subsection}{\numberline {A.2}Dataset manifest (distinct accession-level datasets used: 19)}{11}{}%
+\contentsline {subsection}{\numberline {A.2}Dataset manifest (distinct accession-level datasets used: 155)}{11}{}%
 \contentsline {section}{\numberline {B}Multi-cohort replication meta-analysis}{11}{}%
 \contentsline {section}{\numberline {C}Extended derivations and training protocols}{11}{}%
 \contentsline {subsection}{\numberline {C.1}Derivation of the symmetric GCN normalization}{11}{}%
