@@ -1,0 +1,330 @@
+{
+  "design": "independent-evaluator hold-out: optimizer=CNN(train genes only); evaluators=codon-freq ridge (train only) + tAI; test=held-out genes",
+  "n_train": 3189,
+  "n_test_pool": 563,
+  "n_optimized": 30,
+  "cnn_internal_holdout": {
+    "spearman": 0.627,
+    "pearson": 0.643,
+    "n_train": 2710,
+    "n_test": 479
+  },
+  "ridge_heldout_spearman": 0.633,
+  "ridge_z": {
+    "wt": -0.098,
+    "cai_greedy": 0.18,
+    "cnn_opt": 0.266
+  },
+  "tai": {
+    "wt": 0.3132,
+    "cnn_opt": 0.3386
+  },
+  "wilcoxon_cnn_vs_wt_ridge": {
+    "stat": 32.0,
+    "p": 5.144625902175903e-06
+  },
+  "cnn_wins_ridge": 28,
+  "cnn_wins_tai": 30,
+  "per_gene": [
+    {
+      "locus": "b3099",
+      "gene": "yqjE",
+      "wt_ridge_z": -0.125,
+      "wt_tai": 0.3403,
+      "cai_greedy_ridge_z": 0.301,
+      "cai_greedy_tai": 0.4159,
+      "cnn_opt_ridge_z": 0.467,
+      "cnn_opt_tai": 0.3629
+    },
+    {
+      "locus": "b4190",
+      "gene": "yjfP",
+      "wt_ridge_z": -0.42,
+      "wt_tai": 0.2786,
+      "cai_greedy_ridge_z": 0.025,
+      "cai_greedy_tai": 0.3122,
+      "cnn_opt_ridge_z": -0.054,
+      "cnn_opt_tai": 0.2921
+    },
+    {
+      "locus": "b2805",
+      "gene": "fucR",
+      "wt_ridge_z": -0.158,
+      "wt_tai": 0.3155,
+      "cai_greedy_ridge_z": 0.198,
+      "cai_greedy_tai": 0.3394,
+      "cnn_opt_ridge_z": 0.162,
+      "cnn_opt_tai": 0.328
+    },
+    {
+      "locus": "b1254",
+      "gene": "yciB",
+      "wt_ridge_z": -0.518,
+      "wt_tai": 0.3051,
+      "cai_greedy_ridge_z": -0.498,
+      "cai_greedy_tai": 0.3815,
+      "cnn_opt_ridge_z": -0.31,
+      "cnn_opt_tai": 0.3302
+    },
+    {
+      "locus": "b4328",
+      "gene": "iadA",
+      "wt_ridge_z": 0.206,
+      "wt_tai": 0.3084,
+      "cai_greedy_ridge_z": 0.269,
+      "cai_greedy_tai": 0.3378,
+      "cnn_opt_ridge_z": 0.373,
+      "cnn_opt_tai": 0.3293
+    },
+    {
+      "locus": "b3516",
+      "gene": "gadX",
+      "wt_ridge_z": -0.759,
+      "wt_tai": 0.2819,
+      "cai_greedy_ridge_z": -0.035,
+      "cai_greedy_tai": 0.3505,
+      "cnn_opt_ridge_z": -0.157,
+      "cnn_opt_tai": 0.3184
+    },
+    {
+      "locus": "b2377",
+      "gene": "yfdY",
+      "wt_ridge_z": -1.028,
+      "wt_tai": 0.3252,
+      "cai_greedy_ridge_z": -0.925,
+      "cai_greedy_tai": 0.3907,
+      "cnn_opt_ridge_z": -0.23,
+      "cnn_opt_tai": 0.3572
+    },
+    {
+      "locus": "b3859",
+      "gene": "srkA",
+      "wt_ridge_z": -0.154,
+      "wt_tai": 0.2905,
+      "cai_greedy_ridge_z": 0.145,
+      "cai_greedy_tai": 0.3633,
+      "cnn_opt_ridge_z": 0.085,
+      "cnn_opt_tai": 0.3329
+    },
+    {
+      "locus": "b3343",
+      "gene": "tusB",
+      "wt_ridge_z": -0.244,
+      "wt_tai": 0.2995,
+      "cai_greedy_ridge_z": 0.267,
+      "cai_greedy_tai": 0.3651,
+      "cnn_opt_ridge_z": 0.006,
+      "cnn_opt_tai": 0.3049
+    },
+    {
+      "locus": "b2877",
+      "gene": "mocA",
+      "wt_ridge_z": -0.59,
+      "wt_tai": 0.2771,
+      "cai_greedy_ridge_z": 0.034,
+      "cai_greedy_tai": 0.3376,
+      "cnn_opt_ridge_z": 0.094,
+      "cnn_opt_tai": 0.3226
+    },
+    {
+      "locus": "b0796",
+      "gene": "cecR",
+      "wt_ridge_z": -0.151,
+      "wt_tai": 0.2991,
+      "cai_greedy_ridge_z": 0.151,
+      "cai_greedy_tai": 0.3559,
+      "cnn_opt_ridge_z": 0.218,
+      "cnn_opt_tai": 0.3112
+    },
+    {
+      "locus": "b0066",
+      "gene": "thiQ",
+      "wt_ridge_z": -0.3,
+      "wt_tai": 0.2883,
+      "cai_greedy_ridge_z": 0.212,
+      "cai_greedy_tai": 0.3485,
+      "cnn_opt_ridge_z": 0.347,
+      "cnn_opt_tai": 0.3393
+    },
+    {
+      "locus": "b4002",
+      "gene": "zraP",
+      "wt_ridge_z": -0.36,
+      "wt_tai": 0.328,
+      "cai_greedy_ridge_z": 0.099,
+      "cai_greedy_tai": 0.3951,
+      "cnn_opt_ridge_z": 0.347,
+      "cnn_opt_tai": 0.3572
+    },
+    {
+      "locus": "b4012",
+      "gene": "yjaB",
+      "wt_ridge_z": -0.25,
+      "wt_tai": 0.268,
+      "cai_greedy_ridge_z": 0.307,
+      "cai_greedy_tai": 0.3586,
+      "cnn_opt_ridge_z": 0.512,
+      "cnn_opt_tai": 0.3301
+    },
+    {
+      "locus": "b3508",
+      "gene": "yhiD",
+      "wt_ridge_z": -0.412,
+      "wt_tai": 0.3274,
+      "cai_greedy_ridge_z": -0.022,
+      "cai_greedy_tai": 0.4099,
+      "cnn_opt_ridge_z": 0.308,
+      "cnn_opt_tai": 0.3633
+    },
+    {
+      "locus": "b3816",
+      "gene": "corA",
+      "wt_ridge_z": 0.516,
+      "wt_tai": 0.3611,
+      "cai_greedy_ridge_z": 0.234,
+      "cai_greedy_tai": 0.3736,
+      "cnn_opt_ridge_z": 0.374,
+      "cnn_opt_tai": 0.3738
+    },
+    {
+      "locus": "b4095",
+      "gene": "phnM",
+      "wt_ridge_z": 0.138,
+      "wt_tai": 0.3177,
+      "cai_greedy_ridge_z": 0.332,
+      "cai_greedy_tai": 0.3576,
+      "cnn_opt_ridge_z": 0.327,
+      "cnn_opt_tai": 0.3447
+    },
+    {
+      "locus": "b3058",
+      "gene": "folB",
+      "wt_ridge_z": 0.153,
+      "wt_tai": 0.3404,
+      "cai_greedy_ridge_z": 0.231,
+      "cai_greedy_tai": 0.3812,
+      "cnn_opt_ridge_z": 0.622,
+      "cnn_opt_tai": 0.3447
+    },
+    {
+      "locus": "b0252",
+      "gene": "yafZ",
+      "wt_ridge_z": -0.01,
+      "wt_tai": 0.2861,
+      "cai_greedy_ridge_z": 0.247,
+      "cai_greedy_tai": 0.3331,
+      "cnn_opt_ridge_z": 0.276,
+      "cnn_opt_tai": 0.3168
+    },
+    {
+      "locus": "b1613",
+      "gene": "manA",
+      "wt_ridge_z": 0.15,
+      "wt_tai": 0.3219,
+      "cai_greedy_ridge_z": 0.329,
+      "cai_greedy_tai": 0.3417,
+      "cnn_opt_ridge_z": 0.165,
+      "cnn_opt_tai": 0.3257
+    },
+    {
+      "locus": "b2185",
+      "gene": "rplY",
+      "wt_ridge_z": 1.4,
+      "wt_tai": 0.3828,
+      "cai_greedy_ridge_z": 0.37,
+      "cai_greedy_tai": 0.4342,
+      "cnn_opt_ridge_z": 0.598,
+      "cnn_opt_tai": 0.3908
+    },
+    {
+      "locus": "b1585",
+      "gene": "ynfC",
+      "wt_ridge_z": 0.018,
+      "wt_tai": 0.2984,
+      "cai_greedy_ridge_z": 0.543,
+      "cai_greedy_tai": 0.3406,
+      "cnn_opt_ridge_z": 0.501,
+      "cnn_opt_tai": 0.3462
+    },
+    {
+      "locus": "b2893",
+      "gene": "dsbC",
+      "wt_ridge_z": 0.173,
+      "wt_tai": 0.3406,
+      "cai_greedy_ridge_z": 0.3,
+      "cai_greedy_tai": 0.3818,
+      "cnn_opt_ridge_z": 0.5,
+      "cnn_opt_tai": 0.3632
+    },
+    {
+      "locus": "b0849",
+      "gene": "grxA",
+      "wt_ridge_z": 0.328,
+      "wt_tai": 0.3451,
+      "cai_greedy_ridge_z": 0.286,
+      "cai_greedy_tai": 0.3518,
+      "cnn_opt_ridge_z": 0.662,
+      "cnn_opt_tai": 0.3641
+    },
+    {
+      "locus": "b3608",
+      "gene": "gpsA",
+      "wt_ridge_z": 0.043,
+      "wt_tai": 0.3216,
+      "cai_greedy_ridge_z": 0.222,
+      "cai_greedy_tai": 0.366,
+      "cnn_opt_ridge_z": 0.362,
+      "cnn_opt_tai": 0.3528
+    },
+    {
+      "locus": "b3574",
+      "gene": "plaR",
+      "wt_ridge_z": -0.13,
+      "wt_tai": 0.3031,
+      "cai_greedy_ridge_z": 0.263,
+      "cai_greedy_tai": 0.3539,
+      "cnn_opt_ridge_z": 0.468,
+      "cnn_opt_tai": 0.3429
+    },
+    {
+      "locus": "b1781",
+      "gene": "yeaE",
+      "wt_ridge_z": -0.435,
+      "wt_tai": 0.2948,
+      "cai_greedy_ridge_z": 0.219,
+      "cai_greedy_tai": 0.3724,
+      "cnn_opt_ridge_z": -0.039,
+      "cnn_opt_tai": 0.3193
+    },
+    {
+      "locus": "b2306",
+      "gene": "hisP",
+      "wt_ridge_z": 0.066,
+      "wt_tai": 0.3262,
+      "cai_greedy_ridge_z": 0.425,
+      "cai_greedy_tai": 0.3796,
+      "cnn_opt_ridge_z": 0.23,
+      "cnn_opt_tai": 0.328
+    },
+    {
+      "locus": "b4183",
+      "gene": "yjfK",
+      "wt_ridge_z": -0.058,
+      "wt_tai": 0.3273,
+      "cai_greedy_ridge_z": 0.337,
+      "cai_greedy_tai": 0.379,
+      "cnn_opt_ridge_z": 0.436,
+      "cnn_opt_tai": 0.3377
+    },
+    {
+      "locus": "b3920",
+      "gene": "yiiQ",
+      "wt_ridge_z": -0.025,
+      "wt_tai": 0.2948,
+      "cai_greedy_ridge_z": 0.537,
+      "cai_greedy_tai": 0.3438,
+      "cnn_opt_ridge_z": 0.319,
+      "cnn_opt_tai": 0.3263
+    }
+  ]
+}

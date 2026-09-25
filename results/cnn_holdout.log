@@ -1,0 +1,35 @@
+dataset: 3752 genes
+train 3189 / test 563
+CNN (train-only) internal holdout: {'spearman': 0.627, 'pearson': 0.643, 'n_train': 2710, 'n_test': 479}
+ridge independent evaluator held-out spearman: 0.633
+[1/30] yqjE: ridge_z wt -0.125 cnn 0.467 | tAI wt 0.3403 cnn 0.3629
+[2/30] yjfP: ridge_z wt -0.42 cnn -0.054 | tAI wt 0.2786 cnn 0.2921
+[3/30] fucR: ridge_z wt -0.158 cnn 0.162 | tAI wt 0.3155 cnn 0.328
+[4/30] yciB: ridge_z wt -0.518 cnn -0.31 | tAI wt 0.3051 cnn 0.3302
+[5/30] iadA: ridge_z wt 0.206 cnn 0.373 | tAI wt 0.3084 cnn 0.3293
+[6/30] gadX: ridge_z wt -0.759 cnn -0.157 | tAI wt 0.2819 cnn 0.3184
+[7/30] yfdY: ridge_z wt -1.028 cnn -0.23 | tAI wt 0.3252 cnn 0.3572
+[8/30] srkA: ridge_z wt -0.154 cnn 0.085 | tAI wt 0.2905 cnn 0.3329
+[9/30] tusB: ridge_z wt -0.244 cnn 0.006 | tAI wt 0.2995 cnn 0.3049
+[10/30] mocA: ridge_z wt -0.59 cnn 0.094 | tAI wt 0.2771 cnn 0.3226
+[11/30] cecR: ridge_z wt -0.151 cnn 0.218 | tAI wt 0.2991 cnn 0.3112
+[12/30] thiQ: ridge_z wt -0.3 cnn 0.347 | tAI wt 0.2883 cnn 0.3393
+[13/30] zraP: ridge_z wt -0.36 cnn 0.347 | tAI wt 0.328 cnn 0.3572
+[14/30] yjaB: ridge_z wt -0.25 cnn 0.512 | tAI wt 0.268 cnn 0.3301
+[15/30] yhiD: ridge_z wt -0.412 cnn 0.308 | tAI wt 0.3274 cnn 0.3633
+[16/30] corA: ridge_z wt 0.516 cnn 0.374 | tAI wt 0.3611 cnn 0.3738
+[17/30] phnM: ridge_z wt 0.138 cnn 0.327 | tAI wt 0.3177 cnn 0.3447
+[18/30] folB: ridge_z wt 0.153 cnn 0.622 | tAI wt 0.3404 cnn 0.3447
+[19/30] yafZ: ridge_z wt -0.01 cnn 0.276 | tAI wt 0.2861 cnn 0.3168
+[20/30] manA: ridge_z wt 0.15 cnn 0.165 | tAI wt 0.3219 cnn 0.3257
+[21/30] rplY: ridge_z wt 1.4 cnn 0.598 | tAI wt 0.3828 cnn 0.3908
+[22/30] ynfC: ridge_z wt 0.018 cnn 0.501 | tAI wt 0.2984 cnn 0.3462
+[23/30] dsbC: ridge_z wt 0.173 cnn 0.5 | tAI wt 0.3406 cnn 0.3632
+[24/30] grxA: ridge_z wt 0.328 cnn 0.662 | tAI wt 0.3451 cnn 0.3641
+[25/30] gpsA: ridge_z wt 0.043 cnn 0.362 | tAI wt 0.3216 cnn 0.3528
+[26/30] plaR: ridge_z wt -0.13 cnn 0.468 | tAI wt 0.3031 cnn 0.3429
+[27/30] yeaE: ridge_z wt -0.435 cnn -0.039 | tAI wt 0.2948 cnn 0.3193
+[28/30] hisP: ridge_z wt 0.066 cnn 0.23 | tAI wt 0.3262 cnn 0.328
+[29/30] yjfK: ridge_z wt -0.058 cnn 0.436 | tAI wt 0.3273 cnn 0.3377
+[30/30] yiiQ: ridge_z wt -0.025 cnn 0.319 | tAI wt 0.2948 cnn 0.3263
+saved results/cnn_holdout_validation.json

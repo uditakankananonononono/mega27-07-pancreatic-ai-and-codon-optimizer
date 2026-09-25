@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/sandbox/mega27/07/scripts/mfe_audit.py", line 67, in <module>
+    np.max([five[m]["five"] for m in ("BFC", "ERC", "HFC", "URC", "genscript")], axis=0)),
+  File "/usr/local/lib/python3.10/dist-packages/numpy/_core/fromnumeric.py", line 3164, in max
+    return _wrapreduction(a, np.maximum, 'max', axis, None, out,
+  File "/usr/local/lib/python3.10/dist-packages/numpy/_core/fromnumeric.py", line 86, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (5,) + inhomogeneous part.
