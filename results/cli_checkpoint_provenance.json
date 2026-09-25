@@ -1,0 +1,20 @@
+{
+  "scope": "exploratory CLI checkpoint on current public source snapshot; separate from historical holdout",
+  "source_urls": [
+    "https://gtrnadb.ucsc.edu/genomes/bacteria/Esch_coli_K_12_MG1655/eschColi_K_12_MG1655-tRNAs.tar.gz",
+    "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2/GCF_000005845.2_ASM584v2_cds_from_genomic.fna.gz",
+    "https://pax-db.org/downloads/4.2/datasets/paxdb-abundance-files-v4.2/511145/511145-WHOLE_ORGANISM-integrated.txt"
+  ],
+  "input_sha256": {
+    "data/gtrnadb/eschColi_K_12_MG1655-tRNAs.out": "3001d620e181f74689f25972006ae1cfbb7a11eca7895464471cdd639ce4eefe",
+    "data/ecoli/mg1655_cds.fna.gz": "8b7b48b7b905313082141db4b77807b7aafebca7a5c40bbd42832baacd1cfd9b",
+    "data/ecoli/paxdb_abundance.tsv": "753196eb33e31b86a6d6abe8c4b68a59db41b7cf808ec3869698989ae85845ec"
+  },
+  "matched_rows": 3746,
+  "train_rows": 3184,
+  "test_rows": 562,
+  "seed": 0,
+  "epochs": 5,
+  "holdout_spearman": 0.5641871326840703,
+  "label": "log10 protein abundance, normalized using train only"
+}

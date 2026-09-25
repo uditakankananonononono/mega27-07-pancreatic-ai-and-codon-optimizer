@@ -11,7 +11,7 @@ with urllib.request.urlopen(cds_url, timeout=120) as r:
 n = gzip.open(OUT / "mg1655_cds.fna.gz", "rt").read().count(">")
 print("CDS records:", n)
 
-pax_url = "https://pax-db.org/downloads/latest/abundances/511145-WHOLE_ORGANISM-integrated.txt"
+pax_url = "https://pax-db.org/downloads/4.2/datasets/paxdb-abundance-files-v4.2/511145/511145-WHOLE_ORGANISM-integrated.txt"
 print("downloading PaxDb abundances...")
 try:
     with urllib.request.urlopen(pax_url, timeout=120) as r:

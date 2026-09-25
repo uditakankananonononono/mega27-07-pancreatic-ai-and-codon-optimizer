@@ -10,10 +10,10 @@ def load_abundance(path=None):
         if line.startswith("#"):
             continue
         parts = line.rstrip("\n").split("\t")
-        if len(parts) >= 2:
-            sid = parts[0].split(".")[-1]  # 511145.b0001 -> b0001
+        if len(parts) >= 3:
+            sid = parts[1].split(".")[-1]  # STRING ID 511145.b0001 -> b0001
             try:
-                ab[sid] = float(parts[1])  # ppm abundance
+                ab[sid] = float(parts[2])  # ppm abundance
             except ValueError:
                 pass
     return ab
