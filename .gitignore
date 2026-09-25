@@ -1,5 +1,11 @@
 data/
 results/
+!results/
+results/*
+!results/strict_count_audit_2026-09-25.json
 *.pt
 __pycache__/
 .pytest_cache/
+
+# Local licensed Times New Roman font files; do not redistribute.
+paper/fonts/

@@ -1,10 +1,23 @@
-"""Hermetic tests for the codonopt CLI (bundled data only, tiny iteration budget)."""
+"""CLI tests run when the externally sourced datasets and model checkpoint are installed."""
 import json, pathlib, subprocess, sys, tempfile
+import pytest
 
 REPO = pathlib.Path(__file__).resolve().parents[1]
 ENV = {"PYTHONPATH": str(REPO / "src")}
 import os
 ENV = {**os.environ, **ENV}
+
+REQUIRED = (
+    REPO / "data" / "gtrnadb" / "eschColi_K_12_MG1655-tRNAs.out",
+    REPO / "data" / "ecoli" / "mg1655_cds.fna.gz",
+    REPO / "results_expr_model.pt",
+)
+
+@pytest.fixture(autouse=True)
+def require_external_assets():
+    missing = [str(p.relative_to(REPO)) for p in REQUIRED if not p.is_file()]
+    if missing:
+        pytest.skip("CLI needs unbundled external assets: " + ", ".join(missing))
 
 PROT = ">t1\nMKTAYIAKQRQISFVKSHFSRQDILDLWQ\n>t2\nMAEGEITTFTALTEKFNLPPGNYKKPK\n"
 

@@ -1,0 +1,20 @@
+{
+  "scope": "item 07 external-tool and dataset audit",
+  "strict_tool_gate": "open",
+  "historical_tool_claim": 41,
+  "obvious_nonqualifiers": ["9 PDAC cohort data entries are datasets, not tools", "GTEx Portal API v8 and v2 are a single service", "pytest, git, TeX and Zenodo hosting are infrastructure"],
+  "max_surviving_historical_entries_before_evidence_review": 31,
+  "historical_dataset_claim": 54988,
+  "claimed_total_status": "withdrawn; mixes record and study units and does not deduplicate Open Targets pairs",
+  "verified_local_csv_counts": {
+    "gnomad_distinct_variant_ids": 9410,
+    "gtex_distinct_gene_tissue_keys": 432,
+    "civic_distinct_eids": 1146,
+    "opentargets_rows": 42329,
+    "opentargets_distinct_gene_disease_pairs": 41319,
+    "myvariant_distinct_successfully_fetched_hgvs": 1333
+  },
+  "pancan_result_study_ids": 143,
+  "minimum_matched_tcga_origin_pairs": ["acc_tcga/acc_tcga_gdc", "chol_tcga_gdc/chol_tcga_pan_can_atlas_2018", "thym_tcga_gdc/thym_tcga_pan_can_atlas_2018", "ucs_tcga/ucs_tcga_pan_can_atlas_2018"],
+  "counting_warning": "Matched TCGA lineages are a caution, not proof of identical patient sets. Study-level independence requires source and sample-ID mapping."
+}
