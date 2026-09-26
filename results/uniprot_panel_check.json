@@ -1,0 +1,55 @@
+{
+ "tool": "UniProt REST (rest.uniprot.org), accessed 2026-09-26",
+ "entries": {
+  "KRAS": [
+   {
+    "Entry": "P01116",
+    "Entry Name": "RASK_HUMAN",
+    "Gene Names": "KRAS KRAS2 RASK2",
+    "Protein names": "GTPase KRas (EC 3.6.5.2) (K-Ras 2) (Ki-Ras) (c-K-ras) (c-Ki-ras) [Cleaved into: GTPase KRas, N-terminally processed]",
+    "Length": "189"
+   }
+  ],
+  "TP53": [
+   {
+    "Entry": "P04637",
+    "Entry Name": "P53_HUMAN",
+    "Gene Names": "TP53 P53",
+    "Protein names": "Cellular tumor antigen p53 (Antigen NY-CO-13) (Phosphoprotein p53) (Tumor suppressor p53)",
+    "Length": "393"
+   }
+  ],
+  "CDKN2A": [
+   {
+    "Entry": "P42771",
+    "Entry Name": "CDN2A_HUMAN",
+    "Gene Names": "CDKN2A CDKN2 MTS1",
+    "Protein names": "Cyclin-dependent kinase inhibitor 2A (Cyclin-dependent kinase 4 inhibitor A) (CDK4I) (Multiple tumor suppressor 1) (MTS-1) (p16-INK4a) (p16-INK4) (p16INK4A)",
+    "Length": "156"
+   },
+   {
+    "Entry": "Q8N726",
+    "Entry Name": "ARF_HUMAN",
+    "Gene Names": "CDKN2A CDKN2 MLM",
+    "Protein names": "Tumor suppressor ARF (Alternative reading frame) (ARF) (Cyclin-dependent kinase inhibitor 2A) (p14ARF)",
+    "Length": "132"
+   },
+   {
+    "Entry": "Q9UH64",
+    "Entry Name": "NSGX_HUMAN",
+    "Gene Names": "CDKN2A-AS1 C9orf53 CDKN2A-DT",
+    "Protein names": "Putative uncharacterized protein CDKN2A-AS1 (CDKN2A antisense RNA 1) (CDKN2A antisense gene protein 1) (Protein CDKN2A-DT) (Susceptibility protein NSG-x)",
+    "Length": "79"
+   }
+  ],
+  "SMAD4": [
+   {
+    "Entry": "Q13485",
+    "Entry Name": "SMAD4_HUMAN",
+    "Gene Names": "SMAD4 DPC4 MADH4",
+    "Protein names": "SMAD family member 4 (SMAD 4) (hSMAD4) (Deletion target in pancreatic carcinoma 4) (Mothers against decapentaplegic homolog 4) (MAD homolog 4) (Mothers against DPP homolog 4)",
+    "Length": "552"
+   }
+  ]
+ }
+}

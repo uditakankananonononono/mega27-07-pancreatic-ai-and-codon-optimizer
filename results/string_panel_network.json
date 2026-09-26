@@ -1,0 +1,171 @@
+{
+ "tool": "STRING v12 REST (string-db.org), accessed 2026-09-26",
+ "driver_pairwise": [
+  {
+   "a": "KRAS",
+   "b": "SMAD4",
+   "score": 0.917,
+   "channels": {
+    "nscore": 0.0,
+    "fscore": 0.0,
+    "pscore": 0.0,
+    "ascore": 0.118,
+    "escore": 0.051,
+    "dscore": 0.0,
+    "tscore": 0.908
+   }
+  },
+  {
+   "a": "KRAS",
+   "b": "TP53",
+   "score": 0.949,
+   "channels": {
+    "nscore": 0.0,
+    "fscore": 0.0,
+    "pscore": 0.0,
+    "ascore": 0.074,
+    "escore": 0.0,
+    "dscore": 0.0,
+    "tscore": 0.947
+   }
+  },
+  {
+   "a": "KRAS",
+   "b": "CDKN2A",
+   "score": 0.992,
+   "channels": {
+    "nscore": 0.0,
+    "fscore": 0.0,
+    "pscore": 0.0,
+    "ascore": 0.055,
+    "escore": 0.102,
+    "dscore": 0.9,
+    "tscore": 0.917
+   }
+  },
+  {
+   "a": "TP53",
+   "b": "SMAD4",
+   "score": 0.875,
+   "channels": {
+    "nscore": 0.0,
+    "fscore": 0.0,
+    "pscore": 0.0,
+    "ascore": 0.059,
+    "escore": 0.0,
+    "dscore": 0.0,
+    "tscore": 0.873
+   }
+  },
+  {
+   "a": "TP53",
+   "b": "CDKN2A",
+   "score": 0.999,
+   "channels": {
+    "nscore": 0.0,
+    "fscore": 0.0,
+    "pscore": 0.0,
+    "ascore": 0.0,
+    "escore": 0.874,
+    "dscore": 0.9,
+    "tscore": 0.97
+   }
+  },
+  {
+   "a": "SMAD4",
+   "b": "CDKN2A",
+   "score": 0.851,
+   "channels": {
+    "nscore": 0.0,
+    "fscore": 0.0,
+    "pscore": 0.0,
+    "ascore": 0.042,
+    "escore": 0.046,
+    "dscore": 0.0,
+    "tscore": 0.85
+   }
+  }
+ ],
+ "cdkn2a_top_partners_score700": [
+  {
+   "partner": "NPM1",
+   "score": 0.999
+  },
+  {
+   "partner": "MDM2",
+   "score": 0.999
+  },
+  {
+   "partner": "CDK4",
+   "score": 0.999
+  },
+  {
+   "partner": "CDK6",
+   "score": 0.999
+  },
+  {
+   "partner": "TP53",
+   "score": 0.999
+  },
+  {
+   "partner": "MYC",
+   "score": 0.998
+  },
+  {
+   "partner": "CCND1",
+   "score": 0.998
+  },
+  {
+   "partner": "CDK2",
+   "score": 0.993
+  },
+  {
+   "partner": "KRAS",
+   "score": 0.992
+  },
+  {
+   "partner": "HRAS",
+   "score": 0.99
+  },
+  {
+   "partner": "CCND2",
+   "score": 0.99
+  },
+  {
+   "partner": "NRAS",
+   "score": 0.984
+  },
+  {
+   "partner": "CYTH1",
+   "score": 0.976
+  },
+  {
+   "partner": "CCND3",
+   "score": 0.975
+  },
+  {
+   "partner": "E2F1",
+   "score": 0.969
+  },
+  {
+   "partner": "CDKN1A",
+   "score": 0.966
+  },
+  {
+   "partner": "MDM4",
+   "score": 0.963
+  },
+  {
+   "partner": "CCNL2",
+   "score": 0.962
+  },
+  {
+   "partner": "CDKN2AIP",
+   "score": 0.958
+  },
+  {
+   "partner": "HIF1A",
+   "score": 0.956
+  }
+ ]
+}
