@@ -112,6 +112,23 @@ ERC & 0.602 & 0.490 & $-0.27$\\
 \caption{E.~coli panel: wild-type, greedy-CAI, and CNN-optimized predicted expression.}
 \label{fig:codon}\end{figure}
 \input{tai}
+\section{Results: benchmark rescore under the source-pinned checkpoint}
+The head-to-head in Table~\ref{tab:icor} was scored with an earlier ExpressionCNN
+checkpoint that was never committed and is unrecoverable; its numbers are
+historical. We re-fetched ICOR's published benchmark sequences (Zenodo
+10.5281/zenodo.7487432, v1.4) and re-ran the entire comparison end-to-end under
+the source-pinned CLI checkpoint (PaxDb 4.2 / MG1655 RefSeq, held-out Spearman
+$0.564$), re-optimizing our own designs against it with the identical hill-climb
+protocol (\texttt{scripts/icor\_rescore.py}, \texttt{results/icor\_rescore.json}).
+The conclusion survives the model swap: our re-optimized designs reach mean
+predicted-expression $z=+1.34$ versus ICOR's $+0.33$ ($4.0\times$; paired
+Wilcoxon $p=1.8\times10^{-12}$, $n=40$), holding CAI at $0.820$ against ICOR's
+$0.875$ and matching GC. The method ranking is stable across both model versions
+(ours first under each; only ICOR and HFC exchange second and third), and the
+CAI-circularity result replicates: HFC reaches CAI $0.997$ with $z=+0.47$, far
+below our $+1.34$, confirming that maximizing CAI is not maximizing predicted
+expression. Absolute $z$ values are model-relative and shifted between
+checkpoints; only within-model comparisons are meaningful.
 \section{Results: independent hold-out validation of CNN-guided optimization}
 Optimizing CNN-predicted expression and scoring with the same network is circular. We therefore validate against evaluators the optimizer never saw (\texttt{results/cnn\_holdout\_validation.json}). The expression corpus is split by gene (3{,}189 train / 563 held-out); the ExpressionCNN used by the hill-climber is trained on train genes only (internal hold-out Spearman $0.627$). Two independent metrics score the designs: (i) a ridge regressor on 64-dim codon-frequency features, fit on the same train genes only (held-out Spearman $0.633$), and (ii) tAI from GtRNAdb copy numbers. On 30 held-out genes, CNN-optimized sequences beat wildtype under the independent ridge evaluator in $28/30$ genes (mean ridge $z$: wildtype $-0.098$, CNN-opt $+0.266$; Wilcoxon $p=5.1\times10^{-6}$) and beat CAI-greedy on mean ($+0.266$ vs $+0.180$). Under tAI, CNN-opt beats wildtype in $30/30$ (mean $0.3386$ vs $0.3132$). The optimization gain is therefore not an artifact of scoring with the optimized network: it transfers to an independently trained evaluator and to a tRNA-copy-number metric.
 \section{Source-pinned CLI reproduction check (September 2026)}
