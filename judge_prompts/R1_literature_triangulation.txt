@@ -1,0 +1,6 @@
+You are an expert in cancer genomics literature. We built PANCREAS.AI: classifiers predicting PDAC driver status (KRAS, TP53, CDKN2A, SMAD4) FROM the tumor's mutation profile (other genes' mutations as features), trained on TCGA-PAAD. CV AUCs: KRAS 0.85-0.86, TP53 0.79-0.80, CDKN2A 0.68-0.73, SMAD4 0.51-0.55 (at chance).
+
+Question 1: do you know of ANY published work that predicts PDAC (or other cancer) driver-gene status from co-mutation/profiling features? We searched and found only H&E-image or pathomics-based classifiers. Name specific papers if they exist.
+Question 2: if no like-for-like baseline exists, what is the strongest honest benchmark framing for this task?
+Question 3: SMAD4 is at chance - is there a known biological reason co-mutation patterns would fail for SMAD4 specifically (vs CDKN2A which works)?
+Question 4: what single addition would most increase the novelty of a codon-optimizer + PDAC-driver-prediction dual-tool project?
