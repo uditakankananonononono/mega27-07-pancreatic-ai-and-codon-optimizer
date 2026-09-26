@@ -1,0 +1,95 @@
+{
+ "target": "CDKN2A",
+ "seeds": [
+  101,
+  102,
+  103,
+  104,
+  105,
+  106,
+  107,
+  108,
+  109,
+  110,
+  111,
+  112,
+  113,
+  114,
+  115,
+  116
+ ],
+ "held_out_aucs": [
+  0.778,
+  0.883,
+  0.811,
+  0.76,
+  0.709,
+  0.694,
+  0.709,
+  0.811,
+  0.619,
+  0.625,
+  0.613,
+  0.769,
+  0.82,
+  0.745,
+  0.736,
+  0.754
+ ],
+ "held_out_auc_median": 0.749,
+ "split_half_spearman_8v8": 0.1872,
+ "single_split_pairwise_spearman": [
+  0.226,
+  0.116,
+  0.144,
+  -0.081,
+  -0.09,
+  -0.089,
+  -0.031,
+  -0.138
+ ],
+ "single_split_rho_median": -0.0559,
+ "ensemble_top10": [
+  {
+   "gene": "TTN",
+   "mean_auc_drop": 0.00084
+  },
+  {
+   "gene": "MACF1",
+   "mean_auc_drop": 0.00066
+  },
+  {
+   "gene": "SYNE2",
+   "mean_auc_drop": 0.00066
+  },
+  {
+   "gene": "PEG3",
+   "mean_auc_drop": 0.00056
+  },
+  {
+   "gene": "CMYA5",
+   "mean_auc_drop": 0.00056
+  },
+  {
+   "gene": "TGFBR2",
+   "mean_auc_drop": 0.00056
+  },
+  {
+   "gene": "DCHS2",
+   "mean_auc_drop": 0.00047
+  },
+  {
+   "gene": "RYR2",
+   "mean_auc_drop": 0.00047
+  },
+  {
+   "gene": "RNF213",
+   "mean_auc_drop": 0.00047
+  },
+  {
+   "gene": "MUC16",
+   "mean_auc_drop": 0.00038
+  }
+ ],
+ "reading": "if split-half rho >> single-split rho, ensemble ranking is stable though single splits are noise"
+}
