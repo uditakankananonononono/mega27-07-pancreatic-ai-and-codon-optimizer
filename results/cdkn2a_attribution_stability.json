@@ -1,0 +1,61 @@
+{
+  "target": "CDKN2A",
+  "split_seeds": [
+    11,
+    23,
+    42
+  ],
+  "held_out_aucs": [
+    0.844,
+    0.724,
+    0.565
+  ],
+  "pairwise_spearman_of_gene_drops": [
+    -0.013,
+    -0.016,
+    0.042
+  ],
+  "mean_drop_top10": [
+    {
+      "gene": "FAT4",
+      "mean_auc_drop": 0.002
+    },
+    {
+      "gene": "LRP1B",
+      "mean_auc_drop": 0.001
+    },
+    {
+      "gene": "PCDH15",
+      "mean_auc_drop": 0.001
+    },
+    {
+      "gene": "CSMD2",
+      "mean_auc_drop": 0.001
+    },
+    {
+      "gene": "DYNC2H1",
+      "mean_auc_drop": 0.001
+    },
+    {
+      "gene": "NEB",
+      "mean_auc_drop": 0.0005
+    },
+    {
+      "gene": "KMT2C",
+      "mean_auc_drop": 0.0005
+    },
+    {
+      "gene": "SMAD4",
+      "mean_auc_drop": 0.0005
+    },
+    {
+      "gene": "MYLK",
+      "mean_auc_drop": 0.0005
+    },
+    {
+      "gene": "ABCA12",
+      "mean_auc_drop": 0.0005
+    }
+  ],
+  "verdict": "seed-noise: attribution ranking does NOT replicate across splits"
+}

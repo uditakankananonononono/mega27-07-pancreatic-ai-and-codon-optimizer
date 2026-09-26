@@ -41,7 +41,7 @@ Permutation importance on the held-out fold: for covariate set $S$,
 \begin{equation}
 \Delta_S = \mathrm{AUC}_{\mathrm{full}}-\mathrm{AUC}_{\pi(S)},
 \end{equation}
-averaged over 4 permutations. Gene-level permutation proved uninformative (all drops $<0.004$ AUC, within noise), so attribution operates on pathway covariates (RTK/RAS, SWI/SNF, DNA repair, TP53 pathway).
+averaged over 4 permutations. Gene-level permutation proved uninformative (all drops $<0.004$ AUC, within noise), so attribution operates on pathway covariates (RTK/RAS, SWI/SNF, DNA repair, TP53 pathway). A stability audit (results/cdkn2a\_attribution\_stability.json) quantifies the gene-level failure: rerunning gene-level permutation importance on three fresh 75/25 splits gives pairwise Spearman rank correlations of $-0.013$, $-0.016$ and $0.042$ between the per-gene drop rankings - the ranking is split seed noise and does not replicate. The same audit shows single-split held-out AUC for CDKN2A ranging 0.565-0.844 across seeds ($n_{test}=46$), so the Table~\ref{tab:bench} spreads should be read as lower bounds on estimation noise; the pathway-level attribution and the cross-cohort replication, not the gene-level ranking, are the claims we stand behind.
 \subsection{Co-mutation statistics}
 For alteration $A$ in CDKN2A-altered vs wild-type tumors, the $2\times2$ table gives odds ratio
 \begin{equation}
