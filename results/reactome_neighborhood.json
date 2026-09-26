@@ -1,0 +1,168 @@
+{
+ "tool": "Reactome Analysis Service (reactome.org), accessed 2026-09-26",
+ "input_genes": [
+  "CCND1",
+  "CCND2",
+  "CCND3",
+  "CCNL2",
+  "CDK2",
+  "CDK4",
+  "CDK6",
+  "CDKN1A",
+  "CDKN2A",
+  "CDKN2AIP",
+  "CYTH1",
+  "E2F1",
+  "HIF1A",
+  "HRAS",
+  "KRAS",
+  "MDM2",
+  "MDM4",
+  "MYC",
+  "NPM1",
+  "NRAS",
+  "TP53"
+ ],
+ "pathways": [
+  {
+   "name": "Defective binding of RB1 mutants to E2F1,(E2F2, E2F3)",
+   "pValue": 1.1102230246251565e-16,
+   "fdr": 4.9960036108132044e-15,
+   "found": 9,
+   "total": 17
+  },
+  {
+   "name": "G1 Phase",
+   "pValue": 1.1102230246251565e-16,
+   "fdr": 4.9960036108132044e-15,
+   "found": 10,
+   "total": 52
+  },
+  {
+   "name": "Cyclin D associated events in G1",
+   "pValue": 1.1102230246251565e-16,
+   "fdr": 4.9960036108132044e-15,
+   "found": 10,
+   "total": 52
+  },
+  {
+   "name": "Oncogene Induced Senescence",
+   "pValue": 1.1102230246251565e-16,
+   "fdr": 4.9960036108132044e-15,
+   "found": 12,
+   "total": 42
+  },
+  {
+   "name": "Oxidative Stress Induced Senescence",
+   "pValue": 1.1102230246251565e-16,
+   "fdr": 4.9960036108132044e-15,
+   "found": 12,
+   "total": 113
+  },
+  {
+   "name": "Aberrant regulation of mitotic G1/S transition in cancer due to RB1 defects",
+   "pValue": 1.1102230246251565e-16,
+   "fdr": 4.9960036108132044e-15,
+   "found": 9,
+   "total": 17
+  },
+  {
+   "name": "Cellular Senescence",
+   "pValue": 1.1102230246251565e-16,
+   "fdr": 4.9960036108132044e-15,
+   "found": 15,
+   "total": 199
+  },
+  {
+   "name": "Transcriptional regulation by RUNX3",
+   "pValue": 1.1102230246251565e-16,
+   "fdr": 4.9960036108132044e-15,
+   "found": 12,
+   "total": 108
+  },
+  {
+   "name": "Generic Transcription Pathway",
+   "pValue": 1.1102230246251565e-16,
+   "fdr": 4.9960036108132044e-15,
+   "found": 26,
+   "total": 1574
+  },
+  {
+   "name": "RNA Polymerase II Transcription",
+   "pValue": 1.1102230246251565e-16,
+   "fdr": 4.9960036108132044e-15,
+   "found": 26,
+   "total": 1678
+  },
+  {
+   "name": "Aberrant regulation of mitotic cell cycle due to RB1 defects",
+   "pValue": 3.3306690738754696e-16,
+   "fdr": 1.3655743202889425e-14,
+   "found": 9,
+   "total": 36
+  },
+  {
+   "name": "Diseases of mitotic cell cycle",
+   "pValue": 5.551115123125783e-16,
+   "fdr": 2.1094237467877974e-14,
+   "found": 9,
+   "total": 38
+  },
+  {
+   "name": "Cell Cycle",
+   "pValue": 1.3322676295501878e-15,
+   "fdr": 4.6629367034256575e-14,
+   "found": 19,
+   "total": 729
+  },
+  {
+   "name": "Gene expression (Transcription)",
+   "pValue": 3.3306690738754696e-15,
+   "fdr": 1.0658141036401503e-13,
+   "found": 26,
+   "total": 1922
+  },
+  {
+   "name": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation",
+   "pValue": 4.218847493575595e-15,
+   "fdr": 1.2656542480726785e-13,
+   "found": 8,
+   "total": 27
+  },
+  {
+   "name": "Mitotic G1 phase and G1/S transition",
+   "pValue": 4.773959005888173e-15,
+   "fdr": 1.3367085216486885e-13,
+   "found": 12,
+   "total": 164
+  },
+  {
+   "name": "TP53 Regulates Transcription of Genes Involved in G1 Cell Cycle Arrest",
+   "pValue": 7.693845560652335e-14,
+   "fdr": 2.0773383013761304e-12,
+   "found": 7,
+   "total": 20
+  },
+  {
+   "name": "Transcriptional Regulation by VENTX",
+   "pValue": 4.0956127378422025e-13,
+   "fdr": 1.0239031844605506e-11,
+   "found": 8,
+   "total": 48
+  },
+  {
+   "name": "p53-Dependent G1 DNA Damage Response",
+   "pValue": 1.5941692410592623e-12,
+   "fdr": 3.507172330330377e-11,
+   "found": 8,
+   "total": 57
+  },
+  {
+   "name": "p53-Dependent G1/S DNA damage checkpoint",
+   "pValue": 1.5941692410592623e-12,
+   "fdr": 3.507172330330377e-11,
+   "found": 8,
+   "total": 57
+  }
+ ]
+}
