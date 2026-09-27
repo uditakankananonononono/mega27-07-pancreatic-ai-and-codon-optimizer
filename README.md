@@ -21,3 +21,12 @@ wild-type on identical proteins.
 
 ## Reproducibility boundary (2026-09-25 audit)
 The CLI now includes a source-pinned public GtRNAdb tRNAscan output, NCBI MG1655 RefSeq CDS, versioned PaxDb 4.2 abundance file, and a five-epoch *exploratory* checkpoint trained locally from those inputs (`scripts/train_cli_checkpoint.py`; `results/cli_checkpoint_provenance.json`). The current source snapshot yields 3,746 CDS-abundance pairs, 3,184 train and 562 held-out genes, and held-out Spearman 0.564. This new checkpoint is **not** the previously reported 3,752-pair model or the separately archived 0.627 hold-out experiment, and has not been used to rescore the historical ICOR comparison. Both end-to-end CLI tests pass with these bundled assets, and 50 tests pass overall. Source rights and software dependencies still matter for use outside this repo. The strict 40-tool gate remains open. The old PaxDb `latest/abundances` URL now returns 404; `scripts/fetch_ecoli.py` uses the pinned versioned URL.
+
+## Install and CLI
+```
+pip install -e .        # installs the codonopt command (setup.py shim enables PEP 660 editable installs)
+codonopt --help         # subcommands: optimize, metrics
+codonopt optimize --gene BIRC5 ...   # multi-objective optimization (expression z subject to tAI floor)
+codonopt metrics ...                 # CAI/tAI/predicted-expression scoring of a sequence
+```
+The package pins its public data sources (GtRNAdb tRNAscan output, NCBI MG1655 RefSeq CDS, versioned PaxDb 4.2) and ships an exploratory checkpoint for evaluation; see the reproducibility boundary section below for exactly what the bundled checkpoint is and is not.
