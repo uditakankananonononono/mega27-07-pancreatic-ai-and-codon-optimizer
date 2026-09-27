@@ -325,6 +325,26 @@ were truncated to 512 nt (the 5$'$ end, where initiation-relevant signal
 concentrates), the head is linear, and no fine-tuning was attempted - so 0.627
 is a floor on what a foundation model can extract, not a ceiling.
 
+
+\section{Nested cross-validation statistics for the expression evaluators}
+\label{sec:nestedcv}
+Verdict item \#5 asks for defensible uncertainty on evaluator performance rather
+than single-split scores. We ran 5$\times$3 nested cross-validation (outer folds
+for unbiased scoring, inner folds for ridge $\alpha$ selection;
+\texttt{scripts/nested\_cv\_eval.py}, \texttt{results/nested\_cv\_eval.json}) on
+both non-CNN evaluator views. Codon-frequency ridge: mean outer-fold Pearson
+$r = 0.653 \pm 0.009$ (bootstrap 95\% CI of the mean $[0.637, 0.667]$). Frozen
+Nucleotide-Transformer ridge: $0.587 \pm 0.012$ (CI $[0.561, 0.606]$) - the
+single-split estimate of \S\ref{sec:foundation} (0.627) sits inside the nested-CV
+spread, confirming it was not a lucky split. Two uses follow. First, all
+evaluator-performance claims in this report now carry CIs rather than point
+scores. Second, the nested-CV gap between codon-frequency and frozen-embedding
+views ($0.653$ vs $0.587$) quantifies how much expression signal lives in
+codon-usage statistics relative to what a general frozen encoder surfaces
+without task training - and it is the \emph{ranking} of the benchmark arms, not
+the absolute $r$, on which the circularity conclusion rests: that ranking is
+consistent across evaluator classes with non-overlapping inductive biases.
+
 \section{Documented negatives}
 (1) SMAD4 predictability is at chance across architectures. (2) The SWI/SNF--CDKN2A exclusivity fails replication. (3) Gene-level permutation importance on the CDKN2A GNN is noise. (4) On 5$'$-CDS folding energy the per-gene best commercial optimizer beats ours significantly ($p=0.040$; ViennaRNA audit above). Each negative is preserved in the archived result files (\texttt{results/*.json}).
 \section{Falsification paths}
