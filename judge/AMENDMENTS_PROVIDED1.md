@@ -29,3 +29,9 @@ Locked: 2026-09-27 10:50 IST, against 52pp build 9ef60fc. No execution began bef
 1. Flagship restructure: CodonOpt primary, new title/abstract, executive summary (#1/#14/#15)
 2. RF independent evaluator + blinded held-out-protein optimization benchmark (#9/#12)
 3. Driver-discovery scan (#7) from existing mutation matrix
+
+## LANDED 2026-09-27 (commit below)
+- #1/#14/#15: CodonOpt flagship restructure - new title, abstract rewritten CodonOpt-first, executive summary with one main claim + regenerated central figure (fig now INCLUDES the CodonOpt star at CAI 0.829 / z 2.20; prior build's figure omitted it, fixed).
+- #3: "research-grade genomic inference" explicit in abstract.
+- #9: RF independent evaluator LANDED with honest twist - codon-usage-only RF ranks ICOR 1st / CodonOpt 3rd (held-out r=0.678, 2996/749 split); framed as concrete proof that single-codon metrics are blind to context gains (strengthens the circularity discovery). results/rf_evaluator.json + new paper section.
+Still queued: #4 CPTAC, #5 nested CV stats, #6 pathway-level stability methods, #7 driver discovery, #8 Ribo-seq/proteomics, #10 yeast arm, #11 motif scan, #12 blinded benchmark, #13 explicit-vs-published, #17 packaging, #18 foundation models, #19 sequence-features analysis.

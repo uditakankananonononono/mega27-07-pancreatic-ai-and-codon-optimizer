@@ -1,0 +1,48 @@
+{
+ "design": "RF on 61 codon frequencies -> log10 PaxDb abundance; 80/20 gene split; independent of the CNN evaluator",
+ "n_train": 2996,
+ "n_test": 749,
+ "holdout_pearson_r": 0.6781237408193551,
+ "arms": {
+  "wild_type": {
+   "n": 40,
+   "mean_log10_abund": 0.16320084842861854,
+   "sd": 0.2475174029879732
+  },
+  "icor": {
+   "n": 40,
+   "mean_log10_abund": 2.017551418627731,
+   "sd": 0.2930011501901215
+  },
+  "genscript": {
+   "n": 40,
+   "mean_log10_abund": 1.6601491937195392,
+   "sd": 0.4545113659396583
+  },
+  "HFC": {
+   "n": 40,
+   "mean_log10_abund": 1.7984421519550626,
+   "sd": 0.23086677905290218
+  },
+  "BFC": {
+   "n": 40,
+   "mean_log10_abund": 0.7446232826266213,
+   "sd": 0.3091324457845305
+  },
+  "URC": {
+   "n": 40,
+   "mean_log10_abund": 0.09432321252170059,
+   "sd": 0.2671155280628465
+  },
+  "ERC": {
+   "n": 40,
+   "mean_log10_abund": 0.367979415616694,
+   "sd": 0.37392742739472296
+  },
+  "codonopt": {
+   "n": 40,
+   "mean_log10_abund": 1.6816112378632802,
+   "sd": 0.3376928439841375
+  }
+ }
+}
