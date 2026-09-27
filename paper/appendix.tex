@@ -1,0 +1,195 @@
+\appendix
+\section{Numbered formula compendium}
+Every quantitative claim in the body traces to one of the following definitions. Equation numbering continues from the body.
+\subsection{Codon adaptation index}
+For codon $c$ encoding amino acid $a$, the relative adaptiveness is
+\begin{equation} w_c = \frac{f_c}{\max_{c' \in \mathrm{syn}(a)} f_{c'}}, \end{equation}
+where $f_c$ is the codon's frequency in the reference set of highly expressed genes. CAI of a coding sequence of length $L$ codons is the geometric mean
+\begin{equation} \mathrm{CAI} = \left( \prod_{i=1}^{L} w_{c_i} \right)^{1/L}. \end{equation}
+The high-frequency-codon (HFC) baseline sets every $w_{c_i}=1$ by construction, giving
+\begin{equation} \mathrm{CAI}_{\mathrm{HFC}} = 1 \quad \text{by definition}, \end{equation}
+which is the circularity the body reports empirically (HFC reaches CAI 0.997 on the benchmark while its predicted expression trails CodonOpt).
+\subsection{Predicted-expression z-score}
+The CNN expression model outputs a score calibrated against PaxDb whole-proteome abundances; we standardize per gene as
+\begin{equation} z_g = \frac{s_g - \mu_{\mathrm{wt}}}{\sigma_{\mathrm{wt}}}, \end{equation}
+with $\mu_{\mathrm{wt}}, \sigma_{\mathrm{wt}}$ the mean and standard deviation of wild-type scores over the benchmark panel. The head-to-head metric is the mean $z_g$ over the 40 benchmark genes.
+\subsection{Co-mutation enrichment}
+For target alteration $T$ and covariate set $S$, the $2\times2$ contingency table over $n$ tumours is $[[a,b],[c,d]]$ with $a$ the count of tumours altered in both. The odds ratio and Fisher exact $p$-value are
+\begin{equation} \mathrm{OR} = \frac{a\,d}{b\,c}, \qquad p = \sum_{k:\,P(k)\le P(a)} \frac{\binom{a+b}{k}\binom{c+d}{a+c-k}}{\binom{n}{a+c}}. \end{equation}
+Replication requires sign-consistency of $\log \mathrm{OR}$ and $p < 0.05$ in an independent cohort with no shared samples.
+\subsection{Permutation importance}
+For covariate $j$ and held-out metric $M$ (AUC), with $R=4$ permuted replicates,
+\begin{equation} \Delta_j = M_{\mathrm{base}} - \frac{1}{R}\sum_{r=1}^{R} M_{j}^{(r)}, \end{equation}
+ranked descending. Stability is the Spearman rank correlation between rankings from disjoint splits:
+\begin{equation} \rho = 1 - \frac{6 \sum_k d_k^2}{m(m^2-1)}, \end{equation}
+where $d_k$ is the rank difference of gene $k$ between the two half-ensembles and $m$ the number of ranked genes.
+\subsection{5$'$ mRNA structure}
+ViennaRNA fold reports the minimum free energy of the 5$'$ window of length $w$:
+\begin{equation} \mathrm{MFE}_g = \min_{s \in \mathcal{S}} E(s, \mathrm{seq}_g[1..w]), \end{equation}
+over the secondary-structure space $\mathcal{S}$; less negative MFE near the start codon is associated with higher initiation efficiency.
+\subsection{Bootstrap confidence intervals}
+Paired bootstrap over $B=10{,}000$ resamples of the gene axis gives the percentile interval
+\begin{equation} \mathrm{CI}_{95} = \left[ Q_{0.025}(\Delta_b),\; Q_{0.975}(\Delta_b) \right],\quad \Delta_b = \bar z^{\mathrm{CodonOpt}}_b - \bar z^{\mathrm{ICOR}}_b. \end{equation}
+\section{Per-gene benchmark table (ICOR 40-gene panel)}
+All six methods, all 40 genes. pred\_z is the predicted-expression z-score under our CNN; original = wild type. Full machine-readable record: \texttt{results/icor\_headtohead\_per\_gene.json}.
+\begin{footnotesize}
+\begin{longtable}{llllllll}
+\caption{Per-gene codon-optimization benchmark, all methods. Cells show CAI/predicted-expression $z$.}\\
+\hline\hline Gene & original CAI/$z$ & icor CAI/$z$ & gensmart CAI/$z$ & HFC CAI/$z$ & BFC CAI/$z$ & URC CAI/$z$ & ERC CAI/$z$ \\ \hline \endfirsthead
+\hline\hline Gene & original CAI/$z$ & icor CAI/$z$ & gensmart CAI/$z$ & HFC CAI/$z$ & BFC CAI/$z$ & URC CAI/$z$ & ERC CAI/$z$ \\ \hline \endhead
+\hline \multicolumn{8}{r}{continued}\\ \endfoot \hline\hline \endlastfoot
+BIRC5 & 0.597/-0.19 & 0.863/0.67 & 0.731/0.14 & 0.997/0.52 & 0.630/-0.09 & 0.538/-0.56 & 0.674/0.07 \\
+BRAF1 & 0.528/-0.67 & 0.841/0.15 & 0.738/0.40 & 0.998/0.68 & 0.653/-0.08 & 0.546/-0.48 & 0.592/-0.19 \\
+CAV1 & 0.661/0.20 & 0.892/0.12 & 0.765/0.42 & 0.999/0.21 & 0.662/0.04 & 0.561/-0.51 & 0.686/0.01 \\
+CD80 & 0.554/-0.36 & 0.875/0.78 & 0.742/0.30 & 0.998/0.57 & 0.650/0.07 & 0.532/-0.51 & 0.620/-0.11 \\
+CDK1 & 0.523/-0.43 & 0.891/0.78 & 0.731/0.37 & 0.998/0.83 & 0.640/0.15 & 0.483/-0.24 & 0.607/-0.22 \\
+CEBPZ & 0.573/-0.37 & 0.904/1.25 & 0.721/0.76 & 0.998/0.95 & 0.631/0.12 & 0.537/-0.53 & 0.600/0.33 \\
+CLN3 & 0.598/-0.48 & 0.847/-0.03 & 0.714/-0.90 & 0.998/-0.16 & 0.646/-0.68 & 0.510/-1.55 & 0.574/-1.18 \\
+CREB1 & 0.534/-0.02 & 0.862/1.42 & 0.751/1.14 & 0.998/1.37 & 0.666/0.46 & 0.559/0.21 & 0.629/0.26 \\
+CSNK1A1 & 0.543/-0.11 & 0.893/1.17 & 0.732/0.75 & 0.997/1.14 & 0.647/0.48 & 0.540/-0.54 & 0.631/-0.37 \\
+FGFR4 & 0.581/-0.27 & 0.863/0.83 & 0.719/-0.39 & 0.997/0.76 & 0.640/-0.70 & 0.511/-0.80 & 0.564/-0.95 \\
+GSK3B & 0.530/-0.62 & 0.860/0.72 & 0.724/-0.30 & 0.997/0.37 & 0.675/0.14 & 0.537/-0.89 & 0.611/0.11 \\
+JUN & 0.629/-0.55 & 0.851/0.60 & 0.738/0.36 & 0.998/1.03 & 0.631/0.71 & 0.532/-0.55 & 0.601/-0.06 \\
+KIF11 & 0.550/-0.12 & 0.873/1.50 & 0.721/1.10 & 0.998/1.43 & 0.638/0.41 & 0.549/0.55 & 0.585/0.42 \\
+LAMP1 & 0.584/-0.52 & 0.837/0.21 & 0.727/-0.70 & 0.998/0.08 & 0.653/-0.35 & 0.545/-0.50 & 0.607/-1.10 \\
+LEMD3 & 0.531/-0.28 & 0.852/1.50 & 0.728/0.88 & 0.997/0.93 & 0.651/0.37 & 0.524/-0.20 & 0.571/0.44 \\
+MAPK1 & 0.573/-0.10 & 0.892/0.58 & 0.744/0.77 & 0.998/0.77 & 0.663/0.26 & 0.504/-0.19 & 0.620/0.24 \\
+MAPKAPK5 & 0.550/0.20 & 0.906/1.05 & 0.740/0.50 & 0.997/1.12 & 0.664/0.66 & 0.552/-0.27 & 0.602/-0.24 \\
+NGFR & 0.642/-0.20 & 0.861/0.61 & 0.742/0.26 & 0.998/0.55 & 0.667/-0.05 & 0.555/-0.78 & 0.619/0.44 \\
+NOC2L & 0.590/0.08 & 0.866/0.85 & 0.717/-0.29 & 0.997/0.81 & 0.651/0.60 & 0.513/-0.65 & 0.574/-0.55 \\
+OPRM1 & 0.584/-0.92 & 0.862/-0.32 & 0.763/-0.50 & 0.998/-0.36 & 0.677/-0.65 & 0.544/-1.34 & 0.618/-0.93 \\
+PDCD11 & 0.561/0.19 & 0.869/1.01 & 0.710/0.39 & 0.998/0.84 & 0.629/0.02 & 0.537/-0.55 & 0.523/-0.50 \\
+PLK1 & 0.573/0.03 & 0.875/0.79 & 0.719/0.26 & 0.996/0.59 & 0.624/0.08 & 0.507/-0.51 & 0.573/-0.54 \\
+RPS6KB1 & 0.516/-0.74 & 0.889/1.10 & 0.720/0.23 & 0.997/0.88 & 0.632/0.37 & 0.542/-0.01 & 0.594/0.15 \\
+SMARCD1 & 0.562/-0.13 & 0.884/0.70 & 0.732/0.38 & 0.997/0.23 & 0.636/0.12 & 0.513/-0.66 & 0.602/-0.60 \\
+TAP1 & 0.570/-0.65 & 0.853/0.01 & 0.707/-0.43 & 0.998/0.10 & 0.642/-0.90 & 0.498/-1.16 & 0.555/-1.08 \\
+TAS2R10 & 0.517/-1.29 & 0.869/-0.50 & 0.731/-0.73 & 0.998/-0.72 & 0.686/-0.62 & 0.524/-1.12 & 0.624/-0.93 \\
+akt1 & 0.587/-0.17 & 0.895/0.92 & -- & 0.997/0.68 & -- & -- & -- \\
+emg1 & 0.531/-0.16 & 0.866/1.28 & -- & 0.997/1.06 & -- & -- & -- \\
+falvac-1 & 0.592/-0.15 & 0.888/0.80 & -- & 0.999/0.94 & -- & -- & -- \\
+flt1 & 0.557/-1.01 & 0.864/-0.11 & -- & 0.998/0.01 & -- & -- & -- \\
+hpdf & 0.664/-0.33 & 0.899/0.19 & -- & 0.995/0.11 & -- & -- & -- \\
+lck & 0.630/-0.10 & 0.885/0.53 & -- & 0.997/0.31 & -- & -- & -- \\
+mmpl3 & 0.665/0.05 & 0.848/0.54 & -- & 0.997/0.50 & -- & -- & -- \\
+npr1 & 0.612/-0.33 & 0.871/0.26 & -- & 0.997/0.00 & -- & -- & -- \\
+pa & 0.517/-0.40 & 0.923/1.14 & -- & 0.996/0.97 & -- & -- & -- \\
+pak1 & 0.559/0.35 & 0.886/1.00 & 0.728/1.26 & 0.998/1.22 & 0.647/0.88 & 0.547/0.40 & -- \\
+pea & 0.743/-0.11 & 0.882/0.84 & -- & 0.997/0.60 & -- & -- & -- \\
+pim1 & 0.585/-0.39 & 0.890/0.69 & -- & 0.997/0.65 & -- & -- & -- \\
+ptp4a3 & 0.676/0.21 & 0.897/1.16 & -- & 0.997/0.93 & -- & -- & -- \\
+ubtf & 0.577/0.09 & 0.893/0.57 & -- & 0.997/0.61 & -- & -- & -- \\
+\end{longtable}
+\end{footnotesize}
+\section{Seed-ensemble attribution audit (16 splits)}
+Per-seed held-out AUCs and the stability statistics reported in the body. Median held-out AUC = 0.749; split-half Spearman (8v8) = 0.187; median single-split pairwise Spearman = -0.056.
+\begin{center}\begin{tabular}{lr}
+\hline\hline Seed & held-out AUC \\ \hline
+101 & 0.778 \\
+102 & 0.883 \\
+103 & 0.811 \\
+104 & 0.760 \\
+105 & 0.709 \\
+106 & 0.694 \\
+107 & 0.709 \\
+108 & 0.811 \\
+109 & 0.619 \\
+110 & 0.625 \\
+111 & 0.613 \\
+112 & 0.769 \\
+113 & 0.820 \\
+114 & 0.745 \\
+115 & 0.736 \\
+116 & 0.754 \\
+\hline\hline\end{tabular}\end{center}
+Single-split pairwise Spearman values: 0.226, 0.116, 0.144, -0.081, -0.090, -0.089, -0.031, -0.138.
+Ensemble top-10 genes by mean permutation importance: TTN, MACF1, SYNE2, PEG3, CMYA5, TGFBR2, DCHS2, RYR2, RNF213, MUC16. The top genes are known long-gene passengers (TTN, MACF1, SYNE2 class); the rescue is rejected, as reported in the body.
+\section{Replication contingency tables}
+\subsection{paad\_qcmg\_uq\_2016 ($n=456$, CDKN2A-altered $=71$)}
+\begin{center}\begin{tabular}{lrrrr}
+\hline\hline Covariate & OR & $p$ & $a$ & table \\ \hline
+KRAS & 4.12 & 0.0003 & 65 & [[65, 6], [279, 106]] \\
+TP53\_pathway & 4.69 & 7.19e-07 & 60 & [[60, 11], [207, 178]] \\
+SWI\_SNF & 2.05 & 0.0621 & 13 & [[13, 58], [38, 347]] \\
+RTK\_RAS\_nonKRAS & 0.28 & 0.3390 & 1 & [[1, 70], [19, 366]] \\
+\hline\hline\end{tabular}\end{center}
+\subsection{pdac\_msk\_2024 ($n=2336$, CDKN2A-altered $=546$)}
+\begin{center}\begin{tabular}{lrrrr}
+\hline\hline Covariate & OR & $p$ & $a$ & table \\ \hline
+KRAS & 1.91 & 0.0065 & 525 & [[525, 21], [1663, 127]] \\
+TP53\_pathway & 3.79 & 2.00e-20 & 500 & [[500, 46], [1327, 463]] \\
+SWI\_SNF & 0.76 & 0.0737 & 61 & [[61, 485], [255, 1535]] \\
+RTK\_RAS\_nonKRAS & 1.21 & 0.4230 & 30 & [[30, 516], [82, 1708]] \\
+\hline\hline\end{tabular}\end{center}
+\subsection{paad\_qcmg\_uq\_2016 ($n=456$, CDKN2A-altered $=71$)}
+\begin{center}\begin{tabular}{lrrrr}
+\hline\hline Covariate & OR & $p$ & $a$ & table \\ \hline
+KRAS & 4.12 & 0.0003 & 65 & [[65, 6], [279, 106]] \\
+TP53\_pathway & 4.69 & 7.19e-07 & 60 & [[60, 11], [207, 178]] \\
+SWI\_SNF & 2.05 & 0.0621 & 13 & [[13, 58], [38, 347]] \\
+RTK\_RAS\_nonKRAS & 0.28 & 0.3390 & 1 & [[1, 70], [19, 366]] \\
+\hline\hline\end{tabular}\end{center}
+\subsection{pdac\_msk\_2024 ($n=2336$, CDKN2A-altered $=546$)}
+\begin{center}\begin{tabular}{lrrrr}
+\hline\hline Covariate & OR & $p$ & $a$ & table \\ \hline
+KRAS & 1.91 & 0.0065 & 525 & [[525, 21], [1663, 127]] \\
+TP53\_pathway & 3.79 & 2.00e-20 & 500 & [[500, 46], [1327, 463]] \\
+SWI\_SNF & 0.76 & 0.0737 & 61 & [[61, 485], [255, 1535]] \\
+RTK\_RAS\_nonKRAS & 1.21 & 0.4230 & 30 & [[30, 516], [82, 1708]] \\
+\hline\hline\end{tabular}\end{center}
+\subsection{paad\_icgc ($n=99$, CDKN2A-altered $=2$)}
+\begin{center}\begin{tabular}{lrrrr}
+\hline\hline Covariate & OR & $p$ & $a$ & table \\ \hline
+KRAS & None & 1.0000 & 2 & [[2, 0], [92, 5]] \\
+TP53\_pathway & 1.94 & 1.0000 & 1 & [[1, 1], [33, 64]] \\
+SWI\_SNF & 0.00 & 1.0000 & 0 & [[0, 2], [8, 89]] \\
+RTK\_RAS\_nonKRAS & 0.00 & 1.0000 & 0 & [[0, 2], [6, 91]] \\
+\hline\hline\end{tabular}\end{center}
+\subsection{paad\_utsw\_2015 ($n=109$, CDKN2A-altered $=6$)}
+\begin{center}\begin{tabular}{lrrrr}
+\hline\hline Covariate & OR & $p$ & $a$ & table \\ \hline
+KRAS & None & 1.0000 & 6 & [[6, 0], [94, 9]] \\
+TP53\_pathway & None & 0.0280 & 6 & [[6, 0], [51, 52]] \\
+SWI\_SNF & 1.67 & 0.5120 & 1 & [[1, 5], [11, 92]] \\
+RTK\_RAS\_nonKRAS & 2.93 & 0.2350 & 2 & [[2, 4], [15, 88]] \\
+\hline\hline\end{tabular}\end{center}
+\subsection{paad\_cptac\_2021 ($n=140$, CDKN2A-altered $=29$)}
+\begin{center}\begin{tabular}{lrrrr}
+\hline\hline Covariate & OR & $p$ & $a$ & table \\ \hline
+KRAS & 0.38 & 0.2760 & 27 & [[27, 2], [108, 3]] \\
+TP53\_pathway & 2.11 & 0.2240 & 25 & [[25, 4], [83, 28]] \\
+SWI\_SNF & 3.10 & 0.1270 & 5 & [[5, 24], [7, 104]] \\
+RTK\_RAS\_nonKRAS & 1.29 & 1.0000 & 1 & [[1, 28], [3, 108]] \\
+\hline\hline\end{tabular}\end{center}
+\subsection{paac\_jhu\_2014 ($n=23$, CDKN2A-altered $=0$)}
+\begin{center}\begin{tabular}{lrrrr}
+\hline\hline Covariate & OR & $p$ & $a$ & table \\ \hline
+KRAS & None & 1.0000 & 0 & [[0, 0], [0, 23]] \\
+TP53\_pathway & None & 1.0000 & 0 & [[0, 0], [4, 19]] \\
+SWI\_SNF & None & 1.0000 & 0 & [[0, 0], [3, 20]] \\
+RTK\_RAS\_nonKRAS & None & 1.0000 & 0 & [[0, 0], [4, 19]] \\
+\hline\hline\end{tabular}\end{center}
+\subsection{pancreas\_msk\_2024 ($n=395$, CDKN2A-altered $=93$)}
+\begin{center}\begin{tabular}{lrrrr}
+\hline\hline Covariate & OR & $p$ & $a$ & table \\ \hline
+KRAS & 11.29 & 0.0013 & 92 & [[92, 1], [269, 33]] \\
+TP53\_pathway & 3.21 & 0.0004 & 82 & [[82, 11], [211, 91]] \\
+SWI\_SNF & 0.87 & 0.8490 & 9 & [[9, 84], [33, 269]] \\
+RTK\_RAS\_nonKRAS & 1.50 & 0.5460 & 5 & [[5, 88], [11, 291]] \\
+\hline\hline\end{tabular}\end{center}
+\subsection{paad\_msk\_2025 ($n=29$, CDKN2A-altered $=3$)}
+\begin{center}\begin{tabular}{lrrrr}
+\hline\hline Covariate & OR & $p$ & $a$ & table \\ \hline
+KRAS & None & 0.2680 & 3 & [[3, 0], [15, 11]] \\
+TP53\_pathway & None & 0.0996 & 3 & [[3, 0], [11, 15]] \\
+SWI\_SNF & 2.10 & 0.5150 & 1 & [[1, 2], [5, 21]] \\
+RTK\_RAS\_nonKRAS & 0.00 & 1.0000 & 0 & [[0, 3], [3, 23]] \\
+\hline\hline\end{tabular}\end{center}
+\subsection{paad\_tcga ($n=186$, CDKN2A-altered $=22$)}
+\begin{center}\begin{tabular}{lrrrr}
+\hline\hline Covariate & OR & $p$ & $a$ & table \\ \hline
+KRAS & None & 0.0013 & 22 & [[22, 0], [114, 50]] \\
+TP53\_pathway & 3.79 & 0.0200 & 18 & [[18, 4], [89, 75]] \\
+SWI\_SNF & 0.00 & 0.3700 & 0 & [[0, 22], [13, 151]] \\
+RTK\_RAS\_nonKRAS & 3.08 & 0.1260 & 3 & [[3, 19], [8, 156]] \\
+\hline\hline\end{tabular}\end{center}
+
