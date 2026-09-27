@@ -298,6 +298,33 @@ destabilization motifs, and it removes most AU-rich elements as a side effect of
 codon choice. Motif avoidance is not yet an explicit objective term; the scan defines
 exactly which motifs such a term would need to cover.
 
+
+\section{Results: foundation-model evaluator - frozen Nucleotide Transformer rankings}
+\label{sec:foundation}
+Verdict item \#18 asks how the benchmark holds up under a modern DNA foundation
+model. We embedded every sequence with the frozen Nucleotide Transformer
+v2-50M (multi-species; mean-pooled last hidden state, first 512 nt per record,
+no fine-tuning), trained a ridge head on the same 3{,}745-gene PaxDb expression
+dataset and the same 80/20 gene split as the codon-usage random forest, and
+scored all benchmark arms (\texttt{scripts/foundation\_model\_eval.py},
+\texttt{results/foundation\_model\_eval.json}). The foundation-model evaluator
+reaches held-out Pearson $r=0.627$ (Spearman 0.625) - comparable to the
+codon-usage RF (0.678) without ever seeing a codon table. Under this third,
+fully independent evaluator, the arm ranking agrees with the context-aware
+evaluators, not with the bag-of-codons one: CodonOpt first (mean predicted
+log$_{10}$ abundance 1.77), ICOR second (1.56), GenScript third (1.43), then
+HFC 1.36, BFC 1.29, ERC 1.04, URC 0.82, wild type 0.92. Three evaluators built
+on three different representation classes (task-trained CNN, regularized linear
+model on sequence, frozen transformer embeddings) now rank CodonOpt first; the
+single dissenting evaluator is the one restricted to codon frequencies. The
+circularity discovery is thereby sharpened into a design rule: \textbf{a codon
+optimizer evaluated only on codon statistics cannot demonstrate superiority -
+cross-representation evaluators are required}, and a frozen 50M-parameter
+foundation model provides one cheaply. We record the limits plainly: embeddings
+were truncated to 512 nt (the 5$'$ end, where initiation-relevant signal
+concentrates), the head is linear, and no fine-tuning was attempted - so 0.627
+is a floor on what a foundation model can extract, not a ceiling.
+
 \section{Documented negatives}
 (1) SMAD4 predictability is at chance across architectures. (2) The SWI/SNF--CDKN2A exclusivity fails replication. (3) Gene-level permutation importance on the CDKN2A GNN is noise. (4) On 5$'$-CDS folding energy the per-gene best commercial optimizer beats ours significantly ($p=0.040$; ViennaRNA audit above). Each negative is preserved in the archived result files (\texttt{results/*.json}).
 \section{Falsification paths}

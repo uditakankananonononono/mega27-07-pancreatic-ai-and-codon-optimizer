@@ -1,0 +1,51 @@
+{
+ "model": "nucleotide-transformer-v2-50m-multi-species, frozen, mean-pooled, ridge head",
+ "maxlen_nt": 512,
+ "n_train": 2996,
+ "n_test": 749,
+ "holdout_pearson_r": 0.6270111181092002,
+ "holdout_spearman": 0.625386534484791,
+ "alpha": 10.0,
+ "arms": {
+  "wild_type": {
+   "n": 40,
+   "mean_pred_log10_abund": 0.9220169795900686,
+   "sd": 0.5663583568099062
+  },
+  "icor": {
+   "n": 40,
+   "mean_pred_log10_abund": 1.5602436971867324,
+   "sd": 0.5488026429358637
+  },
+  "genscript": {
+   "n": 40,
+   "mean_pred_log10_abund": 1.4331053624229666,
+   "sd": 0.4032173207536962
+  },
+  "HFC": {
+   "n": 40,
+   "mean_pred_log10_abund": 1.3631665930009098,
+   "sd": 0.475731598468242
+  },
+  "BFC": {
+   "n": 40,
+   "mean_pred_log10_abund": 1.2919196542843996,
+   "sd": 0.4394706498246573
+  },
+  "URC": {
+   "n": 40,
+   "mean_pred_log10_abund": 0.8248689318374876,
+   "sd": 0.5419172255466573
+  },
+  "ERC": {
+   "n": 40,
+   "mean_pred_log10_abund": 1.0397176455951285,
+   "sd": 0.40283617228666785
+  },
+  "codonopt": {
+   "n": 40,
+   "mean_pred_log10_abund": 1.7742732987634144,
+   "sd": 0.4877452191203836
+  }
+ }
+}

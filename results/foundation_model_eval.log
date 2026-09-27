@@ -1,0 +1,43 @@
+dataset: 3745 genes
+embedded 16/3745 (2s)
+embedded 175/3745 (9s)
+embedded 335/3745 (17s)
+embedded 493/3745 (24s)
+embedded 653/3745 (31s)
+embedded 813/3745 (39s)
+embedded 972/3745 (47s)
+embedded 1132/3745 (54s)
+embedded 1292/3745 (61s)
+embedded 1452/3745 (68s)
+embedded 1611/3745 (76s)
+embedded 1771/3745 (84s)
+embedded 1931/3745 (92s)
+embedded 2091/3745 (99s)
+embedded 2250/3745 (107s)
+embedded 2410/3745 (114s)
+embedded 2570/3745 (121s)
+embedded 2728/3745 (128s)
+embedded 2888/3745 (136s)
+embedded 3048/3745 (143s)
+embedded 3208/3745 (151s)
+embedded 3368/3745 (159s)
+embedded 3528/3745 (167s)
+embedded 3687/3745 (175s)
+{
+ "model": "nucleotide-transformer-v2-50m-multi-species, frozen, mean-pooled, ridge head",
+ "maxlen_nt": 512,
+ "n_train": 2996,
+ "n_test": 749,
+ "holdout_pearson_r": 0.6270111181092002,
+ "holdout_spearman": 0.625386534484791,
+ "alpha": 10.0
+}
+wild_type {'n': 40, 'mean_pred_log10_abund': 0.9220169795900686, 'sd': 0.5663583568099062}
+icor {'n': 40, 'mean_pred_log10_abund': 1.5602436971867324, 'sd': 0.5488026429358637}
+genscript {'n': 40, 'mean_pred_log10_abund': 1.4331053624229666, 'sd': 0.4032173207536962}
+HFC {'n': 40, 'mean_pred_log10_abund': 1.3631665930009098, 'sd': 0.475731598468242}
+BFC {'n': 40, 'mean_pred_log10_abund': 1.2919196542843996, 'sd': 0.4394706498246573}
+URC {'n': 40, 'mean_pred_log10_abund': 0.8248689318374876, 'sd': 0.5419172255466573}
+ERC {'n': 40, 'mean_pred_log10_abund': 1.0397176455951285, 'sd': 0.40283617228666785}
+codonopt {'n': 40, 'mean_pred_log10_abund': 1.7742732987634144, 'sd': 0.4877452191203836}
+saved results/foundation_model_eval.json
