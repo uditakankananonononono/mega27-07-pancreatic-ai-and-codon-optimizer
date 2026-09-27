@@ -1,0 +1,133 @@
+{
+ "design": "permutation importance, ridge, 5-fold CV, 10 permutations/feature; importance = mean r drop",
+ "codon_view": {
+  "base_r_mean": 0.655072787093016,
+  "top_features": [
+   {
+    "feature": "TGG",
+    "importance": 0.0351
+   },
+   {
+    "feature": "TTT",
+    "importance": 0.0347
+   },
+   {
+    "feature": "TGC",
+    "importance": 0.0283
+   },
+   {
+    "feature": "CGG",
+    "importance": 0.0268
+   },
+   {
+    "feature": "CTC",
+    "importance": 0.024
+   },
+   {
+    "feature": "GCC",
+    "importance": 0.0201
+   },
+   {
+    "feature": "GCG",
+    "importance": 0.0183
+   },
+   {
+    "feature": "TAT",
+    "importance": 0.0178
+   },
+   {
+    "feature": "ATG",
+    "importance": 0.0174
+   },
+   {
+    "feature": "ACA",
+    "importance": 0.0173
+   },
+   {
+    "feature": "ATA",
+    "importance": 0.0169
+   },
+   {
+    "feature": "AAT",
+    "importance": 0.0168
+   },
+   {
+    "feature": "CTG",
+    "importance": 0.015
+   },
+   {
+    "feature": "ATT",
+    "importance": 0.0149
+   },
+   {
+    "feature": "TCA",
+    "importance": 0.0145
+   }
+  ]
+ },
+ "dinuc_view": {
+  "base_r_mean": 0.5079111860299054,
+  "top_features": [
+   {
+    "feature": "TT",
+    "importance": 0.1064
+   },
+   {
+    "feature": "AA",
+    "importance": 0.055
+   },
+   {
+    "feature": "CG",
+    "importance": 0.0477
+   },
+   {
+    "feature": "GG",
+    "importance": 0.0396
+   },
+   {
+    "feature": "AT",
+    "importance": 0.0344
+   },
+   {
+    "feature": "GT",
+    "importance": 0.033
+   },
+   {
+    "feature": "GC",
+    "importance": 0.03
+   },
+   {
+    "feature": "GA",
+    "importance": 0.0208
+   },
+   {
+    "feature": "CA",
+    "importance": 0.017
+   },
+   {
+    "feature": "TA",
+    "importance": 0.0063
+   },
+   {
+    "feature": "TC",
+    "importance": 0.005
+   },
+   {
+    "feature": "AC",
+    "importance": 0.0031
+   },
+   {
+    "feature": "AG",
+    "importance": 0.002
+   },
+   {
+    "feature": "TG",
+    "importance": 0.0015
+   },
+   {
+    "feature": "CC",
+    "importance": 0.0003
+   }
+  ]
+ }
+}

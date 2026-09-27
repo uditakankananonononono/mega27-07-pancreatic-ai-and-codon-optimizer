@@ -366,6 +366,27 @@ no gene-length or replication-timing normalization, so candidates require
 orthogonal validation (the DepMap 24Q4 + HPA feasibility audit above provides one such axis). The deliverable is a ranked,
 damage-annotated candidate list with internal controls, not a driver claim.
 
+
+\section{Results: which sequence features carry the expression signal}
+\label{sec:features}
+Verdict item \#19 asks which sequence features drive the expression predictions.
+We measured permutation importance (ridge evaluator, 5-fold CV, 10 permutations
+per feature; \texttt{scripts/sequence\_features.py},
+\texttt{results/sequence\_features.json}) in two views. Codon-frequency view
+(base $r=0.655$): importance is spread across codons rather than concentrated in
+a few optimality codons - the top features (TGG 0.035, TTT 0.035, TGC 0.028,
+CGG 0.027, CTC 0.024) each carry only $\sim$5\% of total performance, with a
+long tail; no single codon dominates. Dinucleotide view (base $r=0.508$): local
+context alone reaches 78\% of the codon view's performance, and here importance
+\emph{is} concentrated - TT (0.106) carries twice the next feature (AA 0.055),
+with CG (0.048) and GG (0.040) following. Two findings. First, the expression
+signal in this dataset is distributed across the codon table, which is why
+single-metric optimization (maximize CAI) misallocates it: the objective must be
+multi-feature. Second, the strength of dinucleotide context - a feature class no
+codon-usage metric contains - is the feature-level confirmation of the
+circularity discovery: evaluators restricted to codon frequencies discard a
+signal band (TT/AA/CG context) that context-aware evaluators exploit.
+
 \section{Documented negatives}
 (1) SMAD4 predictability is at chance across architectures. (2) The SWI/SNF--CDKN2A exclusivity fails replication. (3) Gene-level permutation importance on the CDKN2A GNN is noise. (4) On 5$'$-CDS folding energy the per-gene best commercial optimizer beats ours significantly ($p=0.040$; ViennaRNA audit above). Each negative is preserved in the archived result files (\texttt{results/*.json}).
 \section{Falsification paths}
