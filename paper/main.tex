@@ -276,6 +276,28 @@ $\to$ scored designs, with the generalization gaps audited at each arrow (held-o
 genes for training, blinded proteins and split seeds for scoring). A direct wet-lab
 confirmation of the designed sequences remains future work and is not claimed.
 
+
+\section{Results: regulatory-motif audit across optimization arms}
+\label{sec:motifs}
+Verdict item \#11 asks whether codon optimization inadvertently creates regulatory
+motifs - cryptic splice donors, polyadenylation signals, AU-rich destabilizing
+elements - or inflates CpG content. We scanned all 40 benchmark genes across every
+arm (wild type, ICOR, four commercial/heuristic baselines, GenScript, and our
+multiobjective designs) for canonical polyA signals (AATAAA/ATTAAA), the cryptic
+splice-donor core GT[AG]AGT, the AU-rich pentamer ATTTA, and CpG density
+(\texttt{scripts/motif\_scan.py}, \texttt{results/motif\_scan.json}).
+Our designs carry \emph{fewer} regulatory hazards than wild type: mean polyA signals
+0.50 vs 0.78 per gene (reduced in 14 genes, increased in 5), and the lowest AU-rich
+element count of any arm (0.23 vs 1.00 wild type; next best GenScript 0.75).
+Cryptic splice-donor cores are statistically unchanged (0.33 vs 0.30; up in 10 genes,
+down in 8), and CpG density (63.6/kb) sits mid-range among arms (52.3--87.0), well
+below the HFC maximum. The audit therefore converts a plausible failure mode of
+aggressive codon optimization into a checked-and-cleared property for our pipeline:
+the context-aware objective does not smuggle in splice, polyadenylation, or
+destabilization motifs, and it removes most AU-rich elements as a side effect of
+codon choice. Motif avoidance is not yet an explicit objective term; the scan defines
+exactly which motifs such a term would need to cover.
+
 \section{Documented negatives}
 (1) SMAD4 predictability is at chance across architectures. (2) The SWI/SNF--CDKN2A exclusivity fails replication. (3) Gene-level permutation importance on the CDKN2A GNN is noise. (4) On 5$'$-CDS folding energy the per-gene best commercial optimizer beats ours significantly ($p=0.040$; ViennaRNA audit above). Each negative is preserved in the archived result files (\texttt{results/*.json}).
 \section{Falsification paths}

@@ -1,0 +1,2044 @@
+{
+ "per_gene": {
+  "BIRC5": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 46.18473895582329,
+    "len": 498
+   },
+   "icor": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 80.32128514056225,
+    "len": 498
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 68.27309236947791,
+    "len": 498
+   },
+   "ERC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 66.26506024096386,
+    "len": 498
+   },
+   "HFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 94.37751004016064,
+    "len": 498
+   },
+   "URC": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 50.200803212851405,
+    "len": 498
+   },
+   "genscript": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 74.29718875502007,
+    "len": 498
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 64.64646464646465,
+    "len": 495
+   }
+  },
+  "BRAF1": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 24.771838331160364,
+    "len": 2301
+   },
+   "icor": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 80.39982616253803,
+    "len": 2301
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 71.27335940895263,
+    "len": 2301
+   },
+   "ERC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 64.31986093003042,
+    "len": 2301
+   },
+   "HFC": {
+    "polyA": 3,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 93.8722294654498,
+    "len": 2301
+   },
+   "URC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 3,
+    "cpg_per_kb": 57.80095610604085,
+    "len": 2301
+   },
+   "genscript": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 81.2690134724033,
+    "len": 2301
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 2,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 68.75543951261967,
+    "len": 2298
+   }
+  },
+  "CAV1": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 42.83054003724395,
+    "len": 537
+   },
+   "icor": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 3,
+    "cpg_per_kb": 61.452513966480446,
+    "len": 537
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 61.452513966480446,
+    "len": 537
+   },
+   "ERC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 50.279329608938546,
+    "len": 537
+   },
+   "HFC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 4,
+    "cpg_per_kb": 61.452513966480446,
+    "len": 537
+   },
+   "URC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 42.83054003724395,
+    "len": 537
+   },
+   "genscript": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 63.3147113594041,
+    "len": 537
+   },
+   "ours": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 54.30711610486891,
+    "len": 534
+   }
+  },
+  "CD80": {
+   "all_original": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 22.80130293159609,
+    "len": 921
+   },
+   "icor": {
+    "polyA": 3,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 61.88925081433225,
+    "len": 921
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 74.9185667752443,
+    "len": 921
+   },
+   "ERC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 58.63192182410423,
+    "len": 921
+   },
+   "HFC": {
+    "polyA": 4,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 69.48968512486428,
+    "len": 921
+   },
+   "URC": {
+    "polyA": 1,
+    "splice_donor": 1,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 52.11726384364821,
+    "len": 921
+   },
+   "genscript": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 70.57546145494028,
+    "len": 921
+   },
+   "ours": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 52.287581699346404,
+    "len": 918
+   }
+  },
+  "CDK1": {
+   "all_original": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 5.592841163310962,
+    "len": 894
+   },
+   "icor": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 67.11409395973155,
+    "len": 894
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 55.92841163310962,
+    "len": 894
+   },
+   "ERC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 57.04697986577181,
+    "len": 894
+   },
+   "HFC": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 61.52125279642058,
+    "len": 894
+   },
+   "URC": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 35.79418344519016,
+    "len": 894
+   },
+   "genscript": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 62.639821029082775,
+    "len": 894
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 46.01571268237935,
+    "len": 891
+   }
+  },
+  "CEBPZ": {
+   "all_original": {
+    "polyA": 5,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 12.638230647709321,
+    "len": 3165
+   },
+   "icor": {
+    "polyA": 10,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 60.031595576619274,
+    "len": 3165
+   },
+   "BFC": {
+    "polyA": 1,
+    "splice_donor": 3,
+    "ARE_ATTTA": 3,
+    "cpg_per_kb": 55.292259083728275,
+    "len": 3165
+   },
+   "ERC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 3,
+    "cpg_per_kb": 54.66034755134281,
+    "len": 3165
+   },
+   "HFC": {
+    "polyA": 3,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 64.13902053712481,
+    "len": 3165
+   },
+   "URC": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 3,
+    "cpg_per_kb": 44.23380726698262,
+    "len": 3165
+   },
+   "genscript": {
+    "polyA": 4,
+    "splice_donor": 1,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 66.9826224328594,
+    "len": 3165
+   },
+   "ours": {
+    "polyA": 2,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 59.77229601518027,
+    "len": 3162
+   }
+  },
+  "CLN3": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 39.48367501898254,
+    "len": 1317
+   },
+   "icor": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 75.17084282460137,
+    "len": 1317
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 67.57782839787396,
+    "len": 1317
+   },
+   "ERC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 59.22551252847381,
+    "len": 1317
+   },
+   "HFC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 87.31966590736522,
+    "len": 1317
+   },
+   "URC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 3,
+    "cpg_per_kb": 49.35459377372817,
+    "len": 1317
+   },
+   "genscript": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 66.81852695520122,
+    "len": 1317
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 51.75038051750381,
+    "len": 1314
+   }
+  },
+  "CREB1": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 13.211382113821138,
+    "len": 984
+   },
+   "icor": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 89.4308943089431,
+    "len": 984
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 88.41463414634147,
+    "len": 984
+   },
+   "ERC": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 74.1869918699187,
+    "len": 984
+   },
+   "HFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 109.7560975609756,
+    "len": 984
+   },
+   "URC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 54.8780487804878,
+    "len": 984
+   },
+   "genscript": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 89.4308943089431,
+    "len": 984
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 68.29765545361876,
+    "len": 981
+   }
+  },
+  "CSNK1A1": {
+   "all_original": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 20.71005917159763,
+    "len": 1014
+   },
+   "icor": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 63.116370808678504,
+    "len": 1014
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 61.1439842209073,
+    "len": 1014
+   },
+   "ERC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 46.35108481262328,
+    "len": 1014
+   },
+   "HFC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 67.0611439842209,
+    "len": 1014
+   },
+   "URC": {
+    "polyA": 1,
+    "splice_donor": 1,
+    "ARE_ATTTA": 4,
+    "cpg_per_kb": 46.35108481262328,
+    "len": 1014
+   },
+   "genscript": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 64.1025641025641,
+    "len": 1014
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 53.41246290801187,
+    "len": 1011
+   }
+  },
+  "FGFR4": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 2,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 56.039850560398506,
+    "len": 2409
+   },
+   "icor": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 90.4939809049398,
+    "len": 2409
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 3,
+    "ARE_ATTTA": 3,
+    "cpg_per_kb": 82.1917808219178,
+    "len": 2409
+   },
+   "ERC": {
+    "polyA": 0,
+    "splice_donor": 2,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 69.32337069323371,
+    "len": 2409
+   },
+   "HFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 98.7961809879618,
+    "len": 2409
+   },
+   "URC": {
+    "polyA": 0,
+    "splice_donor": 2,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 63.926940639269404,
+    "len": 2409
+   },
+   "genscript": {
+    "polyA": 0,
+    "splice_donor": 2,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 86.3428808634288,
+    "len": 2409
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 70.65669160432253,
+    "len": 2406
+   }
+  },
+  "GSK3B": {
+   "all_original": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 3,
+    "cpg_per_kb": 22.27342549923195,
+    "len": 1302
+   },
+   "icor": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 88.32565284178187,
+    "len": 1302
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 76.036866359447,
+    "len": 1302
+   },
+   "ERC": {
+    "polyA": 1,
+    "splice_donor": 1,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 70.6605222734255,
+    "len": 1302
+   },
+   "HFC": {
+    "polyA": 4,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 102.91858678955454,
+    "len": 1302
+   },
+   "URC": {
+    "polyA": 1,
+    "splice_donor": 1,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 56.83563748079877,
+    "len": 1302
+   },
+   "genscript": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 85.25345622119816,
+    "len": 1302
+   },
+   "ours": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 66.20477290223249,
+    "len": 1299
+   }
+  },
+  "JUN": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 83.33333333333333,
+    "len": 996
+   },
+   "icor": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 86.34538152610442,
+    "len": 996
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 81.32530120481928,
+    "len": 996
+   },
+   "ERC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 66.26506024096386,
+    "len": 996
+   },
+   "HFC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 107.429718875502,
+    "len": 996
+   },
+   "URC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 56.22489959839358,
+    "len": 996
+   },
+   "genscript": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 85.34136546184739,
+    "len": 996
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 60.42296072507553,
+    "len": 993
+   }
+  },
+  "KIF11": {
+   "all_original": {
+    "polyA": 4,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 9.776095868811101,
+    "len": 3171
+   },
+   "icor": {
+    "polyA": 8,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 62.12551245663828,
+    "len": 3171
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 4,
+    "cpg_per_kb": 55.502995900346896,
+    "len": 3171
+   },
+   "ERC": {
+    "polyA": 8,
+    "splice_donor": 1,
+    "ARE_ATTTA": 3,
+    "cpg_per_kb": 48.8804793440555,
+    "len": 3171
+   },
+   "HFC": {
+    "polyA": 5,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 64.64837590665405,
+    "len": 3171
+   },
+   "URC": {
+    "polyA": 5,
+    "splice_donor": 1,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 49.51119520655944,
+    "len": 3171
+   },
+   "genscript": {
+    "polyA": 3,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 65.59444970040997,
+    "len": 3171
+   },
+   "ours": {
+    "polyA": 3,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 54.60858585858586,
+    "len": 3168
+   }
+  },
+  "LAMP1": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 47.04944178628389,
+    "len": 1254
+   },
+   "icor": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 79.74481658692186,
+    "len": 1254
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 68.5805422647528,
+    "len": 1254
+   },
+   "ERC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 70.97288676236045,
+    "len": 1254
+   },
+   "HFC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 98.08612440191388,
+    "len": 1254
+   },
+   "URC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 57.41626794258373,
+    "len": 1254
+   },
+   "genscript": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 89.31419457735247,
+    "len": 1254
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 57.55395683453237,
+    "len": 1251
+   }
+  },
+  "LEMD3": {
+   "all_original": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 8,
+    "cpg_per_kb": 52.26608187134503,
+    "len": 2736
+   },
+   "icor": {
+    "polyA": 3,
+    "splice_donor": 0,
+    "ARE_ATTTA": 3,
+    "cpg_per_kb": 85.1608187134503,
+    "len": 2736
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 80.04385964912281,
+    "len": 2736
+   },
+   "ERC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 68.34795321637426,
+    "len": 2736
+   },
+   "HFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 104.53216374269006,
+    "len": 2736
+   },
+   "URC": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 65.05847953216374,
+    "len": 2736
+   },
+   "genscript": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 90.27777777777777,
+    "len": 2736
+   },
+   "ours": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 73.54555433589462,
+    "len": 2733
+   }
+  },
+  "MAPK1": {
+   "all_original": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 31.39427516158818,
+    "len": 1083
+   },
+   "icor": {
+    "polyA": 3,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 62.78855032317636,
+    "len": 1083
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 63.71191135734072,
+    "len": 1083
+   },
+   "ERC": {
+    "polyA": 5,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 62.78855032317636,
+    "len": 1083
+   },
+   "HFC": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 75.71560480147738,
+    "len": 1083
+   },
+   "URC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 51.70821791320406,
+    "len": 1083
+   },
+   "genscript": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 70.17543859649123,
+    "len": 1083
+   },
+   "ours": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 50.0,
+    "len": 1080
+   }
+  },
+  "MAPKAPK5": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 21.1864406779661,
+    "len": 1416
+   },
+   "icor": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 76.27118644067797,
+    "len": 1416
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 64.26553672316385,
+    "len": 1416
+   },
+   "ERC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 52.259887005649716,
+    "len": 1416
+   },
+   "HFC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 79.09604519774011,
+    "len": 1416
+   },
+   "URC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 58.61581920903955,
+    "len": 1416
+   },
+   "genscript": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 66.38418079096046,
+    "len": 1416
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 60.86341118188252,
+    "len": 1413
+   }
+  },
+  "NGFR": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 2,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 73.20872274143302,
+    "len": 1284
+   },
+   "icor": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 88.00623052959502,
+    "len": 1284
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 86.44859813084112,
+    "len": 1284
+   },
+   "ERC": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 75.54517133956386,
+    "len": 1284
+   },
+   "HFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 114.48598130841121,
+    "len": 1284
+   },
+   "URC": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 69.31464174454828,
+    "len": 1284
+   },
+   "genscript": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 87.22741433021807,
+    "len": 1284
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 59.32864949258392,
+    "len": 1281
+   }
+  },
+  "NOC2L": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 48.44444444444444,
+    "len": 2250
+   },
+   "icor": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 3,
+    "cpg_per_kb": 82.22222222222223,
+    "len": 2250
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 2,
+    "ARE_ATTTA": 3,
+    "cpg_per_kb": 68.88888888888889,
+    "len": 2250
+   },
+   "ERC": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 57.77777777777778,
+    "len": 2250
+   },
+   "HFC": {
+    "polyA": 3,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 88.44444444444444,
+    "len": 2250
+   },
+   "URC": {
+    "polyA": 3,
+    "splice_donor": 1,
+    "ARE_ATTTA": 4,
+    "cpg_per_kb": 51.111111111111114,
+    "len": 2250
+   },
+   "genscript": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 76.88888888888889,
+    "len": 2250
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 66.75567423230974,
+    "len": 2247
+   }
+  },
+  "OPRM1": {
+   "all_original": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 28.262676641729012,
+    "len": 1203
+   },
+   "icor": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 68.16292601828762,
+    "len": 1203
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 59.019118869492935,
+    "len": 1203
+   },
+   "ERC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 56.525353283458024,
+    "len": 1203
+   },
+   "HFC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 76.47547797173732,
+    "len": 1203
+   },
+   "URC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 53.20033250207814,
+    "len": 1203
+   },
+   "genscript": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 68.99418121363259,
+    "len": 1203
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 55.0,
+    "len": 1200
+   }
+  },
+  "PDCD11": {
+   "all_original": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 25.462962962962962,
+    "len": 5616
+   },
+   "icor": {
+    "polyA": 7,
+    "splice_donor": 0,
+    "ARE_ATTTA": 4,
+    "cpg_per_kb": 75.14245014245014,
+    "len": 5616
+   },
+   "BFC": {
+    "polyA": 1,
+    "splice_donor": 3,
+    "ARE_ATTTA": 3,
+    "cpg_per_kb": 63.56837606837607,
+    "len": 5616
+   },
+   "ERC": {
+    "polyA": 1,
+    "splice_donor": 1,
+    "ARE_ATTTA": 4,
+    "cpg_per_kb": 51.63817663817664,
+    "len": 5616
+   },
+   "HFC": {
+    "polyA": 9,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 75.32051282051282,
+    "len": 5616
+   },
+   "URC": {
+    "polyA": 5,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 51.46011396011396,
+    "len": 5616
+   },
+   "genscript": {
+    "polyA": 3,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 73.00569800569801,
+    "len": 5616
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 61.64261535720649,
+    "len": 5613
+   }
+  },
+  "PLK1": {
+   "all_original": {
+    "polyA": 1,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 52.980132450331126,
+    "len": 1812
+   },
+   "icor": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 80.02207505518764,
+    "len": 1812
+   },
+   "BFC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 70.6401766004415,
+    "len": 1812
+   },
+   "ERC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 65.67328918322296,
+    "len": 1812
+   },
+   "HFC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 91.61147902869757,
+    "len": 1812
+   },
+   "URC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 52.428256070640174,
+    "len": 1812
+   },
+   "genscript": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 81.67770419426049,
+    "len": 1812
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 69.65174129353234,
+    "len": 1809
+   }
+  },
+  "RPS6KB1": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 6,
+    "cpg_per_kb": 17.74397972116603,
+    "len": 1578
+   },
+   "icor": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 3,
+    "cpg_per_kb": 84.91761723700887,
+    "len": 1578
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 70.34220532319392,
+    "len": 1578
+   },
+   "ERC": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 5,
+    "cpg_per_kb": 61.4702154626109,
+    "len": 1578
+   },
+   "HFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 5,
+    "cpg_per_kb": 95.05703422053232,
+    "len": 1578
+   },
+   "URC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 6,
+    "cpg_per_kb": 54.49936628643853,
+    "len": 1578
+   },
+   "genscript": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 84.28390367553865,
+    "len": 1578
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 3,
+    "cpg_per_kb": 81.26984126984127,
+    "len": 1575
+   }
+  },
+  "SMARCD1": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 38.59649122807018,
+    "len": 1425
+   },
+   "icor": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 84.21052631578948,
+    "len": 1425
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 70.87719298245614,
+    "len": 1425
+   },
+   "ERC": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 75.78947368421052,
+    "len": 1425
+   },
+   "HFC": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 99.64912280701755,
+    "len": 1425
+   },
+   "URC": {
+    "polyA": 3,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 56.14035087719298,
+    "len": 1425
+   },
+   "genscript": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 80.0,
+    "len": 1425
+   },
+   "ours": {
+    "polyA": 2,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 90.014064697609,
+    "len": 1422
+   }
+  },
+  "TAP1": {
+   "all_original": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 35.60302625723187,
+    "len": 2247
+   },
+   "icor": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 83.22207387627948,
+    "len": 2247
+   },
+   "BFC": {
+    "polyA": 1,
+    "splice_donor": 2,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 68.09078771695594,
+    "len": 2247
+   },
+   "ERC": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 3,
+    "cpg_per_kb": 63.19537160658656,
+    "len": 2247
+   },
+   "HFC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 91.67779261237204,
+    "len": 2247
+   },
+   "URC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 52.9595015576324,
+    "len": 2247
+   },
+   "genscript": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 72.98620382732533,
+    "len": 2247
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 59.71479500891265,
+    "len": 2244
+   }
+  },
+  "TAS2R10": {
+   "all_original": {
+    "polyA": 1,
+    "splice_donor": 1,
+    "ARE_ATTTA": 3,
+    "cpg_per_kb": 9.74025974025974,
+    "len": 924
+   },
+   "icor": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 3,
+    "cpg_per_kb": 47.61904761904762,
+    "len": 924
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 4,
+    "cpg_per_kb": 47.61904761904762,
+    "len": 924
+   },
+   "ERC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 4,
+    "cpg_per_kb": 42.20779220779221,
+    "len": 924
+   },
+   "HFC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 47.61904761904762,
+    "len": 924
+   },
+   "URC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 31.385281385281385,
+    "len": 924
+   },
+   "genscript": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 49.78354978354978,
+    "len": 924
+   },
+   "ours": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 46.68838219326819,
+    "len": 921
+   }
+  },
+  "akt1": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 53.36105336105336,
+    "len": 1443
+   },
+   "icor": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 85.23908523908524,
+    "len": 1443
+   },
+   "HFC": {
+    "polyA": 3,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 82.46708246708246,
+    "len": 1443
+   },
+   "ours": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 71.52777777777777,
+    "len": 1440
+   }
+  },
+  "emg1": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 24.489795918367346,
+    "len": 735
+   },
+   "icor": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 77.55102040816327,
+    "len": 735
+   },
+   "HFC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 96.59863945578232,
+    "len": 735
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 54.6448087431694,
+    "len": 732
+   }
+  },
+  "falvac-1": {
+   "all_original": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 5,
+    "cpg_per_kb": 8.23045267489712,
+    "len": 972
+   },
+   "icor": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 4,
+    "cpg_per_kb": 61.72839506172839,
+    "len": 972
+   },
+   "HFC": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 5,
+    "cpg_per_kb": 63.78600823045267,
+    "len": 972
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 52.46913580246913,
+    "len": 972
+   }
+  },
+  "flt1": {
+   "all_original": {
+    "polyA": 3,
+    "splice_donor": 1,
+    "ARE_ATTTA": 3,
+    "cpg_per_kb": 21.160069703759024,
+    "len": 4017
+   },
+   "icor": {
+    "polyA": 8,
+    "splice_donor": 0,
+    "ARE_ATTTA": 10,
+    "cpg_per_kb": 70.20164301717699,
+    "len": 4017
+   },
+   "HFC": {
+    "polyA": 6,
+    "splice_donor": 0,
+    "ARE_ATTTA": 10,
+    "cpg_per_kb": 76.6741349265621,
+    "len": 4017
+   },
+   "ours": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 63.52765321375187,
+    "len": 4014
+   }
+  },
+  "hpdf": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 102.4390243902439,
+    "len": 615
+   },
+   "icor": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 107.3170731707317,
+    "len": 615
+   },
+   "HFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 115.44715447154472,
+    "len": 615
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 71.89542483660131,
+    "len": 612
+   }
+  },
+  "lck": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 47.05882352941177,
+    "len": 1530
+   },
+   "icor": {
+    "polyA": 3,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 77.77777777777777,
+    "len": 1530
+   },
+   "HFC": {
+    "polyA": 3,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 79.73856209150327,
+    "len": 1530
+   },
+   "ours": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 66.79764243614932,
+    "len": 1527
+   }
+  },
+  "mmpl3": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 126.27865961199295,
+    "len": 2835
+   },
+   "icor": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 93.12169312169313,
+    "len": 2835
+   },
+   "HFC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 114.28571428571429,
+    "len": 2835
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 81.5677966101695,
+    "len": 2832
+   }
+  },
+  "npr1": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 51.4752040175769,
+    "len": 3186
+   },
+   "icor": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 4,
+    "cpg_per_kb": 85.68738229755179,
+    "len": 3186
+   },
+   "HFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 4,
+    "cpg_per_kb": 92.5925925925926,
+    "len": 3186
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 72.57304429783224,
+    "len": 3183
+   }
+  },
+  "pa": {
+   "all_original": {
+    "polyA": 1,
+    "splice_donor": 2,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 18.315018315018314,
+    "len": 1638
+   },
+   "icor": {
+    "polyA": 3,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 80.58608058608058,
+    "len": 1638
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 62.27106227106227,
+    "len": 1638
+   },
+   "HFC": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 84.24908424908425,
+    "len": 1638
+   },
+   "URC": {
+    "polyA": 1,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 49.45054945054945,
+    "len": 1638
+   },
+   "genscript": {
+    "polyA": 1,
+    "splice_donor": 2,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 81.19658119658119,
+    "len": 1638
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 64.51612903225806,
+    "len": 558
+   }
+  },
+  "pak1": {
+   "all_original": {
+    "polyA": 1,
+    "splice_donor": 2,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 18.315018315018314,
+    "len": 1638
+   },
+   "icor": {
+    "polyA": 3,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 80.58608058608058,
+    "len": 1638
+   },
+   "BFC": {
+    "polyA": 0,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 62.27106227106227,
+    "len": 1638
+   },
+   "HFC": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 84.24908424908425,
+    "len": 1638
+   },
+   "URC": {
+    "polyA": 1,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 49.45054945054945,
+    "len": 1638
+   },
+   "genscript": {
+    "polyA": 1,
+    "splice_donor": 2,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 81.19658119658119,
+    "len": 1638
+   },
+   "ours": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 72.17125382262996,
+    "len": 1635
+   }
+  },
+  "pea": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 130.50570962479608,
+    "len": 1839
+   },
+   "icor": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 96.79173463839042,
+    "len": 1839
+   },
+   "HFC": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 115.28004350190321,
+    "len": 1839
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 77.75965198477434,
+    "len": 1839
+   }
+  },
+  "pim1": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 64.75583864118896,
+    "len": 942
+   },
+   "icor": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 83.86411889596603,
+    "len": 942
+   },
+   "HFC": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 87.04883227176221,
+    "len": 942
+   },
+   "ours": {
+    "polyA": 1,
+    "splice_donor": 1,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 68.15761448349308,
+    "len": 939
+   }
+  },
+  "ptp4a3": {
+   "all_original": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 62.38859180035651,
+    "len": 561
+   },
+   "icor": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 81.99643493761141,
+    "len": 561
+   },
+   "HFC": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 90.9090909090909,
+    "len": 561
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 60.60606060606061,
+    "len": 561
+   }
+  },
+  "ubtf": {
+   "all_original": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 1,
+    "cpg_per_kb": 41.830065359477125,
+    "len": 2295
+   },
+   "icor": {
+    "polyA": 2,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 66.23093681917211,
+    "len": 2295
+   },
+   "HFC": {
+    "polyA": 1,
+    "splice_donor": 0,
+    "ARE_ATTTA": 2,
+    "cpg_per_kb": 74.94553376906318,
+    "len": 2295
+   },
+   "ours": {
+    "polyA": 0,
+    "splice_donor": 0,
+    "ARE_ATTTA": 0,
+    "cpg_per_kb": 62.390924956369986,
+    "len": 2292
+   }
+  }
+ },
+ "summary_means": {
+  "all_original": {
+   "polyA": 0.775,
+   "splice_donor": 0.3,
+   "ARE_ATTTA": 1.0,
+   "cpg_per_kb": 41.305,
+   "n": 40
+  },
+  "icor": {
+   "polyA": 1.95,
+   "splice_donor": 0.0,
+   "ARE_ATTTA": 1.575,
+   "cpg_per_kb": 77.81,
+   "n": 40
+  },
+  "BFC": {
+   "polyA": 0.143,
+   "splice_donor": 0.821,
+   "ARE_ATTTA": 1.464,
+   "cpg_per_kb": 68.07,
+   "n": 28
+  },
+  "ERC": {
+   "polyA": 1.0,
+   "splice_donor": 0.308,
+   "ARE_ATTTA": 1.808,
+   "cpg_per_kb": 61.165,
+   "n": 26
+  },
+  "HFC": {
+   "polyA": 1.8,
+   "splice_donor": 0.0,
+   "ARE_ATTTA": 1.55,
+   "cpg_per_kb": 86.971,
+   "n": 40
+  },
+  "URC": {
+   "polyA": 1.179,
+   "splice_donor": 0.393,
+   "ARE_ATTTA": 1.571,
+   "cpg_per_kb": 52.295,
+   "n": 28
+  },
+  "genscript": {
+   "polyA": 0.821,
+   "splice_donor": 0.357,
+   "ARE_ATTTA": 0.75,
+   "cpg_per_kb": 75.548,
+   "n": 28
+  },
+  "ours": {
+   "polyA": 0.5,
+   "splice_donor": 0.325,
+   "ARE_ATTTA": 0.225,
+   "cpg_per_kb": 63.594,
+   "n": 40
+  }
+ },
+ "ours_minus_wt_polyA": {
+  "mean": -0.275,
+  "n_up": 5,
+  "n_down": 14,
+  "n": 40
+ },
+ "ours_minus_wt_splice_donor": {
+  "mean": 0.025,
+  "n_up": 10,
+  "n_down": 8,
+  "n": 40
+ }
+}
