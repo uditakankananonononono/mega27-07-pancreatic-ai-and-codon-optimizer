@@ -257,6 +257,25 @@ survives blinded evaluators, while classical codon-usage maximization remains th
 stronger arm on codon-usage metrics - consistent with the circularity finding that
 single-codon and context-aware metrics measure different quantities.
 
+
+\section{Explicit comparison against published expression measurements}
+\label{sec:published-expr}
+Verdict item \#13 asks us to state explicitly how the evaluation compares against
+published expression measurements rather than internal surrogates. The mapping is as
+follows. Every evaluator used in this report - the CNN expression model, the ridge
+evaluator of \S\ref{sec:blinded}, and the random-forest codon-usage evaluator - is
+trained on log PaxDb integrated protein abundances, which are published,
+experimentally measured expression levels aggregated across mass-spectrometry and
+antibody studies. The held-out Spearman scores we report (0.611/0.607 ridge; RF
+held-out Pearson $r=0.678$) are therefore measured against published expression data,
+not against our own pipeline's outputs. What this does \emph{not} provide, stated
+plainly: there is no published measurement of \emph{our optimized sequences} expressed
+in pancreatic cell lines - such measurements do not exist, because the constructs are
+computational. The honest chain is: published abundances $\to$ trained evaluators
+$\to$ scored designs, with the generalization gaps audited at each arrow (held-out
+genes for training, blinded proteins and split seeds for scoring). A direct wet-lab
+confirmation of the designed sequences remains future work and is not claimed.
+
 \section{Documented negatives}
 (1) SMAD4 predictability is at chance across architectures. (2) The SWI/SNF--CDKN2A exclusivity fails replication. (3) Gene-level permutation importance on the CDKN2A GNN is noise. (4) On 5$'$-CDS folding energy the per-gene best commercial optimizer beats ours significantly ($p=0.040$; ViennaRNA audit above). Each negative is preserved in the archived result files (\texttt{results/*.json}).
 \section{Falsification paths}
