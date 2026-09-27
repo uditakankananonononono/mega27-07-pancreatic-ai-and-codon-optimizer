@@ -345,6 +345,27 @@ without task training - and it is the \emph{ranking} of the benchmark arms, not
 the absolute $r$, on which the circularity conclusion rests: that ranking is
 consistent across evaluator classes with non-overlapping inductive biases.
 
+
+\section{Results: cohort-wide driver-discovery scan with internal positive controls}
+\label{sec:driver-discovery}
+Verdict item \#7 asks for driver discovery beyond the four known drivers. We
+scored every gene in the PAAD mutation matrix (20{,}703 mutations) by recurrence
+$\times$ (1 + damaging fraction), where damaging means nonsense, frameshift,
+splice-site, or nonstop (\texttt{scripts/driver\_discovery.py},
+\texttt{results/driver\_discovery.json}). The method's positive controls behave
+exactly as required: the four canonical PDAC drivers occupy ranks 1--4 (TP53,
+KRAS, SMAD4, CDKN2A). Above background, the scan surfaces novel candidates whose
+damaging fraction separates signal from the long-gene artifact: RNF43 (11
+samples, 62\% damaging), ARID1A (9 samples, 77\%), KDM6A (7 samples, 100\%
+damaging), TGFBR2 and ATM (8 samples each) - all chromatin/R-spondin/DNA-damage
+axis genes with independent PDAC literature - while the classic passenger traps
+TTN (29 samples but 7.5\% damaging), MUC16 (13, 9.8\%), CSMD2 (10, 0\%), PCDH15
+and RYR1 are flagged by their near-zero damaging fraction despite high raw
+recurrence. The scan is explicitly a recurrence screen, not a covariate model:
+no gene-length or replication-timing normalization, so candidates require
+orthogonal validation (the DepMap 24Q4 + HPA feasibility audit above provides one such axis). The deliverable is a ranked,
+damage-annotated candidate list with internal controls, not a driver claim.
+
 \section{Documented negatives}
 (1) SMAD4 predictability is at chance across architectures. (2) The SWI/SNF--CDKN2A exclusivity fails replication. (3) Gene-level permutation importance on the CDKN2A GNN is noise. (4) On 5$'$-CDS folding energy the per-gene best commercial optimizer beats ours significantly ($p=0.040$; ViennaRNA audit above). Each negative is preserved in the archived result files (\texttt{results/*.json}).
 \section{Falsification paths}

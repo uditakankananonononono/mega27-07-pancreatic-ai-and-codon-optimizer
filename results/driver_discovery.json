@@ -1,0 +1,286 @@
+{
+ "n_samples": 184,
+ "n_genes_scored": 10001,
+ "n_mutations": 20703,
+ "positive_control_ranks": {
+  "TP53": 1,
+  "KRAS": 2,
+  "SMAD4": 3,
+  "CDKN2A": 4
+ },
+ "positive_control_check": true,
+ "top10_overall": [
+  {
+   "gene": "TP53",
+   "n_samples": 107,
+   "recurrence": 0.5815,
+   "damage_frac": 0.374,
+   "n_mut": 107,
+   "score": 0.7989,
+   "known_driver": true
+  },
+  {
+   "gene": "KRAS",
+   "n_samples": 117,
+   "recurrence": 0.6359,
+   "damage_frac": 0.0,
+   "n_mut": 119,
+   "score": 0.6359,
+   "known_driver": true
+  },
+  {
+   "gene": "SMAD4",
+   "n_samples": 37,
+   "recurrence": 0.2011,
+   "damage_frac": 0.579,
+   "n_mut": 38,
+   "score": 0.3175,
+   "known_driver": true
+  },
+  {
+   "gene": "CDKN2A",
+   "n_samples": 35,
+   "recurrence": 0.1902,
+   "damage_frac": 0.595,
+   "n_mut": 37,
+   "score": 0.3033,
+   "known_driver": true
+  },
+  {
+   "gene": "TTN",
+   "n_samples": 29,
+   "recurrence": 0.1576,
+   "damage_frac": 0.075,
+   "n_mut": 80,
+   "score": 0.1694,
+   "known_driver": false
+  },
+  {
+   "gene": "RNF43",
+   "n_samples": 11,
+   "recurrence": 0.0598,
+   "damage_frac": 0.615,
+   "n_mut": 13,
+   "score": 0.0966,
+   "known_driver": false
+  },
+  {
+   "gene": "ARID1A",
+   "n_samples": 9,
+   "recurrence": 0.0489,
+   "damage_frac": 0.769,
+   "n_mut": 13,
+   "score": 0.0865,
+   "known_driver": false
+  },
+  {
+   "gene": "MUC16",
+   "n_samples": 13,
+   "recurrence": 0.0707,
+   "damage_frac": 0.098,
+   "n_mut": 41,
+   "score": 0.0775,
+   "known_driver": false
+  },
+  {
+   "gene": "KDM6A",
+   "n_samples": 7,
+   "recurrence": 0.038,
+   "damage_frac": 1.0,
+   "n_mut": 7,
+   "score": 0.0761,
+   "known_driver": false
+  },
+  {
+   "gene": "TGFBR2",
+   "n_samples": 8,
+   "recurrence": 0.0435,
+   "damage_frac": 0.3,
+   "n_mut": 10,
+   "score": 0.0565,
+   "known_driver": false
+  }
+ ],
+ "novel_candidates_min5samples": [
+  {
+   "gene": "TTN",
+   "n_samples": 29,
+   "recurrence": 0.1576,
+   "damage_frac": 0.075,
+   "n_mut": 80,
+   "score": 0.1694,
+   "known_driver": false
+  },
+  {
+   "gene": "RNF43",
+   "n_samples": 11,
+   "recurrence": 0.0598,
+   "damage_frac": 0.615,
+   "n_mut": 13,
+   "score": 0.0966,
+   "known_driver": false
+  },
+  {
+   "gene": "ARID1A",
+   "n_samples": 9,
+   "recurrence": 0.0489,
+   "damage_frac": 0.769,
+   "n_mut": 13,
+   "score": 0.0865,
+   "known_driver": false
+  },
+  {
+   "gene": "MUC16",
+   "n_samples": 13,
+   "recurrence": 0.0707,
+   "damage_frac": 0.098,
+   "n_mut": 41,
+   "score": 0.0775,
+   "known_driver": false
+  },
+  {
+   "gene": "KDM6A",
+   "n_samples": 7,
+   "recurrence": 0.038,
+   "damage_frac": 1.0,
+   "n_mut": 7,
+   "score": 0.0761,
+   "known_driver": false
+  },
+  {
+   "gene": "TGFBR2",
+   "n_samples": 8,
+   "recurrence": 0.0435,
+   "damage_frac": 0.3,
+   "n_mut": 10,
+   "score": 0.0565,
+   "known_driver": false
+  },
+  {
+   "gene": "ATM",
+   "n_samples": 8,
+   "recurrence": 0.0435,
+   "damage_frac": 0.273,
+   "n_mut": 11,
+   "score": 0.0553,
+   "known_driver": false
+  },
+  {
+   "gene": "CSMD2",
+   "n_samples": 10,
+   "recurrence": 0.0543,
+   "damage_frac": 0.0,
+   "n_mut": 10,
+   "score": 0.0543,
+   "known_driver": false
+  },
+  {
+   "gene": "MAP3K21",
+   "n_samples": 7,
+   "recurrence": 0.038,
+   "damage_frac": 0.4,
+   "n_mut": 10,
+   "score": 0.0533,
+   "known_driver": false
+  },
+  {
+   "gene": "RREB1",
+   "n_samples": 7,
+   "recurrence": 0.038,
+   "damage_frac": 0.4,
+   "n_mut": 10,
+   "score": 0.0533,
+   "known_driver": false
+  },
+  {
+   "gene": "PCDH15",
+   "n_samples": 9,
+   "recurrence": 0.0489,
+   "damage_frac": 0.062,
+   "n_mut": 16,
+   "score": 0.052,
+   "known_driver": false
+  },
+  {
+   "gene": "RYR1",
+   "n_samples": 9,
+   "recurrence": 0.0489,
+   "damage_frac": 0.056,
+   "n_mut": 18,
+   "score": 0.0516,
+   "known_driver": false
+  },
+  {
+   "gene": "FLG",
+   "n_samples": 8,
+   "recurrence": 0.0435,
+   "damage_frac": 0.143,
+   "n_mut": 14,
+   "score": 0.0497,
+   "known_driver": false
+  },
+  {
+   "gene": "OBSCN",
+   "n_samples": 8,
+   "recurrence": 0.0435,
+   "damage_frac": 0.143,
+   "n_mut": 14,
+   "score": 0.0497,
+   "known_driver": false
+  },
+  {
+   "gene": "ADAMTS12",
+   "n_samples": 7,
+   "recurrence": 0.038,
+   "damage_frac": 0.25,
+   "n_mut": 8,
+   "score": 0.0476,
+   "known_driver": false
+  },
+  {
+   "gene": "DNAH11",
+   "n_samples": 7,
+   "recurrence": 0.038,
+   "damage_frac": 0.25,
+   "n_mut": 12,
+   "score": 0.0476,
+   "known_driver": false
+  },
+  {
+   "gene": "KMT2C",
+   "n_samples": 7,
+   "recurrence": 0.038,
+   "damage_frac": 0.25,
+   "n_mut": 16,
+   "score": 0.0476,
+   "known_driver": false
+  },
+  {
+   "gene": "CACNA1B",
+   "n_samples": 8,
+   "recurrence": 0.0435,
+   "damage_frac": 0.091,
+   "n_mut": 11,
+   "score": 0.0474,
+   "known_driver": false
+  },
+  {
+   "gene": "MYO18B",
+   "n_samples": 8,
+   "recurrence": 0.0435,
+   "damage_frac": 0.077,
+   "n_mut": 13,
+   "score": 0.0468,
+   "known_driver": false
+  },
+  {
+   "gene": "KMT2D",
+   "n_samples": 7,
+   "recurrence": 0.038,
+   "damage_frac": 0.231,
+   "n_mut": 13,
+   "score": 0.0468,
+   "known_driver": false
+  }
+ ]
+}
