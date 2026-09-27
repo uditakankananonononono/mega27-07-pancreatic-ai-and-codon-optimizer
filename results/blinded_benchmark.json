@@ -1,0 +1,49 @@
+{
+ "design": "blinded benchmark: 60 held-out proteins x 2 split seeds; optimizer sees train split only; evaluators (ridge, tAI) never seen by optimizer",
+ "splits": [
+  {
+   "split_seed": 0,
+   "n_optimized": 60,
+   "ridge_heldout_spearman": 0.611,
+   "ridge_z_mean": {
+    "wt": 0.072,
+    "cai_greedy": 0.274,
+    "cnn_opt": 0.247
+   },
+   "tai_mean": {
+    "wt": 0.3249,
+    "cai_greedy": 0.3622,
+    "cnn_opt": 0.3389
+   },
+   "cnn_minus_wt_ridge_boot95": [
+    0.0567,
+    0.2946
+   ],
+   "wilcoxon_cnn_vs_wt_p": 8.200707995901569e-05,
+   "frac_genes_cnn_beats_wt_ridge": 0.733,
+   "frac_genes_cnn_beats_cai_tai": 0.067
+  },
+  {
+   "split_seed": 1,
+   "n_optimized": 60,
+   "ridge_heldout_spearman": 0.607,
+   "ridge_z_mean": {
+    "wt": 0.005,
+    "cai_greedy": 0.215,
+    "cnn_opt": 0.17
+   },
+   "tai_mean": {
+    "wt": 0.3213,
+    "cai_greedy": 0.358,
+    "cnn_opt": 0.3348
+   },
+   "cnn_minus_wt_ridge_boot95": [
+    0.0305,
+    0.296
+   ],
+   "wilcoxon_cnn_vs_wt_p": 6.815761775262834e-05,
+   "frac_genes_cnn_beats_wt_ridge": 0.783,
+   "frac_genes_cnn_beats_cai_tai": 0.067
+  }
+ ]
+}
