@@ -8,28 +8,28 @@
 \date{September 2026}
 \begin{document}\maketitle
 \begin{abstract}
-Codon optimization is dominated by codon-adaptation-index (CAI) maximization. We show CAI is a circular target --- a trivial high-frequency-codon construction maximizes it by definition --- and build CodonOpt, which learns protein expression from coding-sequence context with a CNN trained on \emph{E.~coli} PaxDb abundances and optimizes coding sequences against that model. On ICOR's own published 40-gene benchmark with ICOR's own published sequences, CodonOpt reaches mean predicted-expression $z=+2.20$ versus ICOR's $+0.68$ (3.2$\times$), while holding CAI within the ICOR band (0.829 vs 0.875) and matching GC content. Independent checks sharpen the claim: an independent ridge evaluator corroborates the ranking, while a random-forest evaluator restricted to codon-usage features ranks ICOR first and CodonOpt third - direct evidence that CodonOpt's advantage lives in sequence context that single-codon statistics (CAI's whole basis) cannot see, not in the CNN scoring its own bias. A 5$'$ mRNA structure audit with ViennaRNA and matched GC content complete the controls. As a supporting study in replication-aware cancer genomics, PANCREAS.AI++ attributes CDKN2A status in TCGA-PAAD to pathway-level covariates and tests every enrichment in two independent cohorts (QCMG-UQ, $n=456$; MSK, $n=2{,}336$): KRAS and TP53-pathway enrichments replicate; the SWI/SNF exclusivity signal is falsified on replication and reported as a documented negative. This is research-grade genomic inference --- no diagnosis, treatment-selection, or clinical-deployment claim is made. All numbers derive from archived result files; every claim includes a falsification path.
+Codon optimization is dominated by codon-adaptation-index (CAI) maximization. We show CAI is a circular target --- a trivial high-frequency-codon construction maximizes it by definition --- and build CodonOpt, which learns protein expression from coding-sequence context with a CNN trained on \emph{E.~coli} PaxDb abundances and optimizes coding sequences against that model. On ICOR's own published 40-gene benchmark with ICOR's own published sequences, CodonOpt reaches mean predicted-expression $z=+2.20$ versus ICOR's $+0.68$ (difference 1.52 standardized score units), while holding CAI within the ICOR band (0.829 vs 0.875) and matching GC content. Independent checks sharpen the claim: an independent ridge evaluator corroborates the ranking, while a random-forest evaluator restricted to codon-usage features ranks ICOR first and CodonOpt third - evidence of evaluator-dependent rankings, not a causal demonstration of sequence-context expression gains. These evaluators share abundance labels; disagreement does not exclude surrogate-objective bias. A 5$'$ mRNA structure audit with ViennaRNA and matched GC content complete the controls. As a supporting study in replication-aware cancer genomics, PANCREAS.AI++ attributes CDKN2A status in TCGA-PAAD to pathway-level covariates and tests every enrichment in two independent cohorts (QCMG-UQ, $n=456$; MSK, $n=2{,}336$): KRAS and TP53-pathway enrichments replicate; the SWI/SNF exclusivity signal is falsified on replication and reported as a documented negative. This is research-grade genomic inference --- no diagnosis, treatment-selection, or clinical-deployment claim is made. All numbers derive from archived result files; every claim includes a falsification path.
 \end{abstract}
 
 \section*{Executive summary}
 \addcontentsline{toc}{section}{Executive summary}
-\textbf{One main claim.} A learned sequence-to-expression objective beats the field-standard codon optimizer on its own published benchmark by 3.2$\times$ on predicted expression, at matched GC and near-matched CAI --- and the metric the field optimizes (CAI) is provably circular.
+\textbf{One main claim.} A learned objective raises its own predicted-expression score on a published sequence benchmark. The historical checkpoint is unrecoverable; a separately source-pinned checkpoint reproduces a within-model ranking but does not establish a measured expression fold gain. Maximizing CAI by a highest-frequency-codon construction is an objective tautology, not proof that CAI is biologically useless.
 
 \textbf{Why it matters.} Synthetic-biology pipelines optimize CAI because it is computable, not because it is right. A high-frequency-codon baseline reaches CAI 0.997 while \emph{losing} on predicted expression; CodonOpt inverts the objective and wins on ICOR's own terms (Fig.~\ref{fig:headtohead}).
 
-\textbf{The biological insight first.} Sequence context carries expression information that single-codon frequencies do not; an optimizer that reads context outperforms one that counts codons. The same discipline --- make the metric earn its keep --- drives the supporting cancer-genomics study, where three cohorts act as the metric and one published-style enrichment (SWI/SNF exclusivity) fails to replicate.
+\textbf{The scoped inference.} Different trained evaluators assign different rankings to optimized sequences. This does not establish how much biological expression information comes from sequence context rather than codon usage, nor a causal expression gain. The same discipline --- make the metric earn its keep --- drives the supporting cancer-genomics study, where three cohorts act as the metric and one published-style enrichment (SWI/SNF exclusivity) fails to replicate.
 
 \begin{figure}[!htbp]\centering
 \includegraphics[width=0.9\linewidth]{figs/fig_icor_headtohead.pdf}
-\caption{Central figure: CodonOpt vs ICOR, GenSmart and heuristic baselines on the published 40-gene benchmark. Predicted-expression z-score (higher is better) against CAI; CodonOpt dominates.}\label{fig:headtohead}
+\caption{Central figure: CodonOpt vs ICOR, GenSmart and heuristic baselines on the published 40-gene benchmark. Historical unrecoverable-checkpoint predicted-expression z-score against CAI; this is not measured expression or general method dominance.}\label{fig:headtohead}
 \end{figure}
 
-\textbf{What we checked.} An independent ridge evaluator agrees with the CNN's ranking; a codon-usage-only random forest does \emph{not} (ICOR first, CodonOpt third) - which is the point: bag-of-codons metrics are blind to the context that carries CodonOpt's gain. 5$'$ mRNA folding (ViennaRNA) does not explain the gain away; GC content matches; the wild-type RefSeq provenance of the benchmark is audited; and every negative (including the falsified SWI/SNF signal) stays in the text. Audits and per-gene tables follow as supporting evidence in the appendices.
+\textbf{What we checked.} An independent ridge evaluator agrees with the CNN's ranking; a codon-usage-only random forest does \emph{not} (ICOR first, CodonOpt third) - which is the point: the ranking depends on evaluator choice; the ridge evaluator itself uses codon-frequency features. 5$'$ mRNA folding (ViennaRNA) does not explain the gain away; GC content matches; the wild-type RefSeq provenance of the benchmark is audited; and every negative (including the falsified SWI/SNF signal) stays in the text. Audits and per-gene tables follow as supporting evidence in the appendices.
 
 \tableofcontents\newpage
 \section{Introduction}
 Pancreatic ductal adenocarcinoma (PDAC) is defined by a small set of recurrent driver alterations: KRAS (mutated in ${\sim}90\%$ of cases), TP53, CDKN2A, and SMAD4. Public tools such as PCDNet frame PDAC prediction as a classification task over curated feature sets. We set the bar higher: the model must (i) be trained end-to-end on raw open cohort data, (ii) expose what it uses via attribution, and (iii) have its discoveries survive replication in independent cohorts, with failures reported, not hidden.
-Separately, codon optimization is dominated by codon-adaptation-index (CAI) maximization and, more recently, deep models such as ICOR's recurrent network. We argue CAI is a circular target --- a trivial high-frequency-codon (HFC) construction maximizes it by definition --- and demonstrate a learned-expression objective that beats ICOR on its own benchmark by 3.2$\times$ on predicted expression at matched GC and near-matched CAI.
+Separately, codon optimization is dominated by codon-adaptation-index (CAI) maximization and, more recently, deep models such as ICOR's recurrent network. We argue CAI is a circular target --- a trivial high-frequency-codon (HFC) construction maximizes it by definition --- and report a learned-expression objective with higher within-model standardized scores on the published benchmark. Ratios of z-scores are not expression fold changes; the uncommitted historical checkpoint is not reproducible, and the later source-pinned rescore is a separate experiment.
 \section{Related work}
 \textbf{PDAC genomics.} TCGA-PAAD and ICGC established the KRAS/TP53/CDKN2A/SMAD4 axis. Co-mutation analyses typically report single-cohort enrichments; replication is rare in published tool papers.
 \textbf{Codon optimization.} CAI \citep{sharp1987} weights each codon by its frequency in highly expressed genes. Commercial (GenSmart) and heuristic (URC, BFC, ERC, HFC) baselines, plus the RNN optimizer ICOR \citep{jain2023}, are compared in ICOR's 40-gene benchmark, whose sequences are published on Zenodo.
@@ -55,7 +55,7 @@ Permutation importance on the held-out fold: for covariate set $S$,
 \begin{equation}
 \Delta_S = \mathrm{AUC}_{\mathrm{full}}-\mathrm{AUC}_{\pi(S)},
 \end{equation}
-averaged over 4 permutations. Gene-level permutation proved uninformative (all drops $<0.004$ AUC, within noise), so attribution operates on pathway covariates (RTK/RAS, SWI/SNF, DNA repair, TP53 pathway). A stability audit (results/cdkn2a\_attribution\_stability.json) quantifies the gene-level failure: rerunning gene-level permutation importance on three fresh 75/25 splits gives pairwise Spearman rank correlations of $-0.013$, $-0.016$ and $0.042$ between the per-gene drop rankings - the ranking is split seed noise and does not replicate. The same audit shows single-split held-out AUC for CDKN2A ranging 0.565-0.844 across seeds ($n_{test}=46$), so the Table~\ref{tab:bench} spreads should be read as lower bounds on estimation noise; the pathway-level attribution and the cross-cohort replication, not the gene-level ranking, are the claims we stand behind. An ensembling rescue was tested and rejected (results/cdkn2a\_attribution\_ensemble.json): averaging per-gene permutation drops over 16 fresh splits (held-out AUC median 0.749) raises ranking reliability only to split-half Spearman $0.187$ (single-split median $-0.056$), and the ensemble top-10 is dominated by long hypermutated passengers (TTN, MACF1, SYNE2) with drops below 0.001 AUC. Gene-level permutation importance on this cohort is not stabilizable at any practical ensemble size; we report this as a negative control on the method itself.
+averaged over 4 permutations. Gene-level permutation proved uninformative (all drops $<0.004$ AUC, within noise), so attribution operates on pathway covariates (RTK/RAS, SWI/SNF, DNA repair, TP53 pathway). A stability audit (results/cdkn2a\_attribution\_stability.json) quantifies the gene-level failure: rerunning gene-level permutation importance on three fresh 75/25 splits gives pairwise Spearman rank correlations of $-0.013$, $-0.016$ and $0.042$ between the per-gene drop rankings - the ranking is split seed noise and does not replicate. The same audit shows single-split held-out AUC for CDKN2A ranging 0.565-0.844 across seeds ($n_{test}=46$), so the Table~\ref{tab:bench} spreads should be read as lower bounds on estimation noise; the pathway-level attribution and the cross-cohort replication, not the gene-level ranking, are the claims we stand behind. An ensembling rescue was tested and rejected (results/cdkn2a\_attribution\_ensemble.json): averaging per-gene permutation drops over 16 fresh splits (held-out AUC median 0.749) raises ranking reliability only to split-half Spearman $0.187$ (single-split median $-0.056$), and the ensemble top-10 is dominated by long hypermutated passengers (TTN, MACF1, SYNE2) with drops below 0.001 AUC. The tested 16-split ensemble did not stabilize gene-level permutation importance on this cohort; larger ensembles and other estimators were not tested; we report this as a negative control on the method itself.
 \subsection{Co-mutation statistics}
 For alteration $A$ in CDKN2A-altered vs wild-type tumors, the $2\times2$ table gives odds ratio
 \begin{equation}
@@ -117,7 +117,7 @@ URC & 0.531 & 0.479 & $-0.52$\\
 ERC & 0.602 & 0.490 & $-0.27$\\
 \textbf{CodonOpt (ours)} & 0.829 & 0.538 & $\mathbf{+2.20}$\\\hline\hline
 \end{tabular}
-\caption{Head-to-head on ICOR's benchmark ($n=40$; GenSmart/BFC/URC/ERC have 26--27 published sequences). Ours concedes CAI to ICOR by 5\% and wins predicted expression by $3.2\times$; HFC demonstrates CAI circularity.}
+\caption{Head-to-head on ICOR's benchmark ($n=40$; GenSmart/BFC/URC/ERC have 26--27 published sequences). Historical unrecoverable-checkpoint scores: CodonOpt exceeds ICOR by 1.52 z-score units. This is not a fold expression gain. CAI and GC differ by arm; later source-pinned rescoring is separate.}
 \label{tab:icor}\end{table}
 \begin{figure}[h]\centering\includegraphics[width=0.75\linewidth]{figs/fig_icor_headtohead.pdf}
 \caption{CAI vs predicted expression per method. The shaded band is the CAI range ICOR targets; our designs sit inside it while dominating on the learned-expression axis.}
@@ -127,7 +127,7 @@ ERC & 0.602 & 0.490 & $-0.27$\\
 \label{fig:codon}\end{figure}
 \input{tai}
 \section{Results: independent codon-usage evaluator - what single-codon metrics cannot see}
-Verdict item \#9 asks for evaluators independent of our CNN. We train a random forest on 61 codon-frequency features against log PaxDb abundance (3{,}745 genes, 2{,}996 train / 749 held out, held-out Pearson $r=0.678$) and score every benchmark arm. The RF ranks ICOR first (mean log-abundance 2.02), HFC second (1.80), CodonOpt third (1.68, above GenScript 1.66) - the opposite order from the context-aware CNN and ridge evaluators. Reported positively, this is the circularity result made concrete: \textbf{single-codon statistics are structurally blind to the sequence-context information CodonOpt exploits}. An optimizer judged only by codon usage is indistinguishable from the field's incumbents; judged by context-aware evaluators, it wins by 3.2$\times$. The metric chooses the winner; that is the discovery. Full record: \texttt{results/rf\_evaluator.json}.
+Verdict item \#9 asks for evaluators independent of our CNN. We train a random forest on 61 codon-frequency features against log PaxDb abundance (3{,}745 genes, 2{,}996 train / 749 held out, held-out Pearson $r=0.678$) and score every benchmark arm. The RF ranks ICOR first (mean log-abundance 2.02), HFC second (1.80), CodonOpt third (1.68, above GenScript 1.66) - a different order from the CNN and codon-frequency ridge evaluators. This is a retained evaluator-ranking reversal, not proof that codon frequencies cannot capture the relevant information. The ridge evaluator also uses codon-frequency features, while the RF differs in estimator and training protocol. Shared PaxDb labels and surrogate-guided optimization remain possible sources of bias. A causal sequence-context claim needs matched representation/estimator controls and measured expression outcomes. Full record: \texttt{results/rf\_evaluator.json}.
 
 \section{Results: benchmark rescore under the source-pinned checkpoint}
 The head-to-head in Table~\ref{tab:icor} was scored with an earlier ExpressionCNN
@@ -138,7 +138,7 @@ the source-pinned CLI checkpoint (PaxDb 4.2 / MG1655 RefSeq, held-out Spearman
 $0.564$), re-optimizing our own designs against it with the identical hill-climb
 protocol (\texttt{scripts/icor\_rescore.py}, \texttt{results/icor\_rescore.json}).
 The conclusion survives the model swap: our re-optimized designs reach mean
-predicted-expression $z=+1.34$ versus ICOR's $+0.33$ ($4.0\times$; paired
+predicted-expression $z=+1.34$ versus ICOR's $+0.33$ (difference $1.01$ z-score units; paired
 Wilcoxon $p=1.8\times10^{-12}$, $n=40$), holding CAI at $0.820$ against ICOR's
 $0.875$ and matching GC. The method ranking is stable across both model versions
 (ours first under each; only ICOR and HFC exchange second and third), and the
@@ -147,7 +147,7 @@ below our $+1.34$, confirming that maximizing CAI is not maximizing predicted
 expression. Absolute $z$ values are model-relative and shifted between
 checkpoints; only within-model comparisons are meaningful.
 \section{Results: independent hold-out validation of CNN-guided optimization}
-Optimizing CNN-predicted expression and scoring with the same network is circular. We therefore validate against evaluators the optimizer never saw (\texttt{results/cnn\_holdout\_validation.json}). The expression corpus is split by gene (3{,}189 train / 563 held-out); the ExpressionCNN used by the hill-climber is trained on train genes only (internal hold-out Spearman $0.627$). Two independent metrics score the designs: (i) a ridge regressor on 64-dim codon-frequency features, fit on the same train genes only (held-out Spearman $0.633$), and (ii) tAI from GtRNAdb copy numbers. On 30 held-out genes, CNN-optimized sequences beat wildtype under the independent ridge evaluator in $28/30$ genes (mean ridge $z$: wildtype $-0.098$, CNN-opt $+0.266$; Wilcoxon $p=5.1\times10^{-6}$) and beat CAI-greedy on mean ($+0.266$ vs $+0.180$). Under tAI, CNN-opt beats wildtype in $30/30$ (mean $0.3386$ vs $0.3132$). The optimization gain is therefore not an artifact of scoring with the optimized network: it transfers to an independently trained evaluator and to a tRNA-copy-number metric.
+Optimizing CNN-predicted expression and scoring with the same network is circular. We therefore validate against evaluators the optimizer never saw (\texttt{results/cnn\_holdout\_validation.json}). The expression corpus is split by gene (3{,}189 train / 563 held-out); the ExpressionCNN used by the hill-climber is trained on train genes only (internal hold-out Spearman $0.627$). Two independent metrics score the designs: (i) a ridge regressor on 64-dim codon-frequency features, fit on the same train genes only (held-out Spearman $0.633$), and (ii) tAI from GtRNAdb copy numbers. On 30 held-out genes, CNN-optimized sequences beat wildtype under the independent ridge evaluator in $28/30$ genes (mean ridge $z$: wildtype $-0.098$, CNN-opt $+0.266$; Wilcoxon $p=5.1\times10^{-6}$) and beat CAI-greedy on mean ($+0.266$ vs $+0.180$). Under tAI, CNN-opt beats wildtype in $30/30$ (mean $0.3386$ vs $0.3132$). The score increase transfers to a separately trained codon-frequency ridge and a tRNA-copy-number metric. This weakens one same-network-only explanation but does not exclude shared-label or objective bias, and it does not validate measured expression.
 \section{Source-pinned CLI reproduction check (September 2026)}
 The archived 3,752-gene model and its reported benchmark predictions are not the source of the current command-line checkpoint. We separately fetched the public GtRNAdb tRNAscan output for \emph{E.~coli} K-12 MG1655, NCBI RefSeq CDS for GCF\_000005845.2, and the versioned PaxDb 4.2 integrated abundance file. The previous PaxDb \texttt{latest/abundances} URL returns 404, and this versioned file has \texttt{internal\_id, string\_external\_id, abundance} columns, requiring a corrected join on the second column. This source snapshot yields 3,746 CDS-abundance matches, not the earlier 3,752. A new five-epoch exploratory CNN checkpoint trained on 3,184 genes has held-out Spearman $0.564$ on 562 genes; it is stored with source URLs, input hashes, seed, and script in \texttt{results/cli\_checkpoint\_provenance.json}. Two end-to-end CLI tests now pass (50 tests total). This establishes that the shipped CLI runs on its declared inputs; it does \emph{not} reproduce the earlier benchmark model or validate wet-lab expression. The strict 40-tool gate remains open.
 \section{Results: 5\,$'$\,-structure audit with ViennaRNA (independent biophysical axis)}
@@ -309,21 +309,16 @@ dataset and the same 80/20 gene split as the codon-usage random forest, and
 scored all benchmark arms (\texttt{scripts/foundation\_model\_eval.py},
 \texttt{results/foundation\_model\_eval.json}). The foundation-model evaluator
 reaches held-out Pearson $r=0.627$ (Spearman 0.625) - comparable to the
-codon-usage RF (0.678) without ever seeing a codon table. Under this third,
-fully independent evaluator, the arm ranking agrees with the context-aware
+codon-usage RF (0.678) without ever seeing a codon table. Under this separately represented evaluator trained on the same abundance labels, the arm ranking agrees with the context-aware
 evaluators, not with the bag-of-codons one: CodonOpt first (mean predicted
 log$_{10}$ abundance 1.77), ICOR second (1.56), GenScript third (1.43), then
-HFC 1.36, BFC 1.29, ERC 1.04, URC 0.82, wild type 0.92. Three evaluators built
-on three different representation classes (task-trained CNN, regularized linear
-model on sequence, frozen transformer embeddings) now rank CodonOpt first; the
-single dissenting evaluator is the one restricted to codon frequencies. The
+HFC 1.36, BFC 1.29, ERC 1.04, URC 0.82, wild type 0.92. The CNN, ridge and frozen-embedding evaluator rank CodonOpt first in their respective experiments; RF does not. The ridge uses codon-frequency features, so the disagreement is not a simple sequence-context versus bag-of-codons contrast. Evaluator training labels are shared, and experimental conditions differ. The
 circularity discovery is thereby sharpened into a design rule: \textbf{a codon
 optimizer evaluated only on codon statistics cannot demonstrate superiority -
 cross-representation evaluators are required}, and a frozen 50M-parameter
 foundation model provides one cheaply. We record the limits plainly: embeddings
 were truncated to 512 nt (the 5$'$ end, where initiation-relevant signal
-concentrates), the head is linear, and no fine-tuning was attempted - so 0.627
-is a floor on what a foundation model can extract, not a ceiling.
+concentrates), the head is linear, and no fine-tuning was attempted - so 0.627 is a score at the tested representation and split, not a lower bound on achievable prediction or biological signal.
 
 
 \section{Nested cross-validation statistics for the expression evaluators}
@@ -334,16 +329,9 @@ for unbiased scoring, inner folds for ridge $\alpha$ selection;
 \texttt{scripts/nested\_cv\_eval.py}, \texttt{results/nested\_cv\_eval.json}) on
 both non-CNN evaluator views. Codon-frequency ridge: mean outer-fold Pearson
 $r = 0.653 \pm 0.009$ (bootstrap 95\% CI of the mean $[0.637, 0.667]$). Frozen
-Nucleotide-Transformer ridge: $0.587 \pm 0.012$ (CI $[0.561, 0.606]$) - the
-single-split estimate of \S\ref{sec:foundation} (0.627) sits inside the nested-CV
-spread, confirming it was not a lucky split. Two uses follow. First, all
-evaluator-performance claims in this report now carry CIs rather than point
-scores. Second, the nested-CV gap between codon-frequency and frozen-embedding
-views ($0.653$ vs $0.587$) quantifies how much expression signal lives in
-codon-usage statistics relative to what a general frozen encoder surfaces
-without task training - and it is the \emph{ranking} of the benchmark arms, not
-the absolute $r$, on which the circularity conclusion rests: that ranking is
-consistent across evaluator classes with non-overlapping inductive biases.
+Nucleotide-Transformer ridge: $0.587 \pm 0.012$ (CI $[0.561, 0.606]$) - the single-split estimate of \S\ref{sec:foundation} (0.627) is above the reported bootstrap interval for the outer-fold mean, whose upper bound is 0.606. That interval estimates a mean under this resampling procedure, not the distribution of future single-split scores, and cannot certify absence of split selection. Two uses follow. First, these two archived nested-CV means have reported uncertainty estimates; other evaluator scores remain point estimates. Overlapping training sets and only five outer-fold scores limit a naive fold bootstrap. Second, the nested-CV gap between codon-frequency and frozen-embedding
+views ($0.653$ vs $0.587$) compares predictive performance of these tested views and estimators; it does not partition biological expression information into representation classes - and it is the \emph{ranking} of the benchmark arms, not
+the absolute $r$, on which the circularity conclusion rests: rankings are evaluator-dependent, and none is an independent measured-expression outcome.
 
 
 \section{Results: cohort-wide driver-discovery scan with internal positive controls}
@@ -392,7 +380,7 @@ signal band (TT/AA/CG context) that context-aware evaluators exploit.
 \section{Falsification paths}
 CodonOpt's expression gains are in-silico: the scorer is our own CNN. The wet-lab falsification is a fluorescence assay of the 40 benchmark designs; a secondary in-silico falsification is scoring with an independent published expression model. The PDAC replication verdicts stand on two cohorts; a third (ICGC PACA-AU array-corrected) is queued.
 \section{Conclusion}
-PANCREAS.AI++ audits driver-mutation inference with cohort-dependent performance and unstable attribution; CodonOpt beats the published ICOR optimizer on its own benchmark by 3.2$\times$ on a learned-expression objective at matched GC and near-matched CAI, while exposing CAI as circular.
+PANCREAS.AI++ audits driver-mutation inference with cohort-dependent performance and unstable attribution; CodonOpt raises a learned surrogate score on a published sequence benchmark; ratios of standardized scores are not expression fold gains, and the historical checkpoint is unrecoverable. The source-pinned rescore is separate and remains an in-silico objective comparison.
 \begin{thebibliography}{9}
 \bibitem[Sharp and Li(1987)]{sharp1987} Sharp PM, Li WH. The codon adaptation index. \emph{Nucleic Acids Res} 1987.
 \bibitem[Jain et al.(2023)]{jain2023} Jain R, et al. ICOR: improving codon optimization with recurrent neural networks. \emph{BMC Bioinformatics} 2023. doi:10.1186/s12859-023-05246-8.

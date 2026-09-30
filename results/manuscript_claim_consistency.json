@@ -1,0 +1,86 @@
+[
+  {
+    "before": "(3.2$\\times$)",
+    "after": "(difference 1.52 standardized score units)"
+  },
+  {
+    "before": "direct evidence that CodonOpt's advantage lives in sequence context that single-codon statistics (CAI's whole basis) cannot see, not in the CNN scoring its own bias",
+    "after": "evidence of evaluator-dependent rankings, not a causal demonstration of sequence-context expression gains. These evaluators share abundance labels; disagreement does not exclude surrogate-objective bias"
+  },
+  {
+    "before": "A learned sequence-to-expression objective beats the field-standard codon optimizer on its own published benchmark by 3.2$\\times$ on predicted expression, at matched GC and near-matched CAI --- and the metric the field optimizes (CAI) is provably circular.",
+    "after": "A learned objective raises its own predicted-expression score on a published sequence benchmark. The historical checkpoint is unrecoverable; a separately source-pinned checkpoint reproduces a within-model ranking but does not establish a measured expression fold gain. Maximizing CAI by a highest-frequency-codon construction is an objective tautology, not proof that CAI is biologically useless."
+  },
+  {
+    "before": "\\textbf{The biological insight first.} Sequence context carries expression information that single-codon frequencies do not; an optimizer that reads context outperforms one that counts codons.",
+    "after": "\\textbf{The scoped inference.} Different trained evaluators assign different rankings to optimized sequences. This does not establish how much biological expression information comes from sequence context rather than codon usage, nor a causal expression gain."
+  },
+  {
+    "before": "bag-of-codons metrics are blind to the context that carries CodonOpt's gain",
+    "after": "the ranking depends on evaluator choice; the ridge evaluator itself uses codon-frequency features"
+  },
+  {
+    "before": "and demonstrate a learned-expression objective that beats ICOR on its own benchmark by 3.2$\\times$ on predicted expression at matched GC and near-matched CAI.",
+    "after": "and report a learned-expression objective with higher within-model standardized scores on the published benchmark. Ratios of z-scores are not expression fold changes; the uncommitted historical checkpoint is not reproducible, and the later source-pinned rescore is a separate experiment."
+  },
+  {
+    "before": "Ours concedes CAI to ICOR by 5\\% and wins predicted expression by $3.2\\times$; HFC demonstrates CAI circularity.",
+    "after": "Historical unrecoverable-checkpoint scores: CodonOpt exceeds ICOR by 1.52 z-score units. This is not a fold expression gain. CAI and GC differ by arm; later source-pinned rescoring is separate."
+  },
+  {
+    "before": "Reported positively, this is the circularity result made concrete: \\textbf{single-codon statistics are structurally blind to the sequence-context information CodonOpt exploits}. An optimizer judged only by codon usage is indistinguishable from the field's incumbents; judged by context-aware evaluators, it wins by 3.2$\\times$. The metric chooses the winner; that is the discovery.",
+    "after": "This is a retained evaluator-ranking reversal, not proof that codon frequencies cannot capture the relevant information. The ridge evaluator also uses codon-frequency features, while the RF differs in estimator and training protocol. Shared PaxDb labels and surrogate-guided optimization remain possible sources of bias. A causal sequence-context claim needs matched representation/estimator controls and measured expression outcomes."
+  },
+  {
+    "before": "($4.0\\times$; paired",
+    "after": "(difference $1.01$ z-score units; paired"
+  },
+  {
+    "before": "The optimization gain is therefore not an artifact of scoring with the optimized network: it transfers to an independently trained evaluator and to a tRNA-copy-number metric.",
+    "after": "The score increase transfers to a separately trained codon-frequency ridge and a tRNA-copy-number metric. This weakens one same-network-only explanation but does not exclude shared-label or objective bias, and it does not validate measured expression."
+  },
+  {
+    "before": "Under this third,\nfully independent evaluator",
+    "after": "Under this separately represented evaluator trained on the same abundance labels"
+  },
+  {
+    "before": "Three evaluators built\non three different representation classes (task-trained CNN, regularized linear\nmodel on sequence, frozen transformer embeddings) now rank CodonOpt first; the\nsingle dissenting evaluator is the one restricted to codon frequencies.",
+    "after": "The CNN, ridge and frozen-embedding evaluator rank CodonOpt first in their respective experiments; RF does not. The ridge uses codon-frequency features, so the disagreement is not a simple sequence-context versus bag-of-codons contrast. Evaluator training labels are shared, and experimental conditions differ."
+  },
+  {
+    "before": "so 0.627\nis a floor on what a foundation model can extract, not a ceiling.",
+    "after": "so 0.627 is a score at the tested representation and split, not a lower bound on achievable prediction or biological signal."
+  },
+  {
+    "before": "the\nsingle-split estimate of \\S\\ref{sec:foundation} (0.627) sits inside the nested-CV\nspread, confirming it was not a lucky split.",
+    "after": "the single-split estimate of \\S\\ref{sec:foundation} (0.627) is above the reported bootstrap interval for the outer-fold mean, whose upper bound is 0.606. That interval estimates a mean under this resampling procedure, not the distribution of future single-split scores, and cannot certify absence of split selection."
+  },
+  {
+    "before": "First, all\nevaluator-performance claims in this report now carry CIs rather than point\nscores.",
+    "after": "First, these two archived nested-CV means have reported uncertainty estimates; other evaluator scores remain point estimates. Overlapping training sets and only five outer-fold scores limit a naive fold bootstrap."
+  },
+  {
+    "before": "quantifies how much expression signal lives in\ncodon-usage statistics relative to what a general frozen encoder surfaces\nwithout task training",
+    "after": "compares predictive performance of these tested views and estimators; it does not partition biological expression information into representation classes"
+  },
+  {
+    "before": "that ranking is\nconsistent across evaluator classes with non-overlapping inductive biases.",
+    "after": "rankings are evaluator-dependent, and none is an independent measured-expression outcome."
+  },
+  {
+    "before": "CodonOpt beats the published ICOR optimizer on its own benchmark by 3.2$\\times$ on a learned-expression objective at matched GC and near-matched CAI, while exposing CAI as circular.",
+    "after": "CodonOpt raises a learned surrogate score on a published sequence benchmark; ratios of standardized scores are not expression fold gains, and the historical checkpoint is unrecoverable. The source-pinned rescore is separate and remains an in-silico objective comparison."
+  },
+  {
+    "before": "Predicted-expression z-score (higher is better) against CAI; CodonOpt dominates.",
+    "after": "Historical unrecoverable-checkpoint predicted-expression z-score against CAI; this is not measured expression or general method dominance."
+  },
+  {
+    "before": "Gene-level permutation importance on this cohort is not stabilizable at any practical ensemble size",
+    "after": "The tested 16-split ensemble did not stabilize gene-level permutation importance on this cohort; larger ensembles and other estimators were not tested"
+  },
+  {
+    "before": "the opposite order from the context-aware CNN and ridge evaluators",
+    "after": "a different order from the CNN and codon-frequency ridge evaluators"
+  }
+]
