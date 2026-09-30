@@ -1,0 +1,446 @@
+{
+  "target": "CDKN2A",
+  "design": "6 stratified 75/25 splits, 120 epochs, 10 grouped permutations; train-only vocabulary, adjacency and age imputation",
+  "pathways": [
+    "RTK_RAS",
+    "TP53",
+    "CELL_CYCLE",
+    "TGF_BETA",
+    "SWI_SNF",
+    "DNA_REPAIR"
+  ],
+  "rows": [
+    {
+      "split_seed": 11,
+      "test_auc": 0.8468468468468467,
+      "drops": [
+        {
+          "pathway": "RTK_RAS",
+          "selected_genes": [
+            "KRAS"
+          ],
+          "mean_auc_drop": 0.09729729729729722,
+          "repeat_sd": 0.05238210597300675
+        },
+        {
+          "pathway": "TP53",
+          "selected_genes": [
+            "TP53",
+            "ATM"
+          ],
+          "mean_auc_drop": 0.05615615615615608,
+          "repeat_sd": 0.03864045388278791
+        },
+        {
+          "pathway": "CELL_CYCLE",
+          "selected_genes": [],
+          "mean_auc_drop": 0.0,
+          "repeat_sd": 0.0
+        },
+        {
+          "pathway": "TGF_BETA",
+          "selected_genes": [
+            "SMAD4",
+            "TGFBR2"
+          ],
+          "mean_auc_drop": -0.0024024024024025038,
+          "repeat_sd": 0.016190243538863485
+        },
+        {
+          "pathway": "SWI_SNF",
+          "selected_genes": [
+            "ARID1A"
+          ],
+          "mean_auc_drop": 0.038138138138138065,
+          "repeat_sd": 0.05653750775437813
+        },
+        {
+          "pathway": "DNA_REPAIR",
+          "selected_genes": [],
+          "mean_auc_drop": 0.012012012012011963,
+          "repeat_sd": 0.02036735730668247
+        }
+      ]
+    },
+    {
+      "split_seed": 23,
+      "test_auc": 0.7207207207207207,
+      "drops": [
+        {
+          "pathway": "RTK_RAS",
+          "selected_genes": [
+            "KRAS"
+          ],
+          "mean_auc_drop": 0.06726726726726726,
+          "repeat_sd": 0.057367052097471775
+        },
+        {
+          "pathway": "TP53",
+          "selected_genes": [
+            "TP53",
+            "ATM"
+          ],
+          "mean_auc_drop": -0.014714714714714704,
+          "repeat_sd": 0.05742379024306977
+        },
+        {
+          "pathway": "CELL_CYCLE",
+          "selected_genes": [],
+          "mean_auc_drop": 0.0,
+          "repeat_sd": 0.0
+        },
+        {
+          "pathway": "TGF_BETA",
+          "selected_genes": [
+            "SMAD4",
+            "TGFBR2"
+          ],
+          "mean_auc_drop": -0.0036036036036036223,
+          "repeat_sd": 0.030222937290259586
+        },
+        {
+          "pathway": "SWI_SNF",
+          "selected_genes": [
+            "ARID1A"
+          ],
+          "mean_auc_drop": 0.008108108108108103,
+          "repeat_sd": 0.02813685436334979
+        },
+        {
+          "pathway": "DNA_REPAIR",
+          "selected_genes": [],
+          "mean_auc_drop": 0.028528528528528517,
+          "repeat_sd": 0.021850730683626685
+        }
+      ]
+    },
+    {
+      "split_seed": 42,
+      "test_auc": 0.5615615615615616,
+      "drops": [
+        {
+          "pathway": "RTK_RAS",
+          "selected_genes": [
+            "KRAS"
+          ],
+          "mean_auc_drop": 0.02192192192192194,
+          "repeat_sd": 0.037132954821981104
+        },
+        {
+          "pathway": "TP53",
+          "selected_genes": [
+            "TP53",
+            "ATM"
+          ],
+          "mean_auc_drop": -0.04084084084084083,
+          "repeat_sd": 0.07645970393983231
+        },
+        {
+          "pathway": "CELL_CYCLE",
+          "selected_genes": [],
+          "mean_auc_drop": 0.0,
+          "repeat_sd": 0.0
+        },
+        {
+          "pathway": "TGF_BETA",
+          "selected_genes": [
+            "SMAD4",
+            "TGFBR2"
+          ],
+          "mean_auc_drop": -0.02582582582582583,
+          "repeat_sd": 0.029802272778263698
+        },
+        {
+          "pathway": "SWI_SNF",
+          "selected_genes": [
+            "ARID1A"
+          ],
+          "mean_auc_drop": 0.004504504504504547,
+          "repeat_sd": 0.032934302054779
+        },
+        {
+          "pathway": "DNA_REPAIR",
+          "selected_genes": [],
+          "mean_auc_drop": 0.006006006006006026,
+          "repeat_sd": 0.021375532036098734
+        }
+      ]
+    },
+    {
+      "split_seed": 71,
+      "test_auc": 0.6096096096096095,
+      "drops": [
+        {
+          "pathway": "RTK_RAS",
+          "selected_genes": [
+            "KRAS"
+          ],
+          "mean_auc_drop": 0.017117117117117064,
+          "repeat_sd": 0.06626369567002986
+        },
+        {
+          "pathway": "TP53",
+          "selected_genes": [
+            "TP53",
+            "ATM"
+          ],
+          "mean_auc_drop": -0.004204204204204231,
+          "repeat_sd": 0.06345430538027909
+        },
+        {
+          "pathway": "CELL_CYCLE",
+          "selected_genes": [],
+          "mean_auc_drop": 0.0,
+          "repeat_sd": 0.0
+        },
+        {
+          "pathway": "TGF_BETA",
+          "selected_genes": [
+            "SMAD4"
+          ],
+          "mean_auc_drop": -0.006606606606606669,
+          "repeat_sd": 0.01085520857795872
+        },
+        {
+          "pathway": "SWI_SNF",
+          "selected_genes": [
+            "ARID1A"
+          ],
+          "mean_auc_drop": 0.02042042042042035,
+          "repeat_sd": 0.03680091385024516
+        },
+        {
+          "pathway": "DNA_REPAIR",
+          "selected_genes": [],
+          "mean_auc_drop": -0.005105105105105157,
+          "repeat_sd": 0.026410117210794143
+        }
+      ]
+    },
+    {
+      "split_seed": 89,
+      "test_auc": 0.7117117117117118,
+      "drops": [
+        {
+          "pathway": "RTK_RAS",
+          "selected_genes": [
+            "KRAS"
+          ],
+          "mean_auc_drop": 0.007507507507507583,
+          "repeat_sd": 0.043523403808427764
+        },
+        {
+          "pathway": "TP53",
+          "selected_genes": [
+            "TP53",
+            "ATM"
+          ],
+          "mean_auc_drop": 0.06456456456456464,
+          "repeat_sd": 0.06743582603984859
+        },
+        {
+          "pathway": "CELL_CYCLE",
+          "selected_genes": [],
+          "mean_auc_drop": 0.0,
+          "repeat_sd": 0.0
+        },
+        {
+          "pathway": "TGF_BETA",
+          "selected_genes": [
+            "SMAD4",
+            "TGFBR2"
+          ],
+          "mean_auc_drop": 0.01231231231231238,
+          "repeat_sd": 0.008546696378833485
+        },
+        {
+          "pathway": "SWI_SNF",
+          "selected_genes": [
+            "ARID1A"
+          ],
+          "mean_auc_drop": 0.06276276276276285,
+          "repeat_sd": 0.04166978528430732
+        },
+        {
+          "pathway": "DNA_REPAIR",
+          "selected_genes": [],
+          "mean_auc_drop": 0.010510510510510574,
+          "repeat_sd": 0.019730133477904935
+        }
+      ]
+    },
+    {
+      "split_seed": 101,
+      "test_auc": 0.7777777777777777,
+      "drops": [
+        {
+          "pathway": "RTK_RAS",
+          "selected_genes": [
+            "KRAS"
+          ],
+          "mean_auc_drop": 0.0957957957957957,
+          "repeat_sd": 0.10043437678911538
+        },
+        {
+          "pathway": "TP53",
+          "selected_genes": [
+            "TP53",
+            "ATM"
+          ],
+          "mean_auc_drop": 0.1078078078078077,
+          "repeat_sd": 0.0736052310800983
+        },
+        {
+          "pathway": "CELL_CYCLE",
+          "selected_genes": [],
+          "mean_auc_drop": 0.0,
+          "repeat_sd": 0.0
+        },
+        {
+          "pathway": "TGF_BETA",
+          "selected_genes": [
+            "SMAD4",
+            "TGFBR2"
+          ],
+          "mean_auc_drop": -0.006906906906906951,
+          "repeat_sd": 0.011240666297201034
+        },
+        {
+          "pathway": "SWI_SNF",
+          "selected_genes": [
+            "ARID1A"
+          ],
+          "mean_auc_drop": 0.040540540540540446,
+          "repeat_sd": 0.04916637313410536
+        },
+        {
+          "pathway": "DNA_REPAIR",
+          "selected_genes": [],
+          "mean_auc_drop": 0.0,
+          "repeat_sd": 0.0
+        }
+      ]
+    }
+  ],
+  "rank_correlations": [
+    {
+      "seeds": [
+        11,
+        23
+      ],
+      "rho": 0.3714285714285715
+    },
+    {
+      "seeds": [
+        11,
+        42
+      ],
+      "rho": 0.3714285714285715
+    },
+    {
+      "seeds": [
+        11,
+        71
+      ],
+      "rho": 0.6
+    },
+    {
+      "seeds": [
+        11,
+        89
+      ],
+      "rho": 0.2
+    },
+    {
+      "seeds": [
+        11,
+        101
+      ],
+      "rho": 0.9276336570439175
+    },
+    {
+      "seeds": [
+        23,
+        42
+      ],
+      "rho": 1.0
+    },
+    {
+      "seeds": [
+        23,
+        71
+      ],
+      "rho": 0.4285714285714286
+    },
+    {
+      "seeds": [
+        23,
+        89
+      ],
+      "rho": -0.5428571428571429
+    },
+    {
+      "seeds": [
+        23,
+        101
+      ],
+      "rho": 0.028988551782622423
+    },
+    {
+      "seeds": [
+        42,
+        71
+      ],
+      "rho": 0.4285714285714286
+    },
+    {
+      "seeds": [
+        42,
+        89
+      ],
+      "rho": -0.5428571428571429
+    },
+    {
+      "seeds": [
+        42,
+        101
+      ],
+      "rho": 0.028988551782622423
+    },
+    {
+      "seeds": [
+        71,
+        89
+      ],
+      "rho": -0.08571428571428573
+    },
+    {
+      "seeds": [
+        71,
+        101
+      ],
+      "rho": 0.5507824838698261
+    },
+    {
+      "seeds": [
+        89,
+        101
+      ],
+      "rho": 0.3768511731740915
+    }
+  ],
+  "mean_auc_drop": {
+    "RTK_RAS": 0.051151151151151125,
+    "TP53": 0.028128128128128108,
+    "CELL_CYCLE": 0.0,
+    "TGF_BETA": -0.005505505505505533,
+    "SWI_SNF": 0.029079079079079067,
+    "DNA_REPAIR": 0.008658658658658653
+  },
+  "limits": [
+    "Overlapping test sets: split replicates are not independent patient cohorts",
+    "Permutation is association, not causal explanation",
+    "Hand-curated pathways and fixed model hyperparameters; no new pathway discovery",
+    "Model excludes target gene but global burden remains a confounder"
+  ]
+}
