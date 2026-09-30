@@ -1,0 +1,210 @@
+{
+  "n_genes": 5068,
+  "chromosomes": [
+    "NC_001133.9",
+    "NC_001134.8",
+    "NC_001135.5",
+    "NC_001136.10",
+    "NC_001137.3",
+    "NC_001138.5",
+    "NC_001139.9",
+    "NC_001140.6",
+    "NC_001141.2",
+    "NC_001142.9",
+    "NC_001143.9",
+    "NC_001144.5",
+    "NC_001145.3",
+    "NC_001146.8",
+    "NC_001147.6",
+    "NC_001148.4"
+  ],
+  "source": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75897",
+  "target": "log2 RPF/RNA",
+  "design": "five chromosome-disjoint GroupKFold folds; inner RidgeCV on training folds; standard genetic code excludes stops from composition features",
+  "models": {
+    "length_gc": {
+      "folds": [
+        {
+          "pearson": 0.4939981348722001,
+          "mse": 0.8081354392771428,
+          "test_chromosomes": [
+            "NC_001133.9",
+            "NC_001136.10",
+            "NC_001143.9"
+          ],
+          "n_test": 1016
+        },
+        {
+          "pearson": 0.4033927527030472,
+          "mse": 1.0384532658773644,
+          "test_chromosomes": [
+            "NC_001139.9",
+            "NC_001140.6",
+            "NC_001142.9"
+          ],
+          "n_test": 1016
+        },
+        {
+          "pearson": 0.45645860173469377,
+          "mse": 0.9652348020748168,
+          "test_chromosomes": [
+            "NC_001134.8",
+            "NC_001141.2",
+            "NC_001147.6"
+          ],
+          "n_test": 991
+        },
+        {
+          "pearson": 0.38372127064561073,
+          "mse": 1.1189743106051764,
+          "test_chromosomes": [
+            "NC_001137.3",
+            "NC_001144.5",
+            "NC_001146.8"
+          ],
+          "n_test": 1012
+        },
+        {
+          "pearson": 0.3812353060844571,
+          "mse": 1.092559411955677,
+          "test_chromosomes": [
+            "NC_001135.5",
+            "NC_001138.5",
+            "NC_001145.3",
+            "NC_001148.4"
+          ],
+          "n_test": 1033
+        }
+      ],
+      "oof_pearson": 0.42016224998148,
+      "oof_mse": 1.0050705777773827
+    },
+    "aa_length_gc": {
+      "folds": [
+        {
+          "pearson": 0.5968654503585458,
+          "mse": 0.6842830744335551,
+          "test_chromosomes": [
+            "NC_001133.9",
+            "NC_001136.10",
+            "NC_001143.9"
+          ],
+          "n_test": 1016
+        },
+        {
+          "pearson": 0.5054410447774383,
+          "mse": 0.9238092352820124,
+          "test_chromosomes": [
+            "NC_001139.9",
+            "NC_001140.6",
+            "NC_001142.9"
+          ],
+          "n_test": 1016
+        },
+        {
+          "pearson": 0.5507831947600493,
+          "mse": 0.8486729899967106,
+          "test_chromosomes": [
+            "NC_001134.8",
+            "NC_001141.2",
+            "NC_001147.6"
+          ],
+          "n_test": 991
+        },
+        {
+          "pearson": 0.4892338458220925,
+          "mse": 0.9974318345046309,
+          "test_chromosomes": [
+            "NC_001137.3",
+            "NC_001144.5",
+            "NC_001146.8"
+          ],
+          "n_test": 1012
+        },
+        {
+          "pearson": 0.49965454495748335,
+          "mse": 0.9582062989855298,
+          "test_chromosomes": [
+            "NC_001135.5",
+            "NC_001138.5",
+            "NC_001145.3",
+            "NC_001148.4"
+          ],
+          "n_test": 1033
+        }
+      ],
+      "oof_pearson": 0.5260428989911089,
+      "oof_mse": 0.8828107425273273
+    },
+    "aa_syn_length_gc": {
+      "folds": [
+        {
+          "pearson": 0.6282927937777669,
+          "mse": 0.6424202697906928,
+          "test_chromosomes": [
+            "NC_001133.9",
+            "NC_001136.10",
+            "NC_001143.9"
+          ],
+          "n_test": 1016
+        },
+        {
+          "pearson": 0.5410944605430306,
+          "mse": 0.8790548662633831,
+          "test_chromosomes": [
+            "NC_001139.9",
+            "NC_001140.6",
+            "NC_001142.9"
+          ],
+          "n_test": 1016
+        },
+        {
+          "pearson": 0.5928552983602108,
+          "mse": 0.788692207173188,
+          "test_chromosomes": [
+            "NC_001134.8",
+            "NC_001141.2",
+            "NC_001147.6"
+          ],
+          "n_test": 991
+        },
+        {
+          "pearson": 0.5491497875329137,
+          "mse": 0.9148010055965261,
+          "test_chromosomes": [
+            "NC_001137.3",
+            "NC_001144.5",
+            "NC_001146.8"
+          ],
+          "n_test": 1012
+        },
+        {
+          "pearson": 0.5414810451614169,
+          "mse": 0.9025974425726129,
+          "test_chromosomes": [
+            "NC_001135.5",
+            "NC_001138.5",
+            "NC_001145.3",
+            "NC_001148.4"
+          ],
+          "n_test": 1033
+        }
+      ],
+      "oof_pearson": 0.5687607494341611,
+      "oof_mse": 0.8258828909591089
+    }
+  },
+  "synonymous_incremental_mse_reduction": 0.05692785156821852,
+  "conditional_chromosome_bootstrap95": [
+    0.04568386742123557,
+    0.07326340773426321
+  ],
+  "limits": [
+    "Chromosome separation does not remove paralog/gene-family leakage",
+    "Conditional cluster bootstrap does not refit models",
+    "Amino-acid and within-AA codon fractions correlate with unmeasured regulation",
+    "Association only; no redesigned-sequence validation",
+    "S288C reference may differ from experimental strain",
+    "No replicate biological uncertainty"
+  ]
+}

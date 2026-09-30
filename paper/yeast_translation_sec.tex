@@ -15,3 +15,23 @@ codon\_length\_gc & 0.572 & 0.821 \\
 Codon composition adds predictive information beyond length and GC in this measured native-sequence endpoint. The combined model improves OOF Pearson correlation from 0.420 to 0.572. This is an association, not evidence that changing codons causes the predicted change. Homologous genes may cross folds, only one measurement pair is used, and the density ratio does not correct differential elongation or common measurement noise. No E. coli optimizer transfer, yeast redesign benefit, or new translation mechanism is established.
 
 This supplies a second-organism measured-endpoint audit, while direct expression validation of optimized designs remains open. Source: \url{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75897}. The archived files, CDS provenance, included locus tags and hashes make the join reproducible.
+
+\subsection{Separating synonymous association from amino-acid composition}
+
+Raw codon frequencies mix amino-acid composition with synonymous choice. A more specific audit decomposes each sequence into 20 amino-acid fractions and 61 within-amino-acid codon fractions, excluding termination codons. The comparison holds amino-acid composition, length and GC available in both arms. Five chromosome-disjoint folds prevent the same chromosome from entering both training and evaluation; standardization and regularization selection use training data only. The 5,068 matched genes span 16 reference chromosomes.
+
+\begin{center}\begin{tabular}{lrr}\hline Feature view & OOF Pearson $r$ & OOF MSE\\\hline
+
+length\_gc & 0.420 & 1.005 \\
+
+aa\_length\_gc & 0.526 & 0.883 \\
+
+aa\_syn\_length\_gc & 0.569 & 0.826 \\
+
+\hline\end{tabular}\end{center}
+
+Adding synonymous fractions reduces paired out-of-fold mean squared error by 0.0569. A conditional chromosome-cluster bootstrap gives a 95\% interval of 0.0457 to 0.0733.
+
+This positive result is narrower than an expression-improvement claim: synonymous composition adds predictive information for a measured ribosome-density ratio beyond the amino-acid/length/GC baseline in this dataset. It does not prove that changing synonymous codons causes the observed difference. Unmeasured expression regulation, gene-family dependence, ratio noise and experimental-strain/reference mismatch can still confound interpretation. Chromosome holdouts are not homolog-family holdouts. The bootstrap conditions on fitted out-of-fold predictions rather than repeating model fitting.
+
+A falsifiable next step is family-disjoint validation followed by experimentally measured synonymous redesigns. Failure at either step would withdraw the intervention claim, not erase the present association. Full fold chromosome assignments, metrics and scope are recorded in results/yeast\_synonymous\_specificity.json.
