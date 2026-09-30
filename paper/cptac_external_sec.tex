@@ -1,0 +1,19 @@
+\section{External CPTAC mutation-inference audit}
+
+To test cohort transport without external-label tuning, a fixed logistic baseline was fitted on TCGA-PAAD pathway and mutation-burden features, excluding the target driver. The same feature definitions were then applied to the CPTAC-PDAC mutation profile (140 samples, 4,897 variant records). This is not external validation of the previous GNN/CNN. cBioPortal sample identifiers do not overlap, but distinct study identifiers alone do not establish patient identity independence.
+
+\begin{center}\begin{tabular}{lrrr}\hline Target & Positive / 140 & AUROC & Bootstrap 95\%\\\hline
+
+KRAS & 135 & 0.384 & 0.157--0.621 \\
+
+TP53 & 105 & 0.741 & 0.643--0.830 \\
+
+CDKN2A & 29 & 0.497 & 0.376--0.612 \\
+
+SMAD4 & 24 & 0.347 & 0.253--0.449 \\
+
+\hline\end{tabular}\end{center}
+
+TP53 provides a positive transport signal, but the CDKN2A endpoint is at chance and SMAD4 reverses direction. KRAS has only five mutation-negative test samples, so its uncertainty is large. These failures prevent claiming cohort-general CDKN2A interpretation. Mutation-only targets omit deletion and methylation, and purity/variant-calling differences remain unmodeled. Confidence intervals are stratified bootstraps of fixed model predictions; they do not include refitting uncertainty or cohort uncertainty.
+
+The experiment supports a narrower contribution: a reproducible external audit that distinguishes a transferable TP53 association from nontransferable driver signals. It establishes neither a mechanism nor clinical utility. Source: \url{https://www.cbioportal.org/study/summary?id=paad_cptac_2021}. Input hashes, prevalence baselines and calibration errors are preserved in results/cptac\_external\_validation.json.

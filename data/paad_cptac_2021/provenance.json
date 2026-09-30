@@ -1,0 +1,7 @@
+{
+  "study": "paad_cptac_2021",
+  "source": "https://www.cbioportal.org/api/molecular-profiles/paad_cptac_2021_mutations/mutations/fetch?projection=DETAILED&pageSize=500000",
+  "sample_list": "paad_cptac_2021_sequenced",
+  "profile": "paad_cptac_2021_mutations",
+  "access_date": "2026-09-30"
+}

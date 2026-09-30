@@ -1,0 +1,17 @@
+\section{Measured yeast ribosome-density endpoint}
+
+To move beyond an optimizer scoring its own objective, native yeast CDS sequences were joined to public GSE75897 RPF and RiboZero RPKM measurements. The endpoint is log2(RPF/RNA), a ribosome-density ratio, not protein yield or initiation efficiency. Of the reference CDS records, 5,068 unique locus tags had positive measurements and valid coding sequence. Five shuffled folds estimate prediction on withheld genes. Standardization and RidgeCV regularization selection are fitted within each training fold.
+
+\begin{center}\begin{tabular}{lrr}\hline Feature view & OOF Pearson $r$ & OOF MSE\\\hline
+
+length\_gc & 0.420 & 1.005 \\
+
+codon\_freq & 0.536 & 0.870 \\
+
+codon\_length\_gc & 0.572 & 0.821 \\
+
+\hline\end{tabular}\end{center}
+
+Codon composition adds predictive information beyond length and GC in this measured native-sequence endpoint. The combined model improves OOF Pearson correlation from 0.420 to 0.572. This is an association, not evidence that changing codons causes the predicted change. Homologous genes may cross folds, only one measurement pair is used, and the density ratio does not correct differential elongation or common measurement noise. No E. coli optimizer transfer, yeast redesign benefit, or new translation mechanism is established.
+
+This supplies a second-organism measured-endpoint audit, while direct expression validation of optimized designs remains open. Source: \url{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75897}. The archived files, CDS provenance, included locus tags and hashes make the join reproducible.

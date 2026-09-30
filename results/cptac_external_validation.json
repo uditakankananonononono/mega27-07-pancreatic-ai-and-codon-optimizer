@@ -1,0 +1,77 @@
+{
+  "source": "https://www.cbioportal.org/study/summary?id=paad_cptac_2021",
+  "train": "TCGA-PAAD",
+  "test": "CPTAC-PDAC",
+  "n_train": 184,
+  "n_test": 140,
+  "model": "fixed StandardScaler + balanced LogisticRegression C=1, max_iter=2000; pathway/burden only",
+  "target_definition": "nonsynonymous mutation only, does not include deletion or methylation",
+  "sample_identifier_overlap": 0,
+  "rows": [
+    {
+      "target": "KRAS",
+      "train_positive": 117,
+      "test_positive": 135,
+      "auc": 0.3844444444444444,
+      "auc95_conditional_stratified_bootstrap": [
+        0.15703703703703706,
+        0.6207407407407407
+      ],
+      "ap": 0.9477987347572661,
+      "prevalence_baseline_ap": 0.9642857142857143,
+      "brier": 0.25493530144433474
+    },
+    {
+      "target": "TP53",
+      "train_positive": 107,
+      "test_positive": 105,
+      "auc": 0.7409523809523809,
+      "auc95_conditional_stratified_bootstrap": [
+        0.643251700680272,
+        0.830238095238095
+      ],
+      "ap": 0.8960281132490803,
+      "prevalence_baseline_ap": 0.75,
+      "brier": 0.18507648815982053
+    },
+    {
+      "target": "CDKN2A",
+      "train_positive": 35,
+      "test_positive": 29,
+      "auc": 0.4965827896862379,
+      "auc95_conditional_stratified_bootstrap": [
+        0.37589313451382417,
+        0.6116806461634048
+      ],
+      "ap": 0.21015673947732022,
+      "prevalence_baseline_ap": 0.20714285714285716,
+      "brier": 0.3245238060088317
+    },
+    {
+      "target": "SMAD4",
+      "train_positive": 37,
+      "test_positive": 24,
+      "auc": 0.3468031609195403,
+      "auc95_conditional_stratified_bootstrap": [
+        0.2526939655172414,
+        0.44865301724137924
+      ],
+      "ap": 0.12859222807514964,
+      "prevalence_baseline_ap": 0.17142857142857143,
+      "brier": 0.3176066898946584
+    }
+  ],
+  "limits": [
+    "Distinct study identifiers are not a patient-identity overlap audit",
+    "Variant calling, tumor purity and platforms differ across cohorts",
+    "Not validation of the previously fitted GNN/CNN",
+    "Features contain burden, so association can reflect mutation load",
+    "This is genomic inference, not diagnosis or treatment selection"
+  ],
+  "inputs_sha256": {
+    "data/paad/samples.json": "a183cec078c3b8968036e8349ffebe7ab72ed9920abe30bed5d438f0ae330029",
+    "data/paad/mutations.json": "9ea520ecedac0bc7c5fdfba0cf48f95dee0eb1e8f745ae215952320c7f00cc17",
+    "data/paad_cptac_2021/samples.json": "76f128a214406370de222fd0359778ee314cf6516fe4027fbffdb001cb660aa4",
+    "data/paad_cptac_2021/mutations.json": "b3f183f8a57695dd407fd325e80dcb727e9474bb6c56ba6c79f28cf26cdaf23a"
+  }
+}

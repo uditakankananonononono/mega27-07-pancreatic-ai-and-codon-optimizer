@@ -392,7 +392,7 @@ signal band (TT/AA/CG context) that context-aware evaluators exploit.
 \section{Falsification paths}
 CodonOpt's expression gains are in-silico: the scorer is our own CNN. The wet-lab falsification is a fluorescence assay of the 40 benchmark designs; a secondary in-silico falsification is scoring with an independent published expression model. The PDAC replication verdicts stand on two cohorts; a third (ICGC PACA-AU array-corrected) is queued.
 \section{Conclusion}
-PANCREAS.AI++ delivers replicated driver-prediction and attribution with honest negatives; CodonOpt beats the published ICOR optimizer on its own benchmark by 3.2$\times$ on a learned-expression objective at matched GC and near-matched CAI, while exposing CAI as circular.
+PANCREAS.AI++ audits driver-mutation inference with cohort-dependent performance and unstable attribution; CodonOpt beats the published ICOR optimizer on its own benchmark by 3.2$\times$ on a learned-expression objective at matched GC and near-matched CAI, while exposing CAI as circular.
 \begin{thebibliography}{9}
 \bibitem[Sharp and Li(1987)]{sharp1987} Sharp PM, Li WH. The codon adaptation index. \emph{Nucleic Acids Res} 1987.
 \bibitem[Jain et al.(2023)]{jain2023} Jain R, et al. ICOR: improving codon optimization with recurrent neural networks. \emph{BMC Bioinformatics} 2023. doi:10.1186/s12859-023-05246-8.
@@ -400,6 +400,8 @@ PANCREAS.AI++ delivers replicated driver-prediction and attribution with honest 
 \bibitem[Grimson et al.(2007)]{grimson} Grimson A, et al. MicroRNA targeting specificity in mammals. \emph{Mol Cell} 2007.
 \end{thebibliography}
 \appendix
+\input{yeast_translation_sec}
+\input{cptac_external_sec}
 \input{pathway_stability_sec}
 \input{tools}
 \input{meta}
