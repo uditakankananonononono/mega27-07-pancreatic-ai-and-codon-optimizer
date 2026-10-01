@@ -1,0 +1,13 @@
+{
+  "plan_sha256": "c8b7647f3702b247ef2b0ac88579144e9034c86d81858d8e5d7b4f4fa68e9e83",
+  "assay_file_sha256": "7e32a22549f4565a08284e64f4187c5562181b909bfb382849cd9227fe4ef978",
+  "selected_training_alpha": 0.001,
+  "n_train_cds": 3745,
+  "n_assay_constructs": 6348,
+  "protein_containment_overlap_constructs": 43,
+  "all_construct_spearman": 0.22507960888319267,
+  "remaining_constructs": 6305,
+  "protein_containment_excluded_spearman": 0.22616172544105648,
+  "prediction_ledger_sha256": "264760461173a8b3c35fdb19013f8ebeccfdeaa87813c7e14ba5686bfcb7429f",
+  "limits": "NaturalproteinppmtoheterologousT7ordinalassaytransfer,sameCDSfrequencyview;notcalibration/incrementaloptimizeddesigngain/clinical/cancerendpoint. Exactproteincontainmentdoesnotexcludehomology/sharedselection. No tuning threshold/featurefamilies on E. Sourcepaperspublished beforethisrepo, but independenceofallpriorlearned/checkpointselectionunverified. Reportasexploratoryassaytransfernotindependentvalidation."
+}

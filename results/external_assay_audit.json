@@ -1,0 +1,37 @@
+{
+  "source_article": "https://www.nature.com/articles/nature16509",
+  "source_file": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnature16509/MediaObjects/41586_2016_BFnature16509_MOESM292_ESM.xlsx",
+  "file_sha256": "7e32a22549f4565a08284e64f4187c5562181b909bfb382849cd9227fe4ef978",
+  "file_bytes": 2210700,
+  "sheet": "E6348.csv",
+  "headers": [
+    "name",
+    "E",
+    "Gz48v",
+    "Gave96",
+    "Gave48",
+    "Gave144",
+    "seq"
+  ],
+  "n_rows": 6348,
+  "expression_categories": {
+    "0": 1754,
+    "5": 1973,
+    "2": 423,
+    "3": 896,
+    "4": 1171,
+    "1": 131
+  },
+  "unique_names": 6348,
+  "unique_exact_sequences": 6348,
+  "duplicate_sequence_excess_rows": 0,
+  "non_acgt_rows": 0,
+  "not_triplet_length_rows": 0,
+  "min_max_nt": [
+    171,
+    3000
+  ],
+  "exact_full_construct_overlap_rows_with_current_paxdb_cds": 0,
+  "current_paxdb_cds_rows": 3745,
+  "limits": "E is assay expression category, not protein ppm or log10 continuous abundance. Exact full-construct nonoverlap does not exclude homologous proteins, tags, shared genes or model-selection overlap. No scoring, mRNA foldgain, causal optimization or independent validation claim."
+}
