@@ -1,0 +1,12 @@
+{
+  "n": 6305,
+  "raw_prediction_spearman": 0.22616172544105648,
+  "gc_spearman": -0.08735257986291503,
+  "length_spearman": -0.030323722962341267,
+  "prediction_gc_spearman": -0.13589484292773096,
+  "prediction_length_spearman": -0.07801005715120655,
+  "gc_length_partial_rank_correlation": 0.21622570638334576,
+  "plan_sha256": "557881a2b57d78b8ae0e5b736baaf01033bae4af151ced1072d9bdef0b0e7b2a",
+  "ledger_sha256": "48a75d9ae3cc275fff765d5d90526945fa89f2ee47b1a4b5126e274a3cdace0d",
+  "limits": "Same6348assay,notindependentreplication;linear rank adjustment does not remove all sequence biology/confounding,homology/sharedselection/construct tags untested;no causal,calibration,designgain or p-value claim."
+}
