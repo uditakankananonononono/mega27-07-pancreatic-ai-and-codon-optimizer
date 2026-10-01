@@ -1,0 +1,186 @@
+{
+  "plan_sha256": "cb7fd85a0ee30c1ac96aa95c5f410edada6a2b93a2969013997db0cca8eb1810",
+  "n_genes": 3745,
+  "input_sha256": "20f1caedc7c57c1c58aab63e8e283c18547f5058cb668e6d63e515c01280ba6b",
+  "prediction_ledger_sha256": "babe0a5d7d75e69bdb600be252a4d2987c169624c14020e35bc853682181d9cb",
+  "summary": {
+    "codon": {
+      "r": 0.6521803413913846,
+      "rmse": 1.0291679506503713,
+      "conditional_gene_bootstrap_r95": [
+        0.6326376022255018,
+        0.6704947789479392
+      ]
+    },
+    "length_gc": {
+      "r": 0.15287073449713726,
+      "rmse": 1.341658794478195,
+      "conditional_gene_bootstrap_r95": [
+        0.12092998888372683,
+        0.1838453106613543
+      ]
+    },
+    "codon_length_gc": {
+      "r": 0.6604444136613947,
+      "rmse": 1.019396552207662,
+      "conditional_gene_bootstrap_r95": [
+        0.6411571504648816,
+        0.6784290268833209
+      ]
+    }
+  },
+  "differences": {
+    "length_gc": {
+      "pooled_r_delta_vs_codon": -0.4993096068942473,
+      "paired_conditional_bootstrap_r_delta95": [
+        -0.534467167703433,
+        -0.4633368197605725
+      ]
+    },
+    "codon_length_gc": {
+      "pooled_r_delta_vs_codon": 0.008264072270010137,
+      "paired_conditional_bootstrap_r_delta95": [
+        0.004531769291561491,
+        0.012322762745860508
+      ]
+    }
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "view": "codon",
+      "n_train": 2996,
+      "n_test": 749,
+      "alpha": 0.03162277660168379,
+      "r": 0.6484084025440277,
+      "rmse": 1.0270433896417117
+    },
+    {
+      "fold": 0,
+      "view": "length_gc",
+      "n_train": 2996,
+      "n_test": 749,
+      "alpha": 0.31622776601683794,
+      "r": 0.15939816151814803,
+      "rmse": 1.3318768168061201
+    },
+    {
+      "fold": 0,
+      "view": "codon_length_gc",
+      "n_train": 2996,
+      "n_test": 749,
+      "alpha": 0.03162277660168379,
+      "r": 0.6579539885120158,
+      "rmse": 1.0159465979218605
+    },
+    {
+      "fold": 1,
+      "view": "codon",
+      "n_train": 2996,
+      "n_test": 749,
+      "alpha": 0.03162277660168379,
+      "r": 0.6273520594190188,
+      "rmse": 1.0524557643874874
+    },
+    {
+      "fold": 1,
+      "view": "length_gc",
+      "n_train": 2996,
+      "n_test": 749,
+      "alpha": 0.1,
+      "r": 0.18525834977301572,
+      "rmse": 1.3276472789649836
+    },
+    {
+      "fold": 1,
+      "view": "codon_length_gc",
+      "n_train": 2996,
+      "n_test": 749,
+      "alpha": 0.03162277660168379,
+      "r": 0.6382871496964552,
+      "rmse": 1.0404041524446974
+    },
+    {
+      "fold": 2,
+      "view": "codon",
+      "n_train": 2996,
+      "n_test": 749,
+      "alpha": 0.001,
+      "r": 0.6431151225864731,
+      "rmse": 1.0226486694713717
+    },
+    {
+      "fold": 2,
+      "view": "length_gc",
+      "n_train": 2996,
+      "n_test": 749,
+      "alpha": 0.01,
+      "r": 0.21352040179300413,
+      "rmse": 1.304642204039415
+    },
+    {
+      "fold": 2,
+      "view": "codon_length_gc",
+      "n_train": 2996,
+      "n_test": 749,
+      "alpha": 0.01,
+      "r": 0.6537015083972153,
+      "rmse": 1.009430166164582
+    },
+    {
+      "fold": 3,
+      "view": "codon",
+      "n_train": 2996,
+      "n_test": 749,
+      "alpha": 0.03162277660168379,
+      "r": 0.6749721264198804,
+      "rmse": 1.011917270693963
+    },
+    {
+      "fold": 3,
+      "view": "length_gc",
+      "n_train": 2996,
+      "n_test": 749,
+      "alpha": 0.31622776601683794,
+      "r": 0.14368542154865663,
+      "rmse": 1.3542077116783557
+    },
+    {
+      "fold": 3,
+      "view": "codon_length_gc",
+      "n_train": 2996,
+      "n_test": 749,
+      "alpha": 0.03162277660168379,
+      "r": 0.6849359684138854,
+      "rmse": 0.9992626013042198
+    },
+    {
+      "fold": 4,
+      "view": "codon",
+      "n_train": 2996,
+      "n_test": 749,
+      "alpha": 0.03162277660168379,
+      "r": 0.6692510306720914,
+      "rmse": 1.031341470673002
+    },
+    {
+      "fold": 4,
+      "view": "length_gc",
+      "n_train": 2996,
+      "n_test": 749,
+      "alpha": 0.1,
+      "r": 0.08873099510652308,
+      "rmse": 1.388426679585473
+    },
+    {
+      "fold": 4,
+      "view": "codon_length_gc",
+      "n_train": 2996,
+      "n_test": 749,
+      "alpha": 0.03162277660168379,
+      "r": 0.6691571876226172,
+      "rmse": 1.0313987377745042
+    }
+  ],
+  "limits": "fixed-model/fixed-fold conditional gene bootstrap not independent training uncertainty or external-expression validation; related genes/polyclonal operons may violate iid sampling; no causality, optimization benefit or biological fold change"
+}

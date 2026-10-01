@@ -1,0 +1,14 @@
+{
+  "purpose": "test-environment validation only, not scientific model rerun",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "torch": "2.14.1+cpu",
+  "numpy": "2.2.6",
+  "scikit_learn": "1.7.2",
+  "command": "PYTHONPATH=/tmp/science-libs:/tmp/pytest-libs:src OMP_NUM_THREADS=2 python3 -m pytest -q",
+  "result": "52 passed in 7.01s",
+  "limits": [
+    "Scratch CPU dependencies installed for this run; not a lockfile or clean-container reproducibility guarantee",
+    "CLI dependency paths now inherited instead of overwritten",
+    "No training score or physical experiment changed"
+  ]
+}

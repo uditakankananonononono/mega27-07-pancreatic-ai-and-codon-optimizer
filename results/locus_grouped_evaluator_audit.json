@@ -1,0 +1,332 @@
+{
+  "plan_sha256": "f2e06149ccbaff143d252acdfa515d47eb236e575579fd7eabe22db0cdd8a6cd",
+  "n_rows": 3745,
+  "n_loci": 3736,
+  "duplicate_loci": [
+    {
+      "locus": "b0149",
+      "rows": 2,
+      "lengths": [
+        2535,
+        2400
+      ],
+      "distinct_sequences": 2,
+      "shared_target": true,
+      "historical_outer_folds": [
+        2,
+        2
+      ],
+      "old_locus_leakage": false
+    },
+    {
+      "locus": "b0470",
+      "rows": 2,
+      "lengths": [
+        1932,
+        1296
+      ],
+      "distinct_sequences": 2,
+      "shared_target": true,
+      "historical_outer_folds": [
+        1,
+        3
+      ],
+      "old_locus_leakage": true
+    },
+    {
+      "locus": "b0484",
+      "rows": 2,
+      "lengths": [
+        2505,
+        213
+      ],
+      "distinct_sequences": 2,
+      "shared_target": true,
+      "historical_outer_folds": [
+        1,
+        3
+      ],
+      "old_locus_leakage": true
+    },
+    {
+      "locus": "b1120",
+      "rows": 2,
+      "lengths": [
+        840,
+        729
+      ],
+      "distinct_sequences": 2,
+      "shared_target": true,
+      "historical_outer_folds": [
+        0,
+        4
+      ],
+      "old_locus_leakage": true
+    },
+    {
+      "locus": "b1888",
+      "rows": 2,
+      "lengths": [
+        1965,
+        1674
+      ],
+      "distinct_sequences": 2,
+      "shared_target": true,
+      "historical_outer_folds": [
+        4,
+        4
+      ],
+      "old_locus_leakage": false
+    },
+    {
+      "locus": "b2592",
+      "rows": 2,
+      "lengths": [
+        2574,
+        2130
+      ],
+      "distinct_sequences": 2,
+      "shared_target": true,
+      "historical_outer_folds": [
+        3,
+        4
+      ],
+      "old_locus_leakage": true
+    },
+    {
+      "locus": "b3168",
+      "rows": 3,
+      "lengths": [
+        2673,
+        2202,
+        2181
+      ],
+      "distinct_sequences": 3,
+      "shared_target": true,
+      "historical_outer_folds": [
+        3,
+        1,
+        3
+      ],
+      "old_locus_leakage": true
+    },
+    {
+      "locus": "b4346",
+      "rows": 2,
+      "lengths": [
+        1380,
+        897
+      ],
+      "distinct_sequences": 2,
+      "shared_target": true,
+      "historical_outer_folds": [
+        1,
+        3
+      ],
+      "old_locus_leakage": true
+    }
+  ],
+  "leaked_locus_count_old_outer": 6,
+  "summary": {
+    "codon": {
+      "r": 0.6527421744957407,
+      "rmse": 1.0287610609478965,
+      "conditional_locus_bootstrap_r95": [
+        0.633492209925859,
+        0.671656690925521
+      ]
+    },
+    "length_gc": {
+      "r": 0.1537843536497806,
+      "rmse": 1.3418161455669566,
+      "conditional_locus_bootstrap_r95": [
+        0.12257108721309853,
+        0.1856578368037635
+      ]
+    },
+    "codon_length_gc": {
+      "r": 0.6617001232663939,
+      "rmse": 1.018156805911997,
+      "conditional_locus_bootstrap_r95": [
+        0.6430562373328961,
+        0.6803057161513005
+      ]
+    }
+  },
+  "delta": {
+    "r_delta_combined_minus_codon": 0.008957948770653257,
+    "conditional_paired_delta95": [
+      0.005159429198927742,
+      0.012811547959612672
+    ]
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "view": "codon",
+      "n_train_rows": 2996,
+      "n_test_rows": 749,
+      "n_train_loci": 2988,
+      "n_test_loci": 748,
+      "alpha": 0.03162277660168379,
+      "r": 0.635997146319368,
+      "rmse": 1.0272097650693592
+    },
+    {
+      "fold": 0,
+      "view": "length_gc",
+      "n_train_rows": 2996,
+      "n_test_rows": 749,
+      "n_train_loci": 2988,
+      "n_test_loci": 748,
+      "alpha": 0.1,
+      "r": 0.16475945331404965,
+      "rmse": 1.3123094529520234
+    },
+    {
+      "fold": 0,
+      "view": "codon_length_gc",
+      "n_train_rows": 2996,
+      "n_test_rows": 749,
+      "n_train_loci": 2988,
+      "n_test_loci": 748,
+      "alpha": 0.03162277660168379,
+      "r": 0.648902480983157,
+      "rmse": 1.0124953926655802
+    },
+    {
+      "fold": 1,
+      "view": "codon",
+      "n_train_rows": 2996,
+      "n_test_rows": 749,
+      "n_train_loci": 2989,
+      "n_test_loci": 747,
+      "alpha": 0.03162277660168379,
+      "r": 0.685528403057534,
+      "rmse": 0.9876524486104111
+    },
+    {
+      "fold": 1,
+      "view": "length_gc",
+      "n_train_rows": 2996,
+      "n_test_rows": 749,
+      "n_train_loci": 2989,
+      "n_test_loci": 747,
+      "alpha": 0.1,
+      "r": 0.19713353832331013,
+      "rmse": 1.3326739479634546
+    },
+    {
+      "fold": 1,
+      "view": "codon_length_gc",
+      "n_train_rows": 2996,
+      "n_test_rows": 749,
+      "n_train_loci": 2989,
+      "n_test_loci": 747,
+      "alpha": 0.03162277660168379,
+      "r": 0.6925865747212281,
+      "rmse": 0.9783180454222997
+    },
+    {
+      "fold": 2,
+      "view": "codon",
+      "n_train_rows": 2994,
+      "n_test_rows": 751,
+      "n_train_loci": 2989,
+      "n_test_loci": 747,
+      "alpha": 0.03162277660168379,
+      "r": 0.6364858517438312,
+      "rmse": 1.0306249339571047
+    },
+    {
+      "fold": 2,
+      "view": "length_gc",
+      "n_train_rows": 2994,
+      "n_test_rows": 751,
+      "n_train_loci": 2989,
+      "n_test_loci": 747,
+      "alpha": 0.001,
+      "r": 0.1007666779230647,
+      "rmse": 1.326109245875242
+    },
+    {
+      "fold": 2,
+      "view": "codon_length_gc",
+      "n_train_rows": 2994,
+      "n_test_rows": 751,
+      "n_train_loci": 2989,
+      "n_test_loci": 747,
+      "alpha": 0.03162277660168379,
+      "r": 0.6445355613902237,
+      "rmse": 1.0207364082192687
+    },
+    {
+      "fold": 3,
+      "view": "codon",
+      "n_train_rows": 2996,
+      "n_test_rows": 749,
+      "n_train_loci": 2989,
+      "n_test_loci": 747,
+      "alpha": 0.03162277660168379,
+      "r": 0.66913146769979,
+      "rmse": 1.0648854748478402
+    },
+    {
+      "fold": 3,
+      "view": "length_gc",
+      "n_train_rows": 2996,
+      "n_test_rows": 749,
+      "n_train_loci": 2989,
+      "n_test_loci": 747,
+      "alpha": 0.03162277660168379,
+      "r": 0.21015266213702577,
+      "rmse": 1.388971136802136
+    },
+    {
+      "fold": 3,
+      "view": "codon_length_gc",
+      "n_train_rows": 2996,
+      "n_test_rows": 749,
+      "n_train_loci": 2989,
+      "n_test_loci": 747,
+      "alpha": 0.03162277660168379,
+      "r": 0.678646044564307,
+      "rmse": 1.0515251562067862
+    },
+    {
+      "fold": 4,
+      "view": "codon",
+      "n_train_rows": 2998,
+      "n_test_rows": 747,
+      "n_train_loci": 2989,
+      "n_test_loci": 747,
+      "alpha": 0.03162277660168379,
+      "r": 0.6494610171969821,
+      "rmse": 1.028891366525784
+    },
+    {
+      "fold": 4,
+      "view": "length_gc",
+      "n_train_rows": 2998,
+      "n_test_rows": 747,
+      "n_train_loci": 2989,
+      "n_test_loci": 747,
+      "alpha": 0.03162277660168379,
+      "r": 0.11120999787465219,
+      "rmse": 1.3475074092681967
+    },
+    {
+      "fold": 4,
+      "view": "codon_length_gc",
+      "n_train_rows": 2998,
+      "n_test_rows": 747,
+      "n_train_loci": 2989,
+      "n_test_loci": 747,
+      "alpha": 0.03162277660168379,
+      "r": 0.6536934524193724,
+      "rmse": 1.023835492202467
+    }
+  ],
+  "prediction_ledger_sha256": "23c74cbdfec32aeabfb830d46bdc5e4318a4358f31cd951b0ceaa26b756b334a",
+  "limits": "new explicit grouped protocol, not externally held-out; gene homology and operon groups not separated; protocol chosen after detecting duplicates, all outcomes retained, conditional intervals only"
+}

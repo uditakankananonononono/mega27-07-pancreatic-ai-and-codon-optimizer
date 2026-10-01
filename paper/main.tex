@@ -334,6 +334,8 @@ views ($0.653$ vs $0.587$) compares predictive performance of these tested views
 the absolute $r$, on which the circularity conclusion rests: rankings are evaluator-dependent, and none is an independent measured-expression outcome.
 
 
+\input{oof_evaluator_sec.tex}
+
 \section{Results: cohort-wide driver-discovery scan with internal positive controls}
 \label{sec:driver-discovery}
 Verdict item \#7 asks for driver discovery beyond the four known drivers. We
@@ -374,6 +376,8 @@ multi-feature. Second, the strength of dinucleotide context - a feature class no
 codon-usage metric contains - is the feature-level confirmation of the
 circularity discovery: evaluators restricted to codon frequencies discard a
 signal band (TT/AA/CG context) that context-aware evaluators exploit.
+
+\input{pancreatic_controls_sec.tex}
 
 \section{Documented negatives}
 (1) SMAD4 predictability is at chance across architectures. (2) The SWI/SNF--CDKN2A exclusivity fails replication. (3) Gene-level permutation importance on the CDKN2A GNN is noise. (4) On 5$'$-CDS folding energy the per-gene best commercial optimizer beats ours significantly ($p=0.040$; ViennaRNA audit above). Each negative is preserved in the archived result files (\texttt{results/*.json}).

@@ -22,7 +22,7 @@ for _ in range(120):
 model.eval()
 with torch.no_grad():
     base = roc_auc_score(y[te], torch.sigmoid(model(Xt[te], Ct[te])).numpy())
-names = ["age", "smoker", "log_burden", "frac_truncating", "log_n_genes"] + list(features.PATHWAYS)
+names = ["age", "is_male", "log_burden", "frac_truncating", "log_n_genes"] + list(features.PATHWAYS)
 rng = np.random.default_rng(1)
 print(f"base {base:.3f}")
 for j in range(C.shape[1]):

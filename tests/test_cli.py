@@ -3,9 +3,10 @@ import json, pathlib, subprocess, sys, tempfile
 import pytest
 
 REPO = pathlib.Path(__file__).resolve().parents[1]
-ENV = {"PYTHONPATH": str(REPO / "src")}
 import os
-ENV = {**os.environ, **ENV}
+# Keep dependency paths used by the parent interpreter in isolated test runs.
+ENV = {**os.environ, "PYTHONPATH": os.pathsep.join(filter(None,
+    [str(REPO / "src"), os.environ.get("PYTHONPATH", "")]))}
 
 REQUIRED = (
     REPO / "data" / "gtrnadb" / "eschColi_K_12_MG1655-tRNAs.out",
