@@ -1,0 +1,44 @@
+{
+  "retained": {
+    "n": 6305,
+    "rho": 0.22616172544105648,
+    "category_counts": {
+      "0": 1741,
+      "1": 131,
+      "2": 420,
+      "3": 892,
+      "4": 1161,
+      "5": 1960
+    }
+  },
+  "flagged": {
+    "n": 506,
+    "rho": 0.1910779073686298,
+    "category_counts": {
+      "0": 121,
+      "1": 12,
+      "2": 27,
+      "3": 72,
+      "4": 102,
+      "5": 172
+    }
+  },
+  "unflagged": {
+    "n": 5799,
+    "rho": 0.22632757327640982,
+    "category_counts": {
+      "0": 1620,
+      "1": 119,
+      "2": 393,
+      "3": 820,
+      "4": 1059,
+      "5": 1788
+    }
+  },
+  "all_constructs_flagged": 549,
+  "maximum_construct_5mer_overlap_expression_rho": 0.005526179141493466,
+  "plan_sha256": "64573527d9266e2cf0345b5e4fce2031c64b96cccf4ccc788205e7e54d6953a2",
+  "ledger_sha256": "e2dd38f637ad4716a466e078fc194e971949cf85ec3a99e1c18061d224270ec0",
+  "limits": "candidate-boundsequence-similarityscreennotphylogenetichomologycertificate;shorterfragments/divergenthomologycanbemissed;stratifiedrhochangesnotcausalexplainedfraction;noindependentvalidation/calibration/designgain;rawsequenceexcluded.",
+  "selection": "currentmodelselectedalphafromnaturaltrainingonly;externalEunused;sameassaychosenafterinternalcodonweakness,rawtransfer,covariateoutcomes,sofollowupnotindependent;historicalsource/checkpointselectionunobservedcannotassigncausalexplainedshare"
+}

@@ -94,3 +94,20 @@ Prediction--expression, GC/length partial rank & .21623\\\hline
 
 For the partial-rank calculation, prediction ranks and expression-category ranks are separately regressed on an intercept, GC ranks and log-length ranks using ordinary least squares; their residuals are correlated. This defines the adjustment rather than implying a new externally trained expression model. The rank association remains weak after this particular linear adjustment. Neither .22616 nor .21623 is a fold-change prediction, calibration measure or causal design benefit. Adjustment for two ranks does not remove arbitrary nonlinear sequence effects, construct tags, homologous proteins or shared source-selection choices. GC and length are sequence properties, not randomized nuisance variables.
 The complete covariate ledger preserves construct identity, length, GC, category, the prior frozen prediction and overlap status. It contains no raw DNA sequence. The plan, deterministic audit, ledger and tests are \path{scripts/external_covariate_plan.json}, \path{scripts/external_covariate_audit.py} and \path{results/external_covariates.jsonl}. The same raw-source redistribution restriction and source-download requirement remain. This is deeper analysis of one ordinal T7 assay, not an independent replication, calibrated natural-protein validation or proof of improvement by the optimizer.
+
+\subsection{Candidate-bounded protein similarity leaves the weak association and source-selection gap}
+A further exploratory plan freezes a sequence-similarity screen before its outcomes. It indexes unique amino-acid five-mers in the 3745 natural training proteins, retrieves the three proteins sharing the most five-mers with each translated construct, and locally aligns those candidates with BLOSUM62, gap-open penalty ten and gap-extension penalty one half. The candidate with greatest identity times minimum full-protein coverage is retained. The fixed flag requires at least .4 nongap-column identity and .7 aligned coverage of both full proteins. This is candidate-bounded sequence similarity, not a phylogenetic homology certificate or exhaustive search; divergent proteins, shorter shared domains and fusion-tag effects can escape this screen.
+\begin{table}[!ht]\centering
+\caption{Same frozen predictions and ordinal assay, after the earlier 43 exact protein containments are excluded. No similarity threshold is selected using expression labels.}
+\begin{tabular}{lrr}\hline
+Screen subset & Constructs & Prediction--expression rho\\\hline
+All retained &6305&.22616\\
+Similarity flagged &506&.19108\\
+Not flagged &5799&.22633\\\hline
+\end{tabular}\end{table}
+
+
+Including the earlier exact overlaps, 549 of 6348 constructs meet this flag. Removing the additional 506 flagged constructs barely changes the retained rank correlation under this specific screen. That does not quantify a causal fraction explained by homologous proteins, demonstrate biological independence or eliminate missed similarity. Subset rank correlations use different category distributions and denominators. Every category count, nearest-candidate identity and coverage, candidate count and sequence-screen status is retained without raw sequences in \path{results/external_similarity.jsonl}; deterministic metrics and the frozen operational plan are retained alongside it.
+
+
+Shared source-selection choices remain a distinct unresolved problem. The present alpha was selected on natural training rows only and external categories did not enter predictor fitting. However, this assay and these follow-ups were chosen after internal codon-evaluator weaknesses and then after observing the raw and covariate results. The same external assay is reused, not independently replicated. Historical source/checkpoint selection and possible shared upstream training material are not observed by this audit, so assigning them a numerical explained share would invent evidence. The defensible result is descriptive exclusion sensitivity of a weak transfer association, with source-selection independence still unverified. No new validation, expression calibration or optimized-design benefit is established.
