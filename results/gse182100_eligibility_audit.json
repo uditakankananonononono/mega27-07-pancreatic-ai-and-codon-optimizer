@@ -1,0 +1,234 @@
+{
+  "plan_sha256": "9b5fcc555a8b665dafabe58e68be6b5e0ab65d347282e41cb1320312ca6ddc2f",
+  "source_sha256": {
+    "S1-RNA.xlsx": "b735aa7a820c954a8b65849d0b690958e2750737e68c7d80e1c4e0afba272947",
+    "S2-Ribo.xlsx": "edcd0fd3b15405fc365437043371377e836db2230be263dd7f65667fe40d5da8"
+  },
+  "rows": 4321,
+  "unique_coordinate_keys": 4321,
+  "duplicate_gene_name_extra_rows": 46,
+  "RNA_zero_cells": 15533,
+  "FP_zero_cells": 4059,
+  "all36_nominal_columns_positive_both_rows": 2323,
+  "columns": [
+    {
+      "label": "C1",
+      "RNA_zero": 262,
+      "FP_zero": 180,
+      "positive_both": 3954
+    },
+    {
+      "label": "C2",
+      "RNA_zero": 601,
+      "FP_zero": 371,
+      "positive_both": 3569
+    },
+    {
+      "label": "C3",
+      "RNA_zero": 628,
+      "FP_zero": 125,
+      "positive_both": 3662
+    },
+    {
+      "label": "C4",
+      "RNA_zero": 198,
+      "FP_zero": 205,
+      "positive_both": 4006
+    },
+    {
+      "label": "C5",
+      "RNA_zero": 460,
+      "FP_zero": 81,
+      "positive_both": 3834
+    },
+    {
+      "label": "C6",
+      "RNA_zero": 359,
+      "FP_zero": 90,
+      "positive_both": 3933
+    },
+    {
+      "label": "N1",
+      "RNA_zero": 278,
+      "FP_zero": 113,
+      "positive_both": 3991
+    },
+    {
+      "label": "N2",
+      "RNA_zero": 456,
+      "FP_zero": 196,
+      "positive_both": 3792
+    },
+    {
+      "label": "N3",
+      "RNA_zero": 342,
+      "FP_zero": 135,
+      "positive_both": 3923
+    },
+    {
+      "label": "N4",
+      "RNA_zero": 276,
+      "FP_zero": 96,
+      "positive_both": 4002
+    },
+    {
+      "label": "N5",
+      "RNA_zero": 496,
+      "FP_zero": 150,
+      "positive_both": 3778
+    },
+    {
+      "label": "N6",
+      "RNA_zero": 741,
+      "FP_zero": 60,
+      "positive_both": 3571
+    },
+    {
+      "label": "P1",
+      "RNA_zero": 171,
+      "FP_zero": 70,
+      "positive_both": 4115
+    },
+    {
+      "label": "P2",
+      "RNA_zero": 400,
+      "FP_zero": 131,
+      "positive_both": 3874
+    },
+    {
+      "label": "P3",
+      "RNA_zero": 431,
+      "FP_zero": 67,
+      "positive_both": 3875
+    },
+    {
+      "label": "P4",
+      "RNA_zero": 214,
+      "FP_zero": 102,
+      "positive_both": 4051
+    },
+    {
+      "label": "P5",
+      "RNA_zero": 423,
+      "FP_zero": 88,
+      "positive_both": 3870
+    },
+    {
+      "label": "P6",
+      "RNA_zero": 381,
+      "FP_zero": 57,
+      "positive_both": 3921
+    },
+    {
+      "label": "M1",
+      "RNA_zero": 297,
+      "FP_zero": 79,
+      "positive_both": 3995
+    },
+    {
+      "label": "M2",
+      "RNA_zero": 346,
+      "FP_zero": 84,
+      "positive_both": 3945
+    },
+    {
+      "label": "M3",
+      "RNA_zero": 549,
+      "FP_zero": 71,
+      "positive_both": 3757
+    },
+    {
+      "label": "R1",
+      "RNA_zero": 455,
+      "FP_zero": 213,
+      "positive_both": 3779
+    },
+    {
+      "label": "R2",
+      "RNA_zero": 557,
+      "FP_zero": 163,
+      "positive_both": 3704
+    },
+    {
+      "label": "R3",
+      "RNA_zero": 656,
+      "FP_zero": 117,
+      "positive_both": 3635
+    },
+    {
+      "label": "RA1",
+      "RNA_zero": 229,
+      "FP_zero": 86,
+      "positive_both": 4054
+    },
+    {
+      "label": "RA2",
+      "RNA_zero": 342,
+      "FP_zero": 80,
+      "positive_both": 3944
+    },
+    {
+      "label": "RA3",
+      "RNA_zero": 402,
+      "FP_zero": 60,
+      "positive_both": 3904
+    },
+    {
+      "label": "RA4",
+      "RNA_zero": 273,
+      "FP_zero": 61,
+      "positive_both": 4028
+    },
+    {
+      "label": "RA5",
+      "RNA_zero": 553,
+      "FP_zero": 67,
+      "positive_both": 3756
+    },
+    {
+      "label": "RA6",
+      "RNA_zero": 404,
+      "FP_zero": 94,
+      "positive_both": 3883
+    },
+    {
+      "label": "LB1",
+      "RNA_zero": 284,
+      "FP_zero": 86,
+      "positive_both": 3999
+    },
+    {
+      "label": "LB2",
+      "RNA_zero": 588,
+      "FP_zero": 117,
+      "positive_both": 3696
+    },
+    {
+      "label": "LB3",
+      "RNA_zero": 640,
+      "FP_zero": 106,
+      "positive_both": 3661
+    },
+    {
+      "label": "LB4",
+      "RNA_zero": 161,
+      "FP_zero": 82,
+      "positive_both": 4118
+    },
+    {
+      "label": "LB5",
+      "RNA_zero": 388,
+      "FP_zero": 94,
+      "positive_both": 3909
+    },
+    {
+      "label": "LB6",
+      "RNA_zero": 1292,
+      "FP_zero": 82,
+      "positive_both": 3024
+    }
+  ],
+  "ratios_constructed": false,
+  "validation_performed": false,
+  "limits": "nominalcolumnmatchesnot samealiquot;independentlibraries cannotcertifypairedreplicateRTE;referenceCDSstrand/runmap/overlapunresolved;zerosnotmissing orprovenabsenceofexpression"
+}
