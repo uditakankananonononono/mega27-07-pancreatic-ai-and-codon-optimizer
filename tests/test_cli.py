@@ -24,7 +24,7 @@ PROT = ">t1\nMKTAYIAKQRQISFVKSHFSRQDILDLWQ\n>t2\nMAEGEITTFTALTEKFNLPPGNYKKPK\n"
 
 
 def run_cli(*args):
-    return subprocess.run([sys.executable, "-m", "codon_optimizer.cli", *args],
+    return subprocess.run([sys.executable, "-m", "codon_optimizer.cli", *args, "--ckpt", str(REPO / "results_expr_unique_locus_model.pt"), "--provenance", str(REPO / "results/cli_unique_locus_audit.json")],
                           capture_output=True, text=True, env=ENV, timeout=600)
 
 
@@ -48,5 +48,5 @@ def test_metrics_roundtrip(tmp_path):
     assert run_cli("optimize", str(f), "-o", str(out), "--iters", "5", "--batch", "8").returncode == 0
     r = run_cli("metrics", str(out / "t1_mo.fasta"))
     assert r.returncode == 0, r.stderr
-    rows = json.loads(r.stdout)
+    rows = json.loads(r.stdout)["genes"]
     assert "t1_mo" in rows and rows["t1_mo"]["tai"] > 0

@@ -1,8 +1,7 @@
 """codonopt - multi-objective codon optimization CLI.
 
-Maximizes CNN-predicted expression (z) subject to a tAI floor, per
-results/multiobjective_benchmark.json (40/40 ICOR benchmark genes beaten on
-both axes). Input: protein FASTA. Output: optimized DNA FASTA + metrics JSON.
+Maximizes CNN-predicted expression (z) subject to a tAI floor, under the explicitly selected checkpoint. Historical benchmark results do not
+certify a different checkpoint or wet-lab yield. Input: protein FASTA. Output: optimized DNA FASTA + metrics JSON.
 
 Usage:
   codonopt optimize input.fasta -o out_dir [--tai-floor F] [--iters N]
@@ -50,14 +49,24 @@ def load_cai_weights(cds=None):
     return cai_weights(parse_cds_fasta(str(cds)) if cds else parse_cds_fasta())
 
 
-def load_model(ckpt=None):
-    import torch
+def load_model(ckpt, provenance):
+    import torch, hashlib
     from .model import ExpressionCNN
-    ckpt = ckpt or (REPO / "results_expr_model.pt")
-    ck = torch.load(str(ckpt), map_location="cpu", weights_only=False)
+    if not ckpt or not provenance:
+        raise ValueError("Explicit checkpoint and provenance paths are required")
+    ckpt = pathlib.Path(ckpt)
+    provenance = pathlib.Path(provenance)
+    expected = json.loads(provenance.read_text())
+    ck = torch.load(str(ckpt), map_location="cpu", weights_only=True)
+    if ck.get("provenance") != expected:
+        raise ValueError("Checkpoint embedded provenance does not match selected ledger")
     model = ExpressionCNN()
     model.load_state_dict(ck["state"])
     model.eval()
+    model.selection_metadata = {"checkpoint_sha256": hashlib.sha256(ckpt.read_bytes()).hexdigest(),
+        "provenance_sha256": hashlib.sha256(provenance.read_bytes()).hexdigest(),
+        "scope": expected.get("scope"), "mean": ck["mean"], "sd": ck["sd"],
+        "score_units": "checkpoint-specific normalized log10 abundance prediction, not fold change or wet-lab yield"}
     return model
 
 
@@ -108,7 +117,7 @@ def cmd_optimize(a):
     from .codon import cai
     scorer = load_scorer(a.trnascan)
     wcai = load_cai_weights(a.cds)
-    model = load_model(a.ckpt)
+    model = load_model(a.ckpt, a.provenance)
     proteins = read_protein_fasta(a.input)
     outdir = pathlib.Path(a.out); outdir.mkdir(parents=True, exist_ok=True)
     rows = {}
@@ -129,21 +138,21 @@ def cmd_optimize(a):
         print(name, rows[name], flush=True)
     metrics_path = outdir / "codonopt_metrics.json"
     json.dump({"tool": "codonopt", "objective": "maximize CNN z s.t. tAI >= floor",
-               "genes": rows}, open(metrics_path, "w"), indent=1)
+               "model_selection": model.selection_metadata, "genes": rows}, open(metrics_path, "w"), indent=1)
     print(f"wrote {metrics_path}")
 
 
 def cmd_metrics(a):
     scorer = load_scorer(a.trnascan)
     wcai = load_cai_weights(a.cds)
-    model = load_model(a.ckpt)
+    model = load_model(a.ckpt, a.provenance)
     from .codon import cai
     rows = {}
     for name, seq in read_dna_fasta(a.input).items():
         rows[name] = {"tai": round(scorer.tai(seq), 4), "cai": round(cai(seq, wcai), 4),
                       "z": round(cnn_z(model, seq), 3), "gc": round(gc(seq), 4),
                       "len_nt": len(seq)}
-    print(json.dumps(rows, indent=1))
+    print(json.dumps({"model_selection": model.selection_metadata, "genes": rows}, indent=1))
 
 
 def main(argv=None):
@@ -155,7 +164,8 @@ def main(argv=None):
         sp.add_argument("input", help="protein FASTA (optimize) or DNA FASTA (metrics)")
         sp.add_argument("--trnascan", help="GtRNAdb tRNA scan output (default: bundled E. coli K-12)")
         sp.add_argument("--cds", help="reference CDS FASTA for CAI weights (default: bundled MG1655)")
-        sp.add_argument("--ckpt", help="ExpressionCNN checkpoint (default: bundled results_expr_model.pt)")
+        sp.add_argument("--ckpt", required=True, help="Explicit trusted ExpressionCNN checkpoint path")
+        sp.add_argument("--provenance", required=True, help="JSON ledger matching checkpoint embedded provenance")
         if name == "optimize":
             sp.add_argument("-o", "--out", default="codonopt_out")
             sp.add_argument("--tai-floor", type=float, default=None,

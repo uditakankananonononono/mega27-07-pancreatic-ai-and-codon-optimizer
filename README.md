@@ -37,3 +37,10 @@ No newfit:5110GSE63789genes/fourRNAcountbins. CodonfrequencySpearman.359/.462/.5
 ### CLI input identity correction
 The archived3746CLIinputrowsare3737uniqueloci,8ambiguousloci/17records;originalrow-split sharesb2592acrosstrain/test. Historical.564score isnot certifiedlocus-disjoint. NewPaxDb6.0geometry(notrefit/validation):3708unambiguousoverlapCDSDNA/prefixidentical;29newproteinmismatchesquarantined. See `results/paxdb_v6_geometry_audit.json`.
 Unique-locusexploratory4.2rerun excludesall17ambiguousrecords:3729loci,3169train/560test,0locusoverlap,5epochs. Spearman.594738vsold.564187,not causalestimateofleakageeffect(changedsplit/dataset). Separatecheckpoint/historicalretained,no6.0externalvalidationscore. See `results/cli_unique_locus_audit.json`.
+
+### Explicit CLI model selection (breaking safety change)
+Both `optimize` and `metrics` now require `--ckpt` and `--provenance`; there is no historical-model default. Example:
+```
+codonopt metrics designs.fasta --ckpt results_expr_unique_locus_model.pt --provenance results/cli_unique_locus_audit.json
+```
+The selected JSON must equal the checkpoint's embedded provenance or loading fails. Checkpoints use restricted weights-only loading; use trusted files. Output records checkpoint/provenance SHA256, training scope and normalization. `metrics` now returns `{model_selection, genes}` rather than a bare gene map. Scores remain checkpoint-specific normalized predictions, not fold changes or demonstrated protein yield. Historical checkpoint selection is possible only by explicitly naming its matching historical ledger, whose locus-overlap caveat remains in the geometry audit.
