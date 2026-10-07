@@ -1,0 +1,69 @@
+{
+  "plan_sha256": "5bd0362238ddd37f22a54588131feff8f177a51bfbe94f05ceb2b0cf72c7e6e3",
+  "input_sha256": "93f8ce181fe91ef7b2ddef4579747738a492eb2ad54d74c3151bd76a6a13b09e",
+  "bins": [
+    {
+      "quartile": 1,
+      "n": 1278,
+      "RNA_min": 98,
+      "RNA_max": 6899,
+      "source_overlap_n": 1135,
+      "models": {
+        "length_gc": 0.18559082292823978,
+        "codon_freq": 0.3589376340564817,
+        "codon_length_gc": 0.35498357139648196
+      }
+    },
+    {
+      "quartile": 2,
+      "n": 1278,
+      "RNA_min": 6905,
+      "RNA_max": 13204,
+      "source_overlap_n": 1231,
+      "models": {
+        "length_gc": 0.2225300407904932,
+        "codon_freq": 0.4624785238962172,
+        "codon_length_gc": 0.41164158785652255
+      }
+    },
+    {
+      "quartile": 3,
+      "n": 1277,
+      "RNA_min": 13210,
+      "RNA_max": 26317,
+      "source_overlap_n": 1231,
+      "models": {
+        "length_gc": 0.2833675066647958,
+        "codon_freq": 0.5099091409158221,
+        "codon_length_gc": 0.458662366156938
+      }
+    },
+    {
+      "quartile": 4,
+      "n": 1277,
+      "RNA_min": 26318,
+      "RNA_max": 2752618,
+      "source_overlap_n": 1158,
+      "models": {
+        "length_gc": 0.17884107084438286,
+        "codon_freq": 0.4169239869681006,
+        "codon_length_gc": 0.362908453948497
+      }
+    }
+  ],
+  "component_correlations": {
+    "length_gc": {
+      "RNA": -0.14973768560749812,
+      "FP": -0.03993467586719664
+    },
+    "codon_freq": {
+      "RNA": 0.3169921869947686,
+      "FP": 0.46524486262382536
+    },
+    "codon_length_gc": {
+      "RNA": 0.26010736465172096,
+      "FP": 0.4015465230958084
+    }
+  },
+  "limits": "countstratificationdescriptivenotnoiseestimate/replicates orcausalRNAadjustment;sameorganismgeneoverlap/ratioendpointnotabsoluteproteinorsynonymousdesignbenefit;quantileconditioningcanchangecorrelation;no newdataset"
+}
