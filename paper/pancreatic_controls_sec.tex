@@ -23,3 +23,30 @@ Average precision and probability-quality measures are recorded separately rathe
 With only nine positive patients per test fold, score changes can arise from a small number of reordered pairs. The three splits reuse the same cohort and cannot be averaged into an independent-patient confidence interval. We provide no significance claim or external-validity estimate. Mutation-context inputs are retrospective features from the same assay family as the target. Excluding the target mutation avoids direct identity leakage but does not turn this task into an independent test of biological mechanism. Broader external-cohort validation and prospective outcome data remain missing.
 
 \path{scripts/pancreatic_control_plan.json} records the frozen estimator, views and split seeds; \path{scripts/pancreatic_control_audit.py} executes the patient-grouped training-only preprocessing. \path{results/pancreatic_control_audit.json} retains patient partitions, missing-age count, mutation-source hash, every AUC/AP/Brier/log-loss record and the corrected clinical-feature meaning. The sample/patient prediction ledger is \path{results/pancreatic_control_predictions.jsonl}. Tests check patient disjointness, exact test counts, target exclusion, ledger hashes and metric recalculation. The historical GNN and attribution files are untouched. This study adds actual control-model results and a source-label correction, not a new pancreatic driver, biomarker or treatment recommendation.
+
+\subsection{Discrimination does not certify useful mutation-status probabilities}
+A frozen retrospective follow-up at head \texttt{bd872ee} scores all nine saved split/view probability records against a training-prevalence constant and a training-only prior-odds heuristic. It adds no model fit and uses no held-out labels to select a correction. Source hashes, exact train/test membership, targets and probability ranges are checked before scoring. All three splits have 26 positives among 138 training patients and nine among 46 test patients; overlap across repeated splits remains unchanged. The preregistration SHA256 is \path{a2a443256683be5292b7884ad052b4a5c16e55bd40324cdeb4fd2073f87afdb9}.
+
+The constant predictor uses training prevalence $26/138$, not test prevalence. Its held-out Brier score is .157425 and log loss .494486 on each split. Every saved balanced-logistic view has worse Brier score and log loss than this constant despite some nontrivial rank discrimination. Balanced probabilities have Brier range .177921--.265473 and log-loss range .504756--.724614. AUC alone therefore does not establish useful probability quality for these saved predictors.
+
+The exploratory odds heuristic transforms $p$ to $\mathrm{logistic}(\mathrm{logit}(p)+\mathrm{logit}(26/138))$. It is strictly monotone on these saved probabilities and leaves AUC and average precision unchanged. This is motivated by a prior adjustment for balancing, not proven calibration for penalized or misspecified logistic models. Held-out proper scores are reported without tuning the transform to those scores.
+
+\begin{center}
+\begin{tabular}{rlrrrr}
+\hline
+Seed & View & Original Brier & Shift Brier & Original log loss & Shift log loss\\
+\hline
+17 & Clinical & .253187 & .158268 & .699850 & .497645\\
+17 & Mutation context & .244810 & .146540 & .669894 & .460248\\
+17 & Combined & .243968 & .146775 & .667847 & .457841\\
+29 & Clinical & .248246 & .156946 & .689637 & .492832\\
+29 & Mutation context & .194433 & .140884 & .536497 & .437404\\
+29 & Combined & .195864 & .141981 & .539678 & .438749\\
+43 & Clinical & .265473 & .162374 & .724614 & .511698\\
+43 & Mutation context & .177921 & .136853 & .504756 & .414342\\
+43 & Combined & .183573 & .136780 & .522620 & .422049\\
+\hline
+\end{tabular}
+\end{center}
+
+The six shifted mutation-context/combined records improve both scores relative to the training-prevalence constant. The clinical view does so only on seed 29; its other two records remain worse than the constant. These are small overlapping retrospective comparisons, not statistical superiority, externally calibrated risks or treatment benefit. The target remains nonsynonymous CDKN2A mutation status, not a clinical decision. Full-precision scores, mean probabilities, source hash and training/test prevalences are in \path{results/pancreatic_probability_audit.json}; plan and runner are \path{scripts/pancreatic_probability_plan.json} and \path{scripts/pancreatic_probability_audit.py}. Tests reproduce prior scores and rank invariance. The content-page gate remains uncertified.

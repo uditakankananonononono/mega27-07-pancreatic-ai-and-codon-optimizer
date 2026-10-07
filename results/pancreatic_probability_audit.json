@@ -1,0 +1,286 @@
+{
+  "plan_sha256": "a2a443256683be5292b7884ad052b4a5c16e55bd40324cdeb4fd2073f87afdb9",
+  "prediction_sha256": "5cbe1bd0f6719e47ef954d8cd80611d93a491c360e407842f5d15a38346bed07",
+  "rows": [
+    {
+      "seed": 17,
+      "view": "clinical_age_sex",
+      "n_train": 138,
+      "n_test": 46,
+      "train_prevalence": 0.18840579710144928,
+      "test_prevalence": 0.1956521739130435,
+      "scores": {
+        "balanced": {
+          "auc": 0.5255255255255254,
+          "average_precision": 0.21451300052375283,
+          "brier": 0.253187322633551,
+          "logloss": 0.6998496298574214,
+          "mean_probability": 0.4994846677254403
+        },
+        "train_prevalence_constant": {
+          "auc": 0.5,
+          "average_precision": 0.1956521739130435,
+          "brier": 0.15742491073303924,
+          "logloss": 0.49448570515477364,
+          "mean_probability": 0.18840579710144925
+        },
+        "train_prior_odds_shift": {
+          "auc": 0.5255255255255254,
+          "average_precision": 0.21451300052375283,
+          "brier": 0.15826757093715088,
+          "logloss": 0.4976447790209889,
+          "mean_probability": 0.19221607816550765
+        }
+      }
+    },
+    {
+      "seed": 17,
+      "view": "burden_pathways",
+      "n_train": 138,
+      "n_test": 46,
+      "train_prevalence": 0.18840579710144928,
+      "test_prevalence": 0.1956521739130435,
+      "scores": {
+        "balanced": {
+          "auc": 0.6966966966966968,
+          "average_precision": 0.31498561637880523,
+          "brier": 0.24480964738355057,
+          "logloss": 0.6698939248638353,
+          "mean_probability": 0.46982567876597353
+        },
+        "train_prevalence_constant": {
+          "auc": 0.5,
+          "average_precision": 0.1956521739130435,
+          "brier": 0.15742491073303924,
+          "logloss": 0.49448570515477364,
+          "mean_probability": 0.18840579710144925
+        },
+        "train_prior_odds_shift": {
+          "auc": 0.6966966966966968,
+          "average_precision": 0.31498561637880523,
+          "brier": 0.14654000000078451,
+          "logloss": 0.4602477602453505,
+          "mean_probability": 0.21642679808108858
+        }
+      }
+    },
+    {
+      "seed": 17,
+      "view": "combined",
+      "n_train": 138,
+      "n_test": 46,
+      "train_prevalence": 0.18840579710144928,
+      "test_prevalence": 0.1956521739130435,
+      "scores": {
+        "balanced": {
+          "auc": 0.7087087087087086,
+          "average_precision": 0.32508029657152465,
+          "brier": 0.24396782630444946,
+          "logloss": 0.667847121798004,
+          "mean_probability": 0.4703521247809813
+        },
+        "train_prevalence_constant": {
+          "auc": 0.5,
+          "average_precision": 0.1956521739130435,
+          "brier": 0.15742491073303924,
+          "logloss": 0.49448570515477364,
+          "mean_probability": 0.18840579710144925
+        },
+        "train_prior_odds_shift": {
+          "auc": 0.7087087087087086,
+          "average_precision": 0.32508029657152465,
+          "brier": 0.14677506058485776,
+          "logloss": 0.45784074309337147,
+          "mean_probability": 0.21664599124552797
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "view": "clinical_age_sex",
+      "n_train": 138,
+      "n_test": 46,
+      "train_prevalence": 0.18840579710144928,
+      "test_prevalence": 0.1956521739130435,
+      "scores": {
+        "balanced": {
+          "auc": 0.5465465465465466,
+          "average_precision": 0.22424083942001458,
+          "brier": 0.24824627835430402,
+          "logloss": 0.6896370652467463,
+          "mean_probability": 0.49841837975699377
+        },
+        "train_prevalence_constant": {
+          "auc": 0.5,
+          "average_precision": 0.1956521739130435,
+          "brier": 0.15742491073303927,
+          "logloss": 0.4944857051547736,
+          "mean_probability": 0.18840579710144925
+        },
+        "train_prior_odds_shift": {
+          "auc": 0.5465465465465466,
+          "average_precision": 0.22424083942001458,
+          "brier": 0.156946094584873,
+          "logloss": 0.4928316624949546,
+          "mean_probability": 0.18755124595499661
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "view": "burden_pathways",
+      "n_train": 138,
+      "n_test": 46,
+      "train_prevalence": 0.18840579710144928,
+      "test_prevalence": 0.1956521739130435,
+      "scores": {
+        "balanced": {
+          "auc": 0.7867867867867868,
+          "average_precision": 0.4403158569825236,
+          "brier": 0.1944328630700354,
+          "logloss": 0.5364967067954717,
+          "mean_probability": 0.3636512005454801
+        },
+        "train_prevalence_constant": {
+          "auc": 0.5,
+          "average_precision": 0.1956521739130435,
+          "brier": 0.15742491073303927,
+          "logloss": 0.4944857051547736,
+          "mean_probability": 0.18840579710144925
+        },
+        "train_prior_odds_shift": {
+          "auc": 0.7867867867867868,
+          "average_precision": 0.4403158569825236,
+          "brier": 0.1408839643570376,
+          "logloss": 0.43740384074730093,
+          "mean_probability": 0.16994680324513284
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "view": "combined",
+      "n_train": 138,
+      "n_test": 46,
+      "train_prevalence": 0.18840579710144928,
+      "test_prevalence": 0.1956521739130435,
+      "scores": {
+        "balanced": {
+          "auc": 0.7747747747747747,
+          "average_precision": 0.39959854959854957,
+          "brier": 0.19586384987789,
+          "logloss": 0.5396781563028087,
+          "mean_probability": 0.3647147458077756
+        },
+        "train_prevalence_constant": {
+          "auc": 0.5,
+          "average_precision": 0.1956521739130435,
+          "brier": 0.15742491073303927,
+          "logloss": 0.4944857051547736,
+          "mean_probability": 0.18840579710144925
+        },
+        "train_prior_odds_shift": {
+          "auc": 0.7747747747747747,
+          "average_precision": 0.39959854959854957,
+          "brier": 0.14198091777309912,
+          "logloss": 0.4387488524382906,
+          "mean_probability": 0.17116135429936577
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "view": "clinical_age_sex",
+      "n_train": 138,
+      "n_test": 46,
+      "train_prevalence": 0.18840579710144928,
+      "test_prevalence": 0.1956521739130435,
+      "scores": {
+        "balanced": {
+          "auc": 0.45495495495495486,
+          "average_precision": 0.21128385552861376,
+          "brier": 0.2654730840050784,
+          "logloss": 0.724613922171803,
+          "mean_probability": 0.5071393076259355
+        },
+        "train_prevalence_constant": {
+          "auc": 0.5,
+          "average_precision": 0.1956521739130435,
+          "brier": 0.15742491073303927,
+          "logloss": 0.49448570515477347,
+          "mean_probability": 0.18840579710144925
+        },
+        "train_prior_odds_shift": {
+          "auc": 0.45495495495495486,
+          "average_precision": 0.21128385552861376,
+          "brier": 0.16237395333234483,
+          "logloss": 0.5116979786472591,
+          "mean_probability": 0.19806466301685147
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "view": "burden_pathways",
+      "n_train": 138,
+      "n_test": 46,
+      "train_prevalence": 0.18840579710144928,
+      "test_prevalence": 0.1956521739130435,
+      "scores": {
+        "balanced": {
+          "auc": 0.7867867867867867,
+          "average_precision": 0.43054305587200326,
+          "brier": 0.17792129890131292,
+          "logloss": 0.504755508208596,
+          "mean_probability": 0.37145159772692404
+        },
+        "train_prevalence_constant": {
+          "auc": 0.5,
+          "average_precision": 0.1956521739130435,
+          "brier": 0.15742491073303927,
+          "logloss": 0.49448570515477347,
+          "mean_probability": 0.18840579710144925
+        },
+        "train_prior_odds_shift": {
+          "auc": 0.7867867867867867,
+          "average_precision": 0.43054305587200326,
+          "brier": 0.13685306096622046,
+          "logloss": 0.4143423801304839,
+          "mean_probability": 0.15633304816492705
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "view": "combined",
+      "n_train": 138,
+      "n_test": 46,
+      "train_prevalence": 0.18840579710144928,
+      "test_prevalence": 0.1956521739130435,
+      "scores": {
+        "balanced": {
+          "auc": 0.7627627627627627,
+          "average_precision": 0.4501449817239291,
+          "brier": 0.1835726014438465,
+          "logloss": 0.5226198337037777,
+          "mean_probability": 0.3796910086930345
+        },
+        "train_prevalence_constant": {
+          "auc": 0.5,
+          "average_precision": 0.1956521739130435,
+          "brier": 0.15742491073303927,
+          "logloss": 0.49448570515477347,
+          "mean_probability": 0.18840579710144925
+        },
+        "train_prior_odds_shift": {
+          "auc": 0.7627627627627627,
+          "average_precision": 0.4501449817239291,
+          "brier": 0.13677990538427737,
+          "logloss": 0.4220492768443661,
+          "mean_probability": 0.1617236816779243
+        }
+      }
+    }
+  ],
+  "limits": "prior shift is algebraic heuristic under balance/prior assumptions not proven calibration for penalized misspecified models;constant baseline uses train prevalence not test;small overlapping retrospective splits,noexternalcohort/statistical superiority/clinical benefit;no source-data redistribution"
+}
