@@ -1,7 +1,6 @@
-# MEGA27-07: PANCREAS-AI-PLUS + Codon Optimizer (Rishab Jain bar, beaten)
+# MEGA27-07: PANCREAS-AI-PLUS + Codon Optimizer
 
-Two open-data tools built to exceed the ISEF-winning bar set by Rishab Jain:
-PANCREAS.AI (biopsy-image mutation prediction) and ICOR (RNN codon optimization).
+Two open-data tools modelled on the problems in Rishab Jain's PANCREAS.AI (biopsy-image mutation prediction) and ICOR (RNN codon optimization). No superiority over either is established: see the status notes below.
 
 ## pancreatic_ai
 Predicts driver mutation status (KRAS / TP53 / CDKN2A / SMAD4) in pancreatic
@@ -12,15 +11,19 @@ gene x mutation-type tensor, GNN over the co-mutation graph, logistic baseline.
 
 ## codon_optimizer
 CNN expression predictor trained on 3,752 real E. coli MG1655 CDS joined to
-PaxDb whole-organism protein abundances (spearman 0.61 held out), plus a
+PaxDb whole-organism protein abundances (spearman 0.61 held out in the historical run; the current auditable checkpoint gets 0.564), plus a
 CNN-guided synonymous-recoding optimizer compared against CAI-greedy and
 wild-type on identical proteins.
+
+## Status (2026-10-07 audit)
+- Pancreas: within-repo TCGA-PAAD results are KRAS AUC 0.85-0.86, TP53 0.79-0.80, CDKN2A 0.68-0.73, SMAD4 0.51-0.55 (chance). On the external CPTAC-PDAC cohort (`results/cptac_external_validation.json`, n=140) external AUCs are KRAS 0.384 (95% CI 0.157-0.621; 96% prevalence), TP53 0.741 (0.643-0.830), CDKN2A 0.497 (0.376-0.612), SMAD4 0.347 (0.253-0.449), i.e. only TP53 transfers; no published like-for-like co-mutation baseline was located (`results/PANCREAS_BENCHMARK_CONTEXT.md`).
+- Codon: under the auditable 5-epoch checkpoint the optimizer's predicted-expression z is 1.336 vs ICOR 0.331 (n=40, paired Wilcoxon p=1.8e-12), but the designs were optimized against the same model that scores them, and predicted z is model-relative, not wet-lab expression (`results/RESCORE.md`). No wet-lab or independent-model test.
 
 ## Data
 `python3 scripts/fetch_paad.py && python3 scripts/fetch_ecoli.py`
 
 ## Reproducibility boundary (2026-09-25 audit)
-The CLI now includes a source-pinned public GtRNAdb tRNAscan output, NCBI MG1655 RefSeq CDS, versioned PaxDb 4.2 abundance file, and a five-epoch *exploratory* checkpoint trained locally from those inputs (`scripts/train_cli_checkpoint.py`; `results/cli_checkpoint_provenance.json`). The current source snapshot yields 3,746 CDS-abundance pairs, 3,184 train and 562 held-out genes, and held-out Spearman 0.564. This new checkpoint is **not** the previously reported 3,752-pair model or the separately archived 0.627 hold-out experiment, and has not been used to rescore the historical ICOR comparison. Both end-to-end CLI tests pass with these bundled assets, and 50 tests pass overall. Source rights and software dependencies still matter for use outside this repo. The strict 40-tool gate remains open. The old PaxDb `latest/abundances` URL now returns 404; `scripts/fetch_ecoli.py` uses the pinned versioned URL.
+The CLI now includes a source-pinned public GtRNAdb tRNAscan output, NCBI MG1655 RefSeq CDS, versioned PaxDb 4.2 abundance file, and a five-epoch *exploratory* checkpoint trained locally from those inputs (`scripts/train_cli_checkpoint.py`; `results/cli_checkpoint_provenance.json`). The current source snapshot yields 3,746 CDS-abundance pairs, 3,184 train and 562 held-out genes, and held-out Spearman 0.564. This new checkpoint is **not** the previously reported 3,752-pair model or the separately archived 0.627 hold-out experiment, and has not been used to rescore the historical ICOR comparison. Both end-to-end CLI tests pass with these bundled assets, and 68 test functions exist (static count, suite not rerun in this audit; the earlier README said 50 pass). Source rights and software dependencies still matter for use outside this repo. The strict 40-tool gate remains open. The old PaxDb `latest/abundances` URL now returns 404; `scripts/fetch_ecoli.py` uses the pinned versioned URL.
 
 ## Install and CLI
 ```
