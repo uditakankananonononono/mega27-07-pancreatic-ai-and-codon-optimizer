@@ -36,3 +36,4 @@ No newfit:5110GSE63789genes/fourRNAcountbins. CodonfrequencySpearman.359/.462/.5
 
 ### CLI input identity correction
 The archived3746CLIinputrowsare3737uniqueloci,8ambiguousloci/17records;originalrow-split sharesb2592acrosstrain/test. Historical.564score isnot certifiedlocus-disjoint. NewPaxDb6.0geometry(notrefit/validation):3708unambiguousoverlapCDSDNA/prefixidentical;29newproteinmismatchesquarantined. See `results/paxdb_v6_geometry_audit.json`.
+Unique-locusexploratory4.2rerun excludesall17ambiguousrecords:3729loci,3169train/560test,0locusoverlap,5epochs. Spearman.594738vsold.564187,not causalestimateofleakageeffect(changedsplit/dataset). Separatecheckpoint/historicalretained,no6.0externalvalidationscore. See `results/cli_unique_locus_audit.json`.
