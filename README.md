@@ -30,3 +30,6 @@ codonopt optimize --gene BIRC5 ...   # multi-objective optimization (expression 
 codonopt metrics ...                 # CAI/tAI/predicted-expression scoring of a sequence
 ```
 The package pins its public data sources (GtRNAdb tRNAscan output, NCBI MG1655 RefSeq CDS, versioned PaxDb 4.2) and ships an exploratory checkpoint for evaluation; see the reproducibility boundary section below for exactly what the bundled checkpoint is and is not.
+
+### Admitted external ratio source: fixed RNA-count strata
+No newfit:5110GSE63789genes/fourRNAcountbins. CodonfrequencySpearman.359/.462/.510/.417,combined.355/.412/.459/.363,lengthGC.186/.223/.283/.179. PredictionalsoassociateswithRNA/FPcomponents;stratificationnotcausaladjustment ornoiseestimate. Samegene/sourceandratioendpointlimitationsremain. See `results/gse63789_count_strata_audit.json`.
