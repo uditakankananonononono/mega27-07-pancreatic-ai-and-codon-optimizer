@@ -1,0 +1,19 @@
+\subsection{Frozen source-only sequence models transport ranks, but less than the old measurement does}
+A separate frozen scoring unit follows the GSE63789 ingest qualification. The original three feature views are fitted on all 5,068 valid GSE75897 genes, with their old log2 RPF/RNA RPKM density-ratio labels. StandardScaler and RidgeCV use the original alpha grid (0.1, 1, 10, 100, 1000). No GSE63789 label is used for fitting, alpha selection or calibration. Exactly 5,110 positive-count genes meet unique valid R64 CDS and three-times-Length equality; 32 length mismatches and 83 unmatched identifiers are excluded as frozen. Of the target genes, 4,755 reuse a training gene identity and 355 are absent from the old training set.
+
+The target is log2 Sum-FP/Sum-mRNA. This is a raw-count-ratio rank test, not equality with RPKM or an author-model synthesis-rate estimate. Global library-size factors would shift all log ratios by a constant without changing ranks; gene-specific biases are not corrected by that observation. No absolute calibration or squared-error comparison across these endpoint scales is claimed.
+
+\begin{center}
+\begin{tabular}{lrrrr}
+\hline
+Feature view & Alpha & All Spearman & Reused genes & Target-only \\
+\hline
+Length and GC & 10 & 0.170 & 0.167 & -0.059 \\
+Codon frequencies & 100 & 0.526 & 0.525 & 0.383 \\
+Codons, length and GC & 100 & 0.476 & 0.461 & 0.489 \\
+\hline
+\end{tabular}
+\end{center}
+The corresponding all-gene Pearson correlations are 0.097, 0.405 and 0.401. Among reused genes, direct old-endpoint versus new-endpoint persistence is stronger than any fitted sequence model: Spearman 0.669 and Pearson 0.765. Thus sequence-only rank transport is observed, but it does not exceed the association available from simply reusing the old measurement. Codon frequencies alone rank better overall than the combined view, whereas that ordering reverses in the 355 target-only genes. The target-only subgroup is nonrandom and does not certify gene-family-independent performance.
+
+All target values, predictions, group flags, selected alphas and exclusions are retained in \path{results/gse63789_transfer_audit.json}. Source-only fitting and the full frozen protocol are in \path{scripts/gse63789_transfer_audit.py} and \path{scripts/gse63789_transfer_plan.json}. The scope remains same-organism source transport over a single WT sample pair, not independent biological replication, protein yield, optimized-sequence benefit or causal synonymous intervention. Primary data source: \url{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63789}. The content-page gate remains uncertified.
