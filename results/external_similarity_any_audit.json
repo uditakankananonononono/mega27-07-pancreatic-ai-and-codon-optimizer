@@ -1,0 +1,45 @@
+{
+  "retained": {
+    "n": 6305,
+    "rho": 0.22616172544105648,
+    "category_counts": {
+      "0": 1741,
+      "1": 131,
+      "2": 420,
+      "3": 892,
+      "4": 1161,
+      "5": 1960
+    }
+  },
+  "flagged": {
+    "n": 506,
+    "rho": 0.1910779073686298,
+    "category_counts": {
+      "0": 121,
+      "1": 12,
+      "2": 27,
+      "3": 72,
+      "4": 102,
+      "5": 172
+    }
+  },
+  "unflagged": {
+    "n": 5799,
+    "rho": 0.22632757327640982,
+    "category_counts": {
+      "0": 1620,
+      "1": 119,
+      "2": 393,
+      "3": 820,
+      "4": 1059,
+      "5": 1788
+    }
+  },
+  "all_constructs_flagged": 549,
+  "maximum_construct_5mer_overlap_expression_rho": 0.005526179141493466,
+  "flag_disagreement_names": [],
+  "plan_sha256": "77fe4ce1bfb26549e2235f6f8ff84cf28e10a3712d6be9ed6869f89f4d2cd4e4",
+  "ledger_sha256": "ace1eb6e527e72f01fdab84a8d42f86d35031f0e5412afc26615d8bad1c82ad1",
+  "limits": "Not exhaustive homology or independence certification; thresholds and candidates unchanged, candidate score need not order threshold eligibility. Preserve original ledger; no causal explained share, external model tuning, new validation or design benefit.",
+  "selection": "Same top3 selection and external frozen predictions; no new E-dependent fitting."
+}
