@@ -34,7 +34,7 @@ def codon_freq_features(seq):
     return v / s if s else v
 
 def main():
-    rows = build_expression_dataset()
+    rows = build_expression_dataset(policy="raw")
     print(f"dataset: {len(rows)} genes", flush=True)
     rng = np.random.default_rng(0)
     idx = rng.permutation(len(rows))

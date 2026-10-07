@@ -25,7 +25,7 @@ def codon_freq_features(seq):
     return v / s if s else v
 
 def run_split(seed, n_opt=60):
-    rows = build_expression_dataset()
+    rows = build_expression_dataset(policy="raw")
     rng = np.random.default_rng(seed)
     idx = rng.permutation(len(rows))
     n_tr = int(0.85 * len(rows))

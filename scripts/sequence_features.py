@@ -55,7 +55,7 @@ def perm_importance(X, y, names, tag):
             "top_features": [{"feature": names[i], "importance": round(float(imp[i]), 4)} for i in order[:15]]}
 
 def main():
-    rows = [(lt, seq, logab) for lt, gene, seq, logab in build_expression_dataset() if len(seq) >= 90]
+    rows = [(lt, seq, logab) for lt, gene, seq, logab in build_expression_dataset(policy="raw") if len(seq) >= 90]
     y = np.array([r[2] for r in rows])
     out = {"design": "permutation importance, ridge, 5-fold CV, 10 permutations/feature; importance = mean r drop"}
     out["codon_view"] = perm_importance(np.array([codon_freq(r[1]) for r in rows]), y, CODONS, "codon")

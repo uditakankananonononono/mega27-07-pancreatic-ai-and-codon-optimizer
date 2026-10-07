@@ -42,7 +42,7 @@ def nested_cv(X, y, tag):
             "boot95_mean": [float(np.percentile(boots, 2.5)), float(np.percentile(boots, 97.5))]}
 
 def main():
-    rows = [(lt, seq, logab) for lt, gene, seq, logab in build_expression_dataset() if len(seq) >= 90]
+    rows = [(lt, seq, logab) for lt, gene, seq, logab in build_expression_dataset(policy="raw") if len(seq) >= 90]
     y = np.array([r[2] for r in rows])
     out = {"design": "5x3 nested CV, RidgeCV inner alpha selection, Pearson r on outer folds",
            "n_genes": len(rows), "views": {}}

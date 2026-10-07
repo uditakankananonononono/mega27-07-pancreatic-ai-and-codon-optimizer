@@ -11,7 +11,7 @@ from oof_evaluator_audit import freq
 from locus_grouped_evaluator_audit import grouped_folds
 def compute():
  raw=(ROOT/'scripts/external_transfer_plan.json').read_bytes();plan=json.loads(raw);file=ROOT/'data/external/nature16509_data2.xlsx';assert hashlib.sha256(file.read_bytes()).hexdigest()==plan['file_sha256']
- rr=list(openpyxl.load_workbook(file,read_only=True,data_only=True)['E6348.csv'].values);rows=[dict(zip(rr[0],r)) for r in rr[1:]];train=[(lt,seq,logab) for lt,gene,seq,logab in build_expression_dataset() if len(seq)>=90];groups=np.array([r[0] for r in train]);X=np.array([freq(r[1]) for r in train]);y=np.array([r[2] for r in train]);proteins=sorted(set(str(Seq(r[1]).translate()).rstrip('*') for r in train));assert all(len(p)>=30 for p in proteins)
+ rr=list(openpyxl.load_workbook(file,read_only=True,data_only=True)['E6348.csv'].values);rows=[dict(zip(rr[0],r)) for r in rr[1:]];train=[(lt,seq,logab) for lt,gene,seq,logab in build_expression_dataset(policy="raw") if len(seq)>=90];groups=np.array([r[0] for r in train]);X=np.array([freq(r[1]) for r in train]);y=np.array([r[2] for r in train]);proteins=sorted(set(str(Seq(r[1]).translate()).rstrip('*') for r in train));assert all(len(p)>=30 for p in proteins)
  overlaps=[]
  for r in rows:
   prot=str(Seq(r['seq']).translate()).rstrip('*');hits=[hashlib.sha256(p.encode()).hexdigest() for p in proteins if p in prot];overlaps.append(hits)

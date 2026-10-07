@@ -12,7 +12,7 @@ from codon_optimizer.model import ExpressionCNN, encode
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 FILES=['data/gtrnadb/eschColi_K_12_MG1655-tRNAs.out','data/ecoli/mg1655_cds.fna.gz','data/ecoli/paxdb_abundance.tsv']
 from collections import Counter
-prior=json.loads((ROOT/'results/cli_checkpoint_provenance.json').read_text());assert all(hashlib.sha256((ROOT/f).read_bytes()).hexdigest()==h for f,h in prior['input_sha256'].items());raw=build_expression_dataset();counts=Counter(r[0] for r in raw);rows=[r for r in raw if counts[r[0]]==1];assert len({r[0] for r in rows})==len(rows); rng=np.random.default_rng(0); ids=rng.permutation(len(rows)); n=int(.85*len(ids)); tr,te=ids[:n],ids[n:]
+prior=json.loads((ROOT/'results/cli_checkpoint_provenance.json').read_text());assert all(hashlib.sha256((ROOT/f).read_bytes()).hexdigest()==h for f,h in prior['input_sha256'].items());raw=build_expression_dataset(policy="raw");counts=Counter(r[0] for r in raw);rows=build_expression_dataset(policy="unique");assert len({r[0] for r in rows})==len(rows); rng=np.random.default_rng(0); ids=rng.permutation(len(rows)); n=int(.85*len(ids)); tr,te=ids[:n],ids[n:]
 X=np.stack([encode(r[2]) for r in rows]); y=np.array([r[3] for r in rows],dtype=np.float32); mu,sd=y[tr].mean(),y[tr].std(); yz=(y-mu)/sd
 print('dataset',len(rows),'train',n,'test',len(te),flush=True)
 torch.manual_seed(0); torch.set_num_threads(2); model=ExpressionCNN(); opt=torch.optim.Adam(model.parameters(),lr=1e-3); lossfn=torch.nn.MSELoss()

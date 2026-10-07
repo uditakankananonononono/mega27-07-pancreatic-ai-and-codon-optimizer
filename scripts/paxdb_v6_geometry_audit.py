@@ -12,7 +12,7 @@ def compute(folder):
   f=folder/r['file'];h=hashlib.sha256(f.read_bytes()).hexdigest();assert h==r['sha256'];newhash[r['file']]=h
  prov=json.loads((ROOT/'results/cli_checkpoint_provenance.json').read_text())
  for f,h in prov['input_sha256'].items():assert hashlib.sha256((ROOT/f).read_bytes()).hexdigest()==h
- rows=build_expression_dataset();assert len(rows)==prov['matched_rows'];counts=Counter(r[0] for r in rows);ambiguous={k for k,v in counts.items() if v>1};old={r[0]:r[2] for r in rows if r[0] not in ambiguous};perm=np.random.default_rng(0).permutation(len(rows));train={rows[i][0] for i in perm[:int(.85*len(rows))]};test={rows[i][0] for i in perm[int(.85*len(rows)):]} 
+ rows=build_expression_dataset(policy="raw");assert len(rows)==prov['matched_rows'];counts=Counter(r[0] for r in rows);ambiguous={k for k,v in counts.items() if v>1};old={r[0]:r[2] for r in rows if r[0] not in ambiguous};perm=np.random.default_rng(0).permutation(len(rows));train={rows[i][0] for i in perm[:int(.85*len(rows))]};test={rows[i][0] for i in perm[int(.85*len(rows)):]} 
  seq={};key=None
  for line in (folder/'reference-selected-CDS.fasta').read_text().splitlines():
   if line.startswith('>'):key=line[1:].split()[0];assert key not in seq;seq[key]=''

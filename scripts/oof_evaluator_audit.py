@@ -11,7 +11,7 @@ def freq(seq):
  n=len(seq)//3;return np.array([sum(seq[i:i+3]==c for i in range(0,n*3,3))/n for c in CODONS])
 def metrics(y,p):return {'r':float(np.corrcoef(y,p)[0,1]),'rmse':float(np.sqrt(np.mean((p-y)**2)))}
 def main():
- raw=(ROOT/'scripts/oof_evaluator_plan.json').read_bytes();rows=[(lt,seq,logab) for lt,gene,seq,logab in build_expression_dataset() if len(seq)>=90];y=np.array([r[2] for r in rows]);c=np.array([freq(r[1]) for r in rows]);simple=np.array([[np.log10(len(r[1])),sum(b in 'GC' for b in r[1])/len(r[1])] for r in rows]);views={'codon':c,'length_gc':simple,'codon_length_gc':np.c_[c,simple]};pred={k:np.zeros(len(y)) for k in views};folds=[]
+ raw=(ROOT/'scripts/oof_evaluator_plan.json').read_bytes();rows=[(lt,seq,logab) for lt,gene,seq,logab in build_expression_dataset(policy="raw") if len(seq)>=90];y=np.array([r[2] for r in rows]);c=np.array([freq(r[1]) for r in rows]);simple=np.array([[np.log10(len(r[1])),sum(b in 'GC' for b in r[1])/len(r[1])] for r in rows]);views={'codon':c,'length_gc':simple,'codon_length_gc':np.c_[c,simple]};pred={k:np.zeros(len(y)) for k in views};folds=[]
  for fold,(tr,te) in enumerate(KFold(5,shuffle=True,random_state=7).split(y)):
   for name,X in views.items():
    m=RidgeCV(alphas=np.logspace(-3,3,13),cv=KFold(3,shuffle=True,random_state=fold)).fit(X[tr],y[tr]);pred[name][te]=m.predict(X[te]);folds.append({'fold':fold,'view':name,'n_train':len(tr),'n_test':len(te),'alpha':float(m.alpha_),**metrics(y[te],pred[name][te])});print(fold,name,folds[-1],flush=True)

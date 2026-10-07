@@ -14,7 +14,7 @@ def grouped_folds(groups,seed,k):
 
 def main():
  raw=(ROOT/'scripts/nested_partition_plan.json').read_bytes();plan=json.loads(raw)
- rows=[(lt,seq,logab) for lt,gene,seq,logab in build_expression_dataset() if len(seq)>=90];groups=np.array([r[0] for r in rows]);y=np.array([r[2] for r in rows]);c=np.array([freq(r[1]) for r in rows]);simple=np.array([[np.log10(len(r[1])),sum(b in 'GC' for b in r[1])/len(r[1])] for r in rows]);views={'codon':c,'length_gc':simple,'codon_length_gc':np.c_[c,simple]};unique=np.unique(groups);records=[];ledger=[]
+ rows=[(lt,seq,logab) for lt,gene,seq,logab in build_expression_dataset(policy="raw") if len(seq)>=90];groups=np.array([r[0] for r in rows]);y=np.array([r[2] for r in rows]);c=np.array([freq(r[1]) for r in rows]);simple=np.array([[np.log10(len(r[1])),sum(b in 'GC' for b in r[1])/len(r[1])] for r in rows]);views={'codon':c,'length_gc':simple,'codon_length_gc':np.c_[c,simple]};unique=np.unique(groups);records=[];ledger=[]
  for seed in plan['outer_seeds']:
   pred={k:np.zeros(len(y)) for k in views};folds=[];row_outer=np.zeros(len(y),dtype=int)
   for fold,(tr,te) in enumerate(grouped_folds(groups,seed,5)):

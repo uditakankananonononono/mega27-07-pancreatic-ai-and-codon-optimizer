@@ -25,7 +25,7 @@ def main():
     from transformers import AutoTokenizer, AutoModelForMaskedLM
     torch.set_num_threads(os.cpu_count())
     t0 = time.time()
-    rows = [(lt, seq, logab) for lt, gene, seq, logab in build_expression_dataset() if len(seq) >= 90]
+    rows = [(lt, seq, logab) for lt, gene, seq, logab in build_expression_dataset(policy="raw") if len(seq) >= 90]
     print(f"dataset: {len(rows)} genes", flush=True)
     tok = AutoTokenizer.from_pretrained("InstaDeepAI/nucleotide-transformer-v2-50m-multi-species", trust_remote_code=True)
     model = AutoModelForMaskedLM.from_pretrained("InstaDeepAI/nucleotide-transformer-v2-50m-multi-species", trust_remote_code=True)

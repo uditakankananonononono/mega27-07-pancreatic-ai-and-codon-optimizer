@@ -56,7 +56,7 @@ def main():
     import sys
     sys.path.insert(0, str(ROOT / "src"))
     from codon_optimizer.expr_data import build_expression_dataset
-    rows = build_expression_dataset()
+    rows = build_expression_dataset(policy="raw")
     X, y = [], []
     for lt, gene, seq, logab in rows:
         if len(seq) >= 90:
