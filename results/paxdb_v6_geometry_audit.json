@@ -1,0 +1,50 @@
+{
+  "plan_sha256": "6d0a080423fbe93c1ac0aaf88e15f2ad0b4e8bbe345e05a6cfba4f0d32c9f0ba",
+  "qualified_source_sha256": {
+    "paxdb-v6.tsv": "685c34689ff17bc17a7652f3bc2cf2f9b91844de10d8b14c4880d4f0cbd91bc0",
+    "paxdb-proteins.fa": "654b8eac1c1b36ae08c03bad6e6055bdb65eca2074d4485bd9549ca6dd744ccb",
+    "NC_000913.3.gb": "313752bfe10d4aaf04abdb541a1309bce9a6b66f059e75fe215898e736a5a8a5",
+    "identity-join.csv": "5f8146884bc1d3c068945d78dc4a1ee2f4e3b287c73d047eeec38a304e91d5d5",
+    "reference-cds.json": "9eb87f474ff62bfd0b63a9599abfd71f2cc9f585793ff8bedc3c59e473907511",
+    "reference-selected-CDS.fasta": "c9078172ed8077bf8f9abf4a324a98062c23848de59a1f9a4f5e91f2a93441e5",
+    "reference-selected-protein.fasta": "d1cb9f84bacdfed8d623dec3d3e54edf8514809bdd0d43b529c33cf49b003d33",
+    "cds-geometry.csv": "c1465c7b9c4e5a3035d3b0a67215287619e95c8d48fe53ee3318239aed7e5f65",
+    "license-content.js": "9a9dd5ce3d279d5335e71e68cc2b594ac90d20456820e97c57439e819303a0e6"
+  },
+  "old_input_sha256": {
+    "data/gtrnadb/eschColi_K_12_MG1655-tRNAs.out": "3001d620e181f74689f25972006ae1cfbb7a11eca7895464471cdd639ce4eefe",
+    "data/ecoli/mg1655_cds.fna.gz": "8b7b48b7b905313082141db4b77807b7aafebca7a5c40bbd42832baacd1cfd9b",
+    "data/ecoli/paxdb_abundance.tsv": "753196eb33e31b86a6d6abe8c4b68a59db41b7cf808ec3869698989ae85845ec"
+  },
+  "old_dataset_rows": 3746,
+  "old_unique_loci": 3737,
+  "old_ambiguous_loci": [
+    "b0149",
+    "b0470",
+    "b0484",
+    "b1120",
+    "b1888",
+    "b2592",
+    "b3168",
+    "b4346"
+  ],
+  "old_ambiguous_record_count": 17,
+  "old_train_rows": 3184,
+  "old_test_rows": 562,
+  "old_train_test_shared_loci": [
+    "b2592"
+  ],
+  "new_exact_protein_rows": 4065,
+  "protein_mismatch_quarantined": 29,
+  "new_exact_protein_old_locus_overlap": 3708,
+  "overlap_old_train": 3148,
+  "overlap_old_test": 560,
+  "new_exact_protein_not_old_input": 357,
+  "full_CDS_DNA_changed_overlap": 0,
+  "encoded1500prefix_changed_overlap": 0,
+  "new_exact_CDS_over1500": 561,
+  "old_CDS_over1500": 568,
+  "changed_locus_tags": [],
+  "no_scoring_or_fitting": true,
+  "limits": "versionssharegenes/integratedstudies,cannotassertindependence;proteinidentitynotDNAidentity;MG1655notNCM3722;1500ntgeometryonlynotfeatureeffect;checkpointnot historicalbenchmark"
+}

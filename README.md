@@ -33,3 +33,6 @@ The package pins its public data sources (GtRNAdb tRNAscan output, NCBI MG1655 R
 
 ### Admitted external ratio source: fixed RNA-count strata
 No newfit:5110GSE63789genes/fourRNAcountbins. CodonfrequencySpearman.359/.462/.510/.417,combined.355/.412/.459/.363,lengthGC.186/.223/.283/.179. PredictionalsoassociateswithRNA/FPcomponents;stratificationnotcausaladjustment ornoiseestimate. Samegene/sourceandratioendpointlimitationsremain. See `results/gse63789_count_strata_audit.json`.
+
+### CLI input identity correction
+The archived3746CLIinputrowsare3737uniqueloci,8ambiguousloci/17records;originalrow-split sharesb2592acrosstrain/test. Historical.564score isnot certifiedlocus-disjoint. NewPaxDb6.0geometry(notrefit/validation):3708unambiguousoverlapCDSDNA/prefixidentical;29newproteinmismatchesquarantined. See `results/paxdb_v6_geometry_audit.json`.
