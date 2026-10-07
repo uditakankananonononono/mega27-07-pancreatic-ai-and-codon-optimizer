@@ -129,3 +129,22 @@ Top ten &524&.18897&.22615\\\hline
 
 Eighteen previously unflagged constructs become flagged; none loses its flag. There are now 5781 unflagged retained constructs. The weak unflagged association scarcely changes despite the additional exclusions. A separate implementation observation is that one construct, CtR128, has a top-ten candidate meeting both thresholds even though the highest identity-times-coverage candidate does not. This best-versus-any disagreement is not the eighteen-construct top-three versus top-ten search comparison. The earlier zero-disagreement statement remains correct for its three-candidate scope but cannot be generalized to wider candidate sets.
 All 6348 identities and up to ten candidate identity/coverage records are retained without raw sequences in \path{results/external_similarity_top10.jsonl}; tests check that each top-three candidate list is an unchanged prefix of the top-ten list, every prior flag persists, all eighteen changed identities are recorded and the saved metrics reproduce. The expanded-pool result does not certify source-selection independence, calibrated expression or causal optimized-design benefit. It is search-scope sensitivity of the same selected assay, with earlier weak transfer and raw-source redistribution limits preserved.
+
+\subsection{Joint selection and covariate sensitivity remains weak}
+A frozen retrospective follow-up at head \texttt{0009847} combines the saved top-ten similarity ledger with the saved GC/length ledger. It changes neither the frozen ridge predictions nor the ordinal expression categories. Names, categories, predictions and containment flags must match across both complete ledgers before joining. The 43 exact protein-containment overlaps remain excluded. Within each specified subset, prediction and category ranks are separately regressed on an intercept, GC rank and log-length rank; the correlation of those rank residuals is descriptive rather than a causal correction.
+
+\begin{center}
+\begin{tabular}{lrrr}
+\hline
+Subset & Constructs & Raw prediction $\rho$ & Rank residual correlation\\
+\hline
+All retained & 6305 & .22616 & .21623\\
+Top-ten flagged & 524 & .18897 & .18417\\
+Top-ten unflagged & 5781 & .22615 & .21534\\
+\hline
+\end{tabular}
+\end{center}
+
+The weak association persists after the particular joint exclusions and rank covariates, but this does not establish an independent expression effect or identify an explained fraction. Ranks are recomputed inside each subset, so these are different conditional estimands, not additive components of one decomposition. GC and log-length correlations with category are respectively $-.04495$ and $-.01142$ among flagged constructs, and $-.09116$ and $-.03429$ among unflagged constructs. The category counts and all full-precision correlations remain in the result ledger.
+
+Top-ten unflagged does not mean homology-free: candidate-bounded local screening can miss divergent or domain relationships. Shared source selection and assay-specific constraints remain unresolved. The ordinal category is not natural abundance, calibrated expression, optimized-design benefit or pancreatic relevance. This follow-up uses the same previously selected assay and is not an independent replication. Plans, input hashes and three-subset summaries are in \path{scripts/external_joint_plan.json} and \path{results/external_joint_audit.json}; tests reconcile the retained totals, category counts and prior raw correlations. No raw sequence redistribution or clinical validation is added, and the manuscript content-page gate remains uncertified.

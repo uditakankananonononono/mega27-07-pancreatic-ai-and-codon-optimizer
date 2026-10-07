@@ -1,0 +1,61 @@
+{
+  "plan_sha256": "de712cab2e145aed9dbce8551272907968f128cb60968ce0171628cb24267721",
+  "input_sha256": {
+    "external_covariates.jsonl": "48a75d9ae3cc275fff765d5d90526945fa89f2ee47b1a4b5126e274a3cdace0d",
+    "external_similarity_top10.jsonl": "5f96dd1e856f1ae75eee86ab034bb18bf0da3df5bfa9eafbbe79ac08671eae33"
+  },
+  "rows": {
+    "retained": {
+      "n": 6305,
+      "raw_prediction_spearman": 0.22616172544105648,
+      "gc_spearman": -0.08735257986291503,
+      "length_spearman": -0.030323722962341267,
+      "prediction_gc_spearman": -0.13589484292773096,
+      "prediction_length_spearman": -0.07801005715120655,
+      "gc_length_partial_rank_correlation": 0.21622570638334576,
+      "category_counts": {
+        "0": 1741,
+        "1": 131,
+        "2": 420,
+        "3": 892,
+        "4": 1161,
+        "5": 1960
+      }
+    },
+    "top10_flagged": {
+      "n": 524,
+      "raw_prediction_spearman": 0.18896958845608272,
+      "gc_spearman": -0.04494780527521604,
+      "length_spearman": -0.011417216915802393,
+      "prediction_gc_spearman": -0.24664306113366113,
+      "prediction_length_spearman": -0.13191500870186026,
+      "gc_length_partial_rank_correlation": 0.18416594066607592,
+      "category_counts": {
+        "0": 123,
+        "1": 12,
+        "2": 29,
+        "3": 76,
+        "4": 107,
+        "5": 177
+      }
+    },
+    "top10_unflagged": {
+      "n": 5781,
+      "raw_prediction_spearman": 0.2261506405269984,
+      "gc_spearman": -0.09116070842518324,
+      "length_spearman": -0.034293071018696365,
+      "prediction_gc_spearman": -0.1366966050765779,
+      "prediction_length_spearman": -0.08826261035913043,
+      "gc_length_partial_rank_correlation": 0.21533855955166856,
+      "category_counts": {
+        "0": 1618,
+        "1": 119,
+        "2": 391,
+        "3": 816,
+        "4": 1054,
+        "5": 1783
+      }
+    }
+  },
+  "limits": "descriptive conditional sensitivity, not causal adjustment or explained fraction;top10 unflagged not homology-free;shared source selection unresolved;ordinalE not abundance/calibration;no pancreatic/clinical/independent validation;no raw sequence redistribution"
+}
