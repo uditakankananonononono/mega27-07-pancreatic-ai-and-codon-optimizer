@@ -1,0 +1,68 @@
+{
+  "retained": {
+    "n": 6305,
+    "rho": 0.22616172544105648,
+    "category_counts": {
+      "0": 1741,
+      "1": 131,
+      "2": 420,
+      "3": 892,
+      "4": 1161,
+      "5": 1960
+    }
+  },
+  "flagged": {
+    "n": 524,
+    "rho": 0.18896958845608272,
+    "category_counts": {
+      "0": 123,
+      "1": 12,
+      "2": 29,
+      "3": 76,
+      "4": 107,
+      "5": 177
+    }
+  },
+  "unflagged": {
+    "n": 5781,
+    "rho": 0.2261506405269984,
+    "category_counts": {
+      "0": 1618,
+      "1": 119,
+      "2": 391,
+      "3": 816,
+      "4": 1054,
+      "5": 1783
+    }
+  },
+  "all_constructs_flagged": 567,
+  "maximum_construct_5mer_overlap_expression_rho": 0.005526179141493466,
+  "flag_disagreement_names": [
+    "CtR128"
+  ],
+  "plan_sha256": "daf1c4329e9e26e952855ad25dc74d0817b687005039b2d535f6bc7349e347b6",
+  "ledger_sha256": "5f96dd1e856f1ae75eee86ab034bb18bf0da3df5bfa9eafbbe79ac08671eae33",
+  "limits": "Candidate expansion not exhaustive homology;divergent/domain similarity can remain missed;selection-conditioned same-assay sensitivity not causal explained fraction or independent validation;no threshold tuning/raw sequence redistribution.",
+  "selection": "Top10 candidate expansion; same frozen predictions, no E-dependent fitting.",
+  "top3_vs_top10_flag_changes": [
+    "BjR112",
+    "BoR75",
+    "CvR149",
+    "EwR20",
+    "EwR27",
+    "IR126",
+    "LgR139",
+    "MlR34",
+    "PaR204",
+    "PaR226",
+    "PlR23",
+    "PsR176",
+    "SiR35",
+    "StR250",
+    "VpR61",
+    "VpR94",
+    "XcR191",
+    "ZR16"
+  ],
+  "prior_best_flag_note": "best-versus-any disagreement within top10, not top3 comparison"
+}
