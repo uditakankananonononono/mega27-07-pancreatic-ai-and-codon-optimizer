@@ -1,0 +1,4054 @@
+{
+  "plan_sha256": "8d8c697115af54914777318f02167fd5907f7ea09847b64d141bbea1686e4d9f",
+  "input_sha256": {
+    "data/paad/samples.json": "a183cec078c3b8968036e8349ffebe7ab72ed9920abe30bed5d438f0ae330029",
+    "data/paad/mutations.json": "9ea520ecedac0bc7c5fdfba0cf48f95dee0eb1e8f745ae215952320c7f00cc17",
+    "data/paad_cptac_2021/samples.json": "76f128a214406370de222fd0359778ee314cf6516fe4027fbffdb001cb660aa4",
+    "data/paad_cptac_2021/mutations.json": "b3f183f8a57695dd407fd325e80dcb727e9474bb6c56ba6c79f28cf26cdaf23a"
+  },
+  "rows": [
+    {
+      "target": "KRAS",
+      "n_train": 184,
+      "n_test": 140,
+      "train_prevalence": 0.6358695652173914,
+      "test_prevalence_descriptive": 0.9642857142857143,
+      "scores": {
+        "balanced": {
+          "auc": 0.3844444444444444,
+          "ap": 0.9477987347572661,
+          "brier": 0.25493530144433474,
+          "logloss": 0.7784515955696273,
+          "mean_probability": 0.5925227454704501
+        },
+        "train_prior_constant": {
+          "auc": 0.5,
+          "ap": 0.9642857142857143,
+          "brier": 0.14229594247907099,
+          "logloss": 0.4726718697900434,
+          "mean_probability": 0.6358695652173915
+        },
+        "train_prior_odds_shift": {
+          "auc": 0.3844444444444444,
+          "ap": 0.9477987347572661,
+          "brier": 0.18633732035532088,
+          "logloss": 0.5964787784210118,
+          "mean_probability": 0.6818441449967455
+        }
+      }
+    },
+    {
+      "target": "TP53",
+      "n_train": 184,
+      "n_test": 140,
+      "train_prevalence": 0.5815217391304348,
+      "test_prevalence_descriptive": 0.75,
+      "scores": {
+        "balanced": {
+          "auc": 0.7409523809523809,
+          "ap": 0.8960281132490803,
+          "brier": 0.18507648815982053,
+          "logloss": 0.5568323976665884,
+          "mean_probability": 0.6025818890841664
+        },
+        "train_prior_constant": {
+          "auc": 0.5,
+          "ap": 0.75,
+          "brier": 0.21588492438563323,
+          "logloss": 0.624362776299135,
+          "mean_probability": 0.5815217391304348
+        },
+        "train_prior_odds_shift": {
+          "auc": 0.7409523809523809,
+          "ap": 0.8960281132490803,
+          "brier": 0.17047892065156223,
+          "logloss": 0.5183916133573038,
+          "mean_probability": 0.6629636183507446
+        }
+      }
+    },
+    {
+      "target": "CDKN2A",
+      "n_train": 184,
+      "n_test": 140,
+      "train_prevalence": 0.19021739130434784,
+      "test_prevalence_descriptive": 0.20714285714285716,
+      "scores": {
+        "balanced": {
+          "auc": 0.4965827896862379,
+          "ap": 0.21015673947732022,
+          "brier": 0.3245238060088317,
+          "logloss": 0.9033040488252971,
+          "mean_probability": 0.5318749064844217
+        },
+        "train_prior_constant": {
+          "auc": 0.5,
+          "ap": 0.20714285714285716,
+          "brier": 0.16452116527140156,
+          "logloss": 0.5110562308722789,
+          "mean_probability": 0.19021739130434787
+        },
+        "train_prior_odds_shift": {
+          "auc": 0.4965827896862379,
+          "ap": 0.21015673947732022,
+          "brier": 0.18225308322513936,
+          "logloss": 0.6477376966740567,
+          "mean_probability": 0.2435240194493469
+        }
+      }
+    },
+    {
+      "target": "SMAD4",
+      "n_train": 184,
+      "n_test": 140,
+      "train_prevalence": 0.20108695652173914,
+      "test_prevalence_descriptive": 0.17142857142857143,
+      "scores": {
+        "balanced": {
+          "auc": 0.3468031609195403,
+          "ap": 0.12859222807514964,
+          "brier": 0.3176066898946584,
+          "logloss": 0.8333827693403174,
+          "mean_probability": 0.5597005969623747
+        },
+        "train_prior_constant": {
+          "auc": 0.5,
+          "ap": 0.17142857142857143,
+          "brier": 0.1429204361328653,
+          "logloss": 0.46099140068187977,
+          "mean_probability": 0.20108695652173916
+        },
+        "train_prior_odds_shift": {
+          "auc": 0.3468031609195403,
+          "ap": 0.12859222807514964,
+          "brier": 0.1650286755349052,
+          "logloss": 0.5167636103522072,
+          "mean_probability": 0.2541187901197226
+        }
+      }
+    }
+  ],
+  "records": [
+    {
+      "sample": "C3L-00102",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.8301159996031605,
+      "shift": 0.8951002800894546
+    },
+    {
+      "sample": "C3L-00189",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.16488173756016802,
+      "shift": 0.25638112036386335
+    },
+    {
+      "sample": "C3L-00277",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.47664674904784593,
+      "shift": 0.6139627274023123
+    },
+    {
+      "sample": "C3L-00401",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.09287981008294681,
+      "shift": 0.15167968315605918
+    },
+    {
+      "sample": "C3L-00640",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.8980625808448202,
+      "shift": 0.9389667908140537
+    },
+    {
+      "sample": "C3L-00819",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.6314013752729971,
+      "shift": 0.7494563190787132
+    },
+    {
+      "sample": "C3L-00881",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.05230652727876989,
+      "shift": 0.08790971774839278
+    },
+    {
+      "sample": "C3L-00928",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.5105428516498143,
+      "shift": 0.6455782808787601
+    },
+    {
+      "sample": "C3L-01031",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.6468303452080492,
+      "shift": 0.7618078772741623
+    },
+    {
+      "sample": "C3L-01036",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.1221771866320398,
+      "shift": 0.19552665664104582
+    },
+    {
+      "sample": "C3L-01037",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.8940382223678649,
+      "shift": 0.936442993407442
+    },
+    {
+      "sample": "C3L-01051",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.9171765297457882,
+      "shift": 0.950830850543558
+    },
+    {
+      "sample": "C3L-01052",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.010179642635578098,
+      "shift": 0.017642366256356026
+    },
+    {
+      "sample": "C3L-01053",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.06530613053150128,
+      "shift": 0.1087423886679526
+    },
+    {
+      "sample": "C3L-01054",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.7373048044764496,
+      "shift": 0.8305440967339042
+    },
+    {
+      "sample": "C3L-01124",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.7148458725557669,
+      "shift": 0.8140461355867934
+    },
+    {
+      "sample": "C3L-01598",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.9137536394796092,
+      "shift": 0.9487210487105376
+    },
+    {
+      "sample": "C3L-01637",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.8785796177050516,
+      "shift": 0.926663298005264
+    },
+    {
+      "sample": "C3L-01971",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.984938530484588,
+      "shift": 0.9913191816101712
+    },
+    {
+      "sample": "C3L-02606",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.9398160494461955,
+      "shift": 0.9646258768282255
+    },
+    {
+      "sample": "C3L-02610",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.973145429220807,
+      "shift": 0.984443206903666
+    },
+    {
+      "sample": "C3L-02809",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.5827946044650659,
+      "shift": 0.70924859643428
+    },
+    {
+      "sample": "C3L-02899",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.8917942852919206,
+      "shift": 0.935031799900025
+    },
+    {
+      "sample": "C3L-03123",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.9998891028744902,
+      "shift": 0.9999364917986923
+    },
+    {
+      "sample": "C3L-03356",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.7585339117844845,
+      "shift": 0.8458139959560396
+    },
+    {
+      "sample": "C3L-03388",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.4321726091908033,
+      "shift": 0.5706463920397941
+    },
+    {
+      "sample": "C3L-03395",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.3677800906656609,
+      "shift": 0.5039322198809559
+    },
+    {
+      "sample": "C3L-03630",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.891824569073108,
+      "shift": 0.9350508640102317
+    },
+    {
+      "sample": "C3L-03632",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.06686092018751381,
+      "shift": 0.11120825875092848
+    },
+    {
+      "sample": "C3L-03639",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.7645920646449592,
+      "shift": 0.8501150704333906
+    },
+    {
+      "sample": "C3L-04072",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.6942725118836007,
+      "shift": 0.7986135919928232
+    },
+    {
+      "sample": "C3L-04473",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.3590249892926738,
+      "shift": 0.494470934941698
+    },
+    {
+      "sample": "C3L-04479",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.9766668309244115,
+      "shift": 0.9865036930887415
+    },
+    {
+      "sample": "C3L-04495",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.7807394021980176,
+      "shift": 0.8614590737786355
+    },
+    {
+      "sample": "C3L-04848",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.9256249887700829,
+      "shift": 0.9560110276228054
+    },
+    {
+      "sample": "C3L-04853",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.6548036621118922,
+      "shift": 0.7681159797549447
+    },
+    {
+      "sample": "C3N-00249",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.7972117232072087,
+      "shift": 0.8728547630767444
+    },
+    {
+      "sample": "C3N-00436",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.6079730936666633,
+      "shift": 0.7303268427091719
+    },
+    {
+      "sample": "C3N-00512",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.24823965700020584,
+      "shift": 0.36573875662922484
+    },
+    {
+      "sample": "C3N-00513",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.2563899400477594,
+      "shift": 0.3758182413087671
+    },
+    {
+      "sample": "C3N-00514",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.18531805456725234,
+      "shift": 0.28429759051819503
+    },
+    {
+      "sample": "C3N-00517",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.20777697799999661,
+      "shift": 0.3141267349435877
+    },
+    {
+      "sample": "C3N-00518",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.5742459607746377,
+      "shift": 0.7019659833414945
+    },
+    {
+      "sample": "C3N-00709",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.6266298527865856,
+      "shift": 0.7455972731436675
+    },
+    {
+      "sample": "C3N-00957",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.5095244703002577,
+      "shift": 0.6446453018861888
+    },
+    {
+      "sample": "C3N-01011",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.42194890917561356,
+      "shift": 0.5603797262957558
+    },
+    {
+      "sample": "C3N-01997",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.28661649087280927,
+      "shift": 0.41231758832255494
+    },
+    {
+      "sample": "C3N-01998",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.5696349718052358,
+      "shift": 0.6980107998148871
+    },
+    {
+      "sample": "C3N-02010",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.5834609638770288,
+      "shift": 0.7098135502164182
+    },
+    {
+      "sample": "C3N-02295",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.3030318438241001,
+      "shift": 0.43157685422456654
+    },
+    {
+      "sample": "C3N-02573",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.9941406182755061,
+      "shift": 0.9966362045845282
+    },
+    {
+      "sample": "C3N-02585",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.982537294668313,
+      "shift": 0.9899248011223851
+    },
+    {
+      "sample": "C3N-02589",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.4123049768189251,
+      "shift": 0.550585462302195
+    },
+    {
+      "sample": "C3N-02592",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.4993078113345775,
+      "shift": 0.6352282479978978
+    },
+    {
+      "sample": "C3N-02768",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.9233793093062639,
+      "shift": 0.9546378615782807
+    },
+    {
+      "sample": "C3N-02944",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.42095414679773135,
+      "shift": 0.5593744194293523
+    },
+    {
+      "sample": "C3N-03061",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.6894085412993987,
+      "shift": 0.7949192850088607
+    },
+    {
+      "sample": "C3N-03069",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.9385761171879399,
+      "shift": 0.9638774397979123
+    },
+    {
+      "sample": "C3N-03211",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.14570000713894596,
+      "shift": 0.22947971667691347
+    },
+    {
+      "sample": "C3N-03426",
+      "target": "KRAS",
+      "label": 0,
+      "balanced": 0.7164032424701087,
+      "shift": 0.8152017818092998
+    },
+    {
+      "sample": "C3N-03440",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.13110924179956707,
+      "shift": 0.20854714054796666
+    },
+    {
+      "sample": "C3N-03780",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.4514144919160871,
+      "shift": 0.5896513151201657
+    },
+    {
+      "sample": "C3N-03839",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.7948233992207685,
+      "shift": 0.871213401003322
+    },
+    {
+      "sample": "C3N-03840",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.7604144523706098,
+      "shift": 0.8471517688039905
+    },
+    {
+      "sample": "C3N-03884",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.5095244703002577,
+      "shift": 0.6446453018861888
+    },
+    {
+      "sample": "C3N-04119",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.9771550563016241,
+      "shift": 0.9867888752319046
+    },
+    {
+      "sample": "C3N-04282",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.23852640055854768,
+      "shift": 0.35359039741717635
+    },
+    {
+      "sample": "C3L-00017",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.5938159599410662,
+      "shift": 0.7185427026387979
+    },
+    {
+      "sample": "C3L-00589",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.743909579235987,
+      "shift": 0.8353281892635722
+    },
+    {
+      "sample": "C3L-00598",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.6314013752729971,
+      "shift": 0.7494563190787132
+    },
+    {
+      "sample": "C3L-00599",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.19873861426017628,
+      "shift": 0.3022270014276644
+    },
+    {
+      "sample": "C3L-00622",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.2213598306555358,
+      "shift": 0.3317505635561788
+    },
+    {
+      "sample": "C3L-00625",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.3371953196134432,
+      "shift": 0.4704503039498779
+    },
+    {
+      "sample": "C3L-01328",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.959283520948237,
+      "shift": 0.9762708333129525
+    },
+    {
+      "sample": "C3L-01453",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.48474268786377717,
+      "shift": 0.6216207343344168
+    },
+    {
+      "sample": "C3L-01662",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.2125855077014643,
+      "shift": 0.3204010893788903
+    },
+    {
+      "sample": "C3L-01687",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.901848878246214,
+      "shift": 0.9413330200682561
+    },
+    {
+      "sample": "C3L-01689",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.8977215419377702,
+      "shift": 0.9387532670017978
+    },
+    {
+      "sample": "C3L-01703",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.8182631243429853,
+      "shift": 0.8871650955651973
+    },
+    {
+      "sample": "C3L-02109",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.5308412466540964,
+      "shift": 0.6639625459360275
+    },
+    {
+      "sample": "C3L-02112",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.6578356375597891,
+      "shift": 0.7705015182180316
+    },
+    {
+      "sample": "C3L-02115",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.6334264153391691,
+      "shift": 0.7510884623680837
+    },
+    {
+      "sample": "C3L-02116",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.5679793435886004,
+      "shift": 0.6965859816372835
+    },
+    {
+      "sample": "C3L-02118",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.5485216055178747,
+      "shift": 0.6796536259694267
+    },
+    {
+      "sample": "C3L-02463",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.914401970195174,
+      "shift": 0.9491211587574435
+    },
+    {
+      "sample": "C3L-02604",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.7561232380074309,
+      "shift": 0.8440955879193951
+    },
+    {
+      "sample": "C3L-02613",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.9943029898945257,
+      "shift": 0.9967296475331676
+    },
+    {
+      "sample": "C3L-02701",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.8778154094727754,
+      "shift": 0.9261762946514099
+    },
+    {
+      "sample": "C3L-02890",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.9069996698444251,
+      "shift": 0.9445391808103387
+    },
+    {
+      "sample": "C3L-02897",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.45423375141344097,
+      "shift": 0.5924016185015623
+    },
+    {
+      "sample": "C3L-03394",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.1855255078641142,
+      "shift": 0.2845771415581583
+    },
+    {
+      "sample": "C3L-03628",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.48474268786377717,
+      "shift": 0.6216207343344168
+    },
+    {
+      "sample": "C3L-03635",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.6166898392653197,
+      "shift": 0.7374976835483917
+    },
+    {
+      "sample": "C3L-03743",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.7324648961519064,
+      "shift": 0.8270190053293098
+    },
+    {
+      "sample": "C3L-04027",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.6055263384783597,
+      "shift": 0.7283024670576169
+    },
+    {
+      "sample": "C3L-04080",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.8468419557540885,
+      "shift": 0.9061515265200081
+    },
+    {
+      "sample": "C3L-04475",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.4926552690635313,
+      "shift": 0.6290399231480885
+    },
+    {
+      "sample": "C3N-00198",
+      "target": "KRAS",
+      "label": 0,
+      "balanced": 0.5943324306545693,
+      "shift": 0.7189756350520747
+    },
+    {
+      "sample": "C3N-00302",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.8790082666631368,
+      "shift": 0.9269363142503295
+    },
+    {
+      "sample": "C3N-00303",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.32908897306714885,
+      "shift": 0.46137036994620895
+    },
+    {
+      "sample": "C3N-00511",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.6507632586585906,
+      "shift": 0.7649257231556407
+    },
+    {
+      "sample": "C3N-00516",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.42183524041442805,
+      "shift": 0.5602649100931664
+    },
+    {
+      "sample": "C3N-01012",
+      "target": "KRAS",
+      "label": 0,
+      "balanced": 0.8265034845150937,
+      "shift": 0.8926909961551208
+    },
+    {
+      "sample": "C3N-01165",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.3567928779643311,
+      "shift": 0.49204316288631056
+    },
+    {
+      "sample": "C3N-01166",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.44569212639569705,
+      "shift": 0.584042209936265
+    },
+    {
+      "sample": "C3N-01167",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.8896824375959923,
+      "shift": 0.9337010817644716
+    },
+    {
+      "sample": "C3N-01168",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.8267676840238822,
+      "shift": 0.892867470232476
+    },
+    {
+      "sample": "C3N-01375",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.28488177448733976,
+      "shift": 0.410259603355265
+    },
+    {
+      "sample": "C3N-01380",
+      "target": "KRAS",
+      "label": 0,
+      "balanced": 0.3590249892926738,
+      "shift": 0.494470934941698
+    },
+    {
+      "sample": "C3N-01381",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.8837560902813186,
+      "shift": 0.92995327153738
+    },
+    {
+      "sample": "C3N-01382",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.6967990093138545,
+      "shift": 0.8005255669992183
+    },
+    {
+      "sample": "C3N-01383",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.9421540902015337,
+      "shift": 0.9660349318817908
+    },
+    {
+      "sample": "C3N-01388",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.16682637773072684,
+      "shift": 0.2590701421605068
+    },
+    {
+      "sample": "C3N-01502",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.5780527531435795,
+      "shift": 0.7052170176962393
+    },
+    {
+      "sample": "C3N-01714",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.913433287213612,
+      "shift": 0.9485232619079689
+    },
+    {
+      "sample": "C3N-01715",
+      "target": "KRAS",
+      "label": 0,
+      "balanced": 0.9972814390185173,
+      "shift": 0.9984414064757573
+    },
+    {
+      "sample": "C3N-01716",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.4947999709178975,
+      "shift": 0.6310398682689374
+    },
+    {
+      "sample": "C3N-01719",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.010179642635578098,
+      "shift": 0.017642366256356026
+    },
+    {
+      "sample": "C3N-02579",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.7943045055215402,
+      "shift": 0.8708563085126494
+    },
+    {
+      "sample": "C3N-02940",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.4922024878447837,
+      "shift": 0.6286171038396525
+    },
+    {
+      "sample": "C3N-02971",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.5632532928209852,
+      "shift": 0.6925051490374982
+    },
+    {
+      "sample": "C3N-02998",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.07025866503498107,
+      "shift": 0.1165781003570559
+    },
+    {
+      "sample": "C3N-03000",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.4699146948077079,
+      "shift": 0.6075426587808671
+    },
+    {
+      "sample": "C3N-03006",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.8971534628802947,
+      "shift": 0.9383974492465209
+    },
+    {
+      "sample": "C3N-03007",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.8152800318647362,
+      "shift": 0.8851542474102095
+    },
+    {
+      "sample": "C3N-03039",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.8977215419377702,
+      "shift": 0.9387532670017978
+    },
+    {
+      "sample": "C3N-03086",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.2358548481213428,
+      "shift": 0.3502228300162867
+    },
+    {
+      "sample": "C3N-03173",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.5876336261798613,
+      "shift": 0.7133423419189581
+    },
+    {
+      "sample": "C3N-03190",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.45842105496218316,
+      "shift": 0.5964705904947634
+    },
+    {
+      "sample": "C3N-03428",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.5663645515256575,
+      "shift": 0.6951939226468572
+    },
+    {
+      "sample": "C3N-03430",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.4654111455244651,
+      "shift": 0.6032210907897547
+    },
+    {
+      "sample": "C3N-03439",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.7174544371878432,
+      "shift": 0.8159808317865932
+    },
+    {
+      "sample": "C3N-03665",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.6280160322226054,
+      "shift": 0.7467202966539007
+    },
+    {
+      "sample": "C3N-03666",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.7057342850607596,
+      "shift": 0.8072496213715896
+    },
+    {
+      "sample": "C3N-03670",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.19810615721285948,
+      "shift": 0.3013890853399254
+    },
+    {
+      "sample": "C3N-03754",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.8910317400720058,
+      "shift": 0.9345515952638129
+    },
+    {
+      "sample": "C3N-03853",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.6282604765891042,
+      "shift": 0.7469181709964343
+    },
+    {
+      "sample": "C3N-04126",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.504201304703538,
+      "shift": 0.6397517722155288
+    },
+    {
+      "sample": "C3N-04283",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.5052930756807356,
+      "shift": 0.6407577271468029
+    },
+    {
+      "sample": "C3N-04284",
+      "target": "KRAS",
+      "label": 1,
+      "balanced": 0.13987636911069354,
+      "shift": 0.22117435655501055
+    },
+    {
+      "sample": "C3L-00102",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8009997223726224,
+      "shift": 0.8483319544637818
+    },
+    {
+      "sample": "C3L-00189",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.5237778835499984,
+      "shift": 0.6044894472751574
+    },
+    {
+      "sample": "C3L-00277",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.49716545287310754,
+      "shift": 0.5787599905595058
+    },
+    {
+      "sample": "C3L-00401",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.37740139307066395,
+      "shift": 0.45721258520728536
+    },
+    {
+      "sample": "C3L-00640",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.5614424599532777,
+      "shift": 0.6401560898645674
+    },
+    {
+      "sample": "C3L-00819",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.25374085288988424,
+      "shift": 0.3208788218364323
+    },
+    {
+      "sample": "C3L-00881",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.5503230104796413,
+      "shift": 0.6297161494530207
+    },
+    {
+      "sample": "C3L-00928",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7373580630929414,
+      "shift": 0.7959717738622484
+    },
+    {
+      "sample": "C3L-01031",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8618288141448673,
+      "shift": 0.8965612237166404
+    },
+    {
+      "sample": "C3L-01036",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.7620747967780359,
+      "shift": 0.8165448728968698
+    },
+    {
+      "sample": "C3L-01037",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8877630052686064,
+      "shift": 0.9166070869862226
+    },
+    {
+      "sample": "C3L-01051",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8537365654662487,
+      "shift": 0.8902440862986024
+    },
+    {
+      "sample": "C3L-01052",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.2653466625141998,
+      "shift": 0.3341803114233167
+    },
+    {
+      "sample": "C3L-01053",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.29075397898177446,
+      "shift": 0.362922598258074
+    },
+    {
+      "sample": "C3L-01054",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.0813294873086146,
+      "shift": 0.10954516341168116
+    },
+    {
+      "sample": "C3L-01124",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.33416492135977777,
+      "shift": 0.41086662566098003
+    },
+    {
+      "sample": "C3L-01598",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.905443354747933,
+      "shift": 0.9301014691402473
+    },
+    {
+      "sample": "C3L-01637",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.5045309631253403,
+      "shift": 0.5859257479963115
+    },
+    {
+      "sample": "C3L-01971",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8198691763001142,
+      "shift": 0.863478255577925
+    },
+    {
+      "sample": "C3L-02606",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8598654641804362,
+      "shift": 0.8950312945561198
+    },
+    {
+      "sample": "C3L-02610",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7746508640083186,
+      "shift": 0.826895794727076
+    },
+    {
+      "sample": "C3L-02809",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7633648179710449,
+      "shift": 0.8176102428231558
+    },
+    {
+      "sample": "C3L-02899",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.3572614089876293,
+      "shift": 0.43579470005855253
+    },
+    {
+      "sample": "C3L-03123",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.148359034867265,
+      "shift": 0.1948958435498253
+    },
+    {
+      "sample": "C3L-03356",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.46386846774429774,
+      "shift": 0.5459313712734439
+    },
+    {
+      "sample": "C3L-03388",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.6797542419209449,
+      "shift": 0.7468091367238908
+    },
+    {
+      "sample": "C3L-03395",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.5502230944926135,
+      "shift": 0.6296220016543287
+    },
+    {
+      "sample": "C3L-03630",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.887983849382195,
+      "shift": 0.9167764963247685
+    },
+    {
+      "sample": "C3L-03632",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.3453617373980477,
+      "shift": 0.42300074923731046
+    },
+    {
+      "sample": "C3L-03639",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8502128546587999,
+      "shift": 0.8874839833705118
+    },
+    {
+      "sample": "C3L-04072",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.683186132443204,
+      "shift": 0.7497869461599928
+    },
+    {
+      "sample": "C3L-04473",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.5796920231682242,
+      "shift": 0.6571304863131052
+    },
+    {
+      "sample": "C3L-04479",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.6596980476771339,
+      "shift": 0.7292799311418405
+    },
+    {
+      "sample": "C3L-04495",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.40541390946099143,
+      "shift": 0.48651987725094165
+    },
+    {
+      "sample": "C3L-04848",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8562333124705693,
+      "shift": 0.8921963344217025
+    },
+    {
+      "sample": "C3L-04853",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7323668587771109,
+      "shift": 0.7917799085173958
+    },
+    {
+      "sample": "C3N-00249",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.4810221728271929,
+      "shift": 0.5629333702043037
+    },
+    {
+      "sample": "C3N-00436",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.670913533185101,
+      "shift": 0.7391090837337158
+    },
+    {
+      "sample": "C3N-00512",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.5503230104796413,
+      "shift": 0.6297161494530207
+    },
+    {
+      "sample": "C3N-00513",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.2653466625141998,
+      "shift": 0.3341803114233167
+    },
+    {
+      "sample": "C3N-00514",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.7670963631331413,
+      "shift": 0.8206873146207093
+    },
+    {
+      "sample": "C3N-00517",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.3259040874106457,
+      "shift": 0.4018540405483549
+    },
+    {
+      "sample": "C3N-00518",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.4440535806310816,
+      "shift": 0.5260505706806797
+    },
+    {
+      "sample": "C3N-00709",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7811163256682941,
+      "shift": 0.8321870228533316
+    },
+    {
+      "sample": "C3N-00957",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.6276267180887697,
+      "shift": 0.7007920140334888
+    },
+    {
+      "sample": "C3N-01011",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.3922298874299535,
+      "shift": 0.47279559781499303
+    },
+    {
+      "sample": "C3N-01997",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.6769557230686493,
+      "shift": 0.7443762319309946
+    },
+    {
+      "sample": "C3N-01998",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.6730223401981417,
+      "shift": 0.7409496225163057
+    },
+    {
+      "sample": "C3N-02010",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.6995956594646654,
+      "shift": 0.7639387990347769
+    },
+    {
+      "sample": "C3N-02295",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.5885423778121761,
+      "shift": 0.6652917290968751
+    },
+    {
+      "sample": "C3N-02573",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.03476355536950271,
+      "shift": 0.04766224867418428
+    },
+    {
+      "sample": "C3N-02585",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.2935110276901369,
+      "shift": 0.366010825420728
+    },
+    {
+      "sample": "C3N-02589",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7765355544546401,
+      "shift": 0.8284403079350514
+    },
+    {
+      "sample": "C3N-02592",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7607469078958963,
+      "shift": 0.8154473669594069
+    },
+    {
+      "sample": "C3N-02768",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.5995537819774871,
+      "shift": 0.6753820600106197
+    },
+    {
+      "sample": "C3N-02944",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.6606140479375727,
+      "shift": 0.7300852676522176
+    },
+    {
+      "sample": "C3N-03061",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8429102273079723,
+      "shift": 0.8817457133888384
+    },
+    {
+      "sample": "C3N-03069",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.03333967337968493,
+      "shift": 0.04573508144551538
+    },
+    {
+      "sample": "C3N-03211",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.18729898820503085,
+      "shift": 0.2425713104844074
+    },
+    {
+      "sample": "C3N-03426",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.344671403610108,
+      "shift": 0.42225532608534044
+    },
+    {
+      "sample": "C3N-03440",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.5249784188601784,
+      "shift": 0.605639708139038
+    },
+    {
+      "sample": "C3N-03780",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.546528331212053,
+      "shift": 0.6261362949160588
+    },
+    {
+      "sample": "C3N-03839",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.7038530536990104,
+      "shift": 0.7675872459130486
+    },
+    {
+      "sample": "C3N-03840",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.037633114933944264,
+      "shift": 0.05153967970432328
+    },
+    {
+      "sample": "C3N-03884",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.5934065132934974,
+      "shift": 0.669757663894824
+    },
+    {
+      "sample": "C3N-04119",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.3603850216597489,
+      "shift": 0.439135820199575
+    },
+    {
+      "sample": "C3N-04282",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.391382880507899,
+      "shift": 0.47190969980366165
+    },
+    {
+      "sample": "C3L-00017",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8137747611782726,
+      "shift": 0.8586048233113501
+    },
+    {
+      "sample": "C3L-00589",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.874878835617213,
+      "shift": 0.9066860160056864
+    },
+    {
+      "sample": "C3L-00598",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7323668587771109,
+      "shift": 0.7917799085173958
+    },
+    {
+      "sample": "C3L-00599",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.49360704236192543,
+      "shift": 0.5752857266427446
+    },
+    {
+      "sample": "C3L-00622",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.7161874364459861,
+      "shift": 0.7781039840410158
+    },
+    {
+      "sample": "C3L-00625",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7219184614018369,
+      "shift": 0.7829636187175454
+    },
+    {
+      "sample": "C3L-01328",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.2896637375190759,
+      "shift": 0.36169975141439825
+    },
+    {
+      "sample": "C3L-01453",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.6712262206508786,
+      "shift": 0.7393821445932676
+    },
+    {
+      "sample": "C3L-01662",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.6952787659353453,
+      "shift": 0.760229638950338
+    },
+    {
+      "sample": "C3L-01687",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8123920129608755,
+      "shift": 0.857496654427194
+    },
+    {
+      "sample": "C3L-01689",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.662637580080975,
+      "shift": 0.7318627135661675
+    },
+    {
+      "sample": "C3L-01703",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.6609742431690628,
+      "shift": 0.7304018217925945
+    },
+    {
+      "sample": "C3L-02109",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7464114986032918,
+      "shift": 0.8035430735055268
+    },
+    {
+      "sample": "C3L-02112",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.3297905830100466,
+      "shift": 0.4061006181029554
+    },
+    {
+      "sample": "C3L-02115",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.11691060284276822,
+      "shift": 0.15538257641280143
+    },
+    {
+      "sample": "C3L-02116",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.4358600084924562,
+      "shift": 0.5177530566121307
+    },
+    {
+      "sample": "C3L-02118",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7046995454834118,
+      "shift": 0.7683115297687523
+    },
+    {
+      "sample": "C3L-02463",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.6442741765556627,
+      "shift": 0.7156504407627565
+    },
+    {
+      "sample": "C3L-02604",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8083340130512823,
+      "shift": 0.854239229404791
+    },
+    {
+      "sample": "C3L-02613",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.15016335584678245,
+      "shift": 0.19713512859300453
+    },
+    {
+      "sample": "C3L-02701",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.6210120999434402,
+      "shift": 0.6948451580710523
+    },
+    {
+      "sample": "C3L-02890",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.860822982678064,
+      "shift": 0.8957776542973379
+    },
+    {
+      "sample": "C3L-02897",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7090447882989563,
+      "shift": 0.7720235577422526
+    },
+    {
+      "sample": "C3L-03394",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.6770631351573698,
+      "shift": 0.7444696885778461
+    },
+    {
+      "sample": "C3L-03628",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.6712262206508786,
+      "shift": 0.7393821445932676
+    },
+    {
+      "sample": "C3L-03635",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8331480711751116,
+      "shift": 0.8740362881491189
+    },
+    {
+      "sample": "C3L-03743",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7648073556051516,
+      "shift": 0.8188005919968746
+    },
+    {
+      "sample": "C3L-04027",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7931757062626517,
+      "shift": 0.8420018079212149
+    },
+    {
+      "sample": "C3L-04080",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.5617476288999844,
+      "shift": 0.6404415636112877
+    },
+    {
+      "sample": "C3L-04475",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7949658510610584,
+      "shift": 0.8434527531386244
+    },
+    {
+      "sample": "C3N-00198",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8581568041450338,
+      "shift": 0.8936984034951944
+    },
+    {
+      "sample": "C3N-00302",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7450895569650906,
+      "shift": 0.8024401275509813
+    },
+    {
+      "sample": "C3N-00303",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.6066936166960455,
+      "shift": 0.6818872445382214
+    },
+    {
+      "sample": "C3N-00511",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7776832300766372,
+      "shift": 0.8293799810363875
+    },
+    {
+      "sample": "C3N-00516",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7826468686718269,
+      "shift": 0.8334366038922469
+    },
+    {
+      "sample": "C3N-01012",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.4790142861165222,
+      "shift": 0.5609531377827643
+    },
+    {
+      "sample": "C3N-01165",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.6665390062437007,
+      "shift": 0.7352833986161442
+    },
+    {
+      "sample": "C3N-01166",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.5718924530468777,
+      "shift": 0.6499000564904758
+    },
+    {
+      "sample": "C3N-01167",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.6108219870901201,
+      "shift": 0.6856353107809348
+    },
+    {
+      "sample": "C3N-01168",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8610578808291068,
+      "shift": 0.895960687350885
+    },
+    {
+      "sample": "C3N-01375",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.7143233468907166,
+      "shift": 0.776519666335257
+    },
+    {
+      "sample": "C3N-01380",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.2505127538653574,
+      "shift": 0.31715959667833465
+    },
+    {
+      "sample": "C3N-01381",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7897291928406407,
+      "shift": 0.8392039871637057
+    },
+    {
+      "sample": "C3N-01382",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.4710008607055819,
+      "shift": 0.5530240076349364
+    },
+    {
+      "sample": "C3N-01383",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.7530760510965521,
+      "shift": 0.8090901847721482
+    },
+    {
+      "sample": "C3N-01388",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.2971200681337653,
+      "shift": 0.37004439965194497
+    },
+    {
+      "sample": "C3N-01502",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7716548429467426,
+      "shift": 0.8244369509001451
+    },
+    {
+      "sample": "C3N-01714",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8211342287396285,
+      "shift": 0.8644876640997045
+    },
+    {
+      "sample": "C3N-01715",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.04248100789462554,
+      "shift": 0.058070915763570416
+    },
+    {
+      "sample": "C3N-01716",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.6189210406021725,
+      "shift": 0.6929600587600837
+    },
+    {
+      "sample": "C3N-01719",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.2653466625141998,
+      "shift": 0.3341803114233167
+    },
+    {
+      "sample": "C3N-02579",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7890038058479972,
+      "shift": 0.8386143982970881
+    },
+    {
+      "sample": "C3N-02940",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.753417610872096,
+      "shift": 0.8093738755237875
+    },
+    {
+      "sample": "C3N-02971",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.783828804532373,
+      "shift": 0.8344007904294577
+    },
+    {
+      "sample": "C3N-02998",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.3927944998624078,
+      "shift": 0.4733858532606939
+    },
+    {
+      "sample": "C3N-03000",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7285376447293773,
+      "shift": 0.7885553329369294
+    },
+    {
+      "sample": "C3N-03006",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8712584373265465,
+      "shift": 0.9038848527721788
+    },
+    {
+      "sample": "C3N-03007",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8716079263603885,
+      "shift": 0.9041555155765275
+    },
+    {
+      "sample": "C3N-03039",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.6475076231285819,
+      "shift": 0.7185185517654032
+    },
+    {
+      "sample": "C3N-03086",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.7464114986032918,
+      "shift": 0.8035430735055268
+    },
+    {
+      "sample": "C3N-03173",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7044985978403696,
+      "shift": 0.7681396268461895
+    },
+    {
+      "sample": "C3N-03190",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.6106062536919212,
+      "shift": 0.6854396918648699
+    },
+    {
+      "sample": "C3N-03428",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.19320185635311046,
+      "shift": 0.24968095952584723
+    },
+    {
+      "sample": "C3N-03430",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.8403395322562447,
+      "shift": 0.8797198547299804
+    },
+    {
+      "sample": "C3N-03439",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8453887531213572,
+      "shift": 0.8836960468596852
+    },
+    {
+      "sample": "C3N-03665",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.47930496551761753,
+      "shift": 0.5612399753222899
+    },
+    {
+      "sample": "C3N-03666",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8687689459801615,
+      "shift": 0.9019552656599655
+    },
+    {
+      "sample": "C3N-03670",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.5740957287373639,
+      "shift": 0.6519461969360018
+    },
+    {
+      "sample": "C3N-03754",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.8357439722215375,
+      "shift": 0.8760906557017424
+    },
+    {
+      "sample": "C3N-03853",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7238402774786887,
+      "shift": 0.7845894366725109
+    },
+    {
+      "sample": "C3N-04126",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.7285376447293773,
+      "shift": 0.7885553329369294
+    },
+    {
+      "sample": "C3N-04283",
+      "target": "TP53",
+      "label": 1,
+      "balanced": 0.5740269379774282,
+      "shift": 0.6518823556762824
+    },
+    {
+      "sample": "C3N-04284",
+      "target": "TP53",
+      "label": 0,
+      "balanced": 0.573076200994694,
+      "shift": 0.6509997377811374
+    },
+    {
+      "sample": "C3L-00102",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.6247393642633151,
+      "shift": 0.28112572101022276
+    },
+    {
+      "sample": "C3L-00189",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6686606937043337,
+      "shift": 0.3215921687166754
+    },
+    {
+      "sample": "C3L-00277",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.391022802901598,
+      "shift": 0.1310606438792449
+    },
+    {
+      "sample": "C3L-00401",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6354434747024824,
+      "shift": 0.29050004135752344
+    },
+    {
+      "sample": "C3L-00640",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6203246551285051,
+      "shift": 0.27734458174606685
+    },
+    {
+      "sample": "C3L-00819",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6683747702168065,
+      "shift": 0.3213107370795677
+    },
+    {
+      "sample": "C3L-00881",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.42978644705038976,
+      "shift": 0.15041872071968598
+    },
+    {
+      "sample": "C3L-00928",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6825333703955048,
+      "shift": 0.33555649267884546
+    },
+    {
+      "sample": "C3L-01031",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.7462247779052357,
+      "shift": 0.4085361159924473
+    },
+    {
+      "sample": "C3L-01036",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.44208741859940137,
+      "shift": 0.15692434506059266
+    },
+    {
+      "sample": "C3L-01037",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.6955803912725099,
+      "shift": 0.3492679212929979
+    },
+    {
+      "sample": "C3L-01051",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.6746297422004851,
+      "shift": 0.32752555618821644
+    },
+    {
+      "sample": "C3L-01052",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.3479658911306596,
+      "shift": 0.11139299216875219
+    },
+    {
+      "sample": "C3L-01053",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.292970522678629,
+      "shift": 0.0887011040092722
+    },
+    {
+      "sample": "C3L-01054",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6046240683306825,
+      "shift": 0.26428234726627875
+    },
+    {
+      "sample": "C3L-01124",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.5754027866227044,
+      "shift": 0.2414641702226993
+    },
+    {
+      "sample": "C3L-01598",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.7166915380128709,
+      "shift": 0.3727378999508579
+    },
+    {
+      "sample": "C3L-01637",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6045722712575744,
+      "shift": 0.2642402206218532
+    },
+    {
+      "sample": "C3L-01971",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.6640268569756334,
+      "shift": 0.3170619712603639
+    },
+    {
+      "sample": "C3L-02606",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.6497222754457797,
+      "shift": 0.30348025732731193
+    },
+    {
+      "sample": "C3L-02610",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.6649824902574669,
+      "shift": 0.3179908787270406
+    },
+    {
+      "sample": "C3L-02809",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6955803912725099,
+      "shift": 0.3492679212929979
+    },
+    {
+      "sample": "C3L-02899",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.5070242628693008,
+      "shift": 0.19458331408818405
+    },
+    {
+      "sample": "C3L-03123",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.0028243484515071814,
+      "shift": 0.0006648742898203631
+    },
+    {
+      "sample": "C3L-03356",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6262026920101718,
+      "shift": 0.2823898625845038
+    },
+    {
+      "sample": "C3L-03388",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6797808747658945,
+      "shift": 0.33273669225195296
+    },
+    {
+      "sample": "C3L-03395",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6308182911835056,
+      "shift": 0.28641303819017616
+    },
+    {
+      "sample": "C3L-03630",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.7149893388939752,
+      "shift": 0.3707834675305548
+    },
+    {
+      "sample": "C3L-03632",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.3183215228081395,
+      "shift": 0.0988476640032181
+    },
+    {
+      "sample": "C3L-03639",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.717641428867983,
+      "shift": 0.37383345415362257
+    },
+    {
+      "sample": "C3L-04072",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6295821636942293,
+      "shift": 0.2853301956388026
+    },
+    {
+      "sample": "C3L-04473",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6214499897333644,
+      "shift": 0.27830379126197125
+    },
+    {
+      "sample": "C3L-04479",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.5931967143553253,
+      "shift": 0.25513657032598913
+    },
+    {
+      "sample": "C3L-04495",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.57042536912181,
+      "shift": 0.23775788256960864
+    },
+    {
+      "sample": "C3L-04848",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.6496926840174937,
+      "shift": 0.30345277395796716
+    },
+    {
+      "sample": "C3L-04853",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6543228311446181,
+      "shift": 0.30778338570213193
+    },
+    {
+      "sample": "C3N-00249",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6056097603815411,
+      "shift": 0.2650851980110293
+    },
+    {
+      "sample": "C3N-00436",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6279449594327622,
+      "shift": 0.283902079903287
+    },
+    {
+      "sample": "C3N-00512",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6232987791773159,
+      "shift": 0.27988651205535947
+    },
+    {
+      "sample": "C3N-00513",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.422233342160838,
+      "shift": 0.1465137413133871
+    },
+    {
+      "sample": "C3N-00514",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.4878148216973993,
+      "shift": 0.1828213021809338
+    },
+    {
+      "sample": "C3N-00517",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.484660854054447,
+      "shift": 0.1809426333626147
+    },
+    {
+      "sample": "C3N-00518",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.34659202253301036,
+      "shift": 0.11079446465817443
+    },
+    {
+      "sample": "C3N-00709",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6980863707688924,
+      "shift": 0.3519687814100759
+    },
+    {
+      "sample": "C3N-00957",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.621982638736028,
+      "shift": 0.27875890796195013
+    },
+    {
+      "sample": "C3N-01011",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.5129441053608657,
+      "shift": 0.19832276428097562
+    },
+    {
+      "sample": "C3N-01997",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.7048906250924036,
+      "shift": 0.3594155678152269
+    },
+    {
+      "sample": "C3N-01998",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.029706933672694114,
+      "shift": 0.007140432201105035
+    },
+    {
+      "sample": "C3N-02010",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6611374863789518,
+      "shift": 0.314270126272902
+    },
+    {
+      "sample": "C3N-02295",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6637952607403999,
+      "shift": 0.3168372674993449
+    },
+    {
+      "sample": "C3N-02573",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.050237809207931354,
+      "shift": 0.012272547341943777
+    },
+    {
+      "sample": "C3N-02585",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.03362444708980291,
+      "shift": 0.008106919367897168
+    },
+    {
+      "sample": "C3N-02589",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.7325240868541796,
+      "shift": 0.3914713792151358
+    },
+    {
+      "sample": "C3N-02592",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.7088818453026758,
+      "shift": 0.3638625207567223
+    },
+    {
+      "sample": "C3N-02768",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6262114426910563,
+      "shift": 0.282397438480366
+    },
+    {
+      "sample": "C3N-02944",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6710875616699296,
+      "shift": 0.32399110070139003
+    },
+    {
+      "sample": "C3N-03061",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.7252910508401387,
+      "shift": 0.3827865494942396
+    },
+    {
+      "sample": "C3N-03069",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.0008526417357130956,
+      "shift": 0.00020041571402293262
+    },
+    {
+      "sample": "C3N-03211",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.20869890589112292,
+      "shift": 0.058338466887352176
+    },
+    {
+      "sample": "C3N-03426",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.014464206215227923,
+      "shift": 0.003435653242884121
+    },
+    {
+      "sample": "C3N-03440",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.3696408491149444,
+      "shift": 0.12106789750770734
+    },
+    {
+      "sample": "C3N-03780",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6662213828963234,
+      "shift": 0.31919924791077897
+    },
+    {
+      "sample": "C3N-03839",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.42816018438738507,
+      "shift": 0.14957226764084233
+    },
+    {
+      "sample": "C3N-03840",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.055583688420653816,
+      "shift": 0.013636491791715832
+    },
+    {
+      "sample": "C3N-03884",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.621982638736028,
+      "shift": 0.27875890796195013
+    },
+    {
+      "sample": "C3N-04119",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.03867287187231039,
+      "shift": 0.009361217339788036
+    },
+    {
+      "sample": "C3N-04282",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.022406989578357035,
+      "shift": 0.005355194134680571
+    },
+    {
+      "sample": "C3L-00017",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.7250042861297002,
+      "shift": 0.38244667498371493
+    },
+    {
+      "sample": "C3L-00589",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.7436474923504427,
+      "shift": 0.4052626262031416
+    },
+    {
+      "sample": "C3L-00598",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6683747702168065,
+      "shift": 0.3213107370795677
+    },
+    {
+      "sample": "C3L-00599",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.07515915913070219,
+      "shift": 0.018732007445760153
+    },
+    {
+      "sample": "C3L-00622",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.44066962332742343,
+      "shift": 0.15616509510916493
+    },
+    {
+      "sample": "C3L-00625",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.7167189051668059,
+      "shift": 0.3727694144600394
+    },
+    {
+      "sample": "C3L-01328",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.04327718323807996,
+      "shift": 0.010513911652219578
+    },
+    {
+      "sample": "C3L-01453",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6643048134257424,
+      "shift": 0.31733186933207547
+    },
+    {
+      "sample": "C3L-01662",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.4305085421880008,
+      "shift": 0.150795570816821
+    },
+    {
+      "sample": "C3L-01687",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.6213822814223982,
+      "shift": 0.27824598921889554
+    },
+    {
+      "sample": "C3L-01689",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.662878372833433,
+      "shift": 0.3159492529863836
+    },
+    {
+      "sample": "C3L-01703",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.7010678070742035,
+      "shift": 0.35521117205007446
+    },
+    {
+      "sample": "C3L-02109",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6963237508235185,
+      "shift": 0.3500667767493207
+    },
+    {
+      "sample": "C3L-02112",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.3478123455680733,
+      "shift": 0.11132601475739018
+    },
+    {
+      "sample": "C3L-02115",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.16944434510354944,
+      "shift": 0.04573102347302428
+    },
+    {
+      "sample": "C3L-02116",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.3456017206353964,
+      "shift": 0.11036409934185012
+    },
+    {
+      "sample": "C3L-02118",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6694309838365384,
+      "shift": 0.32235161361242104
+    },
+    {
+      "sample": "C3L-02463",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6525598670493828,
+      "shift": 0.306127248104637
+    },
+    {
+      "sample": "C3L-02604",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6832341975378947,
+      "shift": 0.33627843135908875
+    },
+    {
+      "sample": "C3L-02613",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.06500092532396481,
+      "shift": 0.01606775959656355
+    },
+    {
+      "sample": "C3L-02701",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.649404449563701,
+      "shift": 0.3031852023719707
+    },
+    {
+      "sample": "C3L-02890",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.6663147610312765,
+      "shift": 0.3192905148096579
+    },
+    {
+      "sample": "C3L-02897",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6889975225587958,
+      "shift": 0.34227746644215806
+    },
+    {
+      "sample": "C3L-03394",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.40143055975804287,
+      "shift": 0.1360954018231453
+    },
+    {
+      "sample": "C3L-03628",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6643048134257424,
+      "shift": 0.31733186933207547
+    },
+    {
+      "sample": "C3L-03635",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.7343301723859867,
+      "shift": 0.3936742054008202
+    },
+    {
+      "sample": "C3L-03743",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.665361017791617,
+      "shift": 0.31835958517264407
+    },
+    {
+      "sample": "C3L-04027",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.709570227225983,
+      "shift": 0.3646355122763615
+    },
+    {
+      "sample": "C3L-04080",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6312524484065057,
+      "shift": 0.2867942981505967
+    },
+    {
+      "sample": "C3L-04475",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.730065803911365,
+      "shift": 0.388495249174357
+    },
+    {
+      "sample": "C3N-00198",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.7080214235415543,
+      "shift": 0.3628988420497684
+    },
+    {
+      "sample": "C3N-00302",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.43744993182582287,
+      "shift": 0.154450098844655
+    },
+    {
+      "sample": "C3N-00303",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.35295958727989935,
+      "shift": 0.11358302168232268
+    },
+    {
+      "sample": "C3N-00511",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6920370398352518,
+      "shift": 0.34548658183429537
+    },
+    {
+      "sample": "C3N-00516",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.734424665842468,
+      "shift": 0.3937898386681162
+    },
+    {
+      "sample": "C3N-01012",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.1940965360123355,
+      "shift": 0.05354471821269523
+    },
+    {
+      "sample": "C3N-01165",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6861154085708024,
+      "shift": 0.3392635579287745
+    },
+    {
+      "sample": "C3N-01166",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6247393642633151,
+      "shift": 0.28112572101022276
+    },
+    {
+      "sample": "C3N-01167",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6391086737511991,
+      "shift": 0.29377896305319406
+    },
+    {
+      "sample": "C3N-01168",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.7016112908892975,
+      "shift": 0.3558056663870946
+    },
+    {
+      "sample": "C3N-01375",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.4222600325269323,
+      "shift": 0.14652742293335805
+    },
+    {
+      "sample": "C3N-01380",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.19729837894413935,
+      "shift": 0.05458503883325461
+    },
+    {
+      "sample": "C3N-01381",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.6365311422385461,
+      "shift": 0.29146933839038874
+    },
+    {
+      "sample": "C3N-01382",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.3341908770119333,
+      "shift": 0.10546838993730728
+    },
+    {
+      "sample": "C3N-01383",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.37896823329041923,
+      "shift": 0.125370381574111
+    },
+    {
+      "sample": "C3N-01388",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.019865194046686734,
+      "shift": 0.0047383381504103456
+    },
+    {
+      "sample": "C3N-01502",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6923888079442315,
+      "shift": 0.3458600270199569
+    },
+    {
+      "sample": "C3N-01714",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.6279449594327622,
+      "shift": 0.283902079903287
+    },
+    {
+      "sample": "C3N-01715",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.00015399210054336079,
+      "shift": 3.617690341043775e-05
+    },
+    {
+      "sample": "C3N-01716",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6264766903175797,
+      "shift": 0.2826271688841901
+    },
+    {
+      "sample": "C3N-01719",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.3479658911306596,
+      "shift": 0.11139299216875219
+    },
+    {
+      "sample": "C3N-02579",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.6765186350542451,
+      "shift": 0.3294265649137575
+    },
+    {
+      "sample": "C3N-02940",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.7059920073087386,
+      "shift": 0.360636809730816
+    },
+    {
+      "sample": "C3N-02971",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.7113239957562001,
+      "shift": 0.3666129115562861
+    },
+    {
+      "sample": "C3N-02998",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.338627032704456,
+      "shift": 0.10735797043424554
+    },
+    {
+      "sample": "C3N-03000",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6963708770598329,
+      "shift": 0.3501174867796133
+    },
+    {
+      "sample": "C3N-03006",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.681821537725941,
+      "shift": 0.3348248738147868
+    },
+    {
+      "sample": "C3N-03007",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.7263438284865986,
+      "shift": 0.38403718356065847
+    },
+    {
+      "sample": "C3N-03039",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.662878372833433,
+      "shift": 0.3159492529863836
+    },
+    {
+      "sample": "C3N-03086",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.4574155021559603,
+      "shift": 0.16529454627208814
+    },
+    {
+      "sample": "C3N-03173",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6618062151576833,
+      "shift": 0.31491405939435635
+    },
+    {
+      "sample": "C3N-03190",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6401612426216102,
+      "shift": 0.29472726285849576
+    },
+    {
+      "sample": "C3N-03428",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.31591691821425083,
+      "shift": 0.09786295536912647
+    },
+    {
+      "sample": "C3N-03430",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.47738528126038177,
+      "shift": 0.1766634003216254
+    },
+    {
+      "sample": "C3N-03439",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.7243511600965812,
+      "shift": 0.38167383645590675
+    },
+    {
+      "sample": "C3N-03665",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.3525931758664709,
+      "shift": 0.11342154964443545
+    },
+    {
+      "sample": "C3N-03666",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.7465839501429895,
+      "shift": 0.4089947020089236
+    },
+    {
+      "sample": "C3N-03670",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6801408469660022,
+      "shift": 0.33310405913772567
+    },
+    {
+      "sample": "C3N-03754",
+      "target": "CDKN2A",
+      "label": 1,
+      "balanced": 0.6648008521063619,
+      "shift": 0.31781410759081585
+    },
+    {
+      "sample": "C3N-03853",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6642361016023768,
+      "shift": 0.3172651278492364
+    },
+    {
+      "sample": "C3N-04126",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6783962645236469,
+      "shift": 0.331327560399501
+    },
+    {
+      "sample": "C3N-04283",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.6137535123880118,
+      "shift": 0.27180567194377697
+    },
+    {
+      "sample": "C3N-04284",
+      "target": "CDKN2A",
+      "label": 0,
+      "balanced": 0.38956825361609254,
+      "shift": 0.13036610269669954
+    },
+    {
+      "sample": "C3L-00102",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.4705906593040893,
+      "shift": 0.18283036037910153
+    },
+    {
+      "sample": "C3L-00189",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6196590352508009,
+      "shift": 0.2908182340100918
+    },
+    {
+      "sample": "C3L-00277",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.6268646940083065,
+      "shift": 0.2971878820349424
+    },
+    {
+      "sample": "C3L-00401",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5953432599678969,
+      "shift": 0.2702379451175034
+    },
+    {
+      "sample": "C3L-00640",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.5711896468026948,
+      "shift": 0.251089855736025
+    },
+    {
+      "sample": "C3L-00819",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.575634259620793,
+      "shift": 0.2545220924825563
+    },
+    {
+      "sample": "C3L-00881",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6595077789136159,
+      "shift": 0.32774250571048563
+    },
+    {
+      "sample": "C3L-00928",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.602279166429249,
+      "shift": 0.2759693452502938
+    },
+    {
+      "sample": "C3L-01031",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6664521006455814,
+      "shift": 0.33462664856942875
+    },
+    {
+      "sample": "C3L-01036",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6289313012586437,
+      "shift": 0.2990386628042302
+    },
+    {
+      "sample": "C3L-01037",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5357304653721848,
+      "shift": 0.22507217284068193
+    },
+    {
+      "sample": "C3L-01051",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.4766869684294144,
+      "shift": 0.18651217148113194
+    },
+    {
+      "sample": "C3L-01052",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6036485408937605,
+      "shift": 0.27711373705276193
+    },
+    {
+      "sample": "C3L-01053",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5064323108058622,
+      "shift": 0.2052524207592894
+    },
+    {
+      "sample": "C3L-01054",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.7195519046222296,
+      "shift": 0.39239055085382707
+    },
+    {
+      "sample": "C3L-01124",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.5788985627719796,
+      "shift": 0.25706852031653943
+    },
+    {
+      "sample": "C3L-01598",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5432187552798026,
+      "shift": 0.23037283631857625
+    },
+    {
+      "sample": "C3L-01637",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.5613248517908536,
+      "shift": 0.24361267085972513
+    },
+    {
+      "sample": "C3L-01971",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.5233141866145722,
+      "shift": 0.21649834807056728
+    },
+    {
+      "sample": "C3L-02606",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.4554172327931124,
+      "shift": 0.17388775964585992
+    },
+    {
+      "sample": "C3L-02610",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.5382466406738405,
+      "shift": 0.22684217764475714
+    },
+    {
+      "sample": "C3L-02809",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6113605328421055,
+      "shift": 0.28363940920685166
+    },
+    {
+      "sample": "C3L-02899",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6078136825552748,
+      "shift": 0.28062100536436646
+    },
+    {
+      "sample": "C3L-03123",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.538833624376557,
+      "shift": 0.22725669826357928
+    },
+    {
+      "sample": "C3L-03356",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.7363973571265482,
+      "shift": 0.41285202422813966
+    },
+    {
+      "sample": "C3L-03388",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.605776957654013,
+      "shift": 0.2789009795000528
+    },
+    {
+      "sample": "C3L-03395",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5563528199547706,
+      "shift": 0.23991572127514804
+    },
+    {
+      "sample": "C3L-03630",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5461653521583534,
+      "shift": 0.23248615895511654
+    },
+    {
+      "sample": "C3L-03632",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5362876839387936,
+      "shift": 0.22546318878847982
+    },
+    {
+      "sample": "C3L-03639",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6201450309556729,
+      "shift": 0.2912438131459502
+    },
+    {
+      "sample": "C3L-04072",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5260210910597188,
+      "shift": 0.21834515294572815
+    },
+    {
+      "sample": "C3L-04473",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5468837232217716,
+      "shift": 0.2330037721655174
+    },
+    {
+      "sample": "C3L-04479",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.4556984143296779,
+      "shift": 0.17405067430170754
+    },
+    {
+      "sample": "C3L-04495",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.5563528199547706,
+      "shift": 0.23991572127514804
+    },
+    {
+      "sample": "C3L-04848",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.4584749552512266,
+      "shift": 0.1756649862879501
+    },
+    {
+      "sample": "C3L-04853",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5574446967987127,
+      "shift": 0.2407235410036028
+    },
+    {
+      "sample": "C3N-00249",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.5511774597366772,
+      "shift": 0.2361173186149734
+    },
+    {
+      "sample": "C3N-00436",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5322644996989939,
+      "shift": 0.22265217615908636
+    },
+    {
+      "sample": "C3N-00512",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5598242033759306,
+      "shift": 0.24249187713160886
+    },
+    {
+      "sample": "C3N-00513",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.35805584221080133,
+      "shift": 0.12310743697136937
+    },
+    {
+      "sample": "C3N-00514",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6872687608507322,
+      "shift": 0.35614550088107555
+    },
+    {
+      "sample": "C3N-00517",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.42140267620126143,
+      "shift": 0.15491867162864456
+    },
+    {
+      "sample": "C3N-00518",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.5685368043904245,
+      "shift": 0.2490602033792907
+    },
+    {
+      "sample": "C3N-00709",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6105050943068212,
+      "shift": 0.28290872345137136
+    },
+    {
+      "sample": "C3N-00957",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5343386761471165,
+      "shift": 0.2240978885620391
+    },
+    {
+      "sample": "C3N-01011",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.427289161944073,
+      "shift": 0.15809984807025415
+    },
+    {
+      "sample": "C3N-01997",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6469070252237435,
+      "shift": 0.31560506618927775
+    },
+    {
+      "sample": "C3N-01998",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.644213527830893,
+      "shift": 0.3130679344617844
+    },
+    {
+      "sample": "C3N-02010",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5717915097149163,
+      "shift": 0.2515522927739792
+    },
+    {
+      "sample": "C3N-02295",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5991697776192376,
+      "shift": 0.27338660354884486
+    },
+    {
+      "sample": "C3N-02573",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.3226423648074625,
+      "shift": 0.10705621171883173
+    },
+    {
+      "sample": "C3N-02585",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.41774913562529675,
+      "shift": 0.15296472920223966
+    },
+    {
+      "sample": "C3N-02589",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6683438162192811,
+      "shift": 0.33652677598111963
+    },
+    {
+      "sample": "C3N-02592",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6337425212797404,
+      "shift": 0.3033895998847964
+    },
+    {
+      "sample": "C3N-02768",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.7135201436501768,
+      "shift": 0.38533312612979514
+    },
+    {
+      "sample": "C3N-02944",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5966572908053006,
+      "shift": 0.271315525685617
+    },
+    {
+      "sample": "C3N-03061",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6374470586712321,
+      "shift": 0.3067805479044228
+    },
+    {
+      "sample": "C3N-03069",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.4371260561037208,
+      "shift": 0.1635088579570306
+    },
+    {
+      "sample": "C3N-03211",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.37574741298376396,
+      "shift": 0.13156946875283854
+    },
+    {
+      "sample": "C3N-03426",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.23874321276013116,
+      "shift": 0.0731623915465184
+    },
+    {
+      "sample": "C3N-03440",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.578838009592706,
+      "shift": 0.2570210840285774
+    },
+    {
+      "sample": "C3N-03780",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.6268083679954192,
+      "shift": 0.2971375893620796
+    },
+    {
+      "sample": "C3N-03839",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.7788012727993876,
+      "shift": 0.46983161928081657
+    },
+    {
+      "sample": "C3N-03840",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.7863700583385724,
+      "shift": 0.48092614699256214
+    },
+    {
+      "sample": "C3N-03884",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5343386761471165,
+      "shift": 0.2240978885620391
+    },
+    {
+      "sample": "C3N-04119",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.4803819143919361,
+      "shift": 0.18876922651572553
+    },
+    {
+      "sample": "C3N-04282",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6552945562385883,
+      "shift": 0.3236342189917609
+    },
+    {
+      "sample": "C3L-00017",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6451736418453462,
+      "shift": 0.3139700429377793
+    },
+    {
+      "sample": "C3L-00589",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6542383712065438,
+      "shift": 0.3226122954659591
+    },
+    {
+      "sample": "C3L-00598",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.575634259620793,
+      "shift": 0.2545220924825563
+    },
+    {
+      "sample": "C3L-00599",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6859747853793686,
+      "shift": 0.35476772536119433
+    },
+    {
+      "sample": "C3L-00622",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6388511330060017,
+      "shift": 0.30807518024196545
+    },
+    {
+      "sample": "C3L-00625",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6560050106259172,
+      "shift": 0.3243234119471034
+    },
+    {
+      "sample": "C3L-01328",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6483595372907843,
+      "shift": 0.31698150044172946
+    },
+    {
+      "sample": "C3L-01453",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5836346081848374,
+      "shift": 0.2608022964009923
+    },
+    {
+      "sample": "C3L-01662",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6299210086463227,
+      "shift": 0.29992884457548974
+    },
+    {
+      "sample": "C3L-01687",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.4516602160999761,
+      "shift": 0.1717209057956369
+    },
+    {
+      "sample": "C3L-01689",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.6013430514661461,
+      "shift": 0.2751894840079449
+    },
+    {
+      "sample": "C3L-01703",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.7936899365658124,
+      "shift": 0.4919501964218297
+    },
+    {
+      "sample": "C3L-02109",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6166754383725255,
+      "shift": 0.2882181387524771
+    },
+    {
+      "sample": "C3L-02112",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.38527438604821623,
+      "shift": 0.13625671139271878
+    },
+    {
+      "sample": "C3L-02115",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.2875390535986488,
+      "shift": 0.09221530774004733
+    },
+    {
+      "sample": "C3L-02116",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.6005114013109409,
+      "shift": 0.27449831501606603
+    },
+    {
+      "sample": "C3L-02118",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5841013802583767,
+      "shift": 0.26117283257826474
+    },
+    {
+      "sample": "C3L-02463",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.58564049532492,
+      "shift": 0.2623978879041004
+    },
+    {
+      "sample": "C3L-02604",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5802689606093009,
+      "shift": 0.2581440974501835
+    },
+    {
+      "sample": "C3L-02613",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.3241803702885619,
+      "shift": 0.10772998511505036
+    },
+    {
+      "sample": "C3L-02701",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.7427848280013568,
+      "shift": 0.42091429522495
+    },
+    {
+      "sample": "C3L-02890",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.4811047658331932,
+      "shift": 0.18921306061071527
+    },
+    {
+      "sample": "C3L-02897",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6143303021869482,
+      "shift": 0.28618952144030396
+    },
+    {
+      "sample": "C3L-03394",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5717222841213143,
+      "shift": 0.2514990667366177
+    },
+    {
+      "sample": "C3L-03628",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5836346081848374,
+      "shift": 0.2608022964009923
+    },
+    {
+      "sample": "C3L-03635",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6544739782062052,
+      "shift": 0.32283998529860297
+    },
+    {
+      "sample": "C3L-03743",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5621394095806357,
+      "shift": 0.24422286129628745
+    },
+    {
+      "sample": "C3L-04027",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6258562922934781,
+      "shift": 0.29628870141011526
+    },
+    {
+      "sample": "C3L-04080",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.5741024455331462,
+      "shift": 0.25333466867753496
+    },
+    {
+      "sample": "C3L-04475",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6592194703896983,
+      "shift": 0.32745974840241576
+    },
+    {
+      "sample": "C3N-00198",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5394405395936236,
+      "shift": 0.22768593636587522
+    },
+    {
+      "sample": "C3N-00302",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.40167431182377505,
+      "shift": 0.14454924070671166
+    },
+    {
+      "sample": "C3N-00303",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5353009057309301,
+      "shift": 0.2247711100704806
+    },
+    {
+      "sample": "C3N-00511",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6013430514661461,
+      "shift": 0.2751894840079449
+    },
+    {
+      "sample": "C3N-00516",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6698426387557469,
+      "shift": 0.3380399215807537
+    },
+    {
+      "sample": "C3N-01012",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.10083230568496487,
+      "shift": 0.027450798017800537
+    },
+    {
+      "sample": "C3N-01165",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6191989441335178,
+      "shift": 0.2904158706330235
+    },
+    {
+      "sample": "C3N-01166",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5428430688362191,
+      "shift": 0.23010451912733518
+    },
+    {
+      "sample": "C3N-01167",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.5936212241838761,
+      "shift": 0.2688315495585254
+    },
+    {
+      "sample": "C3N-01168",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5313657040758009,
+      "shift": 0.2220280242880832
+    },
+    {
+      "sample": "C3N-01375",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6137789190667666,
+      "shift": 0.2857144694575926
+    },
+    {
+      "sample": "C3N-01380",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.13532725654366623,
+      "shift": 0.03789990784206336
+    },
+    {
+      "sample": "C3N-01381",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.44825405302136134,
+      "shift": 0.16977225121429024
+    },
+    {
+      "sample": "C3N-01382",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.5680906705430067,
+      "shift": 0.24872024948059318
+    },
+    {
+      "sample": "C3N-01383",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.5201379851112765,
+      "shift": 0.2143469809046608
+    },
+    {
+      "sample": "C3N-01388",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6349457956451046,
+      "shift": 0.30448708931926516
+    },
+    {
+      "sample": "C3N-01502",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6080439768401221,
+      "shift": 0.2808160955764328
+    },
+    {
+      "sample": "C3N-01714",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.435498962263774,
+      "shift": 0.1626060148556728
+    },
+    {
+      "sample": "C3N-01715",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.08438122941929402,
+      "shift": 0.022670268376678366
+    },
+    {
+      "sample": "C3N-01716",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5411241487521617,
+      "shift": 0.22888009113473515
+    },
+    {
+      "sample": "C3N-01719",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6036485408937605,
+      "shift": 0.27711373705276193
+    },
+    {
+      "sample": "C3N-02579",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.49918723460178965,
+      "shift": 0.20056517730743542
+    },
+    {
+      "sample": "C3N-02940",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6309353051174884,
+      "shift": 0.3008437344224934
+    },
+    {
+      "sample": "C3N-02971",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6314506799968908,
+      "shift": 0.3013096084980187
+    },
+    {
+      "sample": "C3N-02998",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5586207569110805,
+      "shift": 0.2415961805720142
+    },
+    {
+      "sample": "C3N-03000",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6215548311541348,
+      "shift": 0.2924816282098196
+    },
+    {
+      "sample": "C3N-03006",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5012991142182456,
+      "shift": 0.20192307120306713
+    },
+    {
+      "sample": "C3N-03007",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5647988929530415,
+      "shift": 0.24622406748145426
+    },
+    {
+      "sample": "C3N-03039",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.7513011499496138,
+      "shift": 0.4319374300515346
+    },
+    {
+      "sample": "C3N-03086",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6534454536758896,
+      "shift": 0.3218471766246794
+    },
+    {
+      "sample": "C3N-03173",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5720511209424173,
+      "shift": 0.25175198802029697
+    },
+    {
+      "sample": "C3N-03190",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5587833309401237,
+      "shift": 0.24171701858116768
+    },
+    {
+      "sample": "C3N-03428",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.25242304414662553,
+      "shift": 0.07833079934526434
+    },
+    {
+      "sample": "C3N-03430",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6518362097205801,
+      "shift": 0.3202997999515266
+    },
+    {
+      "sample": "C3N-03439",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.633299543398849,
+      "shift": 0.30298651212121613
+    },
+    {
+      "sample": "C3N-03665",
+      "target": "SMAD4",
+      "label": 1,
+      "balanced": 0.571622805599185,
+      "shift": 0.2514225967606902
+    },
+    {
+      "sample": "C3N-03666",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6616955611111183,
+      "shift": 0.3298960381632223
+    },
+    {
+      "sample": "C3N-03670",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.6282011500734773,
+      "shift": 0.2983835310360603
+    },
+    {
+      "sample": "C3N-03754",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.48112656496751793,
+      "shift": 0.18922645703306232
+    },
+    {
+      "sample": "C3N-03853",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5711896468026948,
+      "shift": 0.251089855736025
+    },
+    {
+      "sample": "C3N-04126",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.598058250414816,
+      "shift": 0.272468617587393
+    },
+    {
+      "sample": "C3N-04283",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.525698237886385,
+      "shift": 0.21812423628487018
+    },
+    {
+      "sample": "C3N-04284",
+      "target": "SMAD4",
+      "label": 0,
+      "balanced": 0.5985370755967293,
+      "shift": 0.2728637297048665
+    }
+  ],
+  "limits": "distinct study IDs not patient-independenceaudit,onlymutation target not deletion/methylation,burdenconfounding,oneexternalcohort,no GNNvalidation,no treatment/diagnosis/clinicalutility;prioroddsshift heuristic not validatedcalibration"
+}

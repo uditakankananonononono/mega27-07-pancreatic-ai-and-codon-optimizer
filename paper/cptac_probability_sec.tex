@@ -1,0 +1,20 @@
+\subsection{External discrimination does not generally beat a training-prior probability constant}
+A frozen proper-score unit refits the identical TCGA-only balanced logistic baseline and verifies the earlier CPTAC AUROC, average precision and Brier values to $10^{-10}$. No CPTAC label is used for fitting, shift selection or calibration. The comparator constant is each target's TCGA training prevalence, not its CPTAC prevalence. A second comparator applies training-prior odds shifting to the balanced prediction. This preserves all AUROC and average precision values, but is a heuristic rather than certified probability calibration.
+
+\begin{center}
+\begin{tabular}{lrrr}
+\hline
+Target & Balanced Brier & Train-prior constant & Train-prior shift \\
+\hline
+KRAS & 0.255 & 0.142 & 0.186 \\
+TP53 & 0.185 & 0.216 & 0.170 \\
+CDKN2A & 0.325 & 0.165 & 0.182 \\
+SMAD4 & 0.318 & 0.143 & 0.165 \\
+\hline
+\end{tabular}
+\end{center}
+Only TP53 beats the training-prior constant, on both Brier score and log loss. Its log losses are 0.557 balanced, 0.624 constant and 0.518 shifted. KRAS has 0.778, 0.473 and 0.596; CDKN2A has 0.903, 0.511 and 0.648; SMAD4 has 0.833, 0.461 and 0.517. The odds shift improves both proper scores for all four targets relative to balanced outputs, yet three still lose to the simple source-prior constant. Thus the TP53 discrimination result survives this probability-score comparator, while the other targets do not acquire useful probability evidence merely from an improved intercept heuristic.
+
+TCGA and CPTAC prevalences differ: KRAS 0.636 versus 0.964, TP53 0.582 versus 0.750, CDKN2A 0.190 versus 0.207 and SMAD4 0.201 versus 0.171. Those target-cohort values are descriptive, never used to alter predictions. KRAS has only five negatives, so neither this finding nor its poor AUROC is a reliable subgroup clinical estimate. No patient-identity independence, variant-platform harmonization, deletion or methylation target, GNN validation, diagnosis, treatment or clinical utility is established.
+
+All 560 target/sample predictions, fixed source priors and proper scores are in \path{results/cptac_probability_audit.json}, with source hashes and protocol in \path{scripts/cptac_probability_plan.json}. Source: \url{https://www.cbioportal.org/study/summary?id=paad_cptac_2021}. The content-page gate remains uncertified.
